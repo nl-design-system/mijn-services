@@ -44,6 +44,7 @@ const meta = {
   parameters: {
     layout: 'fullscreen',
   },
+  tags: ['!dev'],
 } satisfies Meta;
 
 export default meta;

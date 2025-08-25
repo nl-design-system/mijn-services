@@ -30,7 +30,7 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/Taken',
+  title: 'Templates/Mijn Omgeving/Taken/Taken Overzicht',
   id: 'mijn-omgeving-taken',
   parameters: {
     layout: 'fullscreen',
