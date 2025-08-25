@@ -1,0 +1,326 @@
+.voorbeeld-theme {
+  --utrecht-space-around: 1;
+  --utrecht-root-font-family: var(--voorbeeld-typography-font-family-secondary);
+
+  /* Amsterdam component tokens */
+  --ams-grid-wide-column-count: 12;
+  --ams-grid-medium-column-count: 6;
+  --ams-grid-narrow-column-count: 3;
+  --ams-grid-padding-inline: var(--voorbeeld-space-row-rat);
+  --ams-grid-padding-block-xl: var(--voorbeeld-space-row-cat);
+  --ams-grid-medium-padding-inline: var(--voorbeeld-space-row-cat);
+  --ams-grid-row-gap-xl: var(--voorbeeld-space-row-rat);
+  --ams-grid-column-gap: var(--voorbeeld-space-row-rat);
+
+  /* Amsterdam Page Footer tokens */
+  --ams-page-footer-spotlight-background-color: var(--voorbeeld-color-violet-700);
+  --denhaag-sidenav-display: flex;
+  --denhaag-sidenav-mobile-display: var(--denhaag-sidenav-display);
+  --denhaag-sidenav-flex-direction: column;
+  --denhaag-sidenav-row-gap: 24px;
+  --utrecht-article-max-inline-size: 670px;
+  --utrecht-alert-icon-inset-block-start: 8px;
+  --utrecht-button-group-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-form-field-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-form-label-font-weight: var(--voorbeeld-typography-font-weight-bold);
+  --utrecht-heading-1-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-1-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-2-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-2-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-3-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-paragraph-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-page-padding-inline-start: var(--voorbeeld-space-inline-pig);
+  --utrecht-page-padding-inline-end: var(--voorbeeld-space-inline-pig);
+  --utrecht-page-content-padding-block-start: var(--voorbeeld-space-block-dog);
+  --utrecht-page-content-padding-block-end: var(--voorbeeld-space-block-pig);
+  --utrecht-page-content-padding-inline-start: 0;
+  --utrecht-page-content-padding-inline-end: 0;
+  --utrecht-page-footer-background-color: var(--voorbeeld-color-violet-700);
+  --utrecht-page-footer-color: var(--voorbeeld-color-white);
+  --utrecht-page-footer-padding-block-end: var(--voorbeeld-space-block-dog);
+  --utrecht-page-footer-padding-block-start: var(--voorbeeld-space-block-dog);
+  --utrecht-page-footer-padding-inline-end: var(--voorbeeld-space-inline-dog);
+  --utrecht-page-footer-padding-inline-start: var(--voorbeeld-space-inline-dog);
+  --utrecht-page-header-padding-block-start: var(--voorbeeld-space-block-mouse);
+  --utrecht-page-header-padding-block-end: var(--voorbeeld-space-block-mouse);
+  --utrecht-page-header-border-block-end-width: 2px;
+  --utrecht-page-header-border-block-end-color: var(--voorbeeld-color-violet-700);
+  --utrecht-link-list-icon-inset-block-start: 6px;
+
+  /* Custom component tokens */
+  --voorbeeld-logo-icon-color: var(--voorbeeld-color-violet-700);
+  --todo-page-header-content-max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
+  --todo-page-header-padding-inline-start: var(--voorbeeld-space-inline-mouse);
+  --todo-page-header-padding-inline-end: var(--voorbeeld-space-inline-mouse);
+
+  /* Custom footer tokens */
+  --todo-page-footer-heading-color: var(--voorbeeld-color-white);
+  --todo-page-footer-color: var(--voorbeeld-color-white);
+
+  /* Testing new Den haag components */
+
+  --denhaag-card-width: 352px;
+  --denhaag-card-mobile-width: 312px;
+  --denhaag-card-wrapper-padding: 24px;
+  --denhaag-card-case-title-line-height: 24px;
+  --denhaag-card-case-padding-block-start: 20px;
+  --denhaag-card-case-padding-block-end: 24px;
+  --denhaag-card-case-height: 200px;
+  --denhaag-card-case-border-width: 0;
+  --denhaag-card-arrow-right: 28px;
+  --denhaag-card-arrow-position: relative;
+  --denhaag-card-arrow-left: 0;
+  --denhaag-card-actions-padding-inline-start: 0;
+  --denhaag-card-actions-padding-inline-end: 0;
+  --denhaag-card-actions-padding-block-start: 8px;
+  --denhaag-card-actions-padding-block-end: 0;
+  --denhaag-card-title-padding-inline: var(--denhaag-card-title-padding);
+  --denhaag-card-title-padding-block: var(--denhaag-card-title-padding);
+  --denhaag-card-title-font-weight: var(--voorbeeld-typography-font-weight-bold);
+  --denhaag-card-title-font-size: var(--voorbeeld-typography-font-size-lg);
+  --denhaag-card-title-font-color: var(--denhaag-color-black);
+  --denhaag-card-subtitle-padding-inline: var(--denhaag-card-subtitle-padding);
+  --denhaag-card-subtitle-padding-block: var(--denhaag-card-subtitle-padding);
+  --denhaag-card-subtitle-font-weight: var(--denhaag-typography-weight-regular);
+  --denhaag-card-subtitle-font-size: var(--denhaag-typography-scale-base-font-size);
+  --denhaag-card-subtitle-font-color: var(--denhaag-color-grey-4);
+  --denhaag-card-wrapper-padding-inline: var(--denhaag-card-wrapper-padding);
+  --denhaag-card-wrapper-padding-block: var(--denhaag-card-wrapper-padding);
+  --denhaag-card-case-archived-secondary-background-color: var(--denhaag-color-grey-2);
+  --denhaag-card-case-archived-primary-background-color: var(--denhaag-color-grey-1);
+  --denhaag-card-case-archived-arrow-active-color: var(--denhaag-color-grey-5);
+  --denhaag-card-case-archived-arrow-color: var(--denhaag-color-grey-4);
+  --denhaag-card-case-archived-title-color: var(--denhaag-color-grey-5);
+  --denhaag-card-case-archived-color: var(--denhaag-color-grey-4);
+  --denhaag-card-case-secondary-background-color: var(--voorbeeld-color-violet-300);
+  --denhaag-card-case-primary-background-color: var(--voorbeeld-color-violet-200);
+  --denhaag-card-case-arrow-active-color: var(--denhaag-color-blue-4);
+  --denhaag-card-case-arrow-color: var(--denhaag-color-blue-3);
+  --denhaag-card-case-title-font-weight: var(--denhaag-typography-weight-bold);
+  --denhaag-card-case-title-color: var(--voorbeeld-color-blue-800);
+  --denhaag-card-case-color: var(--voorbeeld-color-blue-800);
+  --denhaag-card-arrow-color: var(--voorbeeld-color-black);
+  --denhaag-card-case-paper-color: var(--voorbeeld-color-white);
+  --denhaag-action-warning-icon-width: var(--voorbeeld-icon-functional-size);
+  --denhaag-action-warning-icon-color: var(--voorbeeld-feedback-negative-color);
+  --denhaag-action-single-details-lg-gap: var(--voorbeeld-space-column-snail);
+  --denhaag-action-single-details-gap: var(--voorbeeld-space-row-snail);
+  --denhaag-action-single-hover-background-color: var(--voorbeeld-color-gray-100);
+  --denhaag-action-single-padding-inline-start: var(--voorbeeld-space-inline-mouse);
+  --denhaag-action-single-padding-inline-end: var(--voorbeeld-space-inline-mouse);
+  --denhaag-action-single-padding-block-start: var(--voorbeeld-space-block-snail);
+  --denhaag-action-single-padding-block-end: var(--voorbeeld-space-block-snail);
+  --denhaag-action-link-icon-width: var(--voorbeeld-icon-functional-size);
+  --denhaag-action-link-icon-color: var(--voorbeeld-interaction-color);
+  --denhaag-action-details-lg-gap: var(--voorbeeld-space-column-rat);
+  --denhaag-action-details-gap: var(--voorbeeld-space-row-snail);
+  --denhaag-action-content-bold-font-weight: var(--voorbeeld-document-strong-font-weight);
+  --denhaag-action-date-warning-font-weight: var(--voorbeeld-document-strong-font-weight);
+  --denhaag-action-date-warning-gap: var(--voorbeeld-space-row-snail);
+  --denhaag-action-date-warning-color: var(--voorbeeld-feedback-negative-color);
+  --denhaag-action-date-gap: var(--voorbeeld-space-row-snail);
+  --denhaag-action-date-font-weight: var(--utrecht-document-font-weight);
+  --denhaag-action-date-color: var(--utrecht-document-color);
+  --denhaag-action-lg-padding-block-start: var(--voorbeeld-space-block-snail);
+  --denhaag-action-lg-padding-block-end: var(--voorbeeld-space-block-snail);
+  --denhaag-action-lg-gap: var(--voorbeeld-space-column-rat);
+  --denhaag-action-padding-inline-start: var(--voorbeeld-space-inline-mouse);
+  --denhaag-action-padding-inline-end: var(--voorbeeld-space-inline-mouse);
+  --denhaag-action-padding-block-start: var(--voorbeeld-space-block-snail);
+  --denhaag-action-padding-block-end: var(--voorbeeld-space-block-snail);
+  --denhaag-action-line-height: var(--utrecht-document-line-height);
+  --denhaag-action-gap: var(--voorbeeld-space-row-snail);
+  --denhaag-action-font-weight: var(--voorbeeld-document-strong-font-weight);
+  --denhaag-action-font-size: var(--utrecht-document-font-size);
+  --denhaag-action-font-familiy: var(--utrecht-document-font-family);
+  --denhaag-action-color: var(--utrecht-document-color);
+  --denhaag-action-border-style: solid;
+  --denhaag-action-border-width: var(--voorbeeld-line-border-width);
+  --denhaag-action-border-color: var(--voorbeeld-line-border-color);
+  --denhaag-action-background-color: var(--utrecht-document-background-color);
+}
+
+.denhaag-theme {
+  --utrecht-root-font-family: var(--denhaag-typography-sans-serif-alternate-font-family);
+  --utrecht-space-around: 1;
+  --utrecht-article-max-inline-size: 670px;
+  --utrecht-alert-column-gap: 8px;
+  --todo-page-header-content-max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
+  --todo-page-header-padding-inline-start: var(--voorbeeld-space-inline-mouse);
+  --todo-page-header-padding-inline-end: var(--voorbeeld-space-inline-mouse);
+  --utrecht-paragraph-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-1-margin-block-start: 0;
+  --utrecht-heading-1-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-2-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-3-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-button-group-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-page-footer-padding-block-end: var(--voorbeeld-space-block-dog);
+  --utrecht-page-footer-padding-block-start: var(--voorbeeld-space-block-dog);
+  --utrecht-page-footer-padding-inline-end: var(--voorbeeld-space-inline-dog);
+  --utrecht-page-footer-padding-inline-start: var(--voorbeeld-space-inline-dog);
+  --utrecht-page-header-padding-block-start: var(--voorbeeld-space-block-mouse);
+  --utrecht-page-header-padding-block-end: var(--voorbeeld-space-block-mouse);
+  --utrecht-page-padding-inline-start: var(--voorbeeld-space-inline-pig);
+  --utrecht-page-padding-inline-end: var(--voorbeeld-space-inline-pig);
+  --utrecht-page-content-padding-block-start: var(--voorbeeld-space-block-beetle);
+  --utrecht-page-content-padding-block-end: var(--voorbeeld-space-block-dog);
+  --utrecht-page-content-padding-inline-start: 0;
+  --utrecht-page-content-padding-inline-end: 0;
+
+  /* Amsterdam component tokens */
+  --ams-grid-wide-column-count: 12;
+  --ams-grid-medium-column-count: 6;
+  --ams-grid-narrow-column-count: 3;
+  --ams-grid-padding-inline: var(--voorbeeld-space-row-rat);
+  --ams-grid-padding-block-xl: var(--voorbeeld-space-row-cat);
+  --ams-grid-medium-padding-inline: var(--voorbeeld-space-row-cat);
+  --ams-grid-row-gap-xl: var(--voorbeeld-space-row-rat);
+  --ams-grid-column-gap: var(--voorbeeld-space-row-rat);
+
+  /* Amsterdam Page Footer tokens */
+  --ams-page-footer-menu-column-gap: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-padding-block: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-padding-inline: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-medium-padding-inline: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-wide-padding-inline: var(--voorbeeld-space-block-mouse);
+
+  /* DH page footer tokens */
+  --ams-page-footer-spotlight-background-color: var(--denhaag-footer-background-color);
+  --todo-page-footer-heading-color: var(--denhaag-link-group-dark-caption-color);
+  --todo-page-footer-color: var(--denhaag-footer-color);
+
+  /* TEMP VOORBEELD SCALE */
+  --voorbeeld-space-relation-onbemind: var(--voorbeeld-space-row-horse);
+  --voorbeeld-space-relation-onbekenden: var(--voorbeeld-space-row-pig);
+  --voorbeeld-space-relation-bekenden: var(--voorbeeld-space-row-cat);
+  --voorbeeld-space-relation-vrienden: var(--voorbeeld-space-row-rat);
+  --voorbeeld-space-relation-besties: var(--voorbeeld-space-row-snail);
+  --voorbeeld-space-relation-kind: 0px;
+  --voorbeeld-space-row-giraffe: 160px;
+  --voorbeeld-space-row-elephant: 96px;
+  --voorbeeld-space-row-horse: 64px;
+  --voorbeeld-space-row-tiger: 48px;
+  --voorbeeld-space-row-pig: 32px;
+  --voorbeeld-space-row-dog: 28px;
+  --voorbeeld-space-row-cat: 24px;
+  --voorbeeld-space-row-rabbit: 20px;
+  --voorbeeld-space-row-rat: 16px;
+  --voorbeeld-space-row-mouse: 12px;
+  --voorbeeld-space-row-snail: 8px;
+  --voorbeeld-space-row-beetle: 4px;
+  --voorbeeld-space-row-ant: 2px;
+  --voorbeeld-space-row-flea: 1px;
+  --voorbeeld-space-column-giraffe: 160px;
+  --voorbeeld-space-column-elephant: 96px;
+  --voorbeeld-space-column-horse: 64px;
+  --voorbeeld-space-column-tiger: 48px;
+  --voorbeeld-space-column-pig: 32px;
+  --voorbeeld-space-column-dog: 28px;
+  --voorbeeld-space-column-cat: 24px;
+  --voorbeeld-space-column-rabbit: 20px;
+  --voorbeeld-space-column-rat: 16px;
+  --voorbeeld-space-column-mouse: 12px;
+  --voorbeeld-space-column-snail: 8px;
+  --voorbeeld-space-column-beetle: 4px;
+  --voorbeeld-space-column-ant: 2px;
+  --voorbeeld-space-column-flea: 1px;
+  --voorbeeld-space-text-dog: 24px;
+  --voorbeeld-space-text-cat: 16px;
+  --voorbeeld-space-text-rabbit: 14px;
+  --voorbeeld-space-text-rat: 12px;
+  --voorbeeld-space-text-mouse: 8px;
+  --voorbeeld-space-text-snail: 6px;
+  --voorbeeld-space-text-beetle: 4px;
+  --voorbeeld-space-text-ant: 2px;
+  --voorbeeld-space-text-flea: 1px;
+  --voorbeeld-space-block-pig: 64px;
+  --voorbeeld-space-block-dog: 48px;
+  --voorbeeld-space-block-cat: 32px;
+  --voorbeeld-space-block-rabbit: 24px;
+  --voorbeeld-space-block-rat: 20px;
+  --voorbeeld-space-block-mouse: 16px;
+  --voorbeeld-space-block-snail: 12px;
+  --voorbeeld-space-block-beetle: 8px;
+  --voorbeeld-space-block-ant: 4px;
+  --voorbeeld-space-block-flea: 2px;
+  --voorbeeld-space-inline-pig: 48px;
+  --voorbeeld-space-inline-dog: 32px;
+  --voorbeeld-space-inline-cat: 28px;
+  --voorbeeld-space-inline-rabbit: 24px;
+  --voorbeeld-space-inline-rat: 20px;
+  --voorbeeld-space-inline-mouse: 16px;
+  --voorbeeld-space-inline-snail: 12px;
+  --voorbeeld-space-inline-beetle: 8px;
+  --voorbeeld-space-inline-ant: 4px;
+  --voorbeeld-space-inline-flea: 2px;
+}
+
+.utrecht-document {
+  --utrecht-space-around: 1;
+}
+
+.voorbeeld-back-link {
+  align-items: center;
+  column-gap: 8px;
+  display: inline-flex;
+}
+
+.voorbeeld-data-list-item {
+  border-block-end-color: var(--voorbeeld-color-gray-200);
+  border-block-end-style: solid;
+  border-block-end-width: 1px;
+  display: block;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  -webkit-padding-after: var(--voorbeeld-space-block-mouse);
+  -webkit-padding-before: var(--voorbeeld-space-block-mouse);
+  padding-block-end: var(--voorbeeld-space-block-mouse);
+  padding-block-start: var(--voorbeeld-space-block-mouse);
+}
+
+.voorbeeld-page-header {
+  /* Design specific overwrite, these need to be set for page-content but we don't want them to work on the header */
+  --utrecht-page-padding-inline-start: 0;
+  --utrecht-page-padding-inline-end: 0;
+
+  border-block-end: 2px solid var(--voorbeeld-color-violet-700);
+}
+
+.todo-alert {
+  --utrecht-heading-3-margin-block-start: -4px;
+  --utrecht-heading-3-margin-block-end: 8px;
+  --utrecht-paragraph-margin-block-end: 4px;
+}
+
+.todo-page-content {
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.25);
+}
+
+.todo-page-header__content {
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-inline-size: var(--todo-page-header-content-max-inline-size);
+  padding-inline-end: var(--todo-page-header-padding-inline-end);
+  padding-inline-start: var(--todo-page-header-padding-inline-start);
+}
+
+.todo-address {
+  font-style: inherit;
+  margin-block: 0;
+}
+
+/* REST */
+.todo-form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-card-layout {
+  column-gap: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 16px;
+}

@@ -32,8 +32,8 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/Zaakdetailpagina',
-  id: 'mijn-omgeving-2',
+  title: 'Templates/Mijn Omgeving/Zaken/Detailpagina',
+  id: 'mijn-omgeving-zaken-detailpagina',
   parameters: {
     layout: 'fullscreen',
   },
