@@ -18,7 +18,7 @@
   --denhaag-sidenav-mobile-display: var(--denhaag-sidenav-display);
   --denhaag-sidenav-flex-direction: column;
   --denhaag-sidenav-row-gap: 24px;
-  --utrecht-article-max-inline-size: 840px;
+  --utrecht-article-max-inline-size: 670px;
   --utrecht-alert-icon-inset-block-start: 8px;
   --utrecht-button-group-margin-block-start: var(--voorbeeld-space-block-rabbit);
   --utrecht-form-field-margin-block-start: var(--voorbeeld-space-block-rabbit);
@@ -59,7 +59,7 @@
 
   /* Testing new Den haag components */
 
-  --denhaag-card-width: 320px;
+  --denhaag-card-width: 352px;
   --denhaag-card-mobile-width: 312px;
   --denhaag-card-wrapper-padding: 24px;
   --denhaag-card-case-title-line-height: 24px;
@@ -143,8 +143,7 @@
 .denhaag-theme {
   --utrecht-root-font-family: var(--denhaag-typography-sans-serif-alternate-font-family);
   --utrecht-space-around: 1;
-  --utrecht-article-max-inline-size: 840px;
-  --denhaag-card-width: 320px;
+  --utrecht-article-max-inline-size: 670px;
   --utrecht-alert-column-gap: 8px;
   --todo-page-header-content-max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
   --todo-page-header-padding-inline-start: var(--voorbeeld-space-inline-mouse);

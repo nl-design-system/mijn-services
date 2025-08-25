@@ -1,7 +1,6 @@
 import '@amsterdam/design-system-css/dist/grid/grid.css';
 import { Grid } from '@amsterdam/design-system-react';
 import { ActionSingle } from '@gemeente-denhaag/action';
-import { CaseCard } from '@gemeente-denhaag/card';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
@@ -10,32 +9,29 @@ import './index.css';
 import {
   IconArchive,
   IconBuildingCommunity,
+  IconChecklist,
   IconChevronRight,
   IconCurrencyEuro,
   IconHome,
   IconInbox,
-  IconInfoCircle,
   IconLayoutGrid,
   IconParking,
   IconUser,
 } from '@tabler/icons-react';
 import {
-  Alert,
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
   Heading1,
-  Heading2,
   Icon,
-  Paragraph,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/Overzichtspagina',
-  id: 'mijn-omgeving-1',
+  title: 'Templates/Mijn Omgeving/Taken',
+  id: 'mijn-omgeving-taken',
   parameters: {
     layout: 'fullscreen',
   },
@@ -72,7 +68,7 @@ const TemplatePage = ({
         </Icon>
       </BreadcrumbNavSeparator>
       <BreadcrumbNavLink href={'/#'} disabled current>
-        Mijn gegevens
+        Mijn Taken
       </BreadcrumbNavLink>
     </BreadcrumbNav>
     <Grid paddingTop={'x-large'}>
@@ -80,7 +76,7 @@ const TemplatePage = ({
         <Sidenav>
           <SidenavList>
             <SidenavItem>
-              <SidenavLink href="/#" current>
+              <SidenavLink href="/#">
                 <IconLayoutGrid />
                 Overzicht
               </SidenavLink>
@@ -88,15 +84,21 @@ const TemplatePage = ({
           </SidenavList>
           <SidenavList>
             <SidenavItem>
+              <SidenavLink href="/#" current>
+                <IconChecklist />
+                Mijn Taken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
               <SidenavLink href="/#">
                 <IconInbox />
-                Berichten
+                Mijn Berichten
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink href="/#">
                 <IconArchive />
-                Lopende zaken
+                Mijn Zaken
               </SidenavLink>
             </SidenavItem>
           </SidenavList>
@@ -137,18 +139,15 @@ const TemplatePage = ({
         </Sidenav>
       </Grid.Cell>
       <Grid.Cell span={8}>
-        <Alert icon={<IconInfoCircle />} className={'todo-alert'}>
-          <Heading1 className={'utrecht-heading-3'}>Heading</Heading1>
-          <Paragraph>Lorem ipsum dolor sit amet, consectetur ad * isicing elit, sed do eiusmod *</Paragraph>
-        </Alert>
-        <Heading1>Hallo Jeroen van Drouwen</Heading1>
-        <Paragraph>
-          In ‘Mijn omgeving’ kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt bijvoorbeeld uw
-          rekeningen betalen en zien wanneer uw aanvraag klaar is.
-        </Paragraph>
         <section>
-          <Heading2>Wat moet ik regelen</Heading2>
-          <ActionSingle link={'#'} labels={labels}>
+          <Heading1>Mijn Taken</Heading1>
+          <ActionSingle
+            link={'#'}
+            labels={labels}
+            now="2023-09-28T19:47:36.593Z"
+            dateTime="2023-09-30T19:47:36.593Z"
+            relativeDate
+          >
             Geef informatie voor uw aanvraag subsidie geluidisolatie
           </ActionSingle>
           <ActionSingle link={'#'} labels={labels}>
@@ -157,13 +156,6 @@ const TemplatePage = ({
           <ActionSingle link={'#'} labels={labels}>
             Verleng uw identiteitskaart
           </ActionSingle>
-        </section>
-        <section>
-          <Heading2>Lopende zaken</Heading2>
-          <div className={'todo-card-layout'}>
-            <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} date={'2020-10-18T07:34'} />
-            <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} date={'2020-11-05T07:34'} />
-          </div>
         </section>
       </Grid.Cell>
     </Grid>
