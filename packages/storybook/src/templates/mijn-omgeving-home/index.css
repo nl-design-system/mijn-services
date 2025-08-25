@@ -58,6 +58,48 @@
 
   /* Testing new Den haag components */
 
+  --denhaag-card-width: 352px;
+  --denhaag-card-mobile-width: 312px;
+  --denhaag-card-wrapper-padding: 24px;
+  --denhaag-card-case-title-line-height: 24px;
+  --denhaag-card-case-padding-block-start: 20px;
+  --denhaag-card-case-padding-block-end: 24px;
+  --denhaag-card-case-height: 200px;
+  --denhaag-card-case-border-width: 0;
+  --denhaag-card-arrow-right: 28px;
+  --denhaag-card-arrow-position: relative;
+  --denhaag-card-arrow-left: 0;
+  --denhaag-card-actions-padding-inline-start: 0;
+  --denhaag-card-actions-padding-inline-end: 0;
+  --denhaag-card-actions-padding-block-start: 8px;
+  --denhaag-card-actions-padding-block-end: 0;
+  --denhaag-card-title-padding-inline: var(--denhaag-card-title-padding);
+  --denhaag-card-title-padding-block: var(--denhaag-card-title-padding);
+  --denhaag-card-title-font-weight: var(--voorbeeld-typography-font-weight-bold);
+  --denhaag-card-title-font-size: var(--voorbeeld-typography-font-size-lg);
+  --denhaag-card-title-font-color: var(--denhaag-color-black);
+  --denhaag-card-subtitle-padding-inline: var(--denhaag-card-subtitle-padding);
+  --denhaag-card-subtitle-padding-block: var(--denhaag-card-subtitle-padding);
+  --denhaag-card-subtitle-font-weight: var(--denhaag-typography-weight-regular);
+  --denhaag-card-subtitle-font-size: var(--denhaag-typography-scale-base-font-size);
+  --denhaag-card-subtitle-font-color: var(--denhaag-color-grey-4);
+  --denhaag-card-wrapper-padding-inline: var(--denhaag-card-wrapper-padding);
+  --denhaag-card-wrapper-padding-block: var(--denhaag-card-wrapper-padding);
+  --denhaag-card-case-archived-secondary-background-color: var(--denhaag-color-grey-2);
+  --denhaag-card-case-archived-primary-background-color: var(--denhaag-color-grey-1);
+  --denhaag-card-case-archived-arrow-active-color: var(--denhaag-color-grey-5);
+  --denhaag-card-case-archived-arrow-color: var(--denhaag-color-grey-4);
+  --denhaag-card-case-archived-title-color: var(--denhaag-color-grey-5);
+  --denhaag-card-case-archived-color: var(--denhaag-color-grey-4);
+  --denhaag-card-case-secondary-background-color: var(--voorbeeld-color-violet-300);
+  --denhaag-card-case-primary-background-color: var(--voorbeeld-color-violet-200);
+  --denhaag-card-case-arrow-active-color: var(--denhaag-color-blue-4);
+  --denhaag-card-case-arrow-color: var(--denhaag-color-blue-3);
+  --denhaag-card-case-title-font-weight: var(--denhaag-typography-weight-bold);
+  --denhaag-card-case-title-color: var(--voorbeeld-color-blue-800);
+  --denhaag-card-case-color: var(--voorbeeld-color-blue-800);
+  --denhaag-card-arrow-color: var(--voorbeeld-color-black);
+  --denhaag-card-case-paper-color: var(--voorbeeld-color-white);
   --denhaag-action-warning-icon-width: var(--voorbeeld-icon-functional-size);
   --denhaag-action-warning-icon-color: var(--voorbeeld-feedback-negative-color);
   --denhaag-action-single-details-lg-gap: var(--voorbeeld-space-column-snail);
@@ -277,4 +319,6 @@
   column-gap: 24px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 16px;
 }
