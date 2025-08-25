@@ -242,6 +242,12 @@
   border-block-end: 2px solid var(--voorbeeld-color-violet-700);
 }
 
+.todo-alert {
+  --utrecht-heading-3-margin-block-start: 0;
+  --utrecht-heading-3-margin-block-end: 8px;
+  --utrecht-paragraph-margin-block-end: 4px;
+}
+
 .todo-page-content {
   margin-inline-end: auto;
   margin-inline-start: auto;

@@ -14,11 +14,13 @@ import {
   IconCurrencyEuro,
   IconHome,
   IconInbox,
+  IconInfoCircle,
   IconLayoutGrid,
   IconParking,
   IconUser,
 } from '@tabler/icons-react';
 import {
+  Alert,
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
@@ -135,6 +137,10 @@ const TemplatePage = ({
         </Sidenav>
       </Grid.Cell>
       <Grid.Cell span={8}>
+        <Alert icon={<IconInfoCircle />} className={'todo-alert'}>
+          <Heading1 className={'utrecht-heading-3'}>Heading</Heading1>
+          <Paragraph>Lorem ipsum dolor sit amet, consectetur ad * isicing elit, sed do eiusmod *</Paragraph>
+        </Alert>
         <Heading1>Hallo Jeroen van Drouwen</Heading1>
         <Paragraph>
           In ‘Mijn omgeving’ kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt bijvoorbeeld uw
