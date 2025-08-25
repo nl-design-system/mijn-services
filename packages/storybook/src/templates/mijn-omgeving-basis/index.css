@@ -30,39 +30,14 @@
   padding-inline-start: var(--todo-page-header-padding-inline-start);
 }
 
-.todo-page-footer__content {
-  --utrecht-heading-2-color: currentColor;
-  --utrecht-heading-2-font-family: var(--voorbeeld-typography-font-family-secondary);
-  --utrecht-heading-2-font-size: var(--voorbeeld-typography-font-size-md);
-  --utrecht-heading-2-font-weight: var(--voorbeeld-typography-font-weight-bold);
-  --utrecht-heading-2-line-height: var(--voorbeeld-typography-line-height-lg);
-  --utrecht-paragraph-color: white;
-
-  margin-inline-end: auto;
-  margin-inline-start: auto;
-  max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.25);
-}
-
-.todo-footer-content-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.todo-footer-content-block {
-  max-inline-size: 50ch;
-}
-
 .todo-address {
   font-style: inherit;
   margin-block-end: 0;
   margin-block-start: 0;
 }
 
-@media screen and (width <= 960px) {
-  .todo-footer-content-group {
-    align-items: start;
-    flex-direction: column;
-    gap: 1em;
+@media screen and (width <= 1087px) {
+  .todo-grid-cell__hide-on-medium {
+    display: none;
   }
 }

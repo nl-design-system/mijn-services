@@ -13,12 +13,6 @@
   --ams-grid-column-gap: var(--voorbeeld-space-row-rat);
 
   /* Amsterdam Page Footer tokens */
-  --ams-page-footer-menu-column-gap: var(--voorbeeld-space-block-mouse);
-  --ams-page-footer-menu-padding-block: var(--voorbeeld-space-block-mouse);
-  --ams-page-footer-menu-padding-inline: var(--voorbeeld-space-block-mouse);
-  --ams-page-footer-menu-medium-padding-inline: var(--voorbeeld-space-block-mouse);
-  --ams-page-footer-menu-wide-padding-inline: var(--voorbeeld-space-block-mouse);
-  --ams-page-footer-menu-hover-color: var(--voorbeeld-color-gray-100);
   --ams-page-footer-spotlight-background-color: var(--voorbeeld-color-violet-700);
 
   /* Component spacing tokens that aren't set in voorbeeld-theme */
@@ -262,33 +256,6 @@
   padding-inline-start: var(--todo-page-header-padding-inline-start);
 }
 
-/* FOOTER */
-.todo-page-footer__grid {
-  --utrecht-heading-2-color: var(--voorbeeld-color-white);
-  --utrecht-heading-2-font-family: var(--voorbeeld-typography-font-family-secondary);
-  --utrecht-heading-2-font-size: var(--voorbeeld-typography-font-size-md);
-  --utrecht-heading-2-font-weight: var(--voorbeeld-typography-font-weight-bold);
-  --utrecht-heading-2-line-height: var(--voorbeeld-typography-line-height-lg);
-
-  margin-inline-end: auto;
-  margin-inline-start: auto;
-  max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
-}
-
-.todo-page-footer__spotlight {
-  --ams-page-footer-menu-hover-color: var(--todo-page-footer-menu-hover-color);
-  --utrecht-heading-4-color: var(--todo-page-footer-heading-color);
-  --utrecht-heading-4-margin-block-end: var(--voorbeeld-space-block-beetle);
-  --utrecht-paragraph-color: var(--todo-page-footer-color);
-  --utrecht-link-color: var(--todo-page-footer-color);
-  --utrecht-link-hover-color: var(--todo-page-footer-color);
-
-  background-color: var(--ams-page-footer-spotlight-background-color);
-  color: var(--todo-page-footer-color);
-  padding-block-end: 1em;
-  padding-block-start: 2em;
-}
-
 .todo-address {
   font-style: inherit;
   margin-block: 0;
@@ -300,19 +267,8 @@
   flex-direction: column;
 }
 
-.todo-profile-page-content {
-  flex-grow: 1;
-}
-
 .todo-card-layout {
   column-gap: 24px;
   display: flex;
   flex-direction: row;
-}
-
-.todo-profile-page-layout {
-  display: flex;
-  flex-direction: row;
-  padding-block-start: var(--voorbeeld-space-block-cat);
-  padding-inline-start: var(--voorbeeld-space-inline-beetle);
 }

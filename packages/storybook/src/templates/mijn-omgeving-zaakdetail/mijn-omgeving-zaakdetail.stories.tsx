@@ -1,3 +1,4 @@
+import { Grid } from '@amsterdam/design-system-react';
 import { ActionMulti } from '@gemeente-denhaag/action';
 import { File } from '@gemeente-denhaag/file';
 import { Status } from '@gemeente-denhaag/process-steps';
@@ -72,66 +73,68 @@ const TemplatePage = ({
         Aanvraag subsidie geluidsisolatie
       </BreadcrumbNavLink>
     </BreadcrumbNav>
-    <div className="todo-profile-page-layout">
-      <Sidenav>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconLayoutGrid />
-              Home
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconInbox />
-              Berichten
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#" current>
-              <IconArchive />
-              Lopende zaken
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconCurrencyEuro />
-              Belastingzaken
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconHome />
-              WOZ
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconParking />
-              Parkeren
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconBuildingCommunity />
-              Erfpacht
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconUser />
-              Gegevens
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-      </Sidenav>
-      <div className="todo-profile-page-content">
+    <Grid paddingTop={'x-large'}>
+      <Grid.Cell span={4} className={'todo-grid-cell__hide-on-medium'}>
+        <Sidenav>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconLayoutGrid />
+                Home
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconInbox />
+                Berichten
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#" current>
+                <IconArchive />
+                Lopende zaken
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconCurrencyEuro />
+                Belastingzaken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconHome />
+                WOZ
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconParking />
+                Parkeren
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconBuildingCommunity />
+                Erfpacht
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconUser />
+                Gegevens
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+        </Sidenav>
+      </Grid.Cell>
+      <Grid.Cell span={8}>
         <Heading1>Hallo Jeroen van Drouwen</Heading1>
         <ActionMulti
           actions={<ButtonLink appearance={'primary-action-button'}>Informatie geven</ButtonLink>}
@@ -152,8 +155,8 @@ const TemplatePage = ({
           size={'658kb'}
           lastUpdated={'12-12-2024'}
         />
-      </div>
-    </div>
+      </Grid.Cell>
+    </Grid>
   </Layout>
 );
 

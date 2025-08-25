@@ -11,6 +11,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import { Root } from '@utrecht/root-react/dist/css';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
+import './layout.css';
 
 interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> {
   logo?: ReactElement;

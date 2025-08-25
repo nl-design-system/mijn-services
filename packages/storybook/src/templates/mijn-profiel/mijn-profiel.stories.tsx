@@ -1,3 +1,4 @@
+import { Grid } from '@amsterdam/design-system-react';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
@@ -79,66 +80,68 @@ const TemplatePage = ({
         Mijn gegevens
       </BreadcrumbNavLink>
     </BreadcrumbNav>
-    <div className="todo-profile-page-layout">
-      <Sidenav>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconLayoutGrid />
-              Home
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconInbox />
-              Berichten
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconArchive />
-              Lopende zaken
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconCurrencyEuro />
-              Belastingzaken
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconHome />
-              WOZ
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconParking />
-              Parkeren
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconBuildingCommunity />
-              Erfpacht
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#" current>
-              <IconUser />
-              Gegevens
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-      </Sidenav>
-      <div className="todo-profile-page-content">
+    <Grid paddingTop={'x-large'}>
+      <Grid.Cell span={4} className={'todo-grid-cell__hide-on-medium'}>
+        <Sidenav>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconLayoutGrid />
+                Home
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconInbox />
+                Berichten
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconArchive />
+                Lopende zaken
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconCurrencyEuro />
+                Belastingzaken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconHome />
+                WOZ
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconParking />
+                Parkeren
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconBuildingCommunity />
+                Erfpacht
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#" current>
+                <IconUser />
+                Gegevens
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+        </Sidenav>
+      </Grid.Cell>
+      <Grid.Cell span={8}>
         <Heading1>Uw gegevens</Heading1>
         <ExpandableSection
           title="Contact"
@@ -222,11 +225,10 @@ const TemplatePage = ({
             </LinkListLink>
           </LinkList>
         </section>
-      </div>
-    </div>
+      </Grid.Cell>
+    </Grid>
   </Layout>
 );
-
 export const Default: Story = {
   render: () => (
     <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />
