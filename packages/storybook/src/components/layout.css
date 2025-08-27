@@ -5,7 +5,6 @@
   --utrecht-link-color: var(--todo-page-footer-color);
   --utrecht-link-hover-color: var(--todo-page-footer-color);
 
-  background-color: var(--ams-page-footer-spotlight-background-color);
   color: var(--todo-page-footer-color);
   padding-block-end: 1em;
   padding-block-start: 2em;
