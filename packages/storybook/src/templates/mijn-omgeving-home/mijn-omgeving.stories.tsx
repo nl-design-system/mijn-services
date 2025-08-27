@@ -76,7 +76,7 @@ const TemplatePage = ({
       </BreadcrumbNavLink>
     </BreadcrumbNav>
     <Grid paddingTop={'x-large'}>
-      <Grid.Cell span={4} className={'todo-grid-cell--hide-on-medium'}>
+      <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
         <Sidenav>
           <SidenavList>
             <SidenavItem>
@@ -136,7 +136,7 @@ const TemplatePage = ({
           </SidenavList>
         </Sidenav>
       </Grid.Cell>
-      <Grid.Cell span={8}>
+      <Grid.Cell span={9}>
         <Alert icon={<IconInfoCircle />} className={'todo-alert'} style={{ marginBlockEnd: '16px' }}>
           <Heading1 className={'utrecht-heading-3'}>Heading</Heading1>
           <Paragraph>Lorem ipsum dolor sit amet, consectetur ad * isicing elit, sed do eiusmod *</Paragraph>

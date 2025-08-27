@@ -82,7 +82,7 @@ const TemplatePage = ({
       </BreadcrumbNavLink>
     </BreadcrumbNav>
     <Grid paddingTop={'x-large'}>
-      <Grid.Cell span={4} className={'todo-grid-cell--hide-on-medium'}>
+      <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
         <Sidenav>
           <SidenavList>
             <SidenavItem>
@@ -142,7 +142,7 @@ const TemplatePage = ({
           </SidenavList>
         </Sidenav>
       </Grid.Cell>
-      <Grid.Cell span={8}>
+      <Grid.Cell span={9}>
         <Heading1>Uw gegevens</Heading1>
         <ExpandableSection
           title="Contact"
