@@ -71,7 +71,7 @@ const TemplatePage = ({
       </BreadcrumbNavLink>
     </BreadcrumbNav>
     <Grid paddingTop={'x-large'}>
-      <Grid.Cell span={4} className={'todo-grid-cell__hide-on-medium'}>
+      <Grid.Cell span={4} className={'todo-grid-cell--hide-on-medium'}>
         <Sidenav>
           <SidenavList>
             <SidenavItem>

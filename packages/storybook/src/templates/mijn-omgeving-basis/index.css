@@ -37,7 +37,7 @@
 }
 
 @media screen and (width <= 1087px) {
-  .todo-grid-cell__hide-on-medium {
+  .todo-grid-cell--hide-on-medium {
     display: none;
   }
 }
