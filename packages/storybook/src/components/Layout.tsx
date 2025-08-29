@@ -1,9 +1,9 @@
 import '@amsterdam/design-system-css/dist/grid/grid.css';
 import '@amsterdam/design-system-css/dist/page-footer/page-footer.css';
 import { Grid, PageFooter } from '@amsterdam/design-system-react';
+import { Link } from '@nl-design-system-candidate/link-react';
 import {
   Heading,
-  Link,
   LinkList,
   LinkListLink,
   PageContent,
