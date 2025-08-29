@@ -120,6 +120,12 @@ importers:
       '@gemeente-denhaag/side-navigation':
         specifier: 4.0.2
         version: 4.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nl-design-system-candidate/link-react':
+        specifier: 1.1.5
+        version: 1.1.5(@babel/runtime@7.27.4)(react@18.3.1)
+      '@nl-design-system-candidate/paragraph-react':
+        specifier: 2.1.5
+        version: 2.1.5(@babel/runtime@7.27.4)(react@18.3.1)
       '@nl-design-system-unstable/voorbeeld-design-tokens':
         specifier: 5.1.0
         version: 5.1.0
@@ -1631,6 +1637,18 @@ packages:
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
+
+  '@nl-design-system-candidate/link-react@1.1.5':
+    resolution: {integrity: sha512-3tV2p0ZMqtHQNg6NKqg5yM85CZmqpQ/L0UJ4r5jbiPIb1zVDGpo277s+lfdJtV0ZQykVCaLZRDIYT37auoNaog==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
+
+  '@nl-design-system-candidate/paragraph-react@2.1.5':
+    resolution: {integrity: sha512-NARI+HE2p2Erqp5OSGeP18ehj154zDVR3X04elggiUzOYuIIeICXmfEJ1WaUj78lvcPJ5a6nlwadTr+EoH+gRg==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0':
     resolution: {integrity: sha512-Kt9V/783qzbpSPzxKk7lFEzGwnUEOWYAsqo1TDLQmUcTZY/91x+mWU0hHpCbr0Q0kL3imQPaBHBkn352s6XioQ==}
@@ -9223,6 +9241,18 @@ snapshots:
     dependencies:
       '@types/mdx': 2.0.5
       '@types/react': 18.3.5
+      react: 18.3.1
+
+  '@nl-design-system-candidate/link-react@1.1.5(@babel/runtime@7.27.4)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.27.4
+      clsx: 2.1.1
+      react: 18.3.1
+
+  '@nl-design-system-candidate/paragraph-react@2.1.5(@babel/runtime@7.27.4)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.27.4
+      clsx: 2.1.1
       react: 18.3.1
 
   '@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0': {}
