@@ -4,7 +4,6 @@ import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaa
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
-import '../mijn-omgeving-zaken-overzicht/index.css';
 import {
   IconArchive,
   IconBuildingCommunity,

@@ -16,6 +16,11 @@
   max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
 }
 
+.todo-address {
+  font-style: inherit;
+  margin-block: 0;
+}
+
 @media screen and (width <= 1087px) {
   .todo-grid-cell--hide-on-medium {
     display: none;
