@@ -8,6 +8,7 @@ import {
   SideNavigationLink,
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
+import { Heading } from '@nl-design-system-candidate/heading-react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -29,8 +30,6 @@ import {
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
   ButtonLink,
-  Heading1,
-  Heading2,
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
@@ -143,7 +142,7 @@ const TemplatePage = ({
         </SideNavigationBase>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <Heading1>Hallo Jeroen van Drouwen</Heading1>
+        <Heading level={1}>Hallo Jeroen van Drouwen</Heading>
         <ActionMulti
           actions={<ButtonLink appearance={'primary-action-button'}>Informatie geven</ButtonLink>}
           labels={labels}
@@ -153,9 +152,9 @@ const TemplatePage = ({
         >
           <strong>Geef informatie voor uw aanvraag subsidie geluidsisolatie</strong>
         </ActionMulti>
-        <Heading2>Status</Heading2>
+        <Heading level={2}>Status</Heading>
         {timeline}
-        <Heading2>Documenten</Heading2>
+        <Heading level={2}>Documenten</Heading>
         <File
           className={'todo-file-component'}
           name={'antwoord-formulier-deelname-onderzoek'}

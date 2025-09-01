@@ -8,6 +8,7 @@ import {
   SideNavigationLink,
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
+import { Heading } from '@nl-design-system-candidate/heading-react';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
@@ -31,8 +32,6 @@ import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-  Heading1,
-  Heading2,
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
@@ -146,16 +145,20 @@ const TemplatePage = ({
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <Alert icon={<IconInfoCircle className="utrecht-icon" />}>
-          <Heading1 className={'utrecht-heading-3'}>Heading</Heading1>
+          <Heading level={1} appearance="level-3">
+            Heading
+          </Heading>
           <Paragraph>Lorem ipsum dolor sit amet, consectetur ad * isicing elit, sed do eiusmod *</Paragraph>
         </Alert>
-        <Heading1>Hallo Jeroen van Drouwen</Heading1>
+        <Heading level={2} appearance="level-1">
+          Hallo Jeroen van Drouwen
+        </Heading>
         <Paragraph>
           In ‘Mijn omgeving’ kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt bijvoorbeeld uw
           rekeningen betalen en zien wanneer uw aanvraag klaar is.
         </Paragraph>
         <section>
-          <Heading2>Wat moet ik regelen</Heading2>
+          <Heading level={2}>Wat moet ik regelen</Heading>
           <ActionSingle link={'#'} labels={labels}>
             <strong>Geef informatie voor uw aanvraag subsidie geluidisolatie</strong>
           </ActionSingle>
@@ -167,7 +170,7 @@ const TemplatePage = ({
           </ActionSingle>
         </section>
         <section>
-          <Heading2>Lopende zaken</Heading2>
+          <Heading level={2}>Lopende zaken</Heading>
           <div className={'todo-card-layout'}>
             <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-228402'} />
             <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-108422'} />
