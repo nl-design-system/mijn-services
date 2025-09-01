@@ -5,6 +5,8 @@ import {
   SideNavigationLink,
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
+import { Heading } from '@nl-design-system-candidate/heading-react';
+import { Link } from '@nl-design-system-candidate/link-react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -30,10 +32,7 @@ import {
   DataListItem,
   DataListKey,
   DataListValue,
-  Heading1,
-  Heading2,
   Icon,
-  Link,
   LinkList,
   LinkListLink,
   PreserveData,
@@ -150,7 +149,7 @@ const TemplatePage = ({
         </SideNavigationBase>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <Heading1>Uw gegevens</Heading1>
+        <Heading level={1}>Uw gegevens</Heading>
         <ExpandableSection
           title="Contact"
           description="Hier vindt u uw e-mailadres en telefoonnummer waarmee we u kunnen bereiken."
@@ -199,7 +198,7 @@ const TemplatePage = ({
           description="Dit zijn uw adresgegevens; u kunt hier ook een verhuizing doorgeven"
         ></ExpandableSection>
         <section>
-          <Heading2>Wijzigingen en aanvragen BRP</Heading2>
+          <Heading level={2}>Wijzigingen en aanvragen BRP</Heading>
           <LinkList>
             <LinkListLink
               href="#"

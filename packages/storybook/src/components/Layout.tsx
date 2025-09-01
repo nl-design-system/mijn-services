@@ -1,14 +1,9 @@
 import '@amsterdam/design-system-css/dist/grid/grid.css';
 import '@amsterdam/design-system-css/dist/page-footer/page-footer.css';
 import { Grid, PageFooter } from '@amsterdam/design-system-react';
+import { Heading } from '@nl-design-system-candidate/heading-react';
 import { Link } from '@nl-design-system-candidate/link-react';
-import {
-  Heading,
-  LinkList,
-  LinkListLink,
-  PageContent,
-  PageHeader,
-} from '@utrecht/component-library-react/dist/css-module';
+import { LinkList, LinkListLink, PageContent, PageHeader } from '@utrecht/component-library-react/dist/css-module';
 import { Root } from '@utrecht/root-react/dist/css';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 import './layout.css';
@@ -37,10 +32,10 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
             )}
 
             <Grid.Cell span={footerLogo ? 3 : 4}>
-              <Heading level={2} appearance="utrecht-heading-4">
+              <Heading level={2} appearance="level-4" className="todo-page-footer-heading">
                 Contact
               </Heading>
-              <address className="todo-address utrecht-paragraph">
+              <address className="todo-address">
                 Bel <Link href="tel:453453">453 453</Link> (maandag tot en met vrijdag van 09.00 tot 17.00 uur) of stuur
                 een e-mail naar{' '}
                 <Link href="mailto:vragen@gemeentevoorbeeld.nl">
@@ -51,7 +46,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
             </Grid.Cell>
 
             <Grid.Cell span={footerLogo ? 3 : 4}>
-              <Heading level={2} appearance="utrecht-heading-4">
+              <Heading level={2} appearance="level-4">
                 Meer weten
               </Heading>
               <LinkList>
@@ -63,7 +58,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
             </Grid.Cell>
 
             <Grid.Cell span={footerLogo ? 3 : 4}>
-              <Heading level={2} appearance="utrecht-heading-4">
+              <Heading level={2} appearance="level-4">
                 Over deze site
               </Heading>
               <LinkList>
