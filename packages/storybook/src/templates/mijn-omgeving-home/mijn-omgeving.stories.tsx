@@ -3,6 +3,7 @@ import { Grid } from '@amsterdam/design-system-react';
 import { ActionSingle } from '@gemeente-denhaag/action';
 import { CaseCard } from '@gemeente-denhaag/card';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import { Heading } from '@nl-design-system-candidate/heading-react';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
@@ -23,8 +24,6 @@ import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-  Heading1,
-  Heading2,
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
@@ -135,13 +134,13 @@ const TemplatePage = ({
         </Sidenav>
       </Grid.Cell>
       <Grid.Cell span={8}>
-        <Heading1>Hallo Jeroen van Drouwen</Heading1>
+        <Heading level={1}>Hallo Jeroen van Drouwen</Heading>
         <Paragraph>
           In ‘Mijn omgeving’ kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt bijvoorbeeld uw
           rekeningen betalen en zien wanneer uw aanvraag klaar is.
         </Paragraph>
         <section>
-          <Heading2>Wat moet ik regelen</Heading2>
+          <Heading level={2}>Wat moet ik regelen</Heading>
           <ActionSingle link={'#'} labels={labels}>
             Geef informatie voor uw aanvraag subsidie geluidisolatie
           </ActionSingle>
@@ -153,7 +152,7 @@ const TemplatePage = ({
           </ActionSingle>
         </section>
         <section>
-          <Heading2>Lopende zaken</Heading2>
+          <Heading level={2}>Lopende zaken</Heading>
           <div className={'todo-card-layout'}>
             <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} date={'2020-10-18T07:34'} />
             <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} date={'2020-11-05T07:34'} />

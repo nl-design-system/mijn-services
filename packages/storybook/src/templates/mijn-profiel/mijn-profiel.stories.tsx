@@ -1,4 +1,6 @@
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import { Heading } from '@nl-design-system-candidate/heading-react';
+import { Link } from '@nl-design-system-candidate/link-react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -24,10 +26,7 @@ import {
   DataListItem,
   DataListKey,
   DataListValue,
-  Heading1,
-  Heading2,
   Icon,
-  Link,
   LinkList,
   LinkListLink,
   PreserveData,
@@ -139,7 +138,7 @@ const TemplatePage = ({
         </SidenavList>
       </Sidenav>
       <div className="todo-profile-page-content">
-        <Heading1>Uw gegevens</Heading1>
+        <Heading level={1}>Uw gegevens</Heading>
         <ExpandableSection
           title="Contact"
           description="Hier vindt u uw e-mailadres en telefoonnummer waarmee we u kunnen bereiken."
@@ -188,7 +187,7 @@ const TemplatePage = ({
           description="Dit zijn uw adresgegevens; u kunt hier ook een verhuizing doorgeven"
         ></ExpandableSection>
         <section>
-          <Heading2>Wijzigingen en aanvragen BRP</Heading2>
+          <Heading level={2}>Wijzigingen en aanvragen BRP</Heading>
           <LinkList>
             <LinkListLink
               href="#"
