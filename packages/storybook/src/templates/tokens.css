@@ -6,7 +6,10 @@
   --ams-grid-wide-column-count: 12;
   --ams-grid-medium-column-count: 6;
   --ams-grid-column-count: 3;
-  --ams-grid-padding-block-xl: var(--voorbeeld-space-block-cat);
+  --ams-grid-column-gap: var(--voorbeeld-space-inline-cat);
+  --ams-grid-row-gap-xl: var(--voorbeeld-space-block-cat);
+  --ams-grid-padding-inline: var(--voorbeeld-space-inline-pig);
+  --ams-grid-medium-padding-inline: var(--voorbeeld-space-inline-pig);
   --ams-page-footer-spotlight-background-color: var(--voorbeeld-color-violet-700);
 
   /* Component spacing tokens that aren't set in voorbeeld-theme */
@@ -24,12 +27,8 @@
   --utrecht-heading-2-margin-block-end: var(--voorbeeld-space-block-rabbit);
   --utrecht-heading-3-margin-block-start: var(--voorbeeld-space-block-rabbit);
   --utrecht-paragraph-margin-block-end: var(--voorbeeld-space-block-rabbit);
-  --utrecht-page-padding-inline-start: var(--voorbeeld-space-inline-pig);
-  --utrecht-page-padding-inline-end: var(--voorbeeld-space-inline-pig);
   --utrecht-page-content-padding-block-start: var(--voorbeeld-space-block-dog);
   --utrecht-page-content-padding-block-end: var(--voorbeeld-space-block-pig);
-  --utrecht-page-content-padding-inline-start: 0;
-  --utrecht-page-content-padding-inline-end: 0;
   --utrecht-page-footer-background-color: var(--voorbeeld-color-violet-700);
   --utrecht-page-footer-color: var(--voorbeeld-color-white);
   --utrecht-page-footer-padding-block-end: var(--voorbeeld-space-block-dog);

@@ -22,12 +22,11 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
   return (
     <Root className={className} {...props}>
       <PageHeader className="voorbeeld-page-header">
-        <div className="todo-page-header__content">{logo}</div>
+        <Grid className="todo-page-header__content">{logo}</Grid>
       </PageHeader>
-      <PageContent className="todo-page-content">
+      <PageContent>
         <main className={'utrecht-page-content__main'}>{children}</main>
       </PageContent>
-
       <PageFooter>
         <PageFooter.Spotlight className="todo-page-footer__spotlight">
           <Grid className="todo-page-footer__grid">
