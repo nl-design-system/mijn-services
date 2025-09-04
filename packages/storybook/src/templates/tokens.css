@@ -10,6 +10,7 @@
   --ams-grid-row-gap-xl: var(--voorbeeld-space-block-cat);
   --ams-grid-padding-inline: var(--voorbeeld-space-inline-pig);
   --ams-grid-medium-padding-inline: var(--voorbeeld-space-inline-pig);
+  --ams-grid-wide-padding-inline: var(--voorbeeld-space-inline-pig);
   --ams-page-footer-spotlight-background-color: var(--voorbeeld-color-violet-700);
 
   /* Component spacing tokens that aren't set in voorbeeld-theme */
