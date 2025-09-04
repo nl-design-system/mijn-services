@@ -51,7 +51,7 @@ const TemplatePage = ({
 }) => (
   <Layout logo={logo} className={theme} footerLogo={footerLogo}>
     <Grid paddingTop={'x-large'}>
-      <Grid.Cell span={12}>
+      <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
         <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
           <h2 id="hidden-breadcrumb-header" hidden>
             Kruimelpad
@@ -139,7 +139,7 @@ const TemplatePage = ({
           </SidenavList>
         </Sidenav>
       </Grid.Cell>
-      <Grid.Cell span={9}>
+      <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <section>
           <Heading1>Mijn Berichten</Heading1>
         </section>
