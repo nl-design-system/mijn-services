@@ -50,27 +50,29 @@ const TemplatePage = ({
   footerLogo?: ReactElement;
 }) => (
   <Layout logo={logo} className={theme} footerLogo={footerLogo}>
-    <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
-      <h2 id="hidden-breadcrumb-header" hidden>
-        Kruimelpad
-      </h2>
-      <BreadcrumbNavLink href={'/#'}>Home</BreadcrumbNavLink>
-      <BreadcrumbNavSeparator>
-        <Icon>
-          <IconChevronRight />
-        </Icon>
-      </BreadcrumbNavSeparator>
-      <BreadcrumbNavLink href={'/#'}>Mijn Voorbeeld</BreadcrumbNavLink>
-      <BreadcrumbNavSeparator>
-        <Icon>
-          <IconChevronRight />
-        </Icon>
-      </BreadcrumbNavSeparator>
-      <BreadcrumbNavLink href={'/#'} disabled current>
-        Mijn Taken
-      </BreadcrumbNavLink>
-    </BreadcrumbNav>
     <Grid paddingTop={'x-large'}>
+      <Grid.Cell span={12}>
+        <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
+          <h2 id="hidden-breadcrumb-header" hidden>
+            Kruimelpad
+          </h2>
+          <BreadcrumbNavLink href={'/#'}>Home</BreadcrumbNavLink>
+          <BreadcrumbNavSeparator>
+            <Icon>
+              <IconChevronRight />
+            </Icon>
+          </BreadcrumbNavSeparator>
+          <BreadcrumbNavLink href={'/#'}>Mijn Voorbeeld</BreadcrumbNavLink>
+          <BreadcrumbNavSeparator>
+            <Icon>
+              <IconChevronRight />
+            </Icon>
+          </BreadcrumbNavSeparator>
+          <BreadcrumbNavLink href={'/#'} disabled current>
+            Mijn Berichten
+          </BreadcrumbNavLink>
+        </BreadcrumbNav>
+      </Grid.Cell>
       <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
         <Sidenav>
           <SidenavList>
