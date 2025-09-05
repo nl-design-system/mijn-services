@@ -45,7 +45,7 @@
     "@tabler/icons-react": "3.14.0",
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
-    "@utrecht/component-library-react": "9.0.3",
+    "@utrecht/component-library-react": "10.3.2",
     "@utrecht/design-tokens": "2.5.1",
     "@utrecht/button-react": "2.0.6",
     "@utrecht/root-react": "1.0.5",
