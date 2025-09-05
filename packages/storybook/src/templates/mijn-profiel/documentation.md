@@ -14,7 +14,7 @@ Het Figma-bestand is handig omdat:
 - **Efficiëntie**: Designers kunnen bestaande componenten hergebruiken, wat de tijd die nodig is voor het maken van nieuwe ontwerpen aanzienlijk verkort.
 - **Samenwerking**: Het bestand fungeert als een gedeeld referentiepunt voor designers en ontwikkelaars, wat de communicatie en samenwerking binnen teams vereenvoudigt.
 
-Je kunt het Figma-ontwerpbestand bekijken via de volgende link: [Figma - Mijn Services templates](https://www.figma.com/design/iZgSIuU8hvH9nw3h7WO1ZY/2024---MijnServices---Templates--Voorheen--Overheidsbrede-portalen-?node-id=1-3&p=f&m=dev).
+Je kunt het Figma-ontwerpbestand bekijken via de volgende link: [Figma - Mijn Services templates](https://www.figma.com/design/pB5d6RlVSa1B088Xpm1sSo/2025---MijnServices---Templates--Voorheen--Overheidsbrede-portalen-).
 
 ## Gebruikersonderzoek naar de MijnProfiel-services
 
