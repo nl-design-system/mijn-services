@@ -28,7 +28,7 @@
     "@gemeente-denhaag/card": "0.2.3-alpha.414",
     "@gemeente-denhaag/file": "0.1.1",
     "@gemeente-denhaag/process-steps": "0.1.1",
-    "@gemeente-denhaag/sidenav": "0.1.0-alpha.228",
+    "@gemeente-denhaag/sidenav": "2.0.0",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "2.0.0",
     "@storybook/addon-a11y": "8.2.9",
     "@storybook/addon-actions": "8.2.9",

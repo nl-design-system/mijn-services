@@ -72,7 +72,7 @@ const TemplatePage = ({
             <SidenavItem>
               <SidenavLink href="/#">
                 <IconLayoutGrid />
-                Home
+                Overzicht
               </SidenavLink>
             </SidenavItem>
           </SidenavList>
