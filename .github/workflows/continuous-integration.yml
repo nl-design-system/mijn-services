@@ -75,17 +75,17 @@ jobs:
 
       - name: "Continuous Integration: build"
         env:
-          BASE_URL: "/overheidsbrede-portalen-community/"
+          BASE_URL: "/mijn-services/"
         run: pnpm run --if-present build
 
       - name: "Continuous Integration: lint build"
         env:
-          BASE_URL: "/overheidsbrede-portalen-community/"
+          BASE_URL: "/mijn-services/"
         run: pnpm run --if-present lint-build
 
       - name: "Continuous Integration: test build"
         env:
-          BASE_URL: "/overheidsbrede-portalen-community/"
+          BASE_URL: "/mijn-services/"
         run: pnpm run --if-present test-build
 
   test:
@@ -112,7 +112,7 @@ jobs:
 
       - name: "Continuous Integration: build"
         env:
-          BASE_URL: "/overheidsbrede-portalen-community/"
+          BASE_URL: "/mijn-services/"
         run: pnpm run --if-present build
 
       - name: Publish to Chromatic

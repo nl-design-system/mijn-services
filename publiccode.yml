@@ -6,12 +6,12 @@ publiccodeYmlVersion: "0.4"
 
 # Dit veld bevat de korte naam van het project. Kies hier de naam waaronder het
 # project bekend is bij de meeste mensen.
-name: Overheidsbrede Portalen
+name: Mijn Services
 # De url naar de source code.
-url: "https://github.com/nl-design-system/overheidsbrede-portalen-community"
+url: "https://github.com/nl-design-system/mijn-services"
 
 # De url naar de productieomgeving van de software.
-landingURL: "https://nl-design-system.github.io/overheidsbrede-portalen-community/" # optioneel
+landingURL: "https://nl-design-system.github.io/mijn-services/" # optioneel
 
 # Type software zoals te vinden op: https://yml.publiccode.tools/schema.core.html#key-softwaretype
 softwareType: library
@@ -42,7 +42,7 @@ description:
   nl:
     longDescription: >
       Binnen de NL Design System community zijn er white label componenten en richtlijnen voor het ontwikkelen van toegankelijke applicaties en websites.
-      Met behulp van de templates, designs en documentatie in de overheidsbrede portalen storybook kunnen organisaties en leveranciers sneller aan de slag met NL Design System.
+      Met behulp van de templates, designs en documentatie in de Mijn Services storybook kunnen organisaties en leveranciers sneller aan de slag met NL Design System.
       De templates tonen hoe je Mijn Services patronen implementeert met bestaande componenten.
 
     # Mand!
