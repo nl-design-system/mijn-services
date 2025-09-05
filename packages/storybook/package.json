@@ -29,7 +29,7 @@
     "@gemeente-denhaag/file": "2.1.0",
     "@gemeente-denhaag/process-steps": "4.2.0",
     "@gemeente-denhaag/sidenav": "2.0.0",
-    "@nl-design-system-unstable/voorbeeld-design-tokens": "2.0.0",
+    "@nl-design-system-unstable/voorbeeld-design-tokens": "5.1.0",
     "@storybook/addon-a11y": "8.2.9",
     "@storybook/addon-actions": "8.2.9",
     "@storybook/addon-docs": "8.2.9",

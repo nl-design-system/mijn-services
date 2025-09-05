@@ -3,7 +3,7 @@ import { Grid } from '@amsterdam/design-system-react';
 import { CaseCard } from '@gemeente-denhaag/card';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
 import { Meta, StoryObj } from '@storybook/react';
-import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
+import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '../tokens.css';
 import {
