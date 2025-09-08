@@ -11,6 +11,7 @@ import {
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
+import '@rijkshuisstijl-community/design-tokens/dist/index.css';
 import '../tokens.css';
 import {
   IconArchive,
@@ -175,6 +176,10 @@ export const Default: Story = {
 
 export const DenHaagTheme: Story = {
   render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
+};
+
+export const RHCTheme: Story = {
+  render: () => <TemplatePage logo={<PageHeaderLogo />} theme={'rhc-theme'} />,
 };
 
 const labels = {
