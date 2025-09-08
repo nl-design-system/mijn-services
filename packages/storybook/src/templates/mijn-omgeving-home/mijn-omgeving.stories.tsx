@@ -139,7 +139,7 @@ const TemplatePage = ({
         </Sidenav>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <Alert icon={<IconInfoCircle />} className={'todo-alert'} style={{ marginBlockEnd: '16px' }}>
+        <Alert icon={<IconInfoCircle />}>
           <Heading1 className={'utrecht-heading-3'}>Heading</Heading1>
           <Paragraph>Lorem ipsum dolor sit amet, consectetur ad * isicing elit, sed do eiusmod *</Paragraph>
         </Alert>

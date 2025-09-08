@@ -1,6 +1,7 @@
 .todo-page-footer__spotlight {
   --utrecht-heading-4-color: var(--todo-page-footer-heading-color);
-  --utrecht-heading-4-margin-block-end: var(--voorbeeld-space-block-beetle);
+  --utrecht-heading-4-margin-block-end: 8px;
+  --utrecht-heading-4-font-family: var(--todo-page-footer-heading-font-family);
   --utrecht-paragraph-color: var(--todo-page-footer-color);
   --utrecht-link-color: var(--todo-page-footer-color);
   --utrecht-link-hover-color: var(--todo-page-footer-color);

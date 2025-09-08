@@ -5,19 +5,25 @@
   --ams-grid-wide-column-count: 12;
   --ams-grid-medium-column-count: 6;
   --ams-grid-column-count: 3;
-  --ams-grid-column-gap: var(--voorbeeld-space-inline-cat);
-  --ams-grid-row-gap-xl: var(--voorbeeld-space-block-cat);
-  --ams-grid-padding-inline: var(--voorbeeld-space-inline-pig);
-  --ams-grid-medium-padding-inline: var(--voorbeeld-space-inline-pig);
-  --ams-grid-wide-padding-inline: var(--voorbeeld-space-inline-pig);
+  --ams-grid-column-gap: var(--basis-space-inline-md);
+  --ams-grid-row-gap-xl: var(--basis-space-block-xl);
+  --ams-grid-padding-inline: var(--basis-space-block-xl);
+  --ams-grid-medium-padding-inline: var(--basis-space-block-xl);
+  --ams-grid-wide-padding-inline: var(--basis-space-block-xl);
 
   /* Component spacing tokens that aren't set in voorbeeld-theme */
   --denhaag-sidenav-display: flex;
   --denhaag-sidenav-mobile-display: var(--denhaag-sidenav-display);
   --denhaag-sidenav-flex-direction: column;
-  --denhaag-sidenav-row-gap: 24px;
+  --denhaag-sidenav-row-gap: var(--basis-space-row-3xl);
+  --utrecht-heading-1-margin-block-end: var(--basis-space-block-xl);
+  --utrecht-heading-2-margin-block-start: var(--basis-space-block-3xl);
+  --utrecht-heading-2-margin-block-end: var(--basis-space-block-xl);
+  --utrecht-paragraph-margin-block-end: var(--basis-space-block-xl);
+  --utrecht-alert-margin-block-end: var(--basis-space-block-xl);
 
   /* Custom component tokens */
   --todo-page-footer-heading-color: var(--basis-color-default-inverse-color-document);
+  --todo-page-footer-heading-font-family: var(--basis-text-font-family-default);
   --todo-page-footer-color: var(--basis-color-default-inverse-color-document);
 }
