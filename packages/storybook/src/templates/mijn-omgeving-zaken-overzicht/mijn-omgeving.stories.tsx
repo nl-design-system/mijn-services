@@ -144,10 +144,10 @@ const TemplatePage = ({
         <section>
           <Heading1>Mijn Zaken</Heading1>
           <div className={'todo-card-layout'}>
-            <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} date={'2020-10-18T07:34'} />
-            <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} date={'2020-11-05T07:34'} />
-            <CaseCard title={'Bezwaar tegen WOZ-waarde'} href={'#'} date={'2020-09-05T07:34'} active={false} />
-            <CaseCard title={'Aanvraag paspoort'} href={'#'} date={'2020-08-05T07:34'} active={false} />
+            <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-29124'} />
+            <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-02599'} />
+            <CaseCard title={'Bezwaar tegen WOZ-waarde'} href={'#'} context={'ZK-00122'} appearance="archived" />
+            <CaseCard title={'Aanvraag paspoort'} href={'#'} context={'ZK-99084'} appearance="archived" />
           </div>
         </section>
       </Grid.Cell>
