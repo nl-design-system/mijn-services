@@ -117,9 +117,9 @@ importers:
       '@gemeente-denhaag/process-steps':
         specifier: 4.2.0
         version: 4.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@gemeente-denhaag/sidenav':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/side-navigation':
+        specifier: 4.0.2
+        version: 4.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@nl-design-system-unstable/voorbeeld-design-tokens':
         specifier: 5.1.0
         version: 5.1.0
@@ -1439,6 +1439,12 @@ packages:
       react: 18 || 19
       react-dom: 18 || 19
 
+  '@gemeente-denhaag/number-badge@2.0.1':
+    resolution: {integrity: sha512-pvku+pUumqGIMyQwnEeg2ic2I2aW8t9bUCNv79WL2++fWfk008b1yDZllCVj7oVC4H9Sa3//pxtae75nov/6XQ==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
   '@gemeente-denhaag/paragraph@2.0.1':
     resolution: {integrity: sha512-Bd4S/rqRmvuH/P0vyKx6WxSucdUi/hz5Z2NkvPNuBmgbcv/zj7Kywn3iETfcifde+/WGN/j+zi/tM6aJg6KhTQ==}
     peerDependencies:
@@ -1451,9 +1457,8 @@ packages:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/sidenav@2.0.0':
-    resolution: {integrity: sha512-en7J1FxYG5xuu/2nvANraFS3nbRxKNi6+vxRPqSi9lPYH1ChG2EBCjbVOe7riarEcb++tglQkIjx6HRcivgctw==}
-    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+  '@gemeente-denhaag/side-navigation@4.0.2':
+    resolution: {integrity: sha512-Cvlo8zYDUAW3hDIUSnAWeHfLXAId8I98jQnTYSdg/G5P6W1ZMq9Q8VjXkMbAWTNSTXkVcn5VPwhM6MlBAWIlwA==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -8602,6 +8607,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
+  '@gemeente-denhaag/number-badge@2.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@gemeente-denhaag/paragraph@2.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
@@ -8616,8 +8626,9 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@gemeente-denhaag/sidenav@2.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gemeente-denhaag/side-navigation@4.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
+      '@gemeente-denhaag/number-badge': 2.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)

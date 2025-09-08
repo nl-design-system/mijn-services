@@ -1,6 +1,11 @@
 import '@amsterdam/design-system-css/dist/grid/grid.css';
 import { Grid } from '@amsterdam/design-system-react';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import {
+  SideNavigationBase,
+  SideNavigationItem,
+  SideNavigationLink,
+  SideNavigationList,
+} from '@gemeente-denhaag/side-navigation';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -8,7 +13,6 @@ import '../tokens.css';
 import {
   IconArchive,
   IconBuildingCommunity,
-  IconChecklist,
   IconChevronRight,
   IconCurrencyEuro,
   IconHome,
@@ -74,70 +78,64 @@ const TemplatePage = ({
         </BreadcrumbNav>
       </Grid.Cell>
       <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
-        <Sidenav>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
+        <SideNavigationBase>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#" current>
                 <IconLayoutGrid />
                 Overzicht
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
-                <IconChecklist />
-                Mijn Taken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#" current>
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconInbox />
-                Mijn Berichten
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+                Berichten
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconArchive />
-                Mijn Zaken
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
+                Lopende zaken
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconCurrencyEuro />
                 Belastingzaken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconHome />
                 WOZ
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconParking />
                 Parkeren
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconBuildingCommunity />
                 Erfpacht
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconUser />
                 Gegevens
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-        </Sidenav>
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+        </SideNavigationBase>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <section>
