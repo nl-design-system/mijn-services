@@ -123,6 +123,9 @@ importers:
       '@nl-design-system-unstable/voorbeeld-design-tokens':
         specifier: 5.1.0
         version: 5.1.0
+      '@rijkshuisstijl-community/design-tokens':
+        specifier: 6.0.0
+        version: 6.0.0
       '@storybook/addon-a11y':
         specifier: 8.2.9
         version: 8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
@@ -1771,6 +1774,9 @@ packages:
   '@pkgr/core@0.1.0':
     resolution: {integrity: sha512-Zwq5OCzuwJC2jwqmpEQt7Ds1DTi6BWSwoGkbb1n9pO3hzb35BoJELx7c0T23iDkBGkh2e7tvOtjF3tr3OaQHDQ==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
+
+  '@rijkshuisstijl-community/design-tokens@6.0.0':
+    resolution: {integrity: sha512-888kpxLV6p90q/gL1iRO7WebYSAolb6oBpC2t6WkanmhUtkW5bBRaNUcbQgOi4SticUpWHiROn/2RN7e/lynVg==}
 
   '@rollup/pluginutils@5.0.2':
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
@@ -9202,6 +9208,8 @@ snapshots:
     optional: true
 
   '@pkgr/core@0.1.0': {}
+
+  '@rijkshuisstijl-community/design-tokens@6.0.0': {}
 
   '@rollup/pluginutils@5.0.2':
     dependencies:
