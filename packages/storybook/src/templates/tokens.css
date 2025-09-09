@@ -46,3 +46,56 @@
   --todo-page-footer-heading-font-family: var(--basis-text-font-family-default);
   --todo-page-footer-color: var(--basis-color-default-inverse-color-document);
 }
+
+.rhc-theme {
+  --utrecht-space-around: 1;
+
+  /* Amsterdam component tokens */
+  --ams-grid-wide-column-count: 12;
+  --ams-grid-medium-column-count: 6;
+  --ams-grid-column-count: 3;
+  --ams-grid-column-gap: var(--rhc-space-300);
+  --ams-grid-row-gap-xl: var(--rhc-space-300);
+  --ams-grid-padding-inline: var(--rhc-space-300);
+  --ams-grid-medium-padding-inline: var(--rhc-space-400);
+  --ams-grid-wide-padding-inline: var(--rhc-space-500);
+  --ams-page-footer-spotlight-background-color: var(--utrecht-page-footer-background-color);
+
+  /* Den Haag component tokens */
+  --denhaag-side-navigation-display: flex;
+  --denhaag-side-navigation-flex-direction: column;
+  --denhaag-side-navigation-row-gap: var(--rhc-space-300);
+  --denhaag-side-navigation-list-padding-inline-start: 0px;
+  --denhaag-side-navigation-list-padding-block-start: 0px;
+  --denhaag-side-navigation-list-padding-block-end: 0px;
+  --denhaag-side-navigation-link-hover-color: var(--rhc-sidenav-link-hover-color);
+  --denhaag-side-navigation-link-active-font-weight: var(
+    --rhc-sidenav-link-current-font-weight
+  ); /* NOTE: current state seems to use this active font weight token */
+
+  --denhaag-side-navigation-link-current-font-weight: var(--rhc-sidenav-link-current-font-weight);
+  --denhaag-side-navigation-link-current-color: var(--rhc-sidenav-link-current-color);
+  --denhaag-side-navigation-link-active-color: var(
+    --rhc-sidenav-link-current-color
+  ); /* NOTE: again, because current uses active tokens, we are using rhc-current for this active token */
+
+  --denhaag-side-navigation-link-padding-block-start: var(--rhc-sidenav-link-padding-block-start);
+  --denhaag-side-navigation-link-padding-block-end: var(--rhc-sidenav-link-padding-block-end);
+  --denhaag-side-navigation-link-column-gap: var(--rhc-sidenav-link-column-gap);
+  --denhaag-side-navigation-link-color: var(--rhc-sidenav-link-color);
+  --denhaag-side-navigation-item-line-height: var(--rhc-sidenav-link-line-height);
+  --denhaag-side-navigation-item-font-weight: var(--rhc-sidenav-link-font-weight);
+  --denhaag-side-navigation-item-font-size: var(--rhc-sidenav-link-font-size);
+  --denhaag-side-navigation-item-font-family: var(--rhc-sidenav-link-font-family), sans-serif;
+
+  /* Spacing tokens */
+  --utrecht-heading-1-margin-block-end: var(--rhc-space-300);
+  --utrecht-heading-2-margin-block-start: var(--rhc-space-300);
+  --utrecht-heading-2-margin-block-end: var(--rhc-space-300);
+  --utrecht-alert-margin-block-end: var(--rhc-space-300);
+
+  /* Custom component tokens */
+  --todo-page-footer-color: var(--utrecht-page-footer-color); /* ? --rhc-color-white werkt niet */
+  --todo-page-footer-heading-font-family: var(--nl-heading-level-4-font-family);
+  --todo-page-footer-heading-color: white; /* TODO: met token instellen - welke? */
+}
