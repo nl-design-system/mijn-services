@@ -145,7 +145,7 @@ const TemplatePage = ({
         </SideNavigationBase>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <Alert icon={<IconInfoCircle />}>
+        <Alert icon={<IconInfoCircle className="utrecht-icon" />}>
           <Heading1 className={'utrecht-heading-3'}>Heading</Heading1>
           <Paragraph>Lorem ipsum dolor sit amet, consectetur ad * isicing elit, sed do eiusmod *</Paragraph>
         </Alert>
