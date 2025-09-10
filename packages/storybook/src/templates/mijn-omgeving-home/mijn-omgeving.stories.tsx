@@ -157,13 +157,13 @@ const TemplatePage = ({
         <section>
           <Heading2>Wat moet ik regelen</Heading2>
           <ActionSingle link={'#'} labels={labels}>
-            Geef informatie voor uw aanvraag subsidie geluidisolatie
+            <strong>Geef informatie voor uw aanvraag subsidie geluidisolatie</strong>
           </ActionSingle>
           <ActionSingle link={'#'} labels={labels}>
-            Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein
+            <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
           </ActionSingle>
           <ActionSingle link={'#'} labels={labels}>
-            Verleng uw identiteitskaart
+            <strong>Verleng uw identiteitskaart</strong>
           </ActionSingle>
         </section>
         <section>
