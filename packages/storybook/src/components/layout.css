@@ -22,6 +22,19 @@
   margin-block: 0;
 }
 
+.todo-card-layout {
+  column-gap: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-block-end: 32px;
+  row-gap: 32px;
+}
+
+.todo-card-layout > .denhaag-case-card {
+  inline-size: 328px;
+}
+
 @media screen and (width <= 1087px) {
   .todo-grid-cell--hide-on-medium {
     display: none;
