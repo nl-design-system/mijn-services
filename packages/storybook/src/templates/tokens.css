@@ -92,6 +92,8 @@
   --denhaag-side-navigation-item-font-weight: var(--rhc-sidenav-link-font-weight);
   --denhaag-side-navigation-item-font-size: var(--rhc-sidenav-link-font-size);
   --denhaag-side-navigation-item-font-family: var(--rhc-sidenav-link-font-family), sans-serif;
+
+  /* Den Haag Action */
   --denhaag-action-color: var(--rhc-color-cool-grey-900);
   --denhaag-action-content-bold-font-weight: 700;
   --denhaag-action-border-color: #cbd5e1;
@@ -100,6 +102,27 @@
   --denhaag-action-single-padding-block-start: var(--rhc-space-150);
   --denhaag-action-single-padding-block-end: var(--rhc-space-150);
   --denhaag-action-single-padding-inline-end: var(--rhc-space-200);
+
+  /* Den Haag Case Card */
+  --denhaag-case-card-height: 192px;
+  --denhaag-case-card-border-radius: 3px;
+  --denhaag-case-card-padding-block-start: 20px;
+  --denhaag-case-card-wrapper-padding-block-start: 12px;
+  --denhaag-case-card-wrapper-padding-block-end: 24px;
+  --denhaag-case-card-wrapper-padding-inline-start: 24px;
+  --denhaag-case-card-wrapper-padding-inline-end: 24px;
+  --denhaag-case-card-title-line-height: 1.5;
+  --denhaag-case-card-subtitle-line-height: 1.5;
+  --denhaag-case-card-background-color: var(--rhc-color-lichtblauw-500);
+  --denhaag-case-card-paper-color: var(--rhc-color-wit);
+  --denhaag-case-card-background-background-color: var(--rhc-color-lichtblauw-100);
+  --denhaag-case-card-title-color: var(--rhc-color-cool-grey-900);
+  --denhaag-case-card-title-font-family: var(--rhc-font-family-primary);
+  --denhaag-case-card-title-font-size: 20px;
+  --denhaag-case-card-title-font-weight: 700;
+  --denhaag-case-card-subtitle-color: var(--rhc-color-cool-grey-800);
+  --denhaag-case-card-subtitle-font-family: var(--rhc-font-family-primary);
+  --denhaag-case-card-subtitle-margin-block-start: var(--rhc-space-150);
 
   /* Spacing tokens */
   --utrecht-heading-1-margin-block-end: var(--rhc-space-300);

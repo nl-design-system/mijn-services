@@ -169,8 +169,8 @@ const TemplatePage = ({
         <section>
           <Heading2>Lopende zaken</Heading2>
           <div className={'todo-card-layout'}>
-            <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'2020-10-18T07:34'} />
-            <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'2020-11-05T07:34'} />
+            <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-228402'} />
+            <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-108422'} />
           </div>
         </section>
       </Grid.Cell>
