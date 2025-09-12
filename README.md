@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-# Overheidsbrede portalen
+# MijnServices
 
 This storybook contains a collection of portal (Mijn Omgeving) templates built with NL Design System components, and using validated patterns.
 
