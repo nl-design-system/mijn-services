@@ -54,13 +54,15 @@
 .rhc-theme {
   --utrecht-space-around: 1;
   --utrecht-root-font-family: var(--rhc-font-family-primary);
+  --todo-page-header-logo-color: var(--rhc-logo-image-color);
+  --todo-page-header-border-block-end: 1px solid var(--rhc-logo-image-color);
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
   --ams-grid-medium-column-count: 6;
   --ams-grid-column-count: 3;
   --ams-grid-column-gap: var(--rhc-space-300);
-  --ams-grid-row-gap-xl: var(--rhc-space-300);
+  --ams-grid-row-gap-xl: var(--rhc-space-200);
   --ams-grid-padding-inline: var(--rhc-space-300);
   --ams-grid-medium-padding-inline: var(--rhc-space-400);
   --ams-grid-wide-padding-inline: var(--rhc-space-500);
@@ -144,6 +146,10 @@
   --utrecht-heading-2-margin-block-start: var(--rhc-space-300);
   --utrecht-heading-2-margin-block-end: var(--rhc-space-300);
   --utrecht-alert-margin-block-end: var(--rhc-space-300);
+
+  /* Utrecht header */
+  --utrecht-page-header-border-block-end-color: var(--rhc-logo-image-color);
+  --utrecht-page-header-border-block-end-width: 2px;
 
   /* Custom component tokens */
   --todo-page-footer-color: var(--utrecht-page-footer-color); /* ? --rhc-color-white werkt niet */
