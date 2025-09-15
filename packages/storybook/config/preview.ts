@@ -7,7 +7,7 @@ const preview: Preview = {
       panelPosition: 'right',
       storySort: {
         order: [
-          'Mijn Services',
+          'MijnServices',
           'Templates',
           ['Mijn Omgeving', ['Basis', 'Overzichtspagina', 'Zaakdetailpagina'], 'Mijn Profiel'],
         ],

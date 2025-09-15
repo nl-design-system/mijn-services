@@ -6,7 +6,7 @@ publiccodeYmlVersion: "0.4"
 
 # Dit veld bevat de korte naam van het project. Kies hier de naam waaronder het
 # project bekend is bij de meeste mensen.
-name: Mijn Services
+name: MijnServices
 # De url naar de source code.
 url: "https://github.com/nl-design-system/mijn-services"
 
@@ -42,11 +42,11 @@ description:
   nl:
     longDescription: >
       Binnen de NL Design System community zijn er white label componenten en richtlijnen voor het ontwikkelen van toegankelijke applicaties en websites.
-      Met behulp van de templates, designs en documentatie in de Mijn Services storybook kunnen organisaties en leveranciers sneller aan de slag met NL Design System.
-      De templates tonen hoe je Mijn Services patronen implementeert met bestaande componenten.
+      Met behulp van de templates, designs en documentatie in de MijnServices storybook kunnen organisaties en leveranciers sneller aan de slag met NL Design System.
+      De templates tonen hoe je MijnServices patronen implementeert met bestaande componenten.
 
     # Mand!
-    shortDescription: Deze storybook bevat een collectie van portaal templates voor het implementeren van Mijn Services patronen met NL Design System componenten.
+    shortDescription: Deze storybook bevat een collectie van portaal templates voor het implementeren van MijnServices patronen met NL Design System componenten.
 
     # Welke grote features heeft dit project?
     features:
