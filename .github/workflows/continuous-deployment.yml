@@ -39,7 +39,7 @@ jobs:
 
       - name: Build
         env:
-          BASE_URL: "/overheidsbrede-portalen-community/"
+          BASE_URL: "/mijn-services/"
         run: pnpm run build
 
       - name: Upload artifact for GitHub Pages
@@ -74,7 +74,7 @@ jobs:
 
       - name: "Continuous Integration: build"
         env:
-          BASE_URL: "/overheidsbrede-portalen-community/"
+          BASE_URL: "/mijn-services/"
         run: pnpm run --if-present build
 
       - name: Publish to Chromatic

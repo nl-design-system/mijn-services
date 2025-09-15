@@ -1,9 +1,9 @@
 <!-- @license CC0-1.0 -->
 
-# Overheidsbrede Portalen Templates
+# Mijn Services Templates
 
 Binnen de NL Design System community zijn er white label componenten en richtlijnen voor het ontwikkelen van toegankelijke applicaties en websites.
-Met behulp van de templates, designs en documentatie in de overheidsbrede portalen storybook kunnen organisaties en leveranciers sneller aan de slag met NL Design System.
+Met behulp van de templates, designs en documentatie in de Mijn Services storybook kunnen organisaties en leveranciers sneller aan de slag met NL Design System.
 
 ## NL Design System
 
