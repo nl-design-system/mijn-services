@@ -143,16 +143,16 @@
 
   /* Spacing tokens */
   --utrecht-heading-1-margin-block-end: var(--rhc-space-300);
-  --utrecht-heading-2-margin-block-start: var(--rhc-space-300);
+  --utrecht-heading-2-margin-block-start: var(--rhc-space-600);
   --utrecht-heading-2-margin-block-end: var(--rhc-space-300);
-  --utrecht-alert-margin-block-end: var(--rhc-space-300);
+  --utrecht-alert-margin-block-end: var(--rhc-space-600);
 
   /* Utrecht header */
   --utrecht-page-header-border-block-end-color: var(--rhc-logo-image-color);
   --utrecht-page-header-border-block-end-width: 2px;
 
   /* Custom component tokens */
-  --todo-page-footer-color: var(--utrecht-page-footer-color); /* ? --rhc-color-white werkt niet */
+  --todo-page-footer-color: var(--utrecht-page-footer-color);
   --todo-page-footer-heading-font-family: var(--nl-heading-level-4-font-family);
   --todo-page-footer-heading-color: white; /* TODO: met token instellen - welke? */
 }
