@@ -102,6 +102,21 @@
   --denhaag-action-single-padding-block-start: var(--rhc-space-150);
   --denhaag-action-single-padding-block-end: var(--rhc-space-150);
   --denhaag-action-single-padding-inline-end: var(--rhc-space-200);
+  --denhaag-action-padding-inline-start: var(--rhc-space-150);
+  --denhaag-action-padding-inline-end: var(--rhc-space-150);
+  --denhaag-action-padding-block-start: var(--rhc-space-150);
+  --denhaag-action-padding-block-end: var(--rhc-space-150);
+  --denhaag-action-details-gap: var(--rhc-space-150);
+  --denhaag-action-details-lg-gap: var(--rhc-space-150);
+  --denhaag-action-date-color: var(--rhc-color-cool-grey-900);
+  --denhaag-action-date-font-weight: var(500);
+  --denhaag-action-date-warning-gap: var(--rhc-space-150);
+  --denhaag-action-date-warning-color: var(--rhc-color-oranje-500);
+  --denhaag-action-date-warning-font-weight: bold;
+  --denhaag-action-actions-gap: var(--rhc-space-150);
+  --denhaag-action-lg-gap: var(--rhc-space-150);
+  --denhaag-action-lg-padding-block-start: var(--rhc-space-150);
+  --denhaag-action-lg-padding-block-end: var(--rhc-space-150);
 
   /* Den Haag Case Card */
   --denhaag-case-card-height: 192px;
