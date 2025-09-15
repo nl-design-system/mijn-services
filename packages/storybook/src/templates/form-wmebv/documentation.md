@@ -14,7 +14,7 @@ Het Figma-bestand is handig omdat:
 - **Efficiëntie**: Designers kunnen bestaande componenten hergebruiken, wat de tijd die nodig is voor het maken van nieuwe ontwerpen aanzienlijk verkort.
 - **Samenwerking**: Het bestand fungeert als een gedeeld referentiepunt voor designers en ontwikkelaars, wat de communicatie en samenwerking binnen teams vereenvoudigt.
 
-Je kunt het Figma-ontwerpbestand bekijken via de volgende link: [Figma - Mijn Services templates](https://www.figma.com/design/pB5d6RlVSa1B088Xpm1sSo/2025---MijnServices---Templates--Voorheen--Overheidsbrede-portalen-).
+Je kunt het Figma-ontwerpbestand bekijken via de volgende link: [Figma - MijnServices templates](https://www.figma.com/design/pB5d6RlVSa1B088Xpm1sSo/2025---MijnServices---Templates--Voorheen--Overheidsbrede-portalen-).
 
 ## Hulpgids Wmebv: e-formulieren en notificeren
 
@@ -62,7 +62,7 @@ De resultaten van het onderzoek naar het generieke klachtenformulier zijn gepres
 ### Overige belangrijke links
 
 - [Patronen voor formulieren – NL Design System](https://nldesignsystem.nl/voorbeelden/patronen/formulieren)
-- [Mijn Services Community Storybook](https://nl-design-system.github.io/mijn-services/)
+- [MijnServices Community Storybook](https://nl-design-system.github.io/mijn-services/)
 - [Hulpgids Wmebv: e-formulieren en notificeren](https://vng.nl/wmebv)
 
 De vernieuwde versie integreert deze verbeteringen en staat nu beschreven in deze Storybook
