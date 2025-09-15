@@ -1,11 +1,15 @@
 import '@amsterdam/design-system-css/dist/grid/grid.css';
 import { Grid } from '@amsterdam/design-system-react';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import {
+  SideNavigationBase,
+  SideNavigationItem,
+  SideNavigationLink,
+  SideNavigationList,
+} from '@gemeente-denhaag/side-navigation';
 import { Meta, StoryObj } from '@storybook/react';
-import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
+import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
-import './index.css';
-import './tokens.css';
+import '../tokens.css';
 import {
   IconArchive,
   IconBuildingCommunity,
@@ -50,82 +54,84 @@ const TemplatePage = ({
   footerLogo?: ReactElement;
 }) => (
   <Layout logo={logo} className={theme} footerLogo={footerLogo}>
-    <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
-      <h2 id="hidden-breadcrumb-header" hidden>
-        Kruimelpad
-      </h2>
-      <BreadcrumbNavLink href={'/#'}>Home</BreadcrumbNavLink>
-      <BreadcrumbNavSeparator>
-        <Icon>
-          <IconChevronRight />
-        </Icon>
-      </BreadcrumbNavSeparator>
-      <BreadcrumbNavLink href={'/#'} current disabled>
-        Gemeente Voorbeeld
-      </BreadcrumbNavLink>
-    </BreadcrumbNav>
     <Grid paddingTop={'x-large'}>
-      <Grid.Cell span={4}>
-        <Sidenav>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
+      <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
+        <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
+          <h2 id="hidden-breadcrumb-header" hidden>
+            Kruimelpad
+          </h2>
+          <BreadcrumbNavLink href={'/#'}>Home</BreadcrumbNavLink>
+          <BreadcrumbNavSeparator>
+            <Icon>
+              <IconChevronRight />
+            </Icon>
+          </BreadcrumbNavSeparator>
+          <BreadcrumbNavLink href={'/#'} current disabled>
+            Gemeente Voorbeeld
+          </BreadcrumbNavLink>
+        </BreadcrumbNav>
+      </Grid.Cell>
+      <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
+        <SideNavigationBase>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#" current>
                 <IconLayoutGrid />
-                Home
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
+                Overzicht
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconInbox />
                 Berichten
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#" current>
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconArchive />
                 Lopende zaken
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconCurrencyEuro />
                 Belastingzaken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconHome />
                 WOZ
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconParking />
                 Parkeren
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconBuildingCommunity />
                 Erfpacht
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconUser />
                 Gegevens
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-        </Sidenav>
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+        </SideNavigationBase>
       </Grid.Cell>
-      <Grid.Cell span={8}>
+      <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <section style={{ backgroundColor: '#ffcc99', padding: '1rem', borderRadius: '8px' }}>
           <Paragraph>Content area</Paragraph>
         </section>

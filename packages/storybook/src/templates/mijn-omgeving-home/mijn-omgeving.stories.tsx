@@ -2,11 +2,17 @@ import '@amsterdam/design-system-css/dist/grid/grid.css';
 import { Grid } from '@amsterdam/design-system-react';
 import { ActionSingle } from '@gemeente-denhaag/action';
 import { CaseCard } from '@gemeente-denhaag/card';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import {
+  SideNavigationBase,
+  SideNavigationItem,
+  SideNavigationLink,
+  SideNavigationList,
+} from '@gemeente-denhaag/side-navigation';
 import { Meta, StoryObj } from '@storybook/react';
-import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
+import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
-import './index.css';
+import '@rijkshuisstijl-community/design-tokens/dist/index.css';
+import '../tokens.css';
 import {
   IconArchive,
   IconBuildingCommunity,
@@ -14,11 +20,13 @@ import {
   IconCurrencyEuro,
   IconHome,
   IconInbox,
+  IconInfoCircle,
   IconLayoutGrid,
   IconParking,
   IconUser,
 } from '@tabler/icons-react';
 import {
+  Alert,
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
@@ -53,88 +61,94 @@ const TemplatePage = ({
   footerLogo?: ReactElement;
 }) => (
   <Layout logo={logo} className={theme} footerLogo={footerLogo}>
-    <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
-      <h2 id="hidden-breadcrumb-header" hidden>
-        Kruimelpad
-      </h2>
-      <BreadcrumbNavLink href={'/#'}>Home</BreadcrumbNavLink>
-      <BreadcrumbNavSeparator>
-        <Icon>
-          <IconChevronRight />
-        </Icon>
-      </BreadcrumbNavSeparator>
-      <BreadcrumbNavLink href={'/#'}>Mijn Voorbeeld</BreadcrumbNavLink>
-      <BreadcrumbNavSeparator>
-        <Icon>
-          <IconChevronRight />
-        </Icon>
-      </BreadcrumbNavSeparator>
-      <BreadcrumbNavLink href={'/#'} disabled current>
-        Mijn gegevens
-      </BreadcrumbNavLink>
-    </BreadcrumbNav>
-    <Grid>
-      <Grid.Cell span={4}>
-        <Sidenav>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#" current>
+    <Grid paddingTop={'x-large'}>
+      <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
+        <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
+          <h2 id="hidden-breadcrumb-header" hidden>
+            Kruimelpad
+          </h2>
+          <BreadcrumbNavLink href={'/#'}>Home</BreadcrumbNavLink>
+          <BreadcrumbNavSeparator>
+            <Icon>
+              <IconChevronRight />
+            </Icon>
+          </BreadcrumbNavSeparator>
+          <BreadcrumbNavLink href={'/#'}>Mijn Voorbeeld</BreadcrumbNavLink>
+          <BreadcrumbNavSeparator>
+            <Icon>
+              <IconChevronRight />
+            </Icon>
+          </BreadcrumbNavSeparator>
+          <BreadcrumbNavLink href={'/#'} disabled current>
+            Mijn gegevens
+          </BreadcrumbNavLink>
+        </BreadcrumbNav>
+      </Grid.Cell>
+      <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
+        <SideNavigationBase>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#" current>
                 <IconLayoutGrid />
-                Home
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
+                Overzicht
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconInbox />
                 Berichten
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconArchive />
                 Lopende zaken
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconCurrencyEuro />
                 Belastingzaken
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconHome />
                 WOZ
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconParking />
                 Parkeren
-              </SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconBuildingCommunity />
                 Erfpacht
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/#">
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconUser />
                 Gegevens
-              </SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-        </Sidenav>
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+        </SideNavigationBase>
       </Grid.Cell>
-      <Grid.Cell span={8}>
+      <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
+        <Alert icon={<IconInfoCircle />}>
+          <Heading1 className={'utrecht-heading-3'}>Heading</Heading1>
+          <Paragraph>Lorem ipsum dolor sit amet, consectetur ad * isicing elit, sed do eiusmod *</Paragraph>
+        </Alert>
         <Heading1>Hallo Jeroen van Drouwen</Heading1>
         <Paragraph>
           In ‘Mijn omgeving’ kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt bijvoorbeeld uw
@@ -155,8 +169,8 @@ const TemplatePage = ({
         <section>
           <Heading2>Lopende zaken</Heading2>
           <div className={'todo-card-layout'}>
-            <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} date={'2020-10-18T07:34'} />
-            <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} date={'2020-11-05T07:34'} />
+            <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'2020-10-18T07:34'} />
+            <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'2020-11-05T07:34'} />
           </div>
         </section>
       </Grid.Cell>
@@ -172,6 +186,10 @@ export const Default: Story = {
 
 export const DenHaagTheme: Story = {
   render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
+};
+
+export const RHCTheme: Story = {
+  render: () => <TemplatePage logo={<PageHeaderLogo />} theme={'rhc-theme'} />,
 };
 
 const labels = {

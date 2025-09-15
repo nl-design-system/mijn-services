@@ -1,0 +1,48 @@
+.voorbeeld-theme {
+  --utrecht-space-around: 1;
+
+  /* Amsterdam component tokens */
+  --ams-grid-wide-column-count: 12;
+  --ams-grid-medium-column-count: 6;
+  --ams-grid-column-count: 3;
+  --ams-grid-column-gap: var(--basis-space-inline-md);
+  --ams-grid-row-gap-xl: var(--basis-space-block-xl);
+  --ams-grid-padding-inline: var(--basis-space-block-xl);
+  --ams-grid-medium-padding-inline: var(--basis-space-block-xl);
+  --ams-grid-wide-padding-inline: var(--basis-space-block-xl);
+
+  /* Den Haag component tokens */
+  --denhaag-side-navigation-display: flex;
+  --denhaag-side-navigation-mobile-display: var(--denhaag-side-navigation-display);
+  --denhaag-side-navigation-flex-direction: column;
+  --denhaag-side-navigation-row-gap: var(--basis-space-row-3xl);
+  --denhaag-side-navigation-list-padding-inline-start: 0px;
+  --denhaag-side-navigation-list-padding-block-start: 0px;
+  --denhaag-side-navigation-list-padding-block-end: 0px;
+  --denhaag-side-navigation-link-hover-color: var(--basis-color-action-2-color-hover);
+  --denhaag-side-navigation-link-current-font-weight: var(--basis-text-font-weight-bold);
+  --denhaag-side-navigation-link-current-color: var(--basis-color-default-color-document);
+  --denhaag-side-navigation-link-active-font-weight: var(--basis-text-font-weight-bold);
+  --denhaag-side-navigation-link-active-color: var(--basis-color-action-2-color-active);
+  --denhaag-side-navigation-link-padding-block-start: var(--basis-space-block-lg);
+  --denhaag-side-navigation-link-padding-block-end: var(--basis-space-block-lg);
+  --denhaag-side-navigation-link-column-gap: var(--basis-space-column-max-md);
+  --denhaag-side-navigation-link-color: var(--basis-color-action-2-color-default);
+  --denhaag-side-navigation-item-line-height: var(--basis-text-line-height-md);
+  --denhaag-side-navigation-item-font-weight: var(--basis-text-font-weight-default);
+  --denhaag-side-navigation-item-font-size: var(--basis-text-font-size-md);
+  --denhaag-side-navigation-item-font-family: var(--basis-text-font-family-default);
+  --denhaag-side-navigation-min-width: 240px;
+
+  /* Spacing tokens */
+  --utrecht-heading-1-margin-block-end: var(--basis-space-block-xl);
+  --utrecht-heading-2-margin-block-start: var(--basis-space-block-3xl);
+  --utrecht-heading-2-margin-block-end: var(--basis-space-block-xl);
+  --utrecht-paragraph-margin-block-end: var(--basis-space-block-xl);
+  --utrecht-alert-margin-block-end: var(--basis-space-block-xl);
+
+  /* Custom component tokens */
+  --todo-page-footer-heading-color: var(--basis-color-default-inverse-color-document);
+  --todo-page-footer-heading-font-family: var(--basis-text-font-family-default);
+  --todo-page-footer-color: var(--basis-color-default-inverse-color-document);
+}

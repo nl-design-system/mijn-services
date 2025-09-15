@@ -1,11 +1,18 @@
+import { Grid } from '@amsterdam/design-system-react';
 import { ActionMulti } from '@gemeente-denhaag/action';
 import { File } from '@gemeente-denhaag/file';
 import { Status } from '@gemeente-denhaag/process-steps';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
+import {
+  SideNavigationBase,
+  SideNavigationItem,
+  SideNavigationLink,
+  SideNavigationList,
+} from '@gemeente-denhaag/side-navigation';
 import { Meta, StoryObj } from '@storybook/react';
-import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
+import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
-import './index.css';
+import '@rijkshuisstijl-community/design-tokens/dist/index.css';
+import '../tokens.css';
 import {
   IconArchive,
   IconBuildingCommunity,
@@ -31,8 +38,8 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/Zaakdetailpagina',
-  id: 'mijn-omgeving-2',
+  title: 'Templates/Mijn Omgeving/Zaken/Detailpagina',
+  id: 'mijn-omgeving-zaken-detailpagina',
   parameters: {
     layout: 'fullscreen',
   },
@@ -52,86 +59,90 @@ const TemplatePage = ({
   footerLogo?: ReactElement;
 }) => (
   <Layout logo={logo} className={theme} footerLogo={footerLogo}>
-    <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
-      <h2 id="hidden-breadcrumb-header" hidden>
-        Kruimelpad
-      </h2>
-      <BreadcrumbNavLink href={'/#'}>Mijn Voorbeeld</BreadcrumbNavLink>
-      <BreadcrumbNavSeparator>
-        <Icon>
-          <IconChevronRight />
-        </Icon>
-      </BreadcrumbNavSeparator>
-      <BreadcrumbNavLink href={'/#'}>Lopende zaken</BreadcrumbNavLink>
-      <BreadcrumbNavSeparator>
-        <Icon>
-          <IconChevronRight />
-        </Icon>
-      </BreadcrumbNavSeparator>
-      <BreadcrumbNavLink href={'/#'} disabled current>
-        Aanvraag subsidie geluidsisolatie
-      </BreadcrumbNavLink>
-    </BreadcrumbNav>
-    <div className="todo-profile-page-layout">
-      <Sidenav>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconLayoutGrid />
-              Home
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconInbox />
-              Berichten
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#" current>
-              <IconArchive />
-              Lopende zaken
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconCurrencyEuro />
-              Belastingzaken
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconHome />
-              WOZ
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconParking />
-              Parkeren
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconBuildingCommunity />
-              Erfpacht
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconUser />
-              Gegevens
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-      </Sidenav>
-      <div className="todo-profile-page-content">
+    <Grid paddingTop={'x-large'}>
+      <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
+        <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
+          <h2 id="hidden-breadcrumb-header" hidden>
+            Kruimelpad
+          </h2>
+          <BreadcrumbNavLink href={'/#'}>Mijn Voorbeeld</BreadcrumbNavLink>
+          <BreadcrumbNavSeparator>
+            <Icon>
+              <IconChevronRight />
+            </Icon>
+          </BreadcrumbNavSeparator>
+          <BreadcrumbNavLink href={'/#'}>Lopende zaken</BreadcrumbNavLink>
+          <BreadcrumbNavSeparator>
+            <Icon>
+              <IconChevronRight />
+            </Icon>
+          </BreadcrumbNavSeparator>
+          <BreadcrumbNavLink href={'/#'} disabled current>
+            Aanvraag subsidie geluidsisolatie
+          </BreadcrumbNavLink>
+        </BreadcrumbNav>
+      </Grid.Cell>
+      <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
+        <SideNavigationBase>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#" current>
+                <IconLayoutGrid />
+                Overzicht
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
+                <IconInbox />
+                Berichten
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
+                <IconArchive />
+                Lopende zaken
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
+                <IconCurrencyEuro />
+                Belastingzaken
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
+                <IconHome />
+                WOZ
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
+                <IconParking />
+                Parkeren
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
+                <IconBuildingCommunity />
+                Erfpacht
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+          <SideNavigationList>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
+                <IconUser />
+                Gegevens
+              </SideNavigationLink>
+            </SideNavigationItem>
+          </SideNavigationList>
+        </SideNavigationBase>
+      </Grid.Cell>
+      <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <Heading1>Hallo Jeroen van Drouwen</Heading1>
         <ActionMulti
           actions={<ButtonLink appearance={'primary-action-button'}>Informatie geven</ButtonLink>}
@@ -152,8 +163,8 @@ const TemplatePage = ({
           size={'658kb'}
           lastUpdated={'12-12-2024'}
         />
-      </div>
-    </div>
+      </Grid.Cell>
+    </Grid>
   </Layout>
 );
 
@@ -165,6 +176,10 @@ export const Default: Story = {
 
 export const DenHaagTheme: Story = {
   render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
+};
+
+export const RHCTheme: Story = {
+  render: () => <TemplatePage logo={<PageHeaderLogo />} theme={'rhc-theme'} />,
 };
 
 const labels = {

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
+import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import './index.css';
 import { IconArrowLeft } from '@tabler/icons-react';

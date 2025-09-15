@@ -1,3 +1,4 @@
+import '@amsterdam/design-system-css/dist/grid/grid.css';
 import { Grid } from '@amsterdam/design-system-react';
 import {
   SideNavigationBase,
@@ -18,38 +19,25 @@ import {
   IconInbox,
   IconLayoutGrid,
   IconParking,
-  IconPencil,
-  IconPlus,
   IconUser,
 } from '@tabler/icons-react';
 import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-  DataList,
-  DataListItem,
-  DataListKey,
-  DataListValue,
   Heading1,
-  Heading2,
   Icon,
-  Link,
-  LinkList,
-  LinkListLink,
-  PreserveData,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
-import { ExpandableSection } from '../../components/ExpandableSection';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Profiel/Mijn Gegevens',
-  id: 'mijn-profiel-1',
+  title: 'Templates/Mijn Omgeving/Berichten/Overzicht',
+  id: 'mijn-omgeving-berichten-overzicht',
   parameters: {
     layout: 'fullscreen',
   },
-  tags: ['!dev'],
 } satisfies Meta;
 
 export default meta;
@@ -85,7 +73,7 @@ const TemplatePage = ({
             </Icon>
           </BreadcrumbNavSeparator>
           <BreadcrumbNavLink href={'/#'} disabled current>
-            Mijn gegevens
+            Mijn Berichten
           </BreadcrumbNavLink>
         </BreadcrumbNav>
       </Grid.Cell>
@@ -150,93 +138,14 @@ const TemplatePage = ({
         </SideNavigationBase>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <Heading1>Uw gegevens</Heading1>
-        <ExpandableSection
-          title="Contact"
-          description="Hier vindt u uw e-mailadres en telefoonnummer waarmee we u kunnen bereiken."
-        >
-          <DataList className="voorbeeld-datalist-style">
-            <DataListItem className="voorbeeld-data-list-item">
-              <DataListKey>
-                <b>E-mailadres</b>
-              </DataListKey>
-              <DataListValue>
-                <PreserveData>j.vandrouwen@gmail.com</PreserveData>
-              </DataListValue>
-              <Link href="/#" className="voorbeeld-back-link">
-                <Icon>
-                  <IconPencil />
-                </Icon>
-                Aanpassen
-              </Link>
-            </DataListItem>
-            <DataListItem className="voorbeeld-data-list-item">
-              <DataListKey>
-                <b>Telefoonnummer</b>
-              </DataListKey>
-              <DataListValue>
-                <PreserveData>-</PreserveData>
-              </DataListValue>
-              <Link href="/#" className="voorbeeld-back-link">
-                <Icon>
-                  <IconPlus />
-                </Icon>
-                Toevoegen
-              </Link>
-            </DataListItem>
-          </DataList>
-        </ExpandableSection>
-        <ExpandableSection
-          title="Meldingen"
-          description="Stel in waarvoor u meldingen wilt ontvangen en op welke manier."
-        ></ExpandableSection>
-        <ExpandableSection
-          title="Persoonsgegevens"
-          description="Dit zijn uw persoonsgegevens zoals naam, bsn, etc."
-        ></ExpandableSection>
-        <ExpandableSection
-          title="Adres"
-          description="Dit zijn uw adresgegevens; u kunt hier ook een verhuizing doorgeven"
-        ></ExpandableSection>
         <section>
-          <Heading2>Wijzigingen en aanvragen BRP</Heading2>
-          <LinkList>
-            <LinkListLink
-              href="#"
-              icon={
-                <Icon>
-                  <IconChevronRight />
-                </Icon>
-              }
-            >
-              Meer informatie over adresonderzoek
-            </LinkListLink>
-            <LinkListLink
-              href="#"
-              icon={
-                <Icon>
-                  <IconChevronRight />
-                </Icon>
-              }
-            >
-              Gegevens in BRP laten corrigeren, wijzigen of verwijderen
-            </LinkListLink>
-            <LinkListLink
-              href="#"
-              icon={
-                <Icon>
-                  <IconChevronRight />
-                </Icon>
-              }
-            >
-              Geheimhouding persoonsgegevens aanvragen
-            </LinkListLink>
-          </LinkList>
+          <Heading1>Mijn Berichten</Heading1>
         </section>
       </Grid.Cell>
     </Grid>
   </Layout>
 );
+
 export const Default: Story = {
   render: () => (
     <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />

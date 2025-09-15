@@ -11,6 +11,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import { Root } from '@utrecht/root-react/dist/css';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
+import './layout.css';
 
 interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> {
   logo?: ReactElement;
@@ -21,12 +22,11 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
   return (
     <Root className={className} {...props}>
       <PageHeader className="voorbeeld-page-header">
-        <div className="todo-page-header__content">{logo}</div>
+        <Grid>{logo}</Grid>
       </PageHeader>
-      <PageContent className="todo-page-content">
+      <PageContent>
         <main className={'utrecht-page-content__main'}>{children}</main>
       </PageContent>
-
       <PageFooter>
         <PageFooter.Spotlight className="todo-page-footer__spotlight">
           <Grid className="todo-page-footer__grid">
