@@ -12,7 +12,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '@rijkshuisstijl-community/design-tokens/dist/index.css';
-import '../tokens.css';
+import '../../themes/index.scss';
 import {
   IconArchive,
   IconBuildingCommunity,
