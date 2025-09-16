@@ -58,9 +58,11 @@
   --ams-grid-medium-padding-inline: 16px;
   --ams-grid-wide-padding-inline: 24px;
   --utrecht-root-font-family: var(--utrecht-document-font-family);
+  --utrecht-alert-column-gap: 16px;
   --utrecht-heading-1-margin-block-end: 16px;
   --utrecht-heading-2-margin-block-start: 32px;
   --utrecht-heading-2-margin-block-end: 16px;
+  --utrecht-heading-3-margin-block-start: 0;
   --utrecht-paragraph-margin-block-end: 16px;
   --utrecht-alert-margin-block-end: 32px;
   --ams-page-footer-spotlight-background-color: var(--denhaag-footer-background-color);
@@ -172,5 +174,5 @@
   /* Custom component tokens */
   --todo-page-footer-color: var(--utrecht-page-footer-color);
   --todo-page-footer-heading-font-family: var(--nl-heading-level-4-font-family);
-  --todo-page-footer-heading-color: white; /* TODO: met token instellen - welke? */
+  --todo-page-footer-heading-color: white;
 }
