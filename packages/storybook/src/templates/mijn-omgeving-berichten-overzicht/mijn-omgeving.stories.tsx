@@ -6,6 +6,7 @@ import {
   SideNavigationLink,
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
+import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -25,7 +26,6 @@ import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-  Heading1,
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
@@ -139,7 +139,7 @@ const TemplatePage = ({
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <section>
-          <Heading1>Mijn Berichten</Heading1>
+          <Heading level={1}>Mijn Berichten</Heading>
         </section>
       </Grid.Cell>
     </Grid>
