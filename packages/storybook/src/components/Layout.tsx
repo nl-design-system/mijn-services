@@ -1,8 +1,8 @@
 import '@amsterdam/design-system-css/dist/grid/grid.css';
 import '@amsterdam/design-system-css/dist/page-footer/page-footer.css';
 import { Grid, PageFooter } from '@amsterdam/design-system-react';
-import { Heading } from '@nl-design-system-candidate/heading-react';
-import { Link } from '@nl-design-system-candidate/link-react';
+import { Heading } from '@nl-design-system-candidate/heading-react/css';
+import { Link } from '@nl-design-system-candidate/link-react/css';
 import { LinkList, LinkListLink, PageContent, PageHeader } from '@utrecht/component-library-react/dist/css-module';
 import { Root } from '@utrecht/root-react/dist/css';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';

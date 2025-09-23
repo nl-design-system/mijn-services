@@ -7,6 +7,7 @@ import {
   SideNavigationLink,
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
+import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -26,7 +27,6 @@ import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-  Heading1,
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
@@ -140,7 +140,7 @@ const TemplatePage = ({
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <section>
-          <Heading1>Mijn Zaken</Heading1>
+          <Heading level={1}>Mijn Zaken</Heading>
           <div className={'todo-card-layout'}>
             <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-29124'} />
             <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-02599'} />
