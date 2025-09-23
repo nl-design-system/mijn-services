@@ -21,11 +21,12 @@
 }
 
 .todo-page-footer__spotlight {
-  --utrecht-heading-4-color: var(--todo-page-footer-heading-color);
-  --utrecht-heading-4-margin-block-end: 8px;
-  --utrecht-heading-4-font-family: var(--todo-page-footer-heading-font-family);
-  --utrecht-paragraph-color: var(--todo-page-footer-color);
+  --nl-heading-level-4-color: var(--todo-page-footer-heading-color);
+  --nl-heading-level-4-margin-block-end: 8px;
+  --nl-heading-level-4-font-family: var(--todo-page-footer-heading-font-family);
+  --nl-link-color: var(--todo-page-footer-color);
   --utrecht-link-color: var(--todo-page-footer-color);
+  --nl-link-hover-color: var(--todo-page-footer-color);
   --utrecht-link-hover-color: var(--todo-page-footer-color);
 
   color: var(--todo-page-footer-color);
