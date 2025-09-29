@@ -129,6 +129,9 @@ importers:
       '@nl-design-system-candidate/paragraph-react':
         specifier: 2.1.5
         version: 2.1.5(@babel/runtime@7.27.4)(react@18.3.1)
+      '@nl-design-system-candidate/skip-link-react':
+        specifier: 1.1.5
+        version: 1.1.5(@babel/runtime@7.27.4)(react@18.3.1)
       '@nl-design-system-unstable/voorbeeld-design-tokens':
         specifier: 5.1.0
         version: 5.1.0
@@ -1655,6 +1658,12 @@ packages:
 
   '@nl-design-system-candidate/paragraph-react@2.1.5':
     resolution: {integrity: sha512-NARI+HE2p2Erqp5OSGeP18ehj154zDVR3X04elggiUzOYuIIeICXmfEJ1WaUj78lvcPJ5a6nlwadTr+EoH+gRg==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18
+
+  '@nl-design-system-candidate/skip-link-react@1.1.5':
+    resolution: {integrity: sha512-zJFAm16NFswU7WfaTVBjus5vs4PoV2mUP8haYp4LwqilUs+/gy8JpYRx1DMUrfs3/E79LjGZx/I4A/a+0bi10A==}
     peerDependencies:
       '@babel/runtime': ^7
       react: ^18
@@ -9264,6 +9273,12 @@ snapshots:
       react: 18.3.1
 
   '@nl-design-system-candidate/paragraph-react@2.1.5(@babel/runtime@7.27.4)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.27.4
+      clsx: 2.1.1
+      react: 18.3.1
+
+  '@nl-design-system-candidate/skip-link-react@1.1.5(@babel/runtime@7.27.4)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.4
       clsx: 2.1.1

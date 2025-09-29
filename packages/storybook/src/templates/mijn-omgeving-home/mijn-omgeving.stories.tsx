@@ -83,6 +83,7 @@ const TemplatePage = ({
           </BreadcrumbNavLink>
         </BreadcrumbNav>
       </Grid.Cell>
+
       <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
         <SideNavigationBase>
           <SideNavigationList>
@@ -143,39 +144,42 @@ const TemplatePage = ({
           </SideNavigationList>
         </SideNavigationBase>
       </Grid.Cell>
+
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <Alert icon={<IconInfoCircle className="utrecht-icon" />}>
-          <Heading level={1} appearance="level-3">
-            Heading
+        <main id="main">
+          <Alert icon={<IconInfoCircle className="utrecht-icon" />}>
+            <Heading level={1} appearance="level-3">
+              Heading
+            </Heading>
+            <Paragraph>Lorem ipsum dolor sit amet, consectetur ad * isicing elit, sed do eiusmod *</Paragraph>
+          </Alert>
+          <Heading level={2} appearance="level-1">
+            Hallo Jeroen van Drouwen
           </Heading>
-          <Paragraph>Lorem ipsum dolor sit amet, consectetur ad * isicing elit, sed do eiusmod *</Paragraph>
-        </Alert>
-        <Heading level={2} appearance="level-1">
-          Hallo Jeroen van Drouwen
-        </Heading>
-        <Paragraph>
-          In ‘Mijn omgeving’ kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt bijvoorbeeld uw
-          rekeningen betalen en zien wanneer uw aanvraag klaar is.
-        </Paragraph>
-        <section>
-          <Heading level={2}>Wat moet ik regelen</Heading>
-          <ActionSingle link={'#'} labels={labels}>
-            <strong>Geef informatie voor uw aanvraag subsidie geluidisolatie</strong>
-          </ActionSingle>
-          <ActionSingle link={'#'} labels={labels}>
-            <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
-          </ActionSingle>
-          <ActionSingle link={'#'} labels={labels}>
-            <strong>Verleng uw identiteitskaart</strong>
-          </ActionSingle>
-        </section>
-        <section>
-          <Heading level={2}>Lopende zaken</Heading>
-          <div className={'todo-card-layout'}>
-            <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-228402'} />
-            <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-108422'} />
-          </div>
-        </section>
+          <Paragraph>
+            In ‘Mijn omgeving’ kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt bijvoorbeeld uw
+            rekeningen betalen en zien wanneer uw aanvraag klaar is.
+          </Paragraph>
+          <section>
+            <Heading level={2}>Wat moet ik regelen</Heading>
+            <ActionSingle link={'#'} labels={labels}>
+              <strong>Geef informatie voor uw aanvraag subsidie geluidisolatie</strong>
+            </ActionSingle>
+            <ActionSingle link={'#'} labels={labels}>
+              <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
+            </ActionSingle>
+            <ActionSingle link={'#'} labels={labels}>
+              <strong>Verleng uw identiteitskaart</strong>
+            </ActionSingle>
+          </section>
+          <section>
+            <Heading level={2}>Lopende zaken</Heading>
+            <div className={'todo-card-layout'}>
+              <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-228402'} />
+              <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-108422'} />
+            </div>
+          </section>
+        </main>
       </Grid.Cell>
     </Grid>
   </Layout>
