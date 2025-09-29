@@ -25,7 +25,6 @@ import {
   IconParking,
   IconUser,
 } from '@tabler/icons-react';
-import { PageContent } from '@utrecht/component-library-react/dist/css-module';
 import {
   BreadcrumbNav,
   BreadcrumbNavLink,
@@ -145,30 +144,28 @@ const TemplatePage = ({
       </Grid.Cell>
 
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <PageContent className="todo-page-content">
-          <main id="main" className={'utrecht-page-content__main'}>
-            <Heading level={1}>Hallo Jeroen van Drouwen</Heading>
-            <ActionMulti
-              actions={<ButtonLink appearance={'primary-action-button'}>Informatie geven</ButtonLink>}
-              labels={labels}
-              dateTime="2024-11-22"
-              now="2024-11-20"
-              relativeDate={true}
-            >
-              <strong>Geef informatie voor uw aanvraag subsidie geluidsisolatie</strong>
-            </ActionMulti>
-            <Heading level={2}>Status</Heading>
-            {timeline}
-            <Heading level={2}>Documenten</Heading>
-            <File
-              className={'todo-file-component'}
-              name={'antwoord-formulier-deelname-onderzoek'}
-              href={''}
-              size={'658kb'}
-              lastUpdated={'12-12-2024'}
-            />
-          </main>
-        </PageContent>
+        <main id="main">
+          <Heading level={1}>Hallo Jeroen van Drouwen</Heading>
+          <ActionMulti
+            actions={<ButtonLink appearance={'primary-action-button'}>Informatie geven</ButtonLink>}
+            labels={labels}
+            dateTime="2024-11-22"
+            now="2024-11-20"
+            relativeDate={true}
+          >
+            <strong>Geef informatie voor uw aanvraag subsidie geluidsisolatie</strong>
+          </ActionMulti>
+          <Heading level={2}>Status</Heading>
+          {timeline}
+          <Heading level={2}>Documenten</Heading>
+          <File
+            className={'todo-file-component'}
+            name={'antwoord-formulier-deelname-onderzoek'}
+            href={''}
+            size={'658kb'}
+            lastUpdated={'12-12-2024'}
+          />
+        </main>
       </Grid.Cell>
     </Grid>
   </Layout>

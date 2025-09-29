@@ -4,7 +4,7 @@ import { Grid, PageFooter } from '@amsterdam/design-system-react';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
 import { SkipLink } from '@nl-design-system-candidate/skip-link-react/css';
-import { LinkList, LinkListLink, PageHeader } from '@utrecht/component-library-react/dist/css-module';
+import { LinkList, LinkListLink, PageContent, PageHeader } from '@utrecht/component-library-react/dist/css-module';
 import { Root } from '@utrecht/root-react/dist/css';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 import './layout.css';
@@ -21,8 +21,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
       <PageHeader className="todo-page-header">
         <Grid className="todo-page-header-content">{logo}</Grid>
       </PageHeader>
-
-      {children}
+      <PageContent className="todo-page-content">{children}</PageContent>
 
       <PageFooter>
         <PageFooter.Spotlight className="todo-page-footer__spotlight">
