@@ -23,6 +23,7 @@ import {
   IconParking,
   IconUser,
 } from '@tabler/icons-react';
+import { PageContent } from '@utrecht/component-library-react/dist/css-module';
 import {
   BreadcrumbNav,
   BreadcrumbNavLink,
@@ -78,6 +79,7 @@ const TemplatePage = ({
           </BreadcrumbNavLink>
         </BreadcrumbNav>
       </Grid.Cell>
+
       <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
         <SideNavigationBase>
           <SideNavigationList>
@@ -138,16 +140,21 @@ const TemplatePage = ({
           </SideNavigationList>
         </SideNavigationBase>
       </Grid.Cell>
+
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <section>
-          <Heading level={1}>Mijn Zaken</Heading>
-          <div className={'todo-card-layout'}>
-            <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-29124'} />
-            <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-02599'} />
-            <CaseCard title={'Bezwaar tegen WOZ-waarde'} href={'#'} context={'ZK-00122'} appearance="archived" />
-            <CaseCard title={'Aanvraag paspoort'} href={'#'} context={'ZK-99084'} appearance="archived" />
-          </div>
-        </section>
+        <PageContent className="todo-page-content">
+          <main id="main" className={'utrecht-page-content__main'}>
+            <section>
+              <Heading level={1}>Mijn Zaken</Heading>
+              <div className={'todo-card-layout'}>
+                <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-29124'} />
+                <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-02599'} />
+                <CaseCard title={'Bezwaar tegen WOZ-waarde'} href={'#'} context={'ZK-00122'} appearance="archived" />
+                <CaseCard title={'Aanvraag paspoort'} href={'#'} context={'ZK-99084'} appearance="archived" />
+              </div>
+            </section>
+          </main>
+        </PageContent>
       </Grid.Cell>
     </Grid>
   </Layout>

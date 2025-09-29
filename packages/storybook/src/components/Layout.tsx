@@ -3,7 +3,8 @@ import '@amsterdam/design-system-css/dist/page-footer/page-footer.css';
 import { Grid, PageFooter } from '@amsterdam/design-system-react';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
-import { LinkList, LinkListLink, PageContent, PageHeader } from '@utrecht/component-library-react/dist/css-module';
+import { SkipLink } from '@nl-design-system-candidate/skip-link-react/css';
+import { LinkList, LinkListLink, PageHeader } from '@utrecht/component-library-react/dist/css-module';
 import { Root } from '@utrecht/root-react/dist/css';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 import './layout.css';
@@ -16,12 +17,13 @@ interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> 
 export const Layout = ({ logo, children, className, footerLogo, ...props }: LayoutProps) => {
   return (
     <Root className={className} {...props}>
+      <SkipLink href="#main">Direct naar de hoofdinhoud</SkipLink>
       <PageHeader className="todo-page-header">
         <Grid className="todo-page-header-content">{logo}</Grid>
       </PageHeader>
-      <PageContent className="todo-page-content">
-        <main className={'utrecht-page-content__main'}>{children}</main>
-      </PageContent>
+
+      {children}
+
       <PageFooter>
         <PageFooter.Spotlight className="todo-page-footer__spotlight">
           <Grid className="todo-page-footer__grid">
@@ -32,7 +34,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
             )}
 
             <Grid.Cell span={footerLogo ? 3 : 4}>
-              <Heading level={2} appearance="level-4" className="todo-page-footer-heading">
+              <Heading level={2} appearance="level-4">
                 Contact
               </Heading>
               <address className="todo-address">
