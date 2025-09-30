@@ -1,7 +1,7 @@
 .rhc-theme {
-  --nl-heading-level-1-margin-block-end: var(--rhc-space-300);
-  --nl-heading-level-2-margin-block-start: var(--rhc-space-300);
-  --nl-heading-level-2-margin-block-end: var(--rhc-space-300);
+  --nl-heading-level-1-margin-block-end: var(--rhc-space-300) !important;
+  --nl-heading-level-2-margin-block-start: var(--rhc-space-300) !important;
+  --nl-heading-level-2-margin-block-end: var(--rhc-space-300) !important;
 
   /* Utrecht component tokens */
   --utrecht-page-header-border-block-end-color: var(--rhc-logo-image-color);
