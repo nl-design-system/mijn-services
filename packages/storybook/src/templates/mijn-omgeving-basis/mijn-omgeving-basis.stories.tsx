@@ -132,7 +132,7 @@ const TemplatePage = ({
         </SideNavigationBase>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <section style={{ backgroundColor: '#ffcc99', padding: '1rem', borderRadius: '8px' }}>
+        <section style={{ backgroundColor: '#ffcc99', padding: '16px', borderRadius: '8px', marginBlockEnd: '24px' }}>
           <Paragraph>Content area</Paragraph>
         </section>
       </Grid.Cell>

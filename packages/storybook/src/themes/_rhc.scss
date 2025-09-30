@@ -1,12 +1,14 @@
 .rhc-theme {
-  --utrecht-alert-margin-block-end: var(--rhc-space-600);
-  --utrecht-space-around: 1;
-  --utrecht-root-font-family: var(--rhc-font-family-primary);
-  --todo-page-header-logo-color: var(--rhc-logo-image-color);
-  --todo-page-header-border-block-end: 1px solid var(--rhc-logo-image-color);
   --nl-heading-level-1-margin-block-end: var(--rhc-space-300);
-  --nl-heading-level-2-margin-block-start: var(--rhc-space-600);
+  --nl-heading-level-2-margin-block-start: var(--rhc-space-300);
   --nl-heading-level-2-margin-block-end: var(--rhc-space-300);
+
+  /* Utrecht component tokens */
+  --utrecht-page-header-border-block-end-color: var(--rhc-logo-image-color);
+  --utrecht-page-header-border-block-end-width: 2px;
+  --utrecht-space-around: 1;
+  --utrecht-alert-margin-block-end: var(--rhc-space-300);
+  --utrecht-root-font-family: var(--rhc-font-family-primary);
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
@@ -92,12 +94,10 @@
   --denhaag-case-card-subtitle-font-family: var(--rhc-font-family-primary);
   --denhaag-case-card-subtitle-margin-block-start: var(--rhc-space-150);
 
-  /* Utrecht header */
-  --utrecht-page-header-border-block-end-color: var(--rhc-logo-image-color);
-  --utrecht-page-header-border-block-end-width: 2px;
-
   /* Custom component tokens */
   --todo-page-footer-color: var(--utrecht-page-footer-color);
   --todo-page-footer-heading-font-family: var(--nl-heading-level-4-font-family);
   --todo-page-footer-heading-color: white;
+  --todo-page-header-logo-color: var(--rhc-logo-image-color);
+  --todo-page-header-border-block-end: 1px solid var(--rhc-logo-image-color);
 }
