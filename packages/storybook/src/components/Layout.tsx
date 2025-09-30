@@ -22,7 +22,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
       <PageContent className="todo-page-content">
         <main className={'utrecht-page-content__main'}>{children}</main>
       </PageContent>
-      <PageFooter>
+      <PageFooter style={{ marginBlockStart: '24px' }}>
         <PageFooter.Spotlight className="todo-page-footer__spotlight">
           <Grid className="todo-page-footer__grid">
             {footerLogo && (
