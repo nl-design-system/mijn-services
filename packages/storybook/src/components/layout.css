@@ -16,7 +16,7 @@
   max-inline-size: 1248px;
 }
 
-.todo-page-header-content svg {
+.todo-page-header-content svg path:first-child {
   color: var(--todo-page-header-logo-color);
 }
 

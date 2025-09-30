@@ -7,6 +7,8 @@
   /* Utrecht component tokens */
   --utrecht-space-around: 1;
   --utrecht-alert-margin-block-end: var(--basis-space-block-3xl);
+  --utrecht-page-header-border-block-end-color: var(--basis-color-accent-1-color-default);
+  --utrecht-page-header-border-block-end-width: 2px;
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
@@ -61,6 +63,7 @@
   --denhaag-case-card-subtitle-font-family: revert;
 
   /* Custom component tokens */
+  --todo-page-header-logo-color: var(--basis-color-accent-1-color-default);
   --todo-page-footer-heading-color: var(--basis-color-default-inverse-color-document);
   --todo-page-footer-heading-font-family: var(--basis-text-font-family-default);
   --todo-page-footer-color: var(--basis-color-default-inverse-color-document);
