@@ -88,6 +88,7 @@ const TemplatePage = ({
           </BreadcrumbNavLink>
         </BreadcrumbNav>
       </Grid.Cell>
+
       <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
         <SideNavigationBase>
           <SideNavigationList>
@@ -148,90 +149,93 @@ const TemplatePage = ({
           </SideNavigationList>
         </SideNavigationBase>
       </Grid.Cell>
+
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <Heading level={1}>Uw gegevens</Heading>
-        <ExpandableSection
-          title="Contact"
-          description="Hier vindt u uw e-mailadres en telefoonnummer waarmee we u kunnen bereiken."
-        >
-          <DataList className="voorbeeld-datalist-style">
-            <DataListItem className="voorbeeld-data-list-item">
-              <DataListKey>
-                <b>E-mailadres</b>
-              </DataListKey>
-              <DataListValue>
-                <PreserveData>j.vandrouwen@gmail.com</PreserveData>
-              </DataListValue>
-              <Link href="/#" className="voorbeeld-back-link">
-                <Icon>
-                  <IconPencil />
-                </Icon>
-                Aanpassen
-              </Link>
-            </DataListItem>
-            <DataListItem className="voorbeeld-data-list-item">
-              <DataListKey>
-                <b>Telefoonnummer</b>
-              </DataListKey>
-              <DataListValue>
-                <PreserveData>-</PreserveData>
-              </DataListValue>
-              <Link href="/#" className="voorbeeld-back-link">
-                <Icon>
-                  <IconPlus />
-                </Icon>
-                Toevoegen
-              </Link>
-            </DataListItem>
-          </DataList>
-        </ExpandableSection>
-        <ExpandableSection
-          title="Meldingen"
-          description="Stel in waarvoor u meldingen wilt ontvangen en op welke manier."
-        ></ExpandableSection>
-        <ExpandableSection
-          title="Persoonsgegevens"
-          description="Dit zijn uw persoonsgegevens zoals naam, bsn, etc."
-        ></ExpandableSection>
-        <ExpandableSection
-          title="Adres"
-          description="Dit zijn uw adresgegevens; u kunt hier ook een verhuizing doorgeven"
-        ></ExpandableSection>
-        <section>
-          <Heading level={2}>Wijzigingen en aanvragen BRP</Heading>
-          <LinkList>
-            <LinkListLink
-              href="#"
-              icon={
-                <Icon>
-                  <IconChevronRight />
-                </Icon>
-              }
-            >
-              Meer informatie over adresonderzoek
-            </LinkListLink>
-            <LinkListLink
-              href="#"
-              icon={
-                <Icon>
-                  <IconChevronRight />
-                </Icon>
-              }
-            >
-              Gegevens in BRP laten corrigeren, wijzigen of verwijderen
-            </LinkListLink>
-            <LinkListLink
-              href="#"
-              icon={
-                <Icon>
-                  <IconChevronRight />
-                </Icon>
-              }
-            >
-              Geheimhouding persoonsgegevens aanvragen
-            </LinkListLink>
-          </LinkList>
-        </section>
+        <main id="main">
+          <Heading level={1}>Uw gegevens</Heading>
+          <ExpandableSection
+            title="Contact"
+            description="Hier vindt u uw e-mailadres en telefoonnummer waarmee we u kunnen bereiken."
+          >
+            <DataList className="voorbeeld-datalist-style">
+              <DataListItem className="voorbeeld-data-list-item">
+                <DataListKey>
+                  <b>E-mailadres</b>
+                </DataListKey>
+                <DataListValue>
+                  <PreserveData>j.vandrouwen@gmail.com</PreserveData>
+                </DataListValue>
+                <Link href="/#" className="voorbeeld-back-link">
+                  <Icon>
+                    <IconPencil />
+                  </Icon>
+                  Aanpassen
+                </Link>
+              </DataListItem>
+              <DataListItem className="voorbeeld-data-list-item">
+                <DataListKey>
+                  <b>Telefoonnummer</b>
+                </DataListKey>
+                <DataListValue>
+                  <PreserveData>-</PreserveData>
+                </DataListValue>
+                <Link href="/#" className="voorbeeld-back-link">
+                  <Icon>
+                    <IconPlus />
+                  </Icon>
+                  Toevoegen
+                </Link>
+              </DataListItem>
+            </DataList>
+          </ExpandableSection>
+          <ExpandableSection
+            title="Meldingen"
+            description="Stel in waarvoor u meldingen wilt ontvangen en op welke manier."
+          ></ExpandableSection>
+          <ExpandableSection
+            title="Persoonsgegevens"
+            description="Dit zijn uw persoonsgegevens zoals naam, bsn, etc."
+          ></ExpandableSection>
+          <ExpandableSection
+            title="Adres"
+            description="Dit zijn uw adresgegevens; u kunt hier ook een verhuizing doorgeven"
+          ></ExpandableSection>
+          <section>
+            <Heading level={2}>Wijzigingen en aanvragen BRP</Heading>
+            <LinkList>
+              <LinkListLink
+                href="#"
+                icon={
+                  <Icon>
+                    <IconChevronRight />
+                  </Icon>
+                }
+              >
+                Meer informatie over adresonderzoek
+              </LinkListLink>
+              <LinkListLink
+                href="#"
+                icon={
+                  <Icon>
+                    <IconChevronRight />
+                  </Icon>
+                }
+              >
+                Gegevens in BRP laten corrigeren, wijzigen of verwijderen
+              </LinkListLink>
+              <LinkListLink
+                href="#"
+                icon={
+                  <Icon>
+                    <IconChevronRight />
+                  </Icon>
+                }
+              >
+                Geheimhouding persoonsgegevens aanvragen
+              </LinkListLink>
+            </LinkList>
+          </section>
+        </main>
       </Grid.Cell>
     </Grid>
   </Layout>

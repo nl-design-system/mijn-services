@@ -78,6 +78,7 @@ const TemplatePage = ({
           </BreadcrumbNavLink>
         </BreadcrumbNav>
       </Grid.Cell>
+
       <Grid.Cell span={3} className={'todo-grid-cell--hide-on-medium'}>
         <SideNavigationBase>
           <SideNavigationList>
@@ -138,25 +139,28 @@ const TemplatePage = ({
           </SideNavigationList>
         </SideNavigationBase>
       </Grid.Cell>
+
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
-        <section>
-          <Heading1>Mijn Taken</Heading1>
-          <ActionSingle
-            link={'#'}
-            labels={labels}
-            now="2023-09-28T19:47:36.593Z"
-            dateTime="2023-09-30T19:47:36.593Z"
-            relativeDate
-          >
-            Geef informatie voor uw aanvraag subsidie geluidisolatie
-          </ActionSingle>
-          <ActionSingle link={'#'} labels={labels}>
-            Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein
-          </ActionSingle>
-          <ActionSingle link={'#'} labels={labels}>
-            Verleng uw identiteitskaart
-          </ActionSingle>
-        </section>
+        <main id="main">
+          <section>
+            <Heading1>Mijn Taken</Heading1>
+            <ActionSingle
+              link={'#'}
+              labels={labels}
+              now="2023-09-28T19:47:36.593Z"
+              dateTime="2023-09-30T19:47:36.593Z"
+              relativeDate
+            >
+              Geef informatie voor uw aanvraag subsidie geluidisolatie
+            </ActionSingle>
+            <ActionSingle link={'#'} labels={labels}>
+              Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein
+            </ActionSingle>
+            <ActionSingle link={'#'} labels={labels}>
+              Verleng uw identiteitskaart
+            </ActionSingle>
+          </section>
+        </main>
       </Grid.Cell>
     </Grid>
   </Layout>
