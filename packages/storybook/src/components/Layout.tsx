@@ -18,7 +18,9 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
   return (
     <Root className={className} {...props}>
       <PageHeader className="todo-page-header">
-        <SkipLink href="#main">Direct naar de hoofdinhoud</SkipLink>
+        <SkipLink className="todo-skip-link" href="#main">
+          Direct naar de hoofdinhoud
+        </SkipLink>
         <Grid className="todo-page-header-content">{logo}</Grid>
       </PageHeader>
       <PageContent className="todo-page-content">{children}</PageContent>
@@ -36,9 +38,12 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
                 Contact
               </Heading>
               <address className="todo-address">
-                Bel <Link href="tel:453453">453 453</Link> (maandag tot en met vrijdag van 09.00 tot 17.00 uur) of stuur
-                een e-mail naar{' '}
-                <Link href="mailto:vragen@gemeentevoorbeeld.nl">
+                Bel{' '}
+                <Link className="todo-link" href="tel:453453">
+                  453 453
+                </Link>{' '}
+                (maandag tot en met vrijdag van 09.00 tot 17.00 uur) of stuur een e-mail naar{' '}
+                <Link className="todo-link" href="mailto:vragen@gemeentevoorbeeld.nl">
                   <span className="utrecht-url-data">vragen@gemeentevoorbeeld.nl</span>
                 </Link>
                 {'.'}

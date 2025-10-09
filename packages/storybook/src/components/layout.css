@@ -58,6 +58,23 @@
   inline-size: 328px;
 }
 
+.todo-skip-link:focus,
+.todo-skip-link:focus-visible {
+  /* refactor once it's supported in nl candidate */
+  outline-color: var(--todo-skip-link-focus-outline-color);
+  outline-offset: var(--todo-skip-link-focus-outline-offset);
+  outline-style: var(--todo-skip-link-focus-outline-style);
+  outline-width: var(--todo-skip-link-focus-outline-width);
+}
+
+.todo-link:focus,
+.todo-link:focus-visible {
+  /* refactor once it's supported in nl candidate */
+  outline-color: var(--todo-link-focus-outline-color);
+  outline-style: var(--todo-link-focus-outline-style);
+  outline-width: var(--todo-link-focus-outline-width);
+}
+
 @media screen and (width <= 1087px) {
   .todo-grid-cell--hide-on-medium {
     display: none;

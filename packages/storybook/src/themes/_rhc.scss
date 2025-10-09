@@ -99,4 +99,15 @@
   --todo-page-footer-heading-font-family: var(--nl-heading-level-4-font-family);
   --todo-page-footer-heading-color: white;
   --todo-page-header-logo-color: var(--rhc-logo-image-color);
+
+  /* Focus Ring tokens */
+  --todo-skip-link-focus-outline-color: var(--rhc-color-zwart);
+  --todo-skip-link-focus-outline-style: solid;
+  --todo-skip-link-focus-outline-width: 2px;
+  --todo-skip-link-focus-outline-offset: -0.125rem;
+  --todo-link-focus-outline-color: var(--rhc-color-zwart);
+  --todo-link-focus-outline-style: solid;
+  --todo-link-focus-outline-width: 2px;
+
+  // footer links in paragraph need extra white focus ring for contrast (like the link list items in footer)
 }
