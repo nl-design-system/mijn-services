@@ -28,4 +28,14 @@
   /* Skip Link tokens */
   --nl-skip-link-background-color: var(--denhaag-color-ocher-2);
   --nl-skip-link-color: var(--denhaag-color-blue-5);
+
+  /* Focus Ring tokens */
+  --todo-skip-link-focus-outline-color: var(--denhaag-focus-border-color);
+  --todo-skip-link-focus-outline-style: var(--denhaag-focus-border-style);
+  --todo-skip-link-focus-outline-width: var(--denhaag-focus-border-width);
+  --todo-skip-link-focus-outline-offset: -0.125rem;
+  --todo-skip-link-focus-padding: 10px;
+  --todo-link-focus-outline-color: var(--denhaag-color-ocher-2); /* footer link in paragraph  */
+  --todo-link-focus-outline-style: dashed;
+  --todo-link-focus-outline-width: 2px;
 }

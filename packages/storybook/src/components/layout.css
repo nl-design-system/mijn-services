@@ -65,14 +65,23 @@
   outline-offset: var(--todo-skip-link-focus-outline-offset);
   outline-style: var(--todo-skip-link-focus-outline-style);
   outline-width: var(--todo-skip-link-focus-outline-width);
+  padding-inline-end: var(--todo-skip-link-focus-padding);
+  padding-inline-start: var(--todo-skip-link-focus-padding);
 }
 
 .todo-link:focus,
 .todo-link:focus-visible {
   /* refactor once it's supported in nl candidate */
+  color: var(--todo-page-footer-color);
   outline-color: var(--todo-link-focus-outline-color);
   outline-style: var(--todo-link-focus-outline-style);
   outline-width: var(--todo-link-focus-outline-width);
+}
+
+.utrecht-link-list__link:focus,
+.utrecht-link-list__link:focus-visible {
+  color: var(--todo-page-footer-color);
+  outline-color: var(--todo-link-focus-outline-color) !important; /* why does it only work with important? */
 }
 
 @media screen and (width <= 1087px) {
