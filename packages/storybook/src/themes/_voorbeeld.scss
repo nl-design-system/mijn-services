@@ -67,4 +67,12 @@
   --todo-page-footer-heading-color: var(--basis-color-default-inverse-color-document);
   --todo-page-footer-heading-font-family: var(--basis-text-font-family-default);
   --todo-page-footer-color: var(--basis-color-default-inverse-color-document);
+  --todo-page-footer-focus-color: var(--basis-color-highlight-text-1);
+  --todo-skip-link-focus-padding-inline-end: var(--basis-space-inline-xl);
+  --todo-skip-link-focus-padding-inline-start: var(--basis-space-inline-xl);
+  --todo-skip-link-focus-outline-style: dashed;
+  --todo-skip-link-focus-outline-color: var(--basis-color-highlight-text-1);
+  --todo-skip-link-focus-outline-width: 2px;
+  --todo-skip-link-focus-outline-offset: -0.125rem;
+  --todo-skip-link-border-radius: 5px;
 }
