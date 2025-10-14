@@ -54,7 +54,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
               <Heading level={2} appearance="level-4">
                 Meer weten
               </Heading>
-              <LinkList>
+              <LinkList className="todo-link-list">
                 <LinkListLink href="/">Over gemeente Voorbeeld</LinkListLink>
                 <LinkListLink href="/">Nieuwsbrief</LinkListLink>
                 <LinkListLink href="/">Social Media</LinkListLink>
@@ -66,7 +66,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
               <Heading level={2} appearance="level-4">
                 Over deze site
               </Heading>
-              <LinkList>
+              <LinkList className="todo-link-list">
                 <LinkListLink href="/">Gebruikersvoorwaarden</LinkListLink>
                 <LinkListLink href="/">Proclaimer</LinkListLink>
                 <LinkListLink href="/">Cookieverklaring</LinkListLink>

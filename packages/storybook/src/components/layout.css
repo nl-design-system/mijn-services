@@ -61,27 +61,30 @@
 .todo-skip-link:focus,
 .todo-skip-link:focus-visible {
   /* refactor once it's supported in nl candidate */
+  border-radius: var(--todo-skip-link-border-radius);
   outline-color: var(--todo-skip-link-focus-outline-color);
   outline-offset: var(--todo-skip-link-focus-outline-offset);
   outline-style: var(--todo-skip-link-focus-outline-style);
   outline-width: var(--todo-skip-link-focus-outline-width);
-  padding-inline-end: var(--todo-skip-link-focus-padding);
-  padding-inline-start: var(--todo-skip-link-focus-padding);
+  padding-inline-end: var(--todo-skip-link-focus-padding-inline-end);
+  padding-inline-start: var(--todo-skip-link-focus-padding-inline-start);
 }
 
 .todo-link:focus,
 .todo-link:focus-visible {
   /* refactor once it's supported in nl candidate */
+  box-shadow: var(--todo-link-focus-box-shadow);
   color: var(--todo-page-footer-color);
   outline-color: var(--todo-link-focus-outline-color);
+  outline-offset: var(--todo-link-focus-outline-offset);
   outline-style: var(--todo-link-focus-outline-style);
   outline-width: var(--todo-link-focus-outline-width);
 }
 
-.utrecht-link-list__link:focus,
-.utrecht-link-list__link:focus-visible {
-  color: var(--todo-page-footer-color);
-  outline-color: var(--todo-link-focus-outline-color) !important; /* why does it only work with important? */
+.todo-link-list {
+  --utrecht-link-focus-color: var(--todo-page-footer-focus-color);
+  --utrecht-focus-outline-color: var(--todo-link-focus-outline-color);
+  --utrecht-focus-outline-offset: var(--todo-link-list-focus-outline-offset);
 }
 
 @media screen and (width <= 1087px) {

@@ -96,6 +96,7 @@
 
   /* Custom component tokens */
   --todo-page-footer-color: var(--utrecht-page-footer-color);
+  --todo-page-footer-focus-color: var(--utrecht-page-footer-color);
   --todo-page-footer-heading-font-family: var(--nl-heading-level-4-font-family);
   --todo-page-footer-heading-color: white;
   --todo-page-header-logo-color: var(--rhc-logo-image-color);
@@ -105,9 +106,13 @@
   --todo-skip-link-focus-outline-style: solid;
   --todo-skip-link-focus-outline-width: 2px;
   --todo-skip-link-focus-outline-offset: -0.125rem;
+  --todo-skip-link-focus-padding-inline-end: 10px;
+  --todo-skip-link-focus-padding-inline-start: 10px;
   --todo-link-focus-outline-color: var(--rhc-color-zwart);
   --todo-link-focus-outline-style: solid;
   --todo-link-focus-outline-width: 2px;
-
-  // footer links in paragraph need extra white focus ring for contrast (like the link list items in footer)
+  --todo-link-focus-outline-offset: 2px;
+  --todo-link-list-focus-outline-offset: 2px;
+  --todo-link-focus-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+    var(--utrecht-focus-inverse-outline-color, transparent);
 }
