@@ -1,4 +1,4 @@
-# Research en Bronnen – Template: MijnZaken – Zaakdetail pagina
+# Onderzoek en bronnen – Template: MijnZaken – Zaakdetail pagina
 
 ## Introductie van de Zaakdetail pagina
 

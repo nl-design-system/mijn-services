@@ -1,4 +1,4 @@
-# Research en Bronnen – Template: MijnOmgeving
+# Onderzoek en bronnen – Template: MijnOmgeving
 
 ## Introductie van de MijnOmgeving-services
 

@@ -17,8 +17,6 @@ Hierdoor hebben we alle kennis gevangen op een plek, en kunnen we gezamelijk ver
 
 ## Gebruikte componenten
 
-Voor de basis indeling worden de volgende componenten gebruikt:
-
 ### Pagina layout & Navigatie
 
 De pagina layout en navigatie maakt gebruik van de [Basis Layout](/story/mijn-omgeving-basis--default). Refereer naar
@@ -28,7 +26,6 @@ die componenten.
 ### Patronen
 
 | Patroon naam | Patroon variant | Documentatie            |
-|--------------|-----------------|-------------------------|
+| ------------ | --------------- | ----------------------- |
 | MijnTaken    | Overzicht       | Nog niet gedocumenteerd |
 | MijnZaken    | Overzicht       | Nog niet gedocumenteerd |
-
