@@ -93,10 +93,7 @@ const DesignTokenUploaderTab = () => {
         <h2>
           Upload eigen huisstijl: <span>Actief: {themeName || 'Geen eigen thema'}</span>
         </h2>
-        <p>
-          Je kan je eigen huisstijl uploaden door middel van een theme.css bestand. Lees hier voor een stappenplan: rip
-          geen docs
-        </p>
+        <p>Je kan je eigen huisstijl testen met een template door middel van een theme.css bestand.</p>
         <input
           type="file"
           accept=".css"
