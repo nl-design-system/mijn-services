@@ -29,3 +29,28 @@ die componenten.
 | ------------ | --------------- | ----------------------- |
 | MijnTaken    | Overzicht       | Nog niet gedocumenteerd |
 | MijnZaken    | Overzicht       | Nog niet gedocumenteerd |
+
+## Gebruikte MijnServices APIs
+
+Voor dit patroon zijn de volgende API's gebruikt:
+
+- Zaken API 1.5.1 [(specificatie)](https://dienstverleningsplatform.gitbook.io/platform-generieke-dienstverlening-public/standaarden/zaakgericht-werken)
+
+### Voorbeeld response
+
+```json
+{
+  "url": "http://example.com",
+  "uuid": "095be615-a8ad-4c33-8e9c-c7612fbf6c9f",
+  "identificatie": "string",
+  "bronorganisatie": "string",
+  "omschrijving": "string",
+  "toelichting": "string",
+  "zaaktype": "http://example.com",
+  "registratiedatum": "2019-08-24",
+  "verantwoordelijkeOrganisatie": "string",
+  "startdatum": "2019-08-24",
+  "einddatum": "2019-08-24",
+  "einddatumGepland": "2019-08-24"
+}
+```
