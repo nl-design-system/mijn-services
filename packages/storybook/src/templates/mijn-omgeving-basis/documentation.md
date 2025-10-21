@@ -22,9 +22,9 @@ Voor de basis indeling worden de volgende componenten gebruikt:
 ### Pagina layout
 
 | Component                                             | Gebruikte implementatie                                                                                |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| ----------------------------------------------------- |--------------------------------------------------------------------------------------------------------|
 | Grid                                                  | [Amsterdam Grid](https://designsystem.amsterdam/?path=/docs/components-layout-grid--docs)              |
-| [Page Header](https://nldesignsystem.nl/page-header/) | [Amsterdam Header](https://designsystem.amsterdam/?path=/docs/components-containers-page-header--docs) |
+| [Page Header](https://nldesignsystem.nl/page-header/) | Utrecht Page Header                                                                                    |
 | [Page Footer](https://nldesignsystem.nl/page-footer/) | [Amsterdam Footer](https://designsystem.amsterdam/?path=/docs/components-containers-page-footer--docs) |
 
 ### Navigatie
