@@ -22,6 +22,10 @@
   --ams-page-footer-spotlight-background-color: var(--utrecht-page-footer-background-color);
 
   /* Den Haag component tokens */
+  --denhaag-focus-border: 2px solid var(--utrecht-focus-outline-color);
+  --denhaag-file-focus-outline-color: var(--rhc-color-zwart);
+  --denhaag-file-focus-outline-style: solid;
+  --denhaag-file-focus-outline-width: 2px;
   --denhaag-side-navigation-display: flex;
   --denhaag-side-navigation-flex-direction: column;
   --denhaag-side-navigation-row-gap: var(--rhc-space-300);
