@@ -40,5 +40,8 @@
   --todo-link-focus-outline-color: var(--denhaag-color-ocher-2); /* footer link in adress  */
   --todo-link-focus-outline-style: dashed;
   --todo-link-focus-outline-width: 2px;
-  --todo-link-list-focus-outline-offset: var(--denhaag-focus-border-width);
+  --todo-link-list-focus-outline-offset: 2px;
+  --todo-link-list-focus-outline-width: var(--denhaag-focus-border-width);
+  --todo-link-list-focus-outline-color: var(--denhaag-color-ocher-2);
+  --todo-link-list-focus-outline-style: var(--denhaag-focus-border-style);
 }

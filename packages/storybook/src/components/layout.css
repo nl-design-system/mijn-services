@@ -95,7 +95,7 @@
   --utrecht-focus-outline-color: var(--todo-link-list-focus-outline-color);
   --utrecht-focus-outline-offset: var(--todo-link-list-focus-outline-offset);
   --utrecht-focus-outline-style: var(--todo-link-list-focus-outline-style);
-  --utrecht-focus-outline-width: var(--todo-link-list-foccus-outline-width);
+  --utrecht-focus-outline-width: var(--todo-link-list-focus-outline-width);
 }
 
 .denhaag-side-navigation__link:focus,

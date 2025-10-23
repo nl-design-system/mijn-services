@@ -119,4 +119,7 @@
   --todo-link-list-focus-outline-offset: 2px;
   --todo-link-focus-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
     var(--utrecht-focus-inverse-outline-color, transparent);
+  --todo-link-list-focus-outline-color: var(--rhc-color-zwart);
+  --todo-link-list-focus-outline-style: solid;
+  --todo-link-list-focus-outline-width: 2px;
 }
