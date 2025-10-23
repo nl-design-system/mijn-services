@@ -162,13 +162,13 @@ const TemplatePage = ({
           </Paragraph>
           <section>
             <Heading level={2}>Wat moet ik regelen</Heading>
-            <ActionSingle link={'#'} labels={labels}>
+            <ActionSingle className={'todo-action--single'} link={'#'} labels={labels}>
               <strong>Geef informatie voor uw aanvraag subsidie geluidisolatie</strong>
             </ActionSingle>
-            <ActionSingle link={'#'} labels={labels}>
+            <ActionSingle className={'todo-action--single'} link={'#'} labels={labels}>
               <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
             </ActionSingle>
-            <ActionSingle link={'#'} labels={labels}>
+            <ActionSingle className={'todo-action--single'} link={'#'} labels={labels}>
               <strong>Verleng uw identiteitskaart</strong>
             </ActionSingle>
           </section>

@@ -9,6 +9,9 @@
   --utrecht-alert-margin-block-end: var(--basis-space-block-3xl);
   --utrecht-page-header-border-block-end-color: var(--basis-color-accent-1-color-default);
   --utrecht-page-header-border-block-end-width: 2px;
+  --utrecht-focus-outline-color: #0b0c0c;
+  --utrecht-focus-outline-style: dashed;
+  --utrecht-focus-outline-width: 2px;
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
@@ -21,6 +24,10 @@
   --ams-grid-wide-padding-inline: var(--basis-space-block-xl);
 
   /* Den Haag component tokens */
+  --denhaag-focus-border: 2px dashed #0b0c0c;
+  --denhaag-file-focus-outline-color: #0b0c0c;
+  --denhaag-file-focus-outline-style: dashed;
+  --denhaag-file-focus-outline-width: 2px;
   --denhaag-side-navigation-display: flex;
   --denhaag-side-navigation-mobile-display: var(--denhaag-side-navigation-display);
   --denhaag-side-navigation-flex-direction: column;
@@ -67,12 +74,26 @@
   --todo-page-footer-heading-color: var(--basis-color-default-inverse-color-document);
   --todo-page-footer-heading-font-family: var(--basis-text-font-family-default);
   --todo-page-footer-color: var(--basis-color-default-inverse-color-document);
-  --todo-page-footer-focus-color: var(--basis-color-highlight-text-1);
+  --todo-page-footer-focus-color: #0b0c0c;
+  --todo-side-navigation-focus-background-color: var(--basis-focus-background-color);
   --todo-skip-link-focus-padding-inline-end: var(--basis-space-inline-xl);
   --todo-skip-link-focus-padding-inline-start: var(--basis-space-inline-xl);
   --todo-skip-link-focus-outline-style: dashed;
-  --todo-skip-link-focus-outline-color: var(--basis-color-highlight-text-1);
+  --todo-skip-link-focus-outline-color: #0b0c0c;
   --todo-skip-link-focus-outline-width: 2px;
   --todo-skip-link-focus-outline-offset: -0.125rem;
-  --todo-skip-link-border-radius: 5px;
+  --todo-action--single-focus-background-color: var(--utrecht-link-focus-background-color);
+  --todo-link-focus-background-color: var(--utrecht-link-focus-background-color);
+  --todo-link-focus-outline-color: white;
+  --todo-link-focus-outline-style: dashed;
+  --todo-link-focus-outline-width: 2px;
+  --todo-link-focus-text-decoration: none;
+  --todo-link-focus-color: #0b0c0c;
+  --todo-link-list-focus-outline-style: dashed;
+  --todo-link-list-foccus-outline-width: 2px;
+  --todo-link-list-focus-outline-color: white;
+  --todo-breadcrumb-nav-focus-outline-color: #0b0c0c;
+  --todo-breadcrumb-nav-focus-outline-style: dashed;
+  --todo-breadcrumb-nav-focus-outline-width: 2px;
+  --todo-breadcrumb-nav-focus-border-radius: 2%;
 }

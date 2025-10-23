@@ -61,7 +61,6 @@
 .todo-skip-link:focus,
 .todo-skip-link:focus-visible {
   /* refactor once it's supported in nl candidate */
-  border-radius: var(--todo-skip-link-border-radius);
   outline-color: var(--todo-skip-link-focus-outline-color);
   outline-offset: var(--todo-skip-link-focus-outline-offset);
   outline-style: var(--todo-skip-link-focus-outline-style);
@@ -70,21 +69,39 @@
   padding-inline-start: var(--todo-skip-link-focus-padding-inline-start);
 }
 
+.todo-side-navigation-link {
+  background-color: var(--todo-side-navigation-focus-background-color) !important;
+}
+
 .todo-link:focus,
 .todo-link:focus-visible {
   /* refactor once it's supported in nl candidate */
+  background-color: var(--todo-link-focus-background-color);
   box-shadow: var(--todo-link-focus-box-shadow);
-  color: var(--todo-page-footer-color);
+  color: var(--todo-page-footer-focus-color) !important;
   outline-color: var(--todo-link-focus-outline-color);
   outline-offset: var(--todo-link-focus-outline-offset);
   outline-style: var(--todo-link-focus-outline-style);
   outline-width: var(--todo-link-focus-outline-width);
+  text-decoration: var(--todo-link-focus-text-decoration) !important;
+}
+
+.todo-action--single:focus-visible {
+  background-color: var(--todo-action--single-focus-background-color);
 }
 
 .todo-link-list {
   --utrecht-link-focus-color: var(--todo-page-footer-focus-color);
-  --utrecht-focus-outline-color: var(--todo-link-focus-outline-color);
+  --utrecht-focus-outline-color: var(--todo-link-list-focus-outline-color);
   --utrecht-focus-outline-offset: var(--todo-link-list-focus-outline-offset);
+  --utrecht-focus-outline-style: var(--todo-link-list-focus-outline-style);
+  --utrecht-focus-outline-width: var(--todo-link-list-foccus-outline-width);
+}
+
+.denhaag-side-navigation__link:focus,
+.denhaag-side-navigation__link:focus-visible {
+  background-color: var(--todo-link-focus-background-color);
+  color: var(--todo-link-focus-color);
 }
 
 @media screen and (width <= 1087px) {
