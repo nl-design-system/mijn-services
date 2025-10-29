@@ -25,6 +25,7 @@
     "@chromatic-com/storybook": "3.2.7",
     "@gemeente-denhaag/action": "4.0.0",
     "@gemeente-denhaag/card": "5.0.1",
+    "@gemeente-denhaag/descriptionlist": "4.0.2",
     "@gemeente-denhaag/design-tokens-components": "5.1.0",
     "@gemeente-denhaag/file": "2.1.0",
     "@gemeente-denhaag/process-steps": "4.2.0",

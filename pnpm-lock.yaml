@@ -108,6 +108,9 @@ importers:
       '@gemeente-denhaag/card':
         specifier: 5.0.1
         version: 5.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@gemeente-denhaag/descriptionlist':
+        specifier: 4.0.2
+        version: 4.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/design-tokens-components':
         specifier: 5.1.0
         version: 5.1.0
@@ -1435,6 +1438,12 @@ packages:
 
   '@gemeente-denhaag/card@5.0.1':
     resolution: {integrity: sha512-xBOKSEdQqxtxfr41vzOxTKqm30Bh26ngUKjSzeiwgDOWTmZP7F230JllQ8s+NYYiPqm7jO07CqBfwea2myihjg==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
+  '@gemeente-denhaag/descriptionlist@4.0.2':
+    resolution: {integrity: sha512-PRnPuMnTn63zpYSa5aK+QCxjkRr8i9rUFBP31j/8kXGSifBx10lb6GIlAqPUXW/9IUejBc5ntFkXy6beQdEP9g==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -8889,6 +8898,12 @@ snapshots:
       '@gemeente-denhaag/link': 4.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/paragraph': 2.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gemeente-denhaag/utils': 3.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@gemeente-denhaag/descriptionlist@4.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
       clsx: 2.1.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
