@@ -103,23 +103,23 @@
   --todo-page-footer-focus-color: var(--utrecht-page-footer-color);
   --todo-page-footer-heading-font-family: var(--nl-heading-level-4-font-family);
   --todo-page-footer-heading-color: white;
+  --todo-link-footer-text-decoration-line: none;
   --todo-page-header-logo-color: var(--rhc-logo-image-color);
-
-  /* Focus Ring tokens */
   --todo-skip-link-focus-outline-color: var(--rhc-color-zwart);
   --todo-skip-link-focus-outline-style: solid;
   --todo-skip-link-focus-outline-width: 2px;
   --todo-skip-link-focus-outline-offset: -0.125rem;
   --todo-skip-link-focus-padding-inline-end: 10px;
   --todo-skip-link-focus-padding-inline-start: 10px;
-  --todo-link-focus-outline-color: var(--rhc-color-zwart);
-  --todo-link-focus-outline-style: solid;
-  --todo-link-focus-outline-width: 2px;
-  --todo-link-focus-outline-offset: 2px;
-  --todo-link-list-focus-outline-offset: 2px;
-  --todo-link-focus-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+  --todo-link-footer-focus-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
     var(--utrecht-focus-inverse-outline-color, transparent);
-  --todo-link-list-focus-outline-color: var(--rhc-color-zwart);
-  --todo-link-list-focus-outline-style: solid;
-  --todo-link-list-focus-outline-width: 2px;
+  --todo-link-footer-focus-outline-color: var(--rhc-color-zwart);
+  --todo-link-footer-focus-outline-offset: 2px;
+  --todo-link-footer-focus-outline-style: solid;
+  --todo-link-footer-focus-outline-width: 2px;
+  --todo-link-footer-focus-text-decoration-line: none;
+  --todo-link-list-footer-focus-outline-color: var(--rhc-color-zwart);
+  --todo-link-list-footer-focus-outline-offset: 2px;
+  --todo-link-list-footer-focus-outline-style: solid;
+  --todo-link-list-footer-focus-outline-width: 2px;
 }

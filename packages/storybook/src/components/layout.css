@@ -20,26 +20,6 @@
   color: var(--todo-page-header-logo-color);
 }
 
-.todo-page-footer__spotlight {
-  --nl-heading-level-4-color: var(--todo-page-footer-heading-color);
-  --nl-heading-level-4-margin-block-end: 8px;
-  --nl-heading-level-4-font-family: var(--todo-page-footer-heading-font-family);
-  --nl-link-color: var(--todo-page-footer-color);
-  --utrecht-link-color: var(--todo-page-footer-color);
-  --nl-link-hover-color: var(--todo-page-footer-color);
-  --utrecht-link-hover-color: var(--todo-page-footer-color);
-
-  color: var(--todo-page-footer-color);
-  padding-block-end: 3em;
-  padding-block-start: 2em;
-}
-
-.todo-page-footer__grid {
-  margin-inline-end: auto;
-  margin-inline-start: auto;
-  max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
-}
-
 .todo-address {
   font-style: inherit;
   margin-block: 0;
@@ -58,7 +38,6 @@
   inline-size: 328px;
 }
 
-.todo-skip-link:focus,
 .todo-skip-link:focus-visible {
   /* refactor once it's supported in nl candidate */
   outline-color: var(--todo-skip-link-focus-outline-color);
@@ -69,39 +48,56 @@
   padding-inline-start: var(--todo-skip-link-focus-padding-inline-start);
 }
 
-.todo-side-navigation-link {
-  background-color: var(--todo-side-navigation-focus-background-color) !important;
-}
-
-.todo-link:focus,
-.todo-link:focus-visible {
-  /* refactor once it's supported in nl candidate */
+.denhaag-side-navigation__link:focus-visible {
   background-color: var(--todo-link-focus-background-color);
-  box-shadow: var(--todo-link-focus-box-shadow);
-  color: var(--todo-page-footer-focus-color) !important;
-  outline-color: var(--todo-link-focus-outline-color);
-  outline-offset: var(--todo-link-focus-outline-offset);
-  outline-style: var(--todo-link-focus-outline-style);
-  outline-width: var(--todo-link-focus-outline-width);
-  text-decoration: var(--todo-link-focus-text-decoration) !important;
+  color: var(--todo-link-focus-color);
 }
 
 .todo-action--single:focus-visible {
   background-color: var(--todo-action--single-focus-background-color);
 }
 
-.todo-link-list {
-  --utrecht-link-focus-color: var(--todo-page-footer-focus-color);
-  --utrecht-focus-outline-color: var(--todo-link-list-focus-outline-color);
-  --utrecht-focus-outline-offset: var(--todo-link-list-focus-outline-offset);
-  --utrecht-focus-outline-style: var(--todo-link-list-focus-outline-style);
-  --utrecht-focus-outline-width: var(--todo-link-list-focus-outline-width);
+.todo-page-footer__grid {
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
 }
 
-.denhaag-side-navigation__link:focus,
-.denhaag-side-navigation__link:focus-visible {
-  background-color: var(--todo-link-focus-background-color);
-  color: var(--todo-link-focus-color);
+.todo-page-footer__spotlight {
+  --nl-heading-level-4-color: var(--todo-page-footer-heading-color);
+  --nl-heading-level-4-margin-block-end: 8px;
+  --nl-heading-level-4-font-family: var(--todo-page-footer-heading-font-family);
+  --nl-link-color: var(--todo-page-footer-color);
+  --utrecht-link-color: var(--todo-page-footer-color);
+  --nl-link-hover-color: var(--todo-page-footer-color);
+  --utrecht-link-hover-color: var(--todo-page-footer-color);
+  --nl-link-text-decoration-line: var(--todo-link-footer-text-decoration-line);
+
+  color: var(--todo-page-footer-color);
+  padding-block-end: 3em;
+  padding-block-start: 2em;
+}
+
+.todo-link--footer:focus-visible {
+  /* refactor once it's supported in nl candidate */
+
+  --nl-link-color: var(--todo-page-footer-focus-color);
+  --nl-link-text-decoration-line: var(--todo-link-footer-focus-text-decoration-line);
+
+  background-color: var(--todo-link-footer-focus-background-color);
+  box-shadow: var(--todo-link-footer-focus-box-shadow);
+  outline-color: var(--todo-link-footer-focus-outline-color);
+  outline-offset: var(--todo-link-footer-focus-outline-offset);
+  outline-style: var(--todo-link-footer-focus-outline-style);
+  outline-width: var(--todo-link-footer-focus-outline-width);
+}
+
+.todo-link-list--footer {
+  --utrecht-link-focus-color: var(--todo-page-footer-focus-color);
+  --utrecht-focus-outline-color: var(--todo-link-list-footer-focus-outline-color);
+  --utrecht-focus-outline-offset: var(--todo-link-list-footer-focus-outline-offset);
+  --utrecht-focus-outline-style: var(--todo-link-list-footer-focus-outline-style);
+  --utrecht-focus-outline-width: var(--todo-link-list-footer-focus-outline-width);
 }
 
 @media screen and (width <= 1087px) {

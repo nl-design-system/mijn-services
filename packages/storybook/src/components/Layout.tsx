@@ -39,11 +39,11 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
               </Heading>
               <address className="todo-address">
                 Bel{' '}
-                <Link className="todo-link" href="tel:453453">
+                <Link className="todo-link--footer" href="tel:453453">
                   453 453
                 </Link>{' '}
                 (maandag tot en met vrijdag van 09.00 tot 17.00 uur) of stuur een e-mail naar{' '}
-                <Link className="todo-link" href="mailto:vragen@gemeentevoorbeeld.nl">
+                <Link className="todo-link--footer" href="mailto:vragen@gemeentevoorbeeld.nl">
                   <span className="utrecht-url-data">vragen@gemeentevoorbeeld.nl</span>
                 </Link>
                 {'.'}
@@ -54,7 +54,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
               <Heading level={2} appearance="level-4">
                 Meer weten
               </Heading>
-              <LinkList className="todo-link-list">
+              <LinkList className="todo-link-list--footer">
                 <LinkListLink href="/">Over gemeente Voorbeeld</LinkListLink>
                 <LinkListLink href="/">Nieuwsbrief</LinkListLink>
                 <LinkListLink href="/">Social Media</LinkListLink>
@@ -66,7 +66,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
               <Heading level={2} appearance="level-4">
                 Over deze site
               </Heading>
-              <LinkList className="todo-link-list">
+              <LinkList className="todo-link-list--footer">
                 <LinkListLink href="/">Gebruikersvoorwaarden</LinkListLink>
                 <LinkListLink href="/">Proclaimer</LinkListLink>
                 <LinkListLink href="/">Cookieverklaring</LinkListLink>

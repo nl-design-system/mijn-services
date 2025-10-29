@@ -8,6 +8,8 @@
   --nl-heading-level-2-margin-block-end: 16px;
   --nl-heading-level-3-margin-block-start: 0;
   --nl-paragraph-margin-block-end: 16px;
+  --nl-skip-link-background-color: var(--denhaag-color-ocher-2);
+  --nl-skip-link-color: var(--denhaag-color-blue-5);
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
@@ -25,23 +27,19 @@
   --todo-page-footer-heading-color: var(--denhaag-footer-heading-color);
   --todo-page-footer-color: white;
   --todo-page-footer-focus-color: white;
-
-  /* Skip Link tokens */
-  --nl-skip-link-background-color: var(--denhaag-color-ocher-2);
-  --nl-skip-link-color: var(--denhaag-color-blue-5);
-
-  /* Focus Ring tokens */
+  --todo-link-footer-text-decoration-line: none;
   --todo-skip-link-focus-outline-color: var(--denhaag-focus-border-color);
   --todo-skip-link-focus-outline-style: var(--denhaag-focus-border-style);
   --todo-skip-link-focus-outline-width: var(--denhaag-focus-border-width);
   --todo-skip-link-focus-outline-offset: -0.125rem;
   --todo-skip-link-focus-padding-inline-end: 10px;
   --todo-skip-link-focus-padding-inline-start: 10px;
-  --todo-link-focus-outline-color: var(--denhaag-color-ocher-2); /* footer link in adress  */
-  --todo-link-focus-outline-style: dashed;
-  --todo-link-focus-outline-width: 2px;
-  --todo-link-list-focus-outline-offset: 2px;
-  --todo-link-list-focus-outline-width: var(--denhaag-focus-border-width);
-  --todo-link-list-focus-outline-color: var(--denhaag-color-ocher-2);
-  --todo-link-list-focus-outline-style: var(--denhaag-focus-border-style);
+  --todo-link-footer-focus-outline-color: var(--denhaag-color-ocher-2); /* footer link in adress  */
+  --todo-link-footer-focus-outline-style: dashed;
+  --todo-link-footer-focus-outline-width: 2px;
+  --todo-link-list-footer-focus-outline-offset: 2px;
+  --todo-link-list-footer-focus-outline-width: var(--denhaag-focus-border-width);
+  --todo-link-list-footer-focus-outline-color: var(--denhaag-color-ocher-2);
+  --todo-link-list-footer-focus-outline-style: var(--denhaag-focus-border-style);
+  --todo-link-footer-focus-text-decoration-line: none;
 }
