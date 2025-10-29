@@ -1,5 +1,6 @@
 import { Grid } from '@amsterdam/design-system-react';
 import { ActionMulti } from '@gemeente-denhaag/action';
+import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
 import { File } from '@gemeente-denhaag/file';
 import { Status } from '@gemeente-denhaag/process-steps';
 import {
@@ -157,6 +158,19 @@ const TemplatePage = ({
           </ActionMulti>
           <Heading level={2}>Status</Heading>
           {timeline}
+          <Heading level={2}>Details</Heading>
+          <DescriptionList
+            items={[
+              {
+                title: 'Datum aanvraag',
+                detail: '17 oktober 2022',
+              },
+              {
+                title: 'Zaaknummer',
+                detail: '11234899818',
+              },
+            ]}
+          />
           <Heading level={2}>Documenten</Heading>
           <File
             className={'todo-file-component'}
