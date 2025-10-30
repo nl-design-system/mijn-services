@@ -9,6 +9,9 @@
   --utrecht-alert-margin-block-end: var(--basis-space-block-3xl);
   --utrecht-page-header-border-block-end-color: var(--basis-color-accent-1-color-default);
   --utrecht-page-header-border-block-end-width: 2px;
+  --utrecht-focus-outline-color: #0b0c0c;
+  --utrecht-focus-outline-style: dashed;
+  --utrecht-focus-outline-width: 2px;
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
@@ -21,6 +24,10 @@
   --ams-grid-wide-padding-inline: var(--basis-space-block-xl);
 
   /* Den Haag component tokens */
+  --denhaag-focus-border: 2px dashed #0b0c0c;
+  --denhaag-file-focus-outline-color: #0b0c0c;
+  --denhaag-file-focus-outline-style: dashed;
+  --denhaag-file-focus-outline-width: 2px;
   --denhaag-side-navigation-display: flex;
   --denhaag-side-navigation-mobile-display: var(--denhaag-side-navigation-display);
   --denhaag-side-navigation-flex-direction: column;
@@ -67,4 +74,23 @@
   --todo-page-footer-heading-color: var(--basis-color-default-inverse-color-document);
   --todo-page-footer-heading-font-family: var(--basis-text-font-family-default);
   --todo-page-footer-color: var(--basis-color-default-inverse-color-document);
+  --todo-page-footer-focus-color: #0b0c0c;
+  --todo-link-footer-text-decoration-line: none;
+  --todo-side-navigation-focus-background-color: var(--basis-focus-background-color);
+  --todo-skip-link-focus-padding-inline-end: var(--basis-space-inline-xl);
+  --todo-skip-link-focus-padding-inline-start: var(--basis-space-inline-xl);
+  --todo-skip-link-focus-outline-style: dashed;
+  --todo-skip-link-focus-outline-color: #0b0c0c;
+  --todo-skip-link-focus-outline-width: 2px;
+  --todo-skip-link-focus-outline-offset: -0.125rem;
+  --todo-action--single-focus-background-color: var(--utrecht-link-focus-background-color);
+  --todo-link-footer-focus-background-color: var(--utrecht-link-focus-background-color);
+  --todo-link-footer-focus-outline-color: white;
+  --todo-link-footer-focus-outline-style: dashed;
+  --todo-link-footer-focus-outline-width: 2px;
+  --todo-link-footer-focus-text-decoration-line: none;
+  --todo-link-footer-focus-color: #0b0c0c;
+  --todo-link-list-footer-focus-outline-style: dashed;
+  --todo-link-list-footer-focus-outline-width: 2px;
+  --todo-link-list-footer-focus-outline-color: white;
 }
