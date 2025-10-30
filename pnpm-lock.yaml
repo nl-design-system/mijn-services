@@ -136,8 +136,8 @@ importers:
         specifier: 1.1.5
         version: 1.1.5(@babel/runtime@7.27.4)(react@18.3.1)
       '@nl-design-system-unstable/voorbeeld-design-tokens':
-        specifier: 5.1.0
-        version: 5.1.0
+        specifier: 6.2.0
+        version: 6.2.0
       '@rijkshuisstijl-community/design-tokens':
         specifier: 6.0.0
         version: 6.0.0
@@ -1677,8 +1677,8 @@ packages:
       '@babel/runtime': ^7
       react: ^18
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0':
-    resolution: {integrity: sha512-Kt9V/783qzbpSPzxKk7lFEzGwnUEOWYAsqo1TDLQmUcTZY/91x+mWU0hHpCbr0Q0kL3imQPaBHBkn352s6XioQ==}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@6.2.0':
+    resolution: {integrity: sha512-qAWMqpD7UNgL2H5or48rycoVax55dgK4nHTqT8gnpxqJa6qZBJ+k++EpTh3mSR66xL6rb8Wx5SOZR8xJ8V29fg==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -9322,7 +9322,7 @@ snapshots:
       clsx: 2.1.1
       react: 18.3.1
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@5.1.0': {}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@6.2.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
