@@ -69,6 +69,33 @@
   --denhaag-case-card-subtitle-color: var(--basis-color-default-color-document);
   --denhaag-case-card-subtitle-font-family: revert;
 
+  /* Rijkhuisstijl Community component tokens*/
+
+  // --rhc-navigation-list-item-background-color:; niet nodig denk ik
+  // --rhc-navigation-list-item-border-color:; deze moet lichtgrijs worden - welke kleur precies? kan dit vanuit Figma niet duidelijk zien
+  // --rhc-navigation-list-item-border-width:; welke width precies? kan dit vanuit Figma niet duidelijk zien
+  // --rhc-navigation-list-item-color: var(--basis-color-accent-1-color-default); | deze maakt de description paars, niet het label?
+  --rhc-navigation-list-item-column-gap: 1em;
+  --rhc-navigation-list-item-min-height: 48px;
+  // --rhc-navigation-list-item-padding-block:;
+  // --rhc-navigation-list-item-padding-inline:;
+  // hoe pas ik het font aan voor het label (die moet in header font zijn volgens Figma)
+
+  // state tokens? (hover, focus etc)
+  //
+
+  --rhc-navigation-list-icon-color: white;
+  --rhc-navigation-list-icon-background-color: var(--basis-color-accent-1-color-default);
+  --rhc-navigation-list-item-icon-size: 24px;
+  --rhc-navigation-list-icon-border-radius: 999px;
+  --rhc-navigation-list-icon-color: white;
+  --rhc-navigation-list-item-icon-size: 24px;
+  --rhc-navigation-list-item-icon-padding-block: 0.5rem;
+  --rhc-navigation-list-item-icon-padding-inline: 0.5rem;
+  --rhc-navigation-list-item-label-font-size: 1.875rem;
+  --rhc-navigation-list-item-label-font-weight: 700;
+  --rhc-navigation-list-item-label-line-height: 150%;
+
   /* Custom component tokens */
   --todo-page-header-logo-color: var(--basis-color-accent-1-color-default);
   --todo-page-footer-heading-color: var(--basis-color-default-inverse-color-document);

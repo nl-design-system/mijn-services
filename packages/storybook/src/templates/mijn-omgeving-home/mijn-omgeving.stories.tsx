@@ -10,8 +10,8 @@ import {
 } from '@gemeente-denhaag/side-navigation';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
-import '@rijkshuisstijl-community/components-css/dist/index.css';
-import { NavigationList, NavigationListItem } from '@rijkshuisstijl-community/components-react';
+// import '@rijkshuisstijl-community/components-css/src/navigation-list/index.scss';
+// import { NavigationList, NavigationListItem } from '@rijkshuisstijl-community/components-react';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -181,7 +181,7 @@ const TemplatePage = ({
               <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-108422'} />
             </div>
           </section>
-          <section>
+          {/* <section>
             <Heading level={2}>Heading voor themas</Heading>
             <NavigationList>
               {' '}
@@ -205,7 +205,7 @@ const TemplatePage = ({
                 label="Erfpacht"
               />
             </NavigationList>
-          </section>
+          </section> */}
         </main>
       </Grid.Cell>
     </Grid>
