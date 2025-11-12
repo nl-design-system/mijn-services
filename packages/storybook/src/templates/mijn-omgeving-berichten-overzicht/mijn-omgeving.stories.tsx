@@ -9,6 +9,7 @@ import {
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
 import { Meta, StoryObj } from '@storybook/react-vite';
+import { Link } from '@nl-design-system-candidate/link-react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '../../themes/index.scss';
@@ -28,6 +29,14 @@ import {
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
   Icon,
+  PreserveData,
+  Table,
+  TableBody,
+  TableCell,
+  // TableFooter,
+  TableHeader,
+  TableHeaderCell,
+  TableRow,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
@@ -136,6 +145,56 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <main id="main">
           <section>
             <Heading level={1}>Mijn Berichten</Heading>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHeaderCell scope="col"> Onderwerp </TableHeaderCell>
+                  <TableHeaderCell scope="col"> Datum </TableHeaderCell>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>
+                    🔴 <Link href="#">Betalen van uw parkeerbon</Link>
+                  </TableCell>
+                  <TableCell>
+                    <PreserveData>16-3-2025</PreserveData>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    🔴 <Link href="#"> Tip: Recht op subsidie </Link>
+                  </TableCell>
+                  <TableCell>
+                    <PreserveData>14-1-2025</PreserveData>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    <Link href="#">Informatie geven over uw aanvraag subsidie geluidsisolatie </Link>
+                  </TableCell>
+                  <TableCell>
+                    <PreserveData>13-6-2024</PreserveData>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    <Link href="#">Uw aanvraag Ooievaarspas in behandeling genomen </Link>
+                  </TableCell>
+                  <TableCell>
+                    <PreserveData>12-5-2024</PreserveData>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    <Link href="#">Tip: Betaal bedragen met automatische incasso</Link>
+                  </TableCell>
+                  <TableCell>
+                    <PreserveData>1-5-2024</PreserveData>
+                  </TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </section>
         </main>
       </Grid.Cell>
