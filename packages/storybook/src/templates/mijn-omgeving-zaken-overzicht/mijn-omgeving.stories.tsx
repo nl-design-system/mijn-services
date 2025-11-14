@@ -8,7 +8,7 @@ import {
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '../../themes/index.scss';

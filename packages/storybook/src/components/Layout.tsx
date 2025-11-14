@@ -5,7 +5,6 @@ import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
 import { SkipLink } from '@nl-design-system-candidate/skip-link-react/css';
 import { LinkList, LinkListLink, PageContent, PageHeader } from '@utrecht/component-library-react/dist/css-module';
-import { Root } from '@utrecht/root-react/dist/css';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 import './layout.css';
 
@@ -16,7 +15,7 @@ interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> 
 
 export const Layout = ({ logo, children, className, footerLogo, ...props }: LayoutProps) => {
   return (
-    <Root className={className} {...props}>
+    <div className={`utrecht-root ${className}`} {...props}>
       <PageHeader className="todo-page-header">
         <SkipLink className="todo-skip-link" href="#main">
           Direct naar de hoofdinhoud
@@ -75,6 +74,6 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
           </Grid>
         </PageFooter.Spotlight>
       </PageFooter>
-    </Root>
+    </div>
   );
 };
