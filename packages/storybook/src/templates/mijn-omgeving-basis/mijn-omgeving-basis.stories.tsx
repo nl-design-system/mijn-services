@@ -145,6 +145,9 @@ const TemplatePage = ({
 );
 
 export const Default: Story = {
+  parameters: {
+    theme: 'voorbeeld-theme',
+  },
   render: () => (
     <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />
   ),

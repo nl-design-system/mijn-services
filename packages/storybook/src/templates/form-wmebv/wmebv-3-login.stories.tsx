@@ -60,11 +60,17 @@ const TemplatePage = ({
 );
 
 export const Default: Story = {
+  parameters: {
+    theme: 'voorbeeld-theme',
+  },
   render: () => (
     <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />
   ),
 };
 
 export const DenHaagTheme: Story = {
+  parameters: {
+    theme: 'denhaag-theme',
+  },
   render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
 };
