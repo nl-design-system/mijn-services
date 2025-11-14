@@ -1,4 +1,4 @@
-import type { Decorator, Preview } from '@storybook/react';
+import type { Preview } from '@storybook/react-vite';
 import '@utrecht/body-css';
 import '@utrecht/root-css';
 import { useEffect } from 'react';
@@ -11,7 +11,7 @@ interface StoryArgs {
   theme?: string;
 }
 
-const withTheme: Decorator = (Story, { parameters, args }) => {
+const withTheme = (Story: any, { parameters, args }: { parameters: any; args: any }) => {
   const theme = (parameters as StoryParameters).theme || (args as StoryArgs).theme;
 
   useEffect(() => {

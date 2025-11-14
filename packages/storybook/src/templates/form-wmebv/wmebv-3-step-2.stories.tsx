@@ -34,17 +34,9 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const TemplatePage = ({
-  logo,
-  theme,
-  footerLogo,
-}: {
-  logo?: ReactElement;
-  theme: string;
-  footerLogo?: ReactElement;
-}) => (
+const TemplatePage = ({ logo, footerLogo }: { logo?: ReactElement; footerLogo?: ReactElement }) => (
   <>
-    <Layout logo={logo} className={theme} footerLogo={footerLogo}>
+    <Layout logo={logo} footerLogo={footerLogo}>
       <Link href="/#" className="voorbeeld-back-link">
         <Icon>
           <IconArrowLeft />
@@ -93,21 +85,18 @@ export const Default: Story = {
   parameters: {
     theme: 'voorbeeld-theme',
   },
-  render: () => (
-    <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />
-  ),
+  render: () => <TemplatePage logo={<PageHeaderLogo />} footerLogo={<VoorbeeldFooterLogo />} />,
 };
 
 export const DenHaagTheme: Story = {
   parameters: {
     theme: 'denhaag-theme',
   },
-  render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
+  render: () => <TemplatePage logo={<DenHaagLogo />} />,
 };
-
 export const UtrechtTheme: Story = {
   parameters: {
     theme: 'utrecht-theme',
   },
-  render: () => <TemplatePage logo={<LogoImage />} theme={'utrecht-theme'} />,
+  render: () => <TemplatePage logo={<LogoImage />} />,
 };

@@ -50,16 +50,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const TemplatePage = ({
-  logo,
-  theme,
-  footerLogo,
-}: {
-  logo: ReactElement;
-  theme: string;
-  footerLogo?: ReactElement;
-}) => (
-  <Layout logo={logo} className={theme} footerLogo={footerLogo}>
+const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: ReactElement }) => (
+  <Layout logo={logo} footerLogo={footerLogo}>
     <Grid paddingTop={'x-large'}>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
         <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
@@ -189,25 +181,22 @@ export const Default: Story = {
   parameters: {
     theme: 'voorbeeld-theme',
   },
-  render: () => (
-    <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />
-  ),
+  render: () => <TemplatePage logo={<PageHeaderLogo />} footerLogo={<VoorbeeldFooterLogo />} />,
 };
 
 export const DenHaagTheme: Story = {
   parameters: {
     theme: 'denhaag-theme',
   },
-  render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
+  render: () => <TemplatePage logo={<DenHaagLogo />} />,
 };
 
 export const RHCTheme: Story = {
   parameters: {
     theme: 'rhc-theme',
   },
-  render: () => <TemplatePage logo={<PageHeaderLogo />} theme={'rhc-theme'} />,
+  render: () => <TemplatePage logo={<PageHeaderLogo />} />,
 };
-
 const labels = {
   today: 'vandaag',
   yesterday: 'gisteren',
