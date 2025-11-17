@@ -6,9 +6,7 @@ const config: StorybookConfig = {
     '@chromatic-com/storybook',
     '@storybook/addon-a11y',
     '@storybook/addon-docs',
-    '@storybook/addon-viewport',
     '@whitespace/storybook-addon-html',
-    '../addons/user-theme',
   ],
   framework: {
     name: '@storybook/react-vite',
@@ -17,9 +15,6 @@ const config: StorybookConfig = {
   core: {
     disableTelemetry: true,
     disableWhatsNewNotifications: true,
-  },
-  docs: {
-    autodocs: 'tag',
   },
 };
 

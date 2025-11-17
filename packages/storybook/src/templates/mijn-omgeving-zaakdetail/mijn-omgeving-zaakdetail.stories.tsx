@@ -10,7 +10,7 @@ import {
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '../../themes/index.scss';
@@ -48,16 +48,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const TemplatePage = ({
-  logo,
-  theme,
-  footerLogo,
-}: {
-  logo: ReactElement;
-  theme: string;
-  footerLogo?: ReactElement;
-}) => (
-  <Layout logo={logo} className={theme} footerLogo={footerLogo}>
+const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: ReactElement }) => (
+  <Layout logo={logo} footerLogo={footerLogo}>
     <Grid paddingTop={'x-large'}>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
         <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
@@ -185,15 +177,18 @@ const TemplatePage = ({
 );
 
 export const Default: Story = {
-  render: () => (
-    <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />
-  ),
+  parameters: {
+    theme: 'voorbeeld-theme',
+  },
+  render: () => <TemplatePage logo={<PageHeaderLogo />} footerLogo={<VoorbeeldFooterLogo />} />,
 };
 
 export const DenHaagTheme: Story = {
-  render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
+  parameters: {
+    theme: 'denhaag-theme',
+  },
+  render: () => <TemplatePage logo={<DenHaagLogo />} />,
 };
-
 const labels = {
   today: 'vandaag',
   yesterday: 'gisteren',

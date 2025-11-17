@@ -68,5 +68,6 @@
       },
       "plugins": ["@typescript-eslint"]
     }
-  ]
+  ],
+  "extends": ["plugin:storybook/recommended"]
 }

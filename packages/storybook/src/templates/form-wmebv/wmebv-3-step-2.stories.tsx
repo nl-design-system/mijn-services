@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '@utrecht/design-tokens/dist/theme.css';
@@ -34,17 +34,9 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const TemplatePage = ({
-  logo,
-  theme,
-  footerLogo,
-}: {
-  logo?: ReactElement;
-  theme: string;
-  footerLogo?: ReactElement;
-}) => (
+const TemplatePage = ({ logo, footerLogo }: { logo?: ReactElement; footerLogo?: ReactElement }) => (
   <>
-    <Layout logo={logo} className={theme} footerLogo={footerLogo}>
+    <Layout logo={logo} footerLogo={footerLogo}>
       <Link href="/#" className="voorbeeld-back-link">
         <Icon>
           <IconArrowLeft />
@@ -90,15 +82,21 @@ const TemplatePage = ({
 );
 
 export const Default: Story = {
-  render: () => (
-    <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />
-  ),
+  parameters: {
+    theme: 'voorbeeld-theme',
+  },
+  render: () => <TemplatePage logo={<PageHeaderLogo />} footerLogo={<VoorbeeldFooterLogo />} />,
 };
 
 export const DenHaagTheme: Story = {
-  render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
+  parameters: {
+    theme: 'denhaag-theme',
+  },
+  render: () => <TemplatePage logo={<DenHaagLogo />} />,
 };
-
 export const UtrechtTheme: Story = {
-  render: () => <TemplatePage logo={<LogoImage />} theme={'utrecht-theme'} />,
+  parameters: {
+    theme: 'utrecht-theme',
+  },
+  render: () => <TemplatePage logo={<LogoImage />} />,
 };
