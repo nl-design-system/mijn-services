@@ -1,5 +1,6 @@
 import '@amsterdam/design-system-css/dist/grid/grid.css';
 import { Grid } from '@amsterdam/design-system-react';
+import { Action } from '@gemeente-denhaag/action';
 import {
   SideNavigationBase,
   SideNavigationItem,
@@ -9,7 +10,6 @@ import {
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
 import { Meta, StoryObj } from '@storybook/react-vite';
-import { Link } from '@nl-design-system-candidate/link-react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '../../themes/index.scss';
@@ -29,18 +29,62 @@ import {
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
   Icon,
-  PreserveData,
-  Table,
-  TableBody,
-  TableCell,
-  // TableFooter,
-  TableHeader,
-  TableHeaderCell,
-  TableRow,
 } from '@utrecht/component-library-react/dist/css-module';
+import { UtrechtPagination } from '@utrecht/web-component-library-react';
+import '@utrecht/web-component-library-stencil';
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
+
+const messages = [
+  {
+    new: true,
+    title: '🔴 Betalen van uw parkeerbon',
+    dateTime: '2023-03-16T06:41:34.427Z',
+    link: '#example',
+  },
+  {
+    new: true,
+    title: '🔴 Tip: Recht op subsidie',
+    dateTime: '2023-01-14T19:47:36.593Z',
+    link: '#example',
+  },
+  {
+    title: 'Informatie geven over uw aanvraag subsidie geluidsisolatie',
+    dateTime: '2024-06-13T19:47:36.593Z',
+    link: '#example',
+  },
+  {
+    title: 'Uw aanvraag Ooievaarspas in behandeling genomen',
+    dateTime: '2024-05-12T19:47:36.593Z',
+    link: '#example',
+  },
+  {
+    title: 'Informatie geven voor uw aanvraag subsidie geluidsisolatie',
+    dateTime: '2024-06-15T19:47:36.593Z',
+    link: '#example',
+  },
+  {
+    title: 'Tip: Betaal bedragen met automatische incasso',
+    dateTime: '2024-05-01T19:47:36.593Z',
+    link: '#example',
+  },
+  {
+    title: 'Herinnering: Betaling van uw bewoners parkeervergunning',
+    dateTime: '2024-04-03T19:47:36.593Z',
+    link: '#example',
+  },
+  {
+    title: 'Uw paspoort is actief',
+    dateTime: '2024-03-28T19:47:36.593Z',
+    link: '#example',
+  },
+  {
+    title: 'Werkzaamheden gepland in uw buurt',
+    dateTime: '2023-07-06T19:47:36.593Z',
+    link: '#example',
+  },
+];
 
 const meta = {
   title: 'Templates/Mijn Omgeving/Berichten/Overzicht',
@@ -145,56 +189,30 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <main id="main">
           <section>
             <Heading level={1}>Mijn Berichten</Heading>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHeaderCell scope="col"> Onderwerp </TableHeaderCell>
-                  <TableHeaderCell scope="col"> Datum </TableHeaderCell>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                <TableRow>
-                  <TableCell>
-                    🔴 <Link href="#">Betalen van uw parkeerbon</Link>
-                  </TableCell>
-                  <TableCell>
-                    <PreserveData>16-3-2025</PreserveData>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    🔴 <Link href="#"> Tip: Recht op subsidie </Link>
-                  </TableCell>
-                  <TableCell>
-                    <PreserveData>14-1-2025</PreserveData>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    <Link href="#">Informatie geven over uw aanvraag subsidie geluidsisolatie </Link>
-                  </TableCell>
-                  <TableCell>
-                    <PreserveData>13-6-2024</PreserveData>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    <Link href="#">Uw aanvraag Ooievaarspas in behandeling genomen </Link>
-                  </TableCell>
-                  <TableCell>
-                    <PreserveData>12-5-2024</PreserveData>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    <Link href="#">Tip: Betaal bedragen met automatische incasso</Link>
-                  </TableCell>
-                  <TableCell>
-                    <PreserveData>1-5-2024</PreserveData>
-                  </TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
+
+            {messages.map((m) => (
+              <Action key={m.title} link={m.link} dateTime={m.dateTime}>
+                {m.new ? (
+                  <>
+                    <b>{m.title}</b>
+                  </>
+                ) : (
+                  m.title
+                )}
+              </Action>
+            ))}
+
+            <UtrechtPagination
+              currentIndex={3}
+              links={JSON.stringify([
+                { href: '#page1', index: 1 },
+                { href: '#page2', index: 2 },
+                { href: '#page3', index: 3, current: true },
+                { href: '#page4', index: 4 },
+              ])}
+              prev={JSON.stringify({ href: '#page2', index: 2 })}
+              next={JSON.stringify({ href: '#page4', index: 4 })}
+            ></UtrechtPagination>
           </section>
         </main>
       </Grid.Cell>
