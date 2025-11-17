@@ -183,6 +183,12 @@ importers:
       '@utrecht/root-css':
         specifier: 2.0.1
         version: 2.0.1
+      '@utrecht/web-component-library-react':
+        specifier: 3.0.12
+        version: 3.0.12(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@utrecht/web-component-library-stencil':
+        specifier: 3.7.0
+        version: 3.7.0
       '@whitespace/storybook-addon-html':
         specifier: 8.0.2
         version: 8.0.2(storybook@10.0.7(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.2.2(@types/node@24.10.1)(sass-embedded@1.93.3)(sass@1.93.3)(yaml@2.8.1)))
@@ -1335,6 +1341,11 @@ packages:
   '@sindresorhus/merge-streams@4.0.0':
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
+
+  '@stencil/core@4.18.3':
+    resolution: {integrity: sha512-8yoG5AFQYEPocVtuoc5kvRS0Hku0MoDWDUpADRaXPVHsOFLmxR16LJENj25ucCz5GEfeTGQ/tCE8JAypPmr/fQ==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
 
   '@storybook/addon-a11y@10.0.7':
     resolution: {integrity: sha512-JsYPpZ/n67/2bI1XJeyrAWHHQkHemPkPHjCA0tAUnMz1Shlo/LV2q1Ahgpxoihx4strbHwZz71bcS4MqkHBduA==}
@@ -2503,6 +2514,15 @@ packages:
 
   '@utrecht/vega-visualization-css@1.4.2':
     resolution: {integrity: sha512-JTTx1DsKIeYZz95+H34HGfocKjDpbVOsFdPK1f/b3U3C5ivdC75fTkzU1+tVp6ijPwKnWPNr6eiIXTY9tHj5Kg==}
+
+  '@utrecht/web-component-library-react@3.0.12':
+    resolution: {integrity: sha512-MrnnMCg9NZxFWoBjOH4jxduhX96H+QqfwogNlldy8xqJtUXmO21TZY8T29Q1y7DHQT5by+Br0IDIMuarWsY0AQ==}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
+  '@utrecht/web-component-library-stencil@3.7.0':
+    resolution: {integrity: sha512-JvJ6rQAJlRtVbQApFODOMC25FgGsiLkTOs773VZo3u/rvvL4GhpXdri5Zap1yn0oD9dfjC4VWLq9LM+dPsLTDQ==}
 
   '@vitest/expect@3.2.4':
     resolution: {integrity: sha512-Io0yyORnB6sikFlt8QW5K7slY4OjqNX9jmJQ02QDda8lyM6B5oNgVWoSoKPac8/kgnCUzuHQKrSLtu/uOqqrig==}
@@ -7404,6 +7424,8 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
+  '@stencil/core@4.18.3': {}
+
   '@storybook/addon-a11y@10.0.7(storybook@10.0.7(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.2.2(@types/node@24.10.1)(sass-embedded@1.93.3)(sass@1.93.3)(yaml@2.8.1)))':
     dependencies:
       '@storybook/global': 5.0.0
@@ -8677,6 +8699,16 @@ snapshots:
   '@utrecht/vega-visualization-css@1.4.1': {}
 
   '@utrecht/vega-visualization-css@1.4.2': {}
+
+  '@utrecht/web-component-library-react@3.0.12(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      '@utrecht/web-component-library-stencil': 3.7.0
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+
+  '@utrecht/web-component-library-stencil@3.7.0':
+    dependencies:
+      '@stencil/core': 4.18.3
 
   '@vitest/expect@3.2.4':
     dependencies:
