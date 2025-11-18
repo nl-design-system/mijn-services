@@ -21,6 +21,7 @@ import {
   IconHome,
   IconInbox,
   IconLayoutGrid,
+  IconListCheck,
   IconParking,
   IconUser,
 } from '@tabler/icons-react';
@@ -76,7 +77,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <SideNavigationBase>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#" current>
+              <SideNavigationLink href="/#">
                 <IconLayoutGrid />
                 Overzicht
               </SideNavigationLink>
@@ -85,14 +86,20 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           <SideNavigationList>
             <SideNavigationItem>
               <SideNavigationLink href="/#">
-                <IconInbox />
-                Berichten<NumberBadge>2</NumberBadge>
+                <IconListCheck />
+                Mijn taken
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
               <SideNavigationLink href="/#">
+                <IconInbox />
+                Mijn berichten <NumberBadge>2</NumberBadge>
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#" current>
                 <IconArchive />
-                Lopende zaken
+                Mijn zaken
               </SideNavigationLink>
             </SideNavigationItem>
           </SideNavigationList>
@@ -126,7 +133,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             <SideNavigationItem>
               <SideNavigationLink href="/#">
                 <IconUser />
-                Gegevens
+                Mijn gegevens
               </SideNavigationLink>
             </SideNavigationItem>
           </SideNavigationList>
