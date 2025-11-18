@@ -9,6 +9,7 @@ import {
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
+import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
@@ -90,7 +91,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             <SideNavigationItem>
               <SideNavigationLink href="/#">
                 <IconInbox />
-                Berichten
+                Berichten<NumberBadge>2</NumberBadge>
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
