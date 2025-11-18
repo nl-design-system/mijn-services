@@ -183,9 +183,6 @@ importers:
       '@utrecht/web-component-library-react':
         specifier: 3.0.12
         version: 3.0.12(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      '@utrecht/web-component-library-stencil':
-        specifier: 3.7.0
-        version: 3.7.0
       '@whitespace/storybook-addon-html':
         specifier: 8.0.2
         version: 8.0.2(storybook@10.0.7(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.2.2(@types/node@24.10.1)(sass-embedded@1.93.3)(sass@1.93.3)(yaml@2.8.1)))

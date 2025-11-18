@@ -50,7 +50,6 @@
     "@utrecht/icon": "2.2.0",
     "@utrecht/root-css": "2.0.1",
     "@utrecht/web-component-library-react": "3.0.12",
-    "@utrecht/web-component-library-stencil": "3.7.0",
     "@whitespace/storybook-addon-html": "8.0.2",
     "eslint-plugin-storybook": "10.0.7",
     "react": "19.2.0",
