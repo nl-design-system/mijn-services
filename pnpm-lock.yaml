@@ -123,6 +123,9 @@ importers:
       '@gemeente-denhaag/side-navigation':
         specifier: 4.0.2
         version: 4.0.2(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@gemeente-denhaag/tab':
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@nl-design-system-candidate/heading-react':
         specifier: 1.1.5
         version: 1.1.5(@babel/runtime@7.28.4)(react@19.2.0)
@@ -676,6 +679,12 @@ packages:
 
   '@gemeente-denhaag/step-marker@3.0.0':
     resolution: {integrity: sha512-JWIYoRJv4tXpMf611QYPZqPycb5gZr22GvEdAEBhP2+3I6W+Z1YKP1bzEWDk/vhCm7ouOy0r9Ar81m9R+kCFgQ==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
+  '@gemeente-denhaag/tab@3.0.0':
+    resolution: {integrity: sha512-vkM7nSa1RTTfOTfGNqU2xkMz7EhCuN1q1prH+/Ed5R7A2b5pu/pE52XnLfRrUs3FVvyJKMLKNSQxwxYhYEue6Q==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -5866,6 +5875,10 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  uuid@11.1.0:
+    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
+    hasBin: true
+
   uuid@13.0.0:
     resolution: {integrity: sha512-XQegIaBTVUjSHliKqcnFqYypAd4S+WCYt5NIeRs6w/UAry7z8Y9j5ZwRRL4kzq9U3sD6v+85er9FvkEaBpji2w==}
     hasBin: true
@@ -6635,6 +6648,13 @@ snapshots:
       clsx: 2.1.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
+
+  '@gemeente-denhaag/tab@3.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      clsx: 2.1.1
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+      uuid: 11.1.0
 
   '@gemeente-denhaag/utils@3.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
@@ -12653,6 +12673,8 @@ snapshots:
   url-join@4.0.1: {}
 
   util-deprecate@1.0.2: {}
+
+  uuid@11.1.0: {}
 
   uuid@13.0.0: {}
 
