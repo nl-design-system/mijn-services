@@ -7,6 +7,7 @@ import {
   SideNavigationLink,
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
+import { Tabs } from '@gemeente-denhaag/tab';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
 import { Meta, StoryObj } from '@storybook/react-vite';
@@ -144,12 +145,33 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <main id="main">
           <section>
             <Heading level={1}>Mijn Zaken</Heading>
-            <div className={'todo-card-layout'}>
-              <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-29124'} />
-              <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-02599'} />
-              <CaseCard title={'Bezwaar tegen WOZ-waarde'} href={'#'} context={'ZK-00122'} appearance="archived" />
-              <CaseCard title={'Aanvraag paspoort'} href={'#'} context={'ZK-99084'} appearance="archived" />
-            </div>
+            <Tabs
+              tabData={[
+                {
+                  label: 'Open zaken',
+                  panelContent: (
+                    <div className={'todo-card-layout'}>
+                      <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-29124'} />
+                      <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-02599'} />
+                    </div>
+                  ),
+                },
+                {
+                  label: 'Gesloten zaken',
+                  panelContent: (
+                    <div className={'todo-card-layout'}>
+                      <CaseCard
+                        title={'Bezwaar tegen WOZ-waarde'}
+                        href={'#'}
+                        context={'ZK-00122'}
+                        appearance="archived"
+                      />
+                      <CaseCard title={'Aanvraag paspoort'} href={'#'} context={'ZK-99084'} appearance="archived" />
+                    </div>
+                  ),
+                },
+              ]}
+            />
           </section>
         </main>
       </Grid.Cell>
