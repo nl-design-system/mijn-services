@@ -9,6 +9,7 @@ import {
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
+import { Link } from '@nl-design-system-candidate/link-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
 import { Meta, StoryObj } from '@storybook/react-vite';
@@ -172,7 +173,13 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
               },
               {
                 title: 'Datum en tijd parkeren',
-                detail: 'maandag 2 januari 2025 12.10 uur',
+                detail: (
+                  <>
+                    maandag 2 januari 2025
+                    <br />
+                    12.10 uur
+                  </>
+                ),
               },
               {
                 title: 'Kenteken',
@@ -180,7 +187,13 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
               },
               {
                 title: 'Plaats parkeren',
-                detail: 'Valeriusplein 1001 3820 Arnhem',
+                detail: (
+                  <>
+                    Valeriusplein 1001
+                    <br />
+                    3820 Arnhem
+                  </>
+                ),
               },
               {
                 title: 'Totaalbedrag',
@@ -190,10 +203,23 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           />
           <Heading level={2}>Bericht</Heading>
           <Paragraph>
-            Beste J. van Drouwen, U heeft te weinig of geen parkeerkosten betaald voor het parkeren bij Valeriusplein.
-            Daarom heeft u een parkeerbon gekregen. Betaal vóór 1 maart 2023 uw parkeerbon van € 74.90. Bent u het niet
-            eens met deze parkeerbon? Dan kunt u bezwaar maken. Vul het formulier Bezwaar maken tegen een parkeerbon in.
-            Met vriendelijke groet, Gemeente Den Haag
+            Beste J. van Drouwen,
+            <br />
+            <br />
+            U heeft te weinig of geen parkeerkosten betaald voor het parkeren bij Valeriusplein. Daarom heeft u een
+            parkeerbon gekregen.
+            <br />
+            <br />
+            Betaal vóór 1 maart 2023 uw parkeerbon van € 74.90.
+            <br />
+            <br />
+            Bent u het niet eens met deze parkeerbon? Dan kunt u bezwaar maken. Vul het formulier{' '}
+            <Link href="#">Bezwaar maken tegen een parkeerbon</Link> in.
+            <br />
+            <br />
+            Met vriendelijke groet,
+            <br />
+            Gemeente Den Haag
           </Paragraph>
           <File
             className={'todo-file-component'}
