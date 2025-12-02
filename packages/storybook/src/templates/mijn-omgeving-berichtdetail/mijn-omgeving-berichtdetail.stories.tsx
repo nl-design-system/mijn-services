@@ -164,7 +164,6 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
           </ActionMulti>
 
-          <Heading level={2}>Details</Heading>
           <DescriptionList
             items={[
               {
