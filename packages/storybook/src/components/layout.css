@@ -57,6 +57,10 @@
   background-color: var(--todo-action--single-focus-background-color);
 }
 
+.todo-file-component {
+  margin-block-end: 16px;
+}
+
 .todo-page-footer__grid {
   margin-inline-end: auto;
   margin-inline-start: auto;
