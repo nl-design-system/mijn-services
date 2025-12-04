@@ -156,6 +156,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           <Paragraph>Ontvangen op 1 maart 2024 om 18.10 uur</Paragraph>
           <ActionMulti
             actions={<ButtonLink appearance={'primary-action-button'}>Informatie geven</ButtonLink>}
+            className={'todo-action--multi'}
             labels={labels}
             dateTime="2023-09-29"
             now="2023-09-29"
@@ -164,7 +165,9 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
           </ActionMulti>
 
+          <Heading level={2}>Parkeerbon details</Heading>
           <DescriptionList
+            className={'todo-description-list'}
             items={[
               {
                 title: 'Reden',
