@@ -4,7 +4,7 @@ import { processDiscussions } from './utils/index.js';
 
 const init = async () => {
   try {
-    await mkdir('./output', { recursive: true });
+    await mkdir('./out', { recursive: true });
   } catch {
     console.error('Could not create output directory');
   }
