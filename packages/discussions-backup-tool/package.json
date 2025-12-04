@@ -1,0 +1,24 @@
+{
+  "name": "@vng.nl/gh-discussions-backup-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/services.git",
+    "directory": "packages/storybook"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project tsconfig.json && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Community for NL Design System",
+  "license": "EUPL-1.2",
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@octokit/core": "7.0.3"
+  }
+}
