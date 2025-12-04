@@ -70,6 +70,14 @@
   background-color: var(--todo-action--single-focus-background-color);
 }
 
+.todo-action--multi {
+  margin-block-end: 48px;
+}
+
+.todo-description-list {
+  margin-block-end: 32px;
+}
+
 .todo-file-component {
   margin-block-end: 16px;
 }
