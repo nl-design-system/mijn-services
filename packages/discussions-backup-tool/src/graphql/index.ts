@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import type { DiscussionComment } from '@octokit/graphql-schema';
+import type { Discussion, DiscussionComment } from '@octokit/graphql-schema';
 import { graphqlWithAuth, type OctokitWithPagination } from '../graphqlWithAuth.js';
 import type { DiscussionsQueryResponse, MoreCommentsQueryResponse, MoreRepliesQueryResponse } from '../types.js';
 
@@ -117,7 +117,7 @@ const moreRepliesQuery = `
   }
 `;
 
-export const getDiscussions = async (owner: string, repo: string) => {
+export const getDiscussions = async (owner: string, repo: string): Promise<Discussion[]> => {
   console.log(`🔍 Fetching all discussions from ${owner}/${repo}...`);
 
   const allDiscussions = [];
@@ -132,7 +132,7 @@ export const getDiscussions = async (owner: string, repo: string) => {
     });
 
     const discussions = response.repository.discussions.nodes ?? [];
-    const validDiscussions = discussions.filter((d): d is any => d !== null);
+    const validDiscussions = discussions.filter((d): d is Discussion => d !== null);
 
     console.log(
       `  📄 Fetched ${validDiscussions.length} discussion(s) (total: ${allDiscussions.length + validDiscussions.length})`,
@@ -162,7 +162,7 @@ export const getMoreComments = async (discussionId: string, cursor: string): Pro
     );
 
     const comments = response.node.comments.nodes ?? [];
-    allComments.push(...comments.filter((c: any): c is DiscussionComment => c !== null));
+    allComments.push(...comments.filter((c): c is DiscussionComment => c !== null));
 
     hasNextPage = response.node.comments.pageInfo.hasNextPage;
     currentCursor = response.node.comments.pageInfo.endCursor ?? null;
@@ -183,7 +183,7 @@ export const getMoreReplies = async (commentId: string, cursor: string): Promise
     });
 
     const replies = response.node.replies.nodes ?? [];
-    allReplies.push(...replies.filter((r: any): r is DiscussionComment => r !== null));
+    allReplies.push(...replies.filter((r): r is DiscussionComment => r !== null));
 
     hasNextPage = response.node.replies.pageInfo.hasNextPage;
     currentCursor = response.node.replies.pageInfo.endCursor ?? null;
