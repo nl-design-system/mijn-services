@@ -1,9 +1,9 @@
 import 'dotenv/config';
 import type { DiscussionComment } from '@octokit/graphql-schema';
-import { graphqlWithAuth } from '../graphqlWithAuth.js';
+import { graphqlWithAuth, type OctokitWithPagination } from '../graphqlWithAuth.js';
 import type { DiscussionsQueryResponse, MoreCommentsQueryResponse, MoreRepliesQueryResponse } from '../types.js';
 
-let octokit: ReturnType<typeof graphqlWithAuth>;
+let octokit: OctokitWithPagination;
 
 const getOctokit = () => {
   if (!octokit) {
