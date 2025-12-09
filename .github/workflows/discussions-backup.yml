@@ -30,7 +30,7 @@ jobs:
 
       - name: Build and run discussions backup tool
         env:
-          GH_ISSUES_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_DISCUSSIONS_TOKEN: ${{ secrets.GH_DISCUSSIONS_TOKEN }}
         run: pnpm run backup-discussions -- nl-design-system backlog
 
       - name: Upload discussions backup artifact
