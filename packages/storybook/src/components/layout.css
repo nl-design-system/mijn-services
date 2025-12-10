@@ -20,6 +20,22 @@
   color: var(--todo-page-header-logo-color);
 }
 
+.todo-breadcrumb--mobile {
+  --utrecht-icon-size: var(--utrecht-breadcrumb-nav-separator-icon-size);
+
+  align-items: center;
+  display: inline-flex;
+  gap: 0.2rem;
+  min-block-size: 44px;
+  padding-block-end: 0.5rem;
+  padding-block-start: 0.5rem;
+  padding-inline-end: 0.5rem;
+}
+
+.todo-breadcrumb--desktop {
+  display: none;
+}
+
 .todo-address {
   font-style: inherit;
   margin-block: 0;
@@ -103,5 +119,15 @@
 @media screen and (width <= 1087px) {
   .todo-grid-cell--hide-on-medium {
     display: none;
+  }
+}
+
+@media (width >= 768px) {
+  .todo-breadcrumb--mobile {
+    display: none;
+  }
+
+  .todo-breadcrumb--desktop {
+    display: block;
   }
 }
