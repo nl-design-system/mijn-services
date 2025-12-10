@@ -7,6 +7,7 @@ import {
   SideNavigationLink,
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
+import { Link } from '@nl-design-system-candidate/link-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
@@ -15,6 +16,7 @@ import '../../themes/index.scss';
 import {
   IconArchive,
   IconBuildingCommunity,
+  IconChevronLeft,
   IconChevronRight,
   IconCurrencyEuro,
   IconHome,
@@ -51,7 +53,14 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
   <Layout logo={logo} footerLogo={footerLogo}>
     <Grid paddingTop={'x-large'}>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
-        <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
+        <Link href={'/#'} className="todo-breadcrumb--mobile">
+          <Icon>
+            <IconChevronLeft />
+          </Icon>
+          Mijn Voorbeeld
+        </Link>
+
+        <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header" className="todo-breadcrumb--desktop">
           <h2 id="hidden-breadcrumb-header" hidden>
             Kruimelpad
           </h2>
