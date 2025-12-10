@@ -14,6 +14,7 @@ import '../../themes/index.scss';
 import {
   IconArchive,
   IconBuildingCommunity,
+  IconChevronLeft,
   IconChevronRight,
   IconCurrencyEuro,
   IconHome,
@@ -59,7 +60,14 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
   <Layout logo={logo} footerLogo={footerLogo}>
     <Grid paddingTop={'x-large'}>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
-        <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
+        <Link href={'/#'} className="todo-breadcrumb--mobile">
+          <Icon>
+            <IconChevronLeft />
+          </Icon>
+          Mijn Voorbeeld
+        </Link>
+
+        <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header" className="todo-breadcrumb--desktop">
           <h2 id="hidden-breadcrumb-header" hidden>
             Kruimelpad
           </h2>
