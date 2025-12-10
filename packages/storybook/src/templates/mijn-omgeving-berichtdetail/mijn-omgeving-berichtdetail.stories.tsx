@@ -204,21 +204,17 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             ]}
           />
           <Heading level={2}>Bericht</Heading>
+          <Paragraph>Beste J. van Drouwen,</Paragraph>
           <Paragraph>
-            Beste J. van Drouwen,
-            <br />
-            <br />
             U heeft te weinig of geen parkeerkosten betaald voor het parkeren bij Valeriusplein. Daarom heeft u een
             parkeerbon gekregen.
-            <br />
-            <br />
-            Betaal vóór 1 maart 2023 uw parkeerbon van € 74.90.
-            <br />
-            <br />
+          </Paragraph>
+          <Paragraph>Betaal vóór 1 maart 2023 uw parkeerbon van € 74.90.</Paragraph>
+          <Paragraph>
             Bent u het niet eens met deze parkeerbon? Dan kunt u bezwaar maken. Vul het formulier{' '}
             <Link href="#">Bezwaar maken tegen een parkeerbon</Link> in.
-            <br />
-            <br />
+          </Paragraph>
+          <Paragraph>
             Met vriendelijke groet,
             <br />
             Gemeente Den Haag
