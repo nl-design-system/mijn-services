@@ -158,8 +158,8 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             actions={<ButtonLink appearance={'primary-action-button'}>Betalen</ButtonLink>}
             className={'todo-action--multi'}
             labels={labels}
-            dateTime="2023-09-29"
-            now="2023-09-14"
+            dateTime="2023-03-01"
+            now="2023-01-14"
             relativeDate={true}
           >
             <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
@@ -229,8 +229,8 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           <ActionMulti
             actions={<ButtonLink appearance={'primary-action-button'}>Betalen</ButtonLink>}
             labels={labels}
-            dateTime="2023-09-29"
-            now="2023-09-14"
+            dateTime="2023-03-01"
+            now="2023-01-14"
             relativeDate={true}
           >
             <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
