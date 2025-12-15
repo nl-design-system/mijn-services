@@ -90,6 +90,10 @@ const messages = [
 
 const meta = {
   title: 'Templates/Mijn Omgeving/Berichten/Overzicht',
+  globals: {
+    dir: 'ltr',
+    lang: 'nl',
+  },
   id: 'mijn-omgeving-berichten-overzicht',
   parameters: {
     layout: 'fullscreen',

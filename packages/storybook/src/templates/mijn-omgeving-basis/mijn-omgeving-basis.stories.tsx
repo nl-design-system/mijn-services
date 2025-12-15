@@ -38,6 +38,10 @@ import { PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
   title: 'Templates/Mijn Omgeving/Basis',
+  globals: {
+    dir: 'ltr',
+    lang: 'nl',
+  },
   id: 'mijn-omgeving-basis',
   parameters: {
     layout: 'fullscreen',

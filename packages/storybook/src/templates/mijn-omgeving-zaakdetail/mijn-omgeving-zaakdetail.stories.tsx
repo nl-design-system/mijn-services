@@ -42,6 +42,10 @@ import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../componen
 
 const meta = {
   title: 'Templates/Mijn Omgeving/MijnZaken/Detailpagina',
+  globals: {
+    dir: 'ltr',
+    lang: 'nl',
+  },
   id: 'mijn-omgeving-mijnzaken-detailpagina',
   parameters: {
     layout: 'fullscreen',
