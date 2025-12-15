@@ -45,6 +45,10 @@ import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../componen
 
 const meta = {
   title: 'Templates/Mijn Profiel/Mijn Gegevens',
+  globals: {
+    dir: 'ltr',
+    lang: 'nl',
+  },
   id: 'mijn-profiel-1',
   parameters: {
     layout: 'fullscreen',

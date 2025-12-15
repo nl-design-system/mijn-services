@@ -39,6 +39,10 @@ import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../componen
 
 const meta = {
   title: 'Templates/Mijn Omgeving/Taken/Taken Overzicht',
+  globals: {
+    dir: 'ltr',
+    lang: 'nl',
+  },
   id: 'mijn-omgeving-taken',
   parameters: {
     layout: 'fullscreen',
