@@ -7,6 +7,7 @@ import {
 } from '@gemeente-denhaag/side-navigation';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
+import { NumberBadge } from '@nl-design-system-candidate/number-badge-react/css';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -20,6 +21,7 @@ import {
   IconHome,
   IconInbox,
   IconLayoutGrid,
+  IconListCheck,
   IconParking,
   IconPencil,
   IconPlus,
@@ -44,7 +46,7 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Profiel/Mijn Gegevens',
+  title: 'Templates/MijnProfiel/MijnGegevens',
   globals: {
     dir: 'ltr',
     lang: 'nl',
@@ -106,14 +108,20 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           <SideNavigationList>
             <SideNavigationItem>
               <SideNavigationLink href="/#">
+                <IconListCheck />
+                Mijn taken
+              </SideNavigationLink>
+            </SideNavigationItem>
+            <SideNavigationItem>
+              <SideNavigationLink href="/#">
                 <IconInbox />
-                Berichten
+                Mijn berichten <NumberBadge>2</NumberBadge>
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
               <SideNavigationLink href="/#">
                 <IconArchive />
-                Lopende zaken
+                Mijn zaken
               </SideNavigationLink>
             </SideNavigationItem>
           </SideNavigationList>
@@ -147,7 +155,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             <SideNavigationItem>
               <SideNavigationLink href="/#">
                 <IconUser />
-                Gegevens
+                Mijn gegevens
               </SideNavigationLink>
             </SideNavigationItem>
           </SideNavigationList>

@@ -10,7 +10,7 @@ import {
 } from '@gemeente-denhaag/side-navigation';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
-import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
+import { NumberBadge } from '@nl-design-system-candidate/number-badge-react/css';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
@@ -43,7 +43,7 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/Overzichtspagina',
+  title: 'Templates/MijnOmgeving/Overzichtspagina',
   globals: {
     dir: 'ltr',
     lang: 'nl',
@@ -66,7 +66,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           <Icon>
             <IconChevronLeft />
           </Icon>
-          Mijn Voorbeeld
+          Home
         </Link>
 
         <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header" className="todo-breadcrumb--desktop">
@@ -79,14 +79,8 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
               <IconChevronRight />
             </Icon>
           </BreadcrumbNavSeparator>
-          <BreadcrumbNavLink href={'/#'}>Mijn Voorbeeld</BreadcrumbNavLink>
-          <BreadcrumbNavSeparator>
-            <Icon>
-              <IconChevronRight />
-            </Icon>
-          </BreadcrumbNavSeparator>
           <BreadcrumbNavLink href={'/#'} disabled current>
-            Mijn gegevens
+            Mijn Voorbeeld
           </BreadcrumbNavLink>
         </BreadcrumbNav>
       </Grid.Cell>
@@ -186,7 +180,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             </ActionSingle>
           </section>
           <section>
-            <Heading level={2}>Lopende zaken</Heading>
+            <Heading level={2}>Mijn zaken</Heading>
             <div className={'todo-card-layout'}>
               <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-228402'} />
               <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-108422'} />

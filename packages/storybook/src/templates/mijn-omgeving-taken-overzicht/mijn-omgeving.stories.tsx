@@ -7,6 +7,7 @@ import {
   SideNavigationLink,
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
+import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
 import { Meta, StoryObj } from '@storybook/react-vite';
@@ -30,7 +31,6 @@ import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-  Heading1,
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
@@ -38,7 +38,7 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/Taken/Taken Overzicht',
+  title: 'Templates/MijnOmgeving/MijnTaken/Overzicht',
   globals: {
     dir: 'ltr',
     lang: 'nl',
@@ -81,7 +81,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             </Icon>
           </BreadcrumbNavSeparator>
           <BreadcrumbNavLink href={'/#'} disabled current>
-            Mijn Taken
+            Mijn taken
           </BreadcrumbNavLink>
         </BreadcrumbNav>
       </Grid.Cell>
@@ -156,7 +156,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <main id="main">
           <section>
-            <Heading1>Mijn Taken</Heading1>
+            <Heading level={1}>Mijn taken</Heading>
             <ActionSingle
               link={'#'}
               labels={labels}
