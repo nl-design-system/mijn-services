@@ -38,7 +38,7 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/MijnZaken/Overzicht',
+  title: 'Templates/MijnOmgeving/MijnZaken/Overzicht',
   globals: {
     dir: 'ltr',
     lang: 'nl',
@@ -81,7 +81,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             </Icon>
           </BreadcrumbNavSeparator>
           <BreadcrumbNavLink href={'/#'} disabled current>
-            Mijn Taken
+            Mijn zaken
           </BreadcrumbNavLink>
         </BreadcrumbNav>
       </Grid.Cell>
@@ -156,7 +156,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <main id="main">
           <section>
-            <Heading level={1}>Mijn Zaken</Heading>
+            <Heading level={1}>Mijn zaken</Heading>
             <div className={'todo-card-layout'}>
               <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-29124'} />
               <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-02599'} />

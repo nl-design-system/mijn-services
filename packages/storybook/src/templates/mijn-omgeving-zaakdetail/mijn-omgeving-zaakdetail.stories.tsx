@@ -41,7 +41,7 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/MijnZaken/Detailpagina',
+  title: 'Templates/MijnOmgeving/MijnZaken/Detailpagina',
   globals: {
     dir: 'ltr',
     lang: 'nl',
@@ -64,7 +64,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           <Icon>
             <IconChevronLeft />
           </Icon>
-          Lopende zaken
+          Mijn zaken
         </Link>
 
         <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header" className="todo-breadcrumb--desktop">
@@ -77,7 +77,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
               <IconChevronRight />
             </Icon>
           </BreadcrumbNavSeparator>
-          <BreadcrumbNavLink href={'/#'}>Lopende zaken</BreadcrumbNavLink>
+          <BreadcrumbNavLink href={'/#'}>Mijn zaken</BreadcrumbNavLink>
           <BreadcrumbNavSeparator>
             <Icon>
               <IconChevronRight />

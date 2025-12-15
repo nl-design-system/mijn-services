@@ -89,7 +89,7 @@ const messages = [
 ];
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/Berichten/Overzicht',
+  title: 'Templates/MijnOmgeving/MijnBerichten/Overzicht',
   globals: {
     dir: 'ltr',
     lang: 'nl',
@@ -132,7 +132,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             </Icon>
           </BreadcrumbNavSeparator>
           <BreadcrumbNavLink href={'/#'} disabled current>
-            Mijn Berichten
+            Mijn berichten
           </BreadcrumbNavLink>
         </BreadcrumbNav>
       </Grid.Cell>
@@ -207,7 +207,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <main id="main">
           <section>
-            <Heading level={1}>Mijn Berichten</Heading>
+            <Heading level={1}>Mijn berichten</Heading>
 
             {messages.map((m) => (
               <Action key={m.title} link={m.link} dateTime={m.dateTime}>

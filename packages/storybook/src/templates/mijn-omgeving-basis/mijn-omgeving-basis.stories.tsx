@@ -37,7 +37,7 @@ import { Layout } from '../../components/Layout';
 import { PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/Basis',
+  title: 'Templates/MijnOmgeving/Basis',
   globals: {
     dir: 'ltr',
     lang: 'nl',

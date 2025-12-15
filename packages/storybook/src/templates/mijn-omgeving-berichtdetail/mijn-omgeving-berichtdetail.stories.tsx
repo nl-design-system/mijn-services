@@ -19,6 +19,7 @@ import '../../themes/index.scss';
 import {
   IconArchive,
   IconBuildingCommunity,
+  IconChevronLeft,
   IconChevronRight,
   IconCurrencyEuro,
   IconHome,
@@ -40,7 +41,7 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/Berichten/Detailpagina',
+  title: 'Templates/MijnOmgeving/MijnBerichten/Detailpagina',
   globals: {
     dir: 'ltr',
     lang: 'nl',
@@ -59,7 +60,14 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
   <Layout logo={logo} footerLogo={footerLogo}>
     <Grid paddingTop={'x-large'}>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
-        <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
+        <Link href={'/#'} className="todo-breadcrumb--mobile">
+          <Icon>
+            <IconChevronLeft />
+          </Icon>
+          Mijn berichten
+        </Link>
+
+        <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header" className="todo-breadcrumb--desktop">
           <h2 id="hidden-breadcrumb-header" hidden>
             Kruimelpad
           </h2>
@@ -75,7 +83,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
               <IconChevronRight />
             </Icon>
           </BreadcrumbNavSeparator>
-          <BreadcrumbNavLink href={'/#'}>Mijn Berichten</BreadcrumbNavLink>
+          <BreadcrumbNavLink href={'/#'}>Mijn berichten</BreadcrumbNavLink>
           <BreadcrumbNavSeparator>
             <Icon>
               <IconChevronRight />
