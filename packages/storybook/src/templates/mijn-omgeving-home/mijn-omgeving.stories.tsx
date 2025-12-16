@@ -80,7 +80,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             </Icon>
           </BreadcrumbNavSeparator>
           <BreadcrumbNavLink href={'/#'} disabled current>
-            Mijn Voorbeeld
+            Gemeente Voorbeeld
           </BreadcrumbNavLink>
         </BreadcrumbNav>
       </Grid.Cell>

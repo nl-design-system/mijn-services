@@ -71,7 +71,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           <h2 id="hidden-breadcrumb-header" hidden>
             Kruimelpad
           </h2>
-          <BreadcrumbNavLink href={'/#'}>Mijn Voorbeeld</BreadcrumbNavLink>
+          <BreadcrumbNavLink href={'/#'}>Gemeente Voorbeeld</BreadcrumbNavLink>
           <BreadcrumbNavSeparator>
             <Icon>
               <IconChevronRight />
