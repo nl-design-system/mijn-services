@@ -112,7 +112,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           <Icon>
             <IconChevronLeft />
           </Icon>
-          Mijn Voorbeeld
+          Gemeente Voorbeeld
         </Link>
 
         <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header" className="todo-breadcrumb--desktop">
@@ -125,7 +125,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
               <IconChevronRight />
             </Icon>
           </BreadcrumbNavSeparator>
-          <BreadcrumbNavLink href={'/#'}>Mijn Voorbeeld</BreadcrumbNavLink>
+          <BreadcrumbNavLink href={'/#'}>Gemeente Voorbeeld</BreadcrumbNavLink>
           <BreadcrumbNavSeparator>
             <Icon>
               <IconChevronRight />
