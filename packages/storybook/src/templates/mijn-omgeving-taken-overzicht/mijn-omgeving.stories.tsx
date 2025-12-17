@@ -158,19 +158,27 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           <section>
             <Heading level={1}>Mijn taken</Heading>
             <ActionSingle
-              link={'#'}
+              className={'todo-action--single'}
               labels={labels}
+              link={'#'}
               now="2023-09-28T19:47:36.593Z"
               dateTime="2023-09-30T19:47:36.593Z"
+              relativeDate={true}
+            >
+              <strong>Geef informatie voor uw aanvraag subsidie geluidisolatie</strong>
+            </ActionSingle>
+            <ActionSingle
+              className={'todo-action--single'}
+              dateTime="2023-10-02T19:47:36.593Z"
+              labels={labels}
+              link={'#'}
+              now="2023-09-28T19:47:36.593Z"
               relativeDate
             >
-              Geef informatie voor uw aanvraag subsidie geluidisolatie
+              <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
             </ActionSingle>
-            <ActionSingle link={'#'} labels={labels}>
-              Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein
-            </ActionSingle>
-            <ActionSingle link={'#'} labels={labels}>
-              Verleng uw identiteitskaart
+            <ActionSingle className={'todo-action--single'} link={'#'} labels={labels}>
+              <strong>Verleng uw identiteitskaart</strong>
             </ActionSingle>
           </section>
         </main>

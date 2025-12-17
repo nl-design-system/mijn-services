@@ -169,10 +169,25 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </Paragraph>
           <section>
             <Heading level={2}>Wat moet ik regelen</Heading>
-            <ActionSingle className={'todo-action--single'} link={'#'} labels={labels}>
+            <Link href="#">Bekijk alle taken (10)</Link>
+            <ActionSingle
+              className={'todo-action--single'}
+              labels={labels}
+              link={'#'}
+              now="2023-09-28T19:47:36.593Z"
+              dateTime="2023-09-30T19:47:36.593Z"
+              relativeDate={true}
+            >
               <strong>Geef informatie voor uw aanvraag subsidie geluidisolatie</strong>
             </ActionSingle>
-            <ActionSingle className={'todo-action--single'} link={'#'} labels={labels}>
+            <ActionSingle
+              className={'todo-action--single'}
+              dateTime="2023-10-02T19:47:36.593Z"
+              labels={labels}
+              link={'#'}
+              now="2023-09-28T19:47:36.593Z"
+              relativeDate
+            >
               <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
             </ActionSingle>
             <ActionSingle className={'todo-action--single'} link={'#'} labels={labels}>
@@ -181,7 +196,10 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </section>
           <section>
             <Heading level={2}>Mijn zaken</Heading>
+            <Link href="#">Bekijk alle zaken (15)</Link>
             <div className={'todo-card-layout'}>
+              <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-228402'} />
+              <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-108422'} />
               <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-228402'} />
               <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-108422'} />
             </div>
