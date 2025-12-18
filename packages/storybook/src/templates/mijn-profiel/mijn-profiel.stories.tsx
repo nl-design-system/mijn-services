@@ -1,4 +1,5 @@
 import { Grid } from '@amsterdam/design-system-react';
+import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
 import {
   SideNavigationBase,
   SideNavigationItem,
@@ -8,6 +9,7 @@ import {
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react/css';
+import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
 import { Meta, StoryObj } from '@storybook/react-vite';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
@@ -24,24 +26,20 @@ import {
   IconListCheck,
   IconParking,
   IconPencil,
-  IconPlus,
   IconUser,
 } from '@tabler/icons-react';
 import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-  DataList,
-  DataListItem,
-  DataListKey,
-  DataListValue,
   Icon,
   LinkList,
   LinkListLink,
-  PreserveData,
+  SpotlightSection,
+  UnorderedList,
+  UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
-import { ExpandableSection } from '../../components/ExpandableSection';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
@@ -56,7 +54,6 @@ const meta = {
   parameters: {
     layout: 'fullscreen',
   },
-  tags: ['!dev'],
 } satisfies Meta;
 
 export default meta;
@@ -165,89 +162,158 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
 
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
         <main id="main">
-          <Heading level={1}>Uw gegevens</Heading>
-          <ExpandableSection
-            title="Contact"
-            description="Hier vindt u uw e-mailadres en telefoonnummer waarmee we u kunnen bereiken."
-          >
-            <DataList className="voorbeeld-datalist-style">
-              <DataListItem className="voorbeeld-data-list-item">
-                <DataListKey>
-                  <b>E-mailadres</b>
-                </DataListKey>
-                <DataListValue>
-                  <PreserveData>j.vandrouwen@gmail.com</PreserveData>
-                </DataListValue>
-                <Link href="/#" className="voorbeeld-back-link">
-                  <Icon>
-                    <IconPencil />
-                  </Icon>
-                  Aanpassen
-                </Link>
-              </DataListItem>
-              <DataListItem className="voorbeeld-data-list-item">
-                <DataListKey>
-                  <b>Telefoonnummer</b>
-                </DataListKey>
-                <DataListValue>
-                  <PreserveData>-</PreserveData>
-                </DataListValue>
-                <Link href="/#" className="voorbeeld-back-link">
-                  <Icon>
-                    <IconPlus />
-                  </Icon>
-                  Toevoegen
-                </Link>
-              </DataListItem>
-            </DataList>
-          </ExpandableSection>
-          <ExpandableSection
-            title="Meldingen"
-            description="Stel in waarvoor u meldingen wilt ontvangen en op welke manier."
-          ></ExpandableSection>
-          <ExpandableSection
-            title="Persoonsgegevens"
-            description="Dit zijn uw persoonsgegevens zoals naam, bsn, etc."
-          ></ExpandableSection>
-          <ExpandableSection
-            title="Adres"
-            description="Dit zijn uw adresgegevens; u kunt hier ook een verhuizing doorgeven"
-          ></ExpandableSection>
-          <section>
-            <Heading level={2}>Wijzigingen en aanvragen BRP</Heading>
-            <LinkList>
-              <LinkListLink
-                href="#"
-                icon={
-                  <Icon>
-                    <IconChevronRight />
-                  </Icon>
-                }
-              >
-                Meer informatie over adresonderzoek
-              </LinkListLink>
-              <LinkListLink
-                href="#"
-                icon={
-                  <Icon>
-                    <IconChevronRight />
-                  </Icon>
-                }
-              >
-                Gegevens in BRP laten corrigeren, wijzigen of verwijderen
-              </LinkListLink>
-              <LinkListLink
-                href="#"
-                icon={
-                  <Icon>
-                    <IconChevronRight />
-                  </Icon>
-                }
-              >
-                Geheimhouding persoonsgegevens aanvragen
-              </LinkListLink>
-            </LinkList>
-          </section>
+          <Heading level={1}>Mijn gegevens</Heading>
+          <Paragraph>
+            Op deze pagina ziet u uw persoonlijke gegevens en hoe wij die gebruiken om contact met u te houden.
+          </Paragraph>
+          <SpotlightSection>
+            <Heading level={3}>Op deze pagina</Heading>
+            <UnorderedList>
+              <UnorderedListItem>
+                <Link href="#">Contactgegevens</Link>
+              </UnorderedListItem>
+              <UnorderedListItem>
+                <Link href="#">Persoonsgegevens</Link>
+              </UnorderedListItem>
+              <UnorderedListItem>
+                <Link href="#">Adresgegevens</Link>
+              </UnorderedListItem>
+              <UnorderedListItem>
+                <Link href="#">Meldingen</Link>
+              </UnorderedListItem>
+            </UnorderedList>
+          </SpotlightSection>
+
+          <Heading level={2}> Contactgegevens</Heading>
+          <Link href="#">
+            <Icon>
+              <IconPencil />
+            </Icon>{' '}
+            Wijzig
+          </Link>
+          <DescriptionList
+            items={[
+              {
+                title: 'E-mailadres',
+                detail: 'j.vandrouwen@gmail.com',
+              },
+              {
+                title: 'Telefoonnummer',
+                detail: '-',
+              },
+            ]}
+          />
+
+          <Heading level={2}>Persoonsgegevens</Heading>
+          <DescriptionList
+            items={[
+              {
+                title: 'Voornamen',
+                detail: 'Jeroen',
+              },
+              {
+                title: 'Achternaam',
+                detail: 'van Drouwen',
+              },
+              {
+                title: 'Geslacht',
+                detail: 'man',
+              },
+              {
+                title: 'Burgerservicenummer',
+                detail: '78967896789',
+              },
+              {
+                title: 'Geboortedatum',
+                detail: '01 april 1979',
+              },
+              {
+                title: 'Geboorteland',
+                detail: 'Nederland',
+              },
+              {
+                title: 'Nationaliteit',
+                detail: 'Nederlands',
+              },
+            ]}
+          />
+
+          <Heading level={3}>Zie ook</Heading>
+          <LinkList>
+            <LinkListLink>
+              <Icon>
+                <IconChevronRight />
+              </Icon>
+              Meer informatie over wijzigen van persoonsgegevens
+            </LinkListLink>
+            <LinkListLink>
+              <Icon>
+                <IconChevronRight />
+              </Icon>
+              Een andere actie die bij deze dataset hoort...
+            </LinkListLink>
+          </LinkList>
+
+          <Heading level={2}>Adresgegevens</Heading>
+          <DescriptionList
+            items={[
+              {
+                title: 'Straat',
+                detail: 'Laan der Voorbeelden 55',
+              },
+              {
+                detail: 'Postcode en plaats',
+                title: '1215 AA Dronten',
+              },
+              {
+                title: 'Aanvangsdatum',
+                detail: '05 november 2015',
+              },
+              {
+                title: 'Aantal inwoners op uw woonadres',
+                detail: '1',
+              },
+            ]}
+          />
+          <Link href="#">Meer informatie over wijzigen van adresgegevens</Link>
+
+          <Heading level={2}>Meldingen</Heading>
+          <Link href="#">
+            <Icon>
+              <IconPencil />
+            </Icon>{' '}
+            Wijzig
+          </Link>
+          <DescriptionList
+            items={[
+              {
+                title: 'Post',
+                detail: 'U ontvangt altijd fysieke post als er een besluit is genomen.',
+              },
+              {
+                title: 'Email',
+                detail: (
+                  <>
+                    <Paragraph>U ontvangt altijd een ontvangstbevestiging, besluit en taak per email. </Paragraph>
+                    <Paragraph> U ontvangt altijd meldingen over verlengen van uw Reisdocumenten per email.</Paragraph>
+                  </>
+                ),
+              },
+              {
+                title: 'SMS',
+                detail: (
+                  <>
+                    <Paragraph>U ontvangt altijd een SMS over Taken.</Paragraph>
+                    <Paragraph>U ontvangt altijd een SMS over Reisdocumenten.</Paragraph>
+                  </>
+                ),
+              },
+              {
+                title: 'Taal',
+                detail: 'De ingestelde taal voor meldingen is Nederlands.',
+              },
+            ]}
+          />
         </main>
       </Grid.Cell>
     </Grid>
