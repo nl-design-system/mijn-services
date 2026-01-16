@@ -192,7 +192,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             size={'658kb'}
             lastUpdated={'12-12-2024'}
           />
-          <Heading level={2}>Tijdlijn</Heading>
+          <Heading level={2}>Contactmomenten</Heading>
           {contactTimeline}
         </main>
       </Grid.Cell>
