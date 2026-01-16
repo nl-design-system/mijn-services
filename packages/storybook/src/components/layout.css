@@ -67,6 +67,10 @@
   color: var(--todo-link-focus-color);
 }
 
+.denhaag-contact-timeline {
+  --denhaag-process-steps-step-heading-not-checked-color: var(--denhaag-process-steps-step-heading-checked-color);
+}
+
 .todo-action--single:focus-visible {
   background-color: var(--todo-action--single-focus-background-color);
 }

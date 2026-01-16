@@ -19,7 +19,7 @@
   "license": "EUPL-1.2",
   "packageManager": "pnpm@10.17.1",
   "devDependencies": {
-    "@octokit/core": "7.0.3",
+    "@octokit/core": "7.0.6",
     "@octokit/graphql": "9.0.3",
     "@octokit/graphql-schema": "15.26.1",
     "@octokit/plugin-paginate-graphql": "6.0.0",
