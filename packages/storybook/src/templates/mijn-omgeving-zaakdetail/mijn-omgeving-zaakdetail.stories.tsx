@@ -1,5 +1,6 @@
 import { Grid } from '@amsterdam/design-system-react';
 import { ActionMulti } from '@gemeente-denhaag/action';
+import { ContactTimeline } from '@gemeente-denhaag/contact-timeline';
 import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
 import { File } from '@gemeente-denhaag/file';
 import { Status } from '@gemeente-denhaag/process-steps';
@@ -191,6 +192,8 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             size={'658kb'}
             lastUpdated={'12-12-2024'}
           />
+          <Heading level={2}>Tijdlijn</Heading>
+          {contactTimeline}
         </main>
       </Grid.Cell>
     </Grid>
@@ -271,3 +274,71 @@ const timeline = (
     ]}
   />
 );
+
+const contactTimelineArgs = {
+  labels: { today: 'vandaag', yesterday: 'gisteren' },
+  collapsible: true,
+  expandedItems: ['4'],
+  items: [
+    {
+      id: '1',
+      title: 'Herinnering: Geef informatie',
+      channel: 'mail',
+      isoDate: new Date().toISOString(),
+      description: 'Hier komt de uitgebreide beschrijving',
+      sender: 'Gemeente Voorbeeld',
+    },
+    {
+      id: '2',
+      title: 'Geef informatie',
+      channel: 'mail',
+      isoDate: new Date(Date.now() - 864e5).toISOString(),
+      description: 'Hier komt de uitgebreide beschrijving',
+      sender: 'Gemeente Voorbeeld',
+    },
+    {
+      id: '3',
+      title: 'Tip: u heeft recht op extra subsidie, zie hier een extra lange regel',
+      channel: 'mail',
+      isoDate: '2023-01-06T09:17:03.137Z',
+      description:
+        'Hier komt de uitgebreide beschrijving, en hier een extra lange uitgebreide beschrijving. Hier komt de uitgebreide beschrijving, en hier een extra lange uitgebreide beschrijving.',
+      sender: 'Gemeente Voorbeeld',
+    },
+    {
+      id: '4',
+      title: 'Status is veranderd',
+      channel: 'mail',
+      isoDate: '2022-12-01T09:17:03.137Z',
+      description: 'Hier komt de uitgebreide beschrijving',
+      sender: 'Gemeente Voorbeeld',
+      file: <File name="example3" href="test.png" size="2000" lastUpdated="Thu Aug 31 2023 11:22:11 GMT+0200" />,
+    },
+    {
+      id: '5',
+      title: 'Mijn vraag',
+      channel: 'vraag',
+      isoDate: '2022-11-29T09:17:03.137Z',
+      description: 'Hier komt de uitgebreide beschrijving',
+      sender: 'Anna Klap',
+    },
+    {
+      id: '6',
+      title: 'Gesprek over afspraak met adviseur',
+      channel: 'telefoon',
+      isoDate: '2022-11-12T09:17:03.137Z',
+      description: 'Hier komt de uitgebreide beschrijving',
+      sender: 'Gemeente Voorbeeld',
+    },
+    {
+      id: '7',
+      title: 'Kosten onderzoek en verbeteringen',
+      channel: 'brief',
+      isoDate: '2022-11-10T09:17:03.137Z',
+      description: 'Hier komt de uitgebreide beschrijving',
+      sender: 'Gemeente Voorbeeld',
+    },
+  ],
+};
+
+const contactTimeline = <ContactTimeline {...contactTimelineArgs} />;
