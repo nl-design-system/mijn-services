@@ -84,7 +84,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <SideNavigationBase>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href={mijnOmgevingPaths.overzicht} current>
+              <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
                 <IconLayoutGrid />
                 Overzicht
               </SideNavigationLink>

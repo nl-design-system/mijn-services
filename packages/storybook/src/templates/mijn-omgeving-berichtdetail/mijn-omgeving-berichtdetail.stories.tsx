@@ -61,7 +61,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
   <Layout logo={logo} footerLogo={footerLogo}>
     <Grid paddingTop={'x-large'}>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
-        <Link href={'/#'} className="todo-breadcrumb--mobile">
+        <Link href={mijnOmgevingPaths.berichtenOverzicht} className="todo-breadcrumb--mobile">
           <Icon>
             <IconChevronLeft />
           </Icon>
