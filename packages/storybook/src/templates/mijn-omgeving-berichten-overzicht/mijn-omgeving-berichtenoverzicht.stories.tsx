@@ -37,54 +37,55 @@ import { UtrechtPagination } from '@utrecht/web-component-library-react';
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
+import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const messages = [
   {
     new: true,
     title: '🔴 Betalen van uw parkeerbon',
     dateTime: '2023-03-16T06:41:34.427Z',
-    link: '#example',
+    link: mijnOmgevingPaths.berichtDetail,
   },
   {
     new: true,
     title: '🔴 Tip: Recht op subsidie',
     dateTime: '2023-01-14T19:47:36.593Z',
-    link: '#example',
+    link: mijnOmgevingPaths.berichtDetail,
   },
   {
     title: 'Informatie geven over uw aanvraag subsidie geluidsisolatie',
     dateTime: '2024-06-13T19:47:36.593Z',
-    link: '#example',
+    link: mijnOmgevingPaths.berichtDetail,
   },
   {
     title: 'Uw aanvraag Ooievaarspas in behandeling genomen',
     dateTime: '2024-05-12T19:47:36.593Z',
-    link: '#example',
+    link: mijnOmgevingPaths.berichtDetail,
   },
   {
     title: 'Informatie geven voor uw aanvraag subsidie geluidsisolatie',
     dateTime: '2024-06-15T19:47:36.593Z',
-    link: '#example',
+    link: mijnOmgevingPaths.berichtDetail,
   },
   {
     title: 'Tip: Betaal bedragen met automatische incasso',
     dateTime: '2024-05-01T19:47:36.593Z',
-    link: '#example',
+    link: mijnOmgevingPaths.berichtDetail,
   },
   {
     title: 'Herinnering: Betaling van uw bewoners parkeervergunning',
     dateTime: '2024-04-03T19:47:36.593Z',
-    link: '#example',
+    link: mijnOmgevingPaths.berichtDetail,
   },
   {
     title: 'Uw paspoort is actief',
     dateTime: '2024-03-28T19:47:36.593Z',
-    link: '#example',
+    link: mijnOmgevingPaths.berichtDetail,
   },
   {
     title: 'Werkzaamheden gepland in uw buurt',
     dateTime: '2023-07-06T19:47:36.593Z',
-    link: '#example',
+    link: mijnOmgevingPaths.berichtDetail,
   },
 ];
 
@@ -141,7 +142,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <SideNavigationBase>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
                 <IconLayoutGrid />
                 Overzicht
               </SideNavigationLink>
@@ -149,19 +150,19 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.taken}>
                 <IconListCheck />
                 Mijn taken
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href="/#" current>
+              <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht} current>
                 <IconInbox />
                 Mijn berichten <NumberBadge>2</NumberBadge>
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht}>
                 <IconArchive />
                 Mijn zaken
               </SideNavigationLink>
@@ -195,7 +196,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens}>
                 <IconUser />
                 Mijn gegevens
               </SideNavigationLink>

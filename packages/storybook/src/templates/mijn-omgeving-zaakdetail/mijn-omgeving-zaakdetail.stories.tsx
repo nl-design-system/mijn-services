@@ -40,6 +40,7 @@ import {
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
+import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const meta = {
   title: 'Templates/MijnOmgeving/MijnZaken/Detailpagina',
@@ -61,7 +62,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
   <Layout logo={logo} footerLogo={footerLogo}>
     <Grid paddingTop={'x-large'}>
       <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
-        <Link href={'/#'} className="todo-breadcrumb--mobile">
+        <Link href={mijnOmgevingPaths.zakenOverzicht} className="todo-breadcrumb--mobile">
           <Icon>
             <IconChevronLeft />
           </Icon>
@@ -78,7 +79,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
               <IconChevronRight />
             </Icon>
           </BreadcrumbNavSeparator>
-          <BreadcrumbNavLink href={'/#'}>Mijn zaken</BreadcrumbNavLink>
+          <BreadcrumbNavLink href={mijnOmgevingPaths.zakenOverzicht}>Mijn zaken</BreadcrumbNavLink>
           <BreadcrumbNavSeparator>
             <Icon>
               <IconChevronRight />
@@ -94,7 +95,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <SideNavigationBase>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
                 <IconLayoutGrid />
                 Overzicht
               </SideNavigationLink>
@@ -102,19 +103,19 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.taken}>
                 <IconListCheck />
                 Mijn taken
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht}>
                 <IconInbox />
                 Mijn berichten <NumberBadge>2</NumberBadge>
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href="/#" current>
+              <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht} current>
                 <IconArchive />
                 Mijn zaken
               </SideNavigationLink>
@@ -148,7 +149,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens}>
                 <IconUser />
                 Mijn gegevens
               </SideNavigationLink>

@@ -44,6 +44,7 @@ import { ReactElement } from 'react';
 import { ExpandableSection } from '../../components/ExpandableSection';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
+import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const meta = {
   title: 'Templates/MijnProfiel/MijnGegevens',
@@ -99,7 +100,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <SideNavigationBase>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#" current>
+              <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
                 <IconLayoutGrid />
                 Overzicht
               </SideNavigationLink>
@@ -107,19 +108,19 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.taken}>
                 <IconListCheck />
                 Mijn taken
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht}>
                 <IconInbox />
                 Mijn berichten <NumberBadge>2</NumberBadge>
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht}>
                 <IconArchive />
                 Mijn zaken
               </SideNavigationLink>
@@ -153,7 +154,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens} current>
                 <IconUser />
                 Mijn gegevens
               </SideNavigationLink>

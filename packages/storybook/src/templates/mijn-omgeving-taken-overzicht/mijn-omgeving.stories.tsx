@@ -36,6 +36,7 @@ import {
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
+import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const meta = {
   title: 'Templates/MijnOmgeving/MijnTaken/Overzicht',
@@ -90,7 +91,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <SideNavigationBase>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
                 <IconLayoutGrid />
                 Overzicht
               </SideNavigationLink>
@@ -98,19 +99,19 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#" current>
+              <SideNavigationLink href={mijnOmgevingPaths.taken} current>
                 <IconListCheck />
                 Mijn taken
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht}>
                 <IconInbox />
                 Mijn berichten <NumberBadge>2</NumberBadge>
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht}>
                 <IconArchive />
                 Mijn zaken
               </SideNavigationLink>
@@ -144,7 +145,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens}>
                 <IconUser />
                 Mijn gegevens
               </SideNavigationLink>
@@ -160,7 +161,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             <ActionSingle
               className={'todo-action--single'}
               labels={labels}
-              link={'#'}
+              link={mijnOmgevingPaths.zaakDetail}
               now="2023-09-28T19:47:36.593Z"
               dateTime="2023-09-30T19:47:36.593Z"
               relativeDate={true}
@@ -171,13 +172,13 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
               className={'todo-action--single'}
               dateTime="2023-10-02T19:47:36.593Z"
               labels={labels}
-              link={'#'}
+              link={mijnOmgevingPaths.zaakDetail}
               now="2023-09-28T19:47:36.593Z"
               relativeDate
             >
               <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
             </ActionSingle>
-            <ActionSingle className={'todo-action--single'} link={'#'} labels={labels}>
+            <ActionSingle className={'todo-action--single'} link={mijnOmgevingPaths.zaakDetail} labels={labels}>
               <strong>Verleng uw identiteitskaart</strong>
             </ActionSingle>
           </section>

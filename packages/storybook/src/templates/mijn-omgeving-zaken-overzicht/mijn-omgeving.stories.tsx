@@ -36,6 +36,7 @@ import {
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
+import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const meta = {
   title: 'Templates/MijnOmgeving/MijnZaken/Overzicht',
@@ -90,7 +91,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <SideNavigationBase>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
                 <IconLayoutGrid />
                 Overzicht
               </SideNavigationLink>
@@ -98,19 +99,19 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.taken}>
                 <IconListCheck />
                 Mijn taken
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht}>
                 <IconInbox />
                 Mijn berichten <NumberBadge>2</NumberBadge>
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href="/#" current>
+              <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht} current>
                 <IconArchive />
                 Mijn zaken
               </SideNavigationLink>
@@ -144,7 +145,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href="/#">
+              <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens}>
                 <IconUser />
                 Mijn gegevens
               </SideNavigationLink>
@@ -158,10 +159,24 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           <section>
             <Heading level={1}>Mijn zaken</Heading>
             <div className={'todo-card-layout'}>
-              <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} context={'ZK-29124'} />
-              <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} context={'ZK-02599'} />
-              <CaseCard title={'Bezwaar tegen WOZ-waarde'} href={'#'} context={'ZK-00122'} appearance="archived" />
-              <CaseCard title={'Aanvraag paspoort'} href={'#'} context={'ZK-99084'} appearance="archived" />
+              <CaseCard
+                title={'Aanvraag subsidie geluidsisolatie'}
+                href={mijnOmgevingPaths.zaakDetail}
+                context={'ZK-29124'}
+              />
+              <CaseCard title={'Aanvraag parkeervergunning'} href={mijnOmgevingPaths.zaakDetail} context={'ZK-02599'} />
+              <CaseCard
+                title={'Bezwaar tegen WOZ-waarde'}
+                href={mijnOmgevingPaths.zaakDetail}
+                context={'ZK-00122'}
+                appearance="archived"
+              />
+              <CaseCard
+                title={'Aanvraag paspoort'}
+                href={mijnOmgevingPaths.zaakDetail}
+                context={'ZK-99084'}
+                appearance="archived"
+              />
             </div>
           </section>
         </main>
