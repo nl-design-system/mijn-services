@@ -185,7 +185,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SpotlightSection>
 
           <Heading level={2}> Contactgegevens</Heading>
-          <Link href="#">
+          <Link href="#" className="todo-link">
             <Icon>
               <IconPencil />
             </Icon>{' '}
@@ -275,10 +275,12 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
               },
             ]}
           />
-          <Link href="#">Meer informatie over wijzigen van adresgegevens</Link>
+          <Link href="#" className="todo-link">
+            Meer informatie over wijzigen van adresgegevens
+          </Link>
 
           <Heading level={2}>Meldingen</Heading>
-          <Link href="#">
+          <Link href="#" className="todo-link">
             <Icon>
               <IconPencil />
             </Icon>{' '}

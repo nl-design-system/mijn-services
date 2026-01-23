@@ -83,6 +83,16 @@
   margin-block-end: 16px;
 }
 
+.todo-link {
+  display: flex;
+  margin-block-end: var(--basis-space-block-xl); /*  --nl-link-margin-block-end bestaat niet */
+  margin-block-start: var(--basis-space-block-xl);
+}
+
+.utrecht-link-list__link-text {
+  display: flex;
+}
+
 .todo-page-footer__grid {
   margin-inline-end: auto;
   margin-inline-start: auto;
