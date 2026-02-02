@@ -45,7 +45,7 @@ import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../componen
 import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const meta = {
-  title: 'Templates/MijnProfiel/MijnGegevens',
+  title: 'Templates/MijnOmgeving/MijnGegevens/Overzicht',
   globals: {
     dir: 'ltr',
     lang: 'nl',
