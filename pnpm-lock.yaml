@@ -169,8 +169,8 @@ importers:
         specifier: 8.0.0
         version: 8.0.0
       '@rijkshuisstijl-community/design-tokens':
-        specifier: 9.0.0
-        version: 9.0.0
+        specifier: 11.1.0
+        version: 11.1.0
       '@storybook/addon-a11y':
         specifier: 10.1.11
         version: 10.1.11(storybook@10.1.11(prettier@3.8.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))
@@ -1210,8 +1210,8 @@ packages:
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@rijkshuisstijl-community/design-tokens@9.0.0':
-    resolution: {integrity: sha512-zuuj4vnw2jcORmxAfqD9wP1eRaawSCLAq4rc2fZaNWMjYv93JTOfo9B5cHnwPllsI/DiKBmDZfS+VQDf94RA6w==}
+  '@rijkshuisstijl-community/design-tokens@11.1.0':
+    resolution: {integrity: sha512-QWAsFCEVv9AlOnISFMlBvU1M75D/LmI4sUU5RegMkj3HZH1a9A218rlExlIy/6KfmtvL67TUTnuZYkDEZmQ/UQ==}
 
   '@rollup/pluginutils@5.3.0':
     resolution: {integrity: sha512-5EdhGZtnu3V88ces7s53hhfK5KSASnJZv8Lulpc04cWO3REESroJXg73DFsOmgbU2BhwV0E20bu2IDZb3VKW4Q==}
@@ -3259,6 +3259,7 @@ packages:
   glob@11.1.0:
     resolution: {integrity: sha512-vuNwKSaKiqm7g0THUBu2x7ckSs3XJLXE+2ssL7/MfTGPLLcrJQ/4Uq1CjPTtO5cCIiRxqvN6Twy1qOwhL0Xjcw==}
     engines: {node: 20 || >=22}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@13.0.0:
@@ -7102,7 +7103,7 @@ snapshots:
 
   '@pkgr/core@0.2.9': {}
 
-  '@rijkshuisstijl-community/design-tokens@9.0.0': {}
+  '@rijkshuisstijl-community/design-tokens@11.1.0': {}
 
   '@rollup/pluginutils@5.3.0(rollup@4.53.2)':
     dependencies:
