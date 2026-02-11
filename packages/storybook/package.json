@@ -55,7 +55,7 @@
     "@utrecht/web-component-library-react": "4.0.0",
     "@whitespace/storybook-addon-html": "8.0.2",
     "eslint-plugin-storybook": "10.1.11",
-    "react": "19.2.3",
+    "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-syntax-highlighter": "16.1.0",
     "rimraf": "6.1.2",
