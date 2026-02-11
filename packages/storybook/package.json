@@ -38,7 +38,7 @@
     "@nl-design-system-candidate/paragraph-react": "2.2.2",
     "@nl-design-system-candidate/skip-link-react": "1.1.7",
     "@nl-design-system-unstable/voorbeeld-design-tokens": "8.0.0",
-    "@rijkshuisstijl-community/design-tokens": "9.0.0",
+    "@rijkshuisstijl-community/design-tokens": "11.1.0",
     "@storybook/addon-a11y": "10.1.11",
     "@storybook/addon-docs": "10.1.11",
     "@storybook/addon-links": "10.1.11",

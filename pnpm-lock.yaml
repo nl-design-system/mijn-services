@@ -169,8 +169,8 @@ importers:
         specifier: 8.0.0
         version: 8.0.0
       '@rijkshuisstijl-community/design-tokens':
-        specifier: 9.0.0
-        version: 9.0.0
+        specifier: 11.1.0
+        version: 11.1.0
       '@storybook/addon-a11y':
         specifier: 10.1.11
         version: 10.1.11(storybook@10.1.11(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
@@ -1217,8 +1217,8 @@ packages:
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@rijkshuisstijl-community/design-tokens@9.0.0':
-    resolution: {integrity: sha512-zuuj4vnw2jcORmxAfqD9wP1eRaawSCLAq4rc2fZaNWMjYv93JTOfo9B5cHnwPllsI/DiKBmDZfS+VQDf94RA6w==}
+  '@rijkshuisstijl-community/design-tokens@11.1.0':
+    resolution: {integrity: sha512-QWAsFCEVv9AlOnISFMlBvU1M75D/LmI4sUU5RegMkj3HZH1a9A218rlExlIy/6KfmtvL67TUTnuZYkDEZmQ/UQ==}
 
   '@rollup/pluginutils@5.3.0':
     resolution: {integrity: sha512-5EdhGZtnu3V88ces7s53hhfK5KSASnJZv8Lulpc04cWO3REESroJXg73DFsOmgbU2BhwV0E20bu2IDZb3VKW4Q==}
@@ -7110,7 +7110,7 @@ snapshots:
 
   '@pkgr/core@0.2.9': {}
 
-  '@rijkshuisstijl-community/design-tokens@9.0.0': {}
+  '@rijkshuisstijl-community/design-tokens@11.1.0': {}
 
   '@rollup/pluginutils@5.3.0(rollup@4.53.2)':
     dependencies:
