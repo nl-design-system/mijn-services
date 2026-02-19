@@ -23,6 +23,8 @@
     "@rijkshuisstijl-community/design-tokens": "9.0.0",
     "@tabler/icons-react": "3.36.1",
     "@utrecht/component-library-react": "12.0.0",
+    "@utrecht/body-css": "2.0.1",
+    "@utrecht/root-css": "2.0.1",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"

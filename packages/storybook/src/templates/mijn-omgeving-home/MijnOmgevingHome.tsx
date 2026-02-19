@@ -1,5 +1,5 @@
 'use client';
-
+import '@amsterdam/design-system-css/dist/grid/grid.css';
 import { Grid } from '@amsterdam/design-system-react';
 import { ActionSingle } from '@gemeente-denhaag/action';
 import { CaseCard } from '@gemeente-denhaag/card';
@@ -13,6 +13,10 @@ import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react/css';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
+import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
+import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
+import '@rijkshuisstijl-community/design-tokens/dist/index.css';
+import '../../themes/index.scss';
 import {
   IconArchive,
   IconBuildingCommunity,

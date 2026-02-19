@@ -285,9 +285,15 @@ importers:
       '@tabler/icons-react':
         specifier: 3.36.1
         version: 3.36.1(react@19.2.3)
+      '@utrecht/body-css':
+        specifier: 2.0.1
+        version: 2.0.1
       '@utrecht/component-library-react':
         specifier: 12.0.0
         version: 12.0.0(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@utrecht/root-css':
+        specifier: 2.0.1
+        version: 2.0.1
       next:
         specifier: 16.1.6
         version: 16.1.6(@babel/core@7.28.5)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(sass@1.97.3)
