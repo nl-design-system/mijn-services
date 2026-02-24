@@ -38,8 +38,8 @@ import {
   BreadcrumbNavSeparator,
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
+import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
-import { PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const labels = {
@@ -54,9 +54,9 @@ const labels = {
   },
 };
 
-export default function MijnOmgevingHome() {
+export default function MijnOmgevingHome({ logo, footerLogo }: { logo: ReactElement; footerLogo?: ReactElement }) {
   return (
-    <Layout logo={<PageHeaderLogo />} footerLogo={<VoorbeeldFooterLogo />}>
+    <Layout logo={logo} footerLogo={footerLogo}>
       <Grid paddingTop={'x-large'}>
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
           <Link href={'/#'} className="todo-breadcrumb--mobile">
