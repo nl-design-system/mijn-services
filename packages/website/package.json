@@ -1,12 +1,16 @@
 {
-  "name": "website",
+  "name": "@vng.nl/website",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:nl-design-system/services.git",
+    "directory": "packages/website"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "next start"
   },
   "dependencies": {
     "@amsterdam/design-system-css": "3.0.0",
