@@ -36,14 +36,16 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement, useEffect, useState } from 'react';
 import { Layout } from '../../components/Layout';
-import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
+import { MijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 export default function MijnOmgevingZakenOverzicht({
   logo,
   footerLogo,
+  paths,
 }: {
   logo: ReactElement;
   footerLogo?: ReactElement;
+  paths: MijnOmgevingPaths;
 }) {
   const [tabsKey, setTabsKey] = useState(0);
 
@@ -89,7 +91,7 @@ export default function MijnOmgevingZakenOverzicht({
           <SideNavigationBase>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
+                <SideNavigationLink href={paths.overzicht}>
                   <IconLayoutGrid />
                   Overzicht
                 </SideNavigationLink>
@@ -97,19 +99,19 @@ export default function MijnOmgevingZakenOverzicht({
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.taken}>
+                <SideNavigationLink href={paths.taken}>
                   <IconListCheck />
                   Mijn taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht}>
+                <SideNavigationLink href={paths.berichtenOverzicht}>
                   <IconInbox />
                   Mijn berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht} current>
+                <SideNavigationLink href={paths.zakenOverzicht} current>
                   <IconArchive />
                   Mijn zaken
                 </SideNavigationLink>
@@ -143,7 +145,7 @@ export default function MijnOmgevingZakenOverzicht({
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens}>
+                <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
                   Mijn gegevens
                 </SideNavigationLink>
@@ -165,14 +167,10 @@ export default function MijnOmgevingZakenOverzicht({
                       <div className={'todo-card-layout'}>
                         <CaseCard
                           title={'Aanvraag subsidie geluidsisolatie'}
-                          href={mijnOmgevingPaths.zaakDetail}
+                          href={paths.zaakDetail}
                           context={'ZK-29124'}
                         />
-                        <CaseCard
-                          title={'Aanvraag parkeervergunning'}
-                          href={mijnOmgevingPaths.zaakDetail}
-                          context={'ZK-02599'}
-                        />
+                        <CaseCard title={'Aanvraag parkeervergunning'} href={paths.zaakDetail} context={'ZK-02599'} />
                       </div>
                     ),
                   },
@@ -182,13 +180,13 @@ export default function MijnOmgevingZakenOverzicht({
                       <div className={'todo-card-layout'}>
                         <CaseCard
                           title={'Bezwaar tegen WOZ-waarde'}
-                          href={mijnOmgevingPaths.zaakDetail}
+                          href={paths.zaakDetail}
                           context={'ZK-00122'}
                           appearance="archived"
                         />
                         <CaseCard
                           title={'Aanvraag paspoort'}
-                          href={mijnOmgevingPaths.zaakDetail}
+                          href={paths.zaakDetail}
                           context={'ZK-99084'}
                           appearance="archived"
                         />
