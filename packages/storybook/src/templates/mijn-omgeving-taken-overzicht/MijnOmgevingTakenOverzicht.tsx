@@ -35,7 +35,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
-import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
+import { MijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const labels = {
   today: 'vandaag',
@@ -52,9 +52,11 @@ const labels = {
 export default function MijnOmgevingTakenOverzicht({
   logo,
   footerLogo,
+  paths,
 }: {
   logo: ReactElement;
   footerLogo?: ReactElement;
+  paths: MijnOmgevingPaths;
 }) {
   return (
     <Layout logo={logo} footerLogo={footerLogo}>
@@ -93,7 +95,7 @@ export default function MijnOmgevingTakenOverzicht({
           <SideNavigationBase>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
+                <SideNavigationLink href={paths.overzicht}>
                   <IconLayoutGrid />
                   Overzicht
                 </SideNavigationLink>
@@ -101,19 +103,19 @@ export default function MijnOmgevingTakenOverzicht({
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.taken} current>
+                <SideNavigationLink href={paths.taken} current>
                   <IconListCheck />
                   Mijn taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht}>
+                <SideNavigationLink href={paths.berichtenOverzicht}>
                   <IconInbox />
                   Mijn berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht}>
+                <SideNavigationLink href={paths.zakenOverzicht}>
                   <IconArchive />
                   Mijn zaken
                 </SideNavigationLink>
@@ -147,7 +149,7 @@ export default function MijnOmgevingTakenOverzicht({
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens}>
+                <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
                   Mijn gegevens
                 </SideNavigationLink>
@@ -163,7 +165,7 @@ export default function MijnOmgevingTakenOverzicht({
               <ActionSingle
                 className={'todo-action--single'}
                 labels={labels}
-                link={mijnOmgevingPaths.zaakDetail}
+                link={paths.zaakDetail}
                 now="2023-09-28T19:47:36.593Z"
                 dateTime="2023-09-30T19:47:36.593Z"
                 relativeDate={true}
@@ -174,13 +176,13 @@ export default function MijnOmgevingTakenOverzicht({
                 className={'todo-action--single'}
                 dateTime="2023-10-02T19:47:36.593Z"
                 labels={labels}
-                link={mijnOmgevingPaths.zaakDetail}
+                link={paths.zaakDetail}
                 now="2023-09-28T19:47:36.593Z"
                 relativeDate
               >
                 <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
               </ActionSingle>
-              <ActionSingle className={'todo-action--single'} link={mijnOmgevingPaths.zaakDetail} labels={labels}>
+              <ActionSingle className={'todo-action--single'} link={paths.zaakDetail} labels={labels}>
                 <strong>Verleng uw identiteitskaart</strong>
               </ActionSingle>
             </section>

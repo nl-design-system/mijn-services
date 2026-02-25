@@ -42,14 +42,16 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
-import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
+import { MijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 export default function MijnOmgevingGegevensOverzicht({
   logo,
   footerLogo,
+  paths,
 }: {
   logo: ReactElement;
   footerLogo?: ReactElement;
+  paths: MijnOmgevingPaths;
 }) {
   return (
     <Layout logo={logo} footerLogo={footerLogo}>
@@ -88,7 +90,7 @@ export default function MijnOmgevingGegevensOverzicht({
           <SideNavigationBase>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
+                <SideNavigationLink href={paths.overzicht}>
                   <IconLayoutGrid />
                   Overzicht
                 </SideNavigationLink>
@@ -96,19 +98,19 @@ export default function MijnOmgevingGegevensOverzicht({
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.taken}>
+                <SideNavigationLink href={paths.taken}>
                   <IconListCheck />
                   Mijn taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht}>
+                <SideNavigationLink href={paths.berichtenOverzicht}>
                   <IconInbox />
                   Mijn berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht}>
+                <SideNavigationLink href={paths.zakenOverzicht}>
                   <IconArchive />
                   Mijn zaken
                 </SideNavigationLink>
@@ -142,7 +144,7 @@ export default function MijnOmgevingGegevensOverzicht({
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens} current>
+                <SideNavigationLink href={paths.mijnGegevens} current>
                   <IconUser />
                   Mijn gegevens
                 </SideNavigationLink>

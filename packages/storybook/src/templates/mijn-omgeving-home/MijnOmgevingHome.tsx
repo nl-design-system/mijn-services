@@ -40,7 +40,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
-import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
+import { MijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const labels = {
   today: 'vandaag',
@@ -54,7 +54,15 @@ const labels = {
   },
 };
 
-export default function MijnOmgevingHome({ logo, footerLogo }: { logo: ReactElement; footerLogo?: ReactElement }) {
+export default function MijnOmgevingHome({
+  logo,
+  footerLogo,
+  paths,
+}: {
+  logo: ReactElement;
+  footerLogo?: ReactElement;
+  paths: MijnOmgevingPaths;
+}) {
   return (
     <Layout logo={logo} footerLogo={footerLogo}>
       <Grid paddingTop={'x-large'}>
@@ -86,7 +94,7 @@ export default function MijnOmgevingHome({ logo, footerLogo }: { logo: ReactElem
           <SideNavigationBase>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.overzicht} current>
+                <SideNavigationLink href={paths.overzicht} current>
                   <IconLayoutGrid />
                   Overzicht
                 </SideNavigationLink>
@@ -94,19 +102,19 @@ export default function MijnOmgevingHome({ logo, footerLogo }: { logo: ReactElem
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.taken}>
+                <SideNavigationLink href={paths.taken}>
                   <IconListCheck />
                   Mijn taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht}>
+                <SideNavigationLink href={paths.berichtenOverzicht}>
                   <IconInbox />
                   Mijn berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht}>
+                <SideNavigationLink href={paths.zakenOverzicht}>
                   <IconArchive />
                   Mijn zaken
                 </SideNavigationLink>
@@ -140,7 +148,7 @@ export default function MijnOmgevingHome({ logo, footerLogo }: { logo: ReactElem
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens}>
+                <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
                   Mijn gegevens
                 </SideNavigationLink>
@@ -166,11 +174,11 @@ export default function MijnOmgevingHome({ logo, footerLogo }: { logo: ReactElem
             </Paragraph>
             <section>
               <Heading level={2}>Wat moet ik regelen</Heading>
-              <Link href={mijnOmgevingPaths.taken}>Bekijk alle taken (10)</Link>
+              <Link href={paths.taken}>Bekijk alle taken (10)</Link>
               <ActionSingle
                 className={'todo-action--single'}
                 labels={labels}
-                link={mijnOmgevingPaths.zaakDetail}
+                link={paths.zaakDetail}
                 now="2023-09-28T19:47:36.593Z"
                 dateTime="2023-09-30T19:47:36.593Z"
                 relativeDate={true}
@@ -181,40 +189,24 @@ export default function MijnOmgevingHome({ logo, footerLogo }: { logo: ReactElem
                 className={'todo-action--single'}
                 dateTime="2023-10-02T19:47:36.593Z"
                 labels={labels}
-                link={mijnOmgevingPaths.zaakDetail}
+                link={paths.zaakDetail}
                 now="2023-09-28T19:47:36.593Z"
                 relativeDate
               >
                 <strong>Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein</strong>
               </ActionSingle>
-              <ActionSingle className={'todo-action--single'} link={mijnOmgevingPaths.zaakDetail} labels={labels}>
+              <ActionSingle className={'todo-action--single'} link={paths.zaakDetail} labels={labels}>
                 <strong>Verleng uw identiteitskaart</strong>
               </ActionSingle>
             </section>
             <section>
               <Heading level={2}>Mijn zaken</Heading>
-              <Link href={mijnOmgevingPaths.zakenOverzicht}>Bekijk alle zaken (15)</Link>
+              <Link href={paths.zakenOverzicht}>Bekijk alle zaken (15)</Link>
               <div className={'todo-card-layout'}>
-                <CaseCard
-                  title={'Aanvraag subsidie geluidsisolatie'}
-                  href={mijnOmgevingPaths.zaakDetail}
-                  context={'ZK-228402'}
-                />
-                <CaseCard
-                  title={'Aanvraag parkeervergunning'}
-                  href={mijnOmgevingPaths.zaakDetail}
-                  context={'ZK-108422'}
-                />
-                <CaseCard
-                  title={'Aanvraag subsidie geluidsisolatie'}
-                  href={mijnOmgevingPaths.zaakDetail}
-                  context={'ZK-228402'}
-                />
-                <CaseCard
-                  title={'Aanvraag parkeervergunning'}
-                  href={mijnOmgevingPaths.zaakDetail}
-                  context={'ZK-108422'}
-                />
+                <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={paths.zaakDetail} context={'ZK-228402'} />
+                <CaseCard title={'Aanvraag parkeervergunning'} href={paths.zaakDetail} context={'ZK-108422'} />
+                <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={paths.zaakDetail} context={'ZK-228402'} />
+                <CaseCard title={'Aanvraag parkeervergunning'} href={paths.zaakDetail} context={'ZK-108422'} />
               </div>
             </section>
           </main>

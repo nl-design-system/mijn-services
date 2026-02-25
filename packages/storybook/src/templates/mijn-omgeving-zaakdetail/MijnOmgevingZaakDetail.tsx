@@ -40,7 +40,7 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
-import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
+import { MijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const labels = {
   today: 'vandaag',
@@ -175,15 +175,17 @@ const contactTimeline = <ContactTimeline {...contactTimelineArgs} />;
 export default function MijnOmgevingZaakDetail({
   logo,
   footerLogo,
+  paths,
 }: {
   logo: ReactElement;
   footerLogo?: ReactElement;
+  paths: MijnOmgevingPaths;
 }) {
   return (
     <Layout logo={logo} footerLogo={footerLogo}>
       <Grid paddingTop={'x-large'}>
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
-          <Link href={mijnOmgevingPaths.zakenOverzicht} className="todo-breadcrumb--mobile">
+          <Link href={paths.zakenOverzicht} className="todo-breadcrumb--mobile">
             <Icon>
               <IconChevronLeft />
             </Icon>
@@ -200,7 +202,7 @@ export default function MijnOmgevingZaakDetail({
                 <IconChevronRight />
               </Icon>
             </BreadcrumbNavSeparator>
-            <BreadcrumbNavLink href={mijnOmgevingPaths.zakenOverzicht}>Mijn zaken</BreadcrumbNavLink>
+            <BreadcrumbNavLink href={paths.zakenOverzicht}>Mijn zaken</BreadcrumbNavLink>
             <BreadcrumbNavSeparator>
               <Icon>
                 <IconChevronRight />
@@ -216,7 +218,7 @@ export default function MijnOmgevingZaakDetail({
           <SideNavigationBase>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
+                <SideNavigationLink href={paths.overzicht}>
                   <IconLayoutGrid />
                   Overzicht
                 </SideNavigationLink>
@@ -224,19 +226,19 @@ export default function MijnOmgevingZaakDetail({
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.taken}>
+                <SideNavigationLink href={paths.taken}>
                   <IconListCheck />
                   Mijn taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht}>
+                <SideNavigationLink href={paths.berichtenOverzicht}>
                   <IconInbox />
                   Mijn berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht} current>
+                <SideNavigationLink href={paths.zakenOverzicht} current>
                   <IconArchive />
                   Mijn zaken
                 </SideNavigationLink>
@@ -270,7 +272,7 @@ export default function MijnOmgevingZaakDetail({
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens}>
+                <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
                   Mijn gegevens
                 </SideNavigationLink>
