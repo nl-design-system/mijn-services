@@ -196,8 +196,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1
       '@utrecht/button-react':
-        specifier: 2.0.10
-        version: 2.0.10(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        specifier: 3.0.0
+        version: 3.0.0(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/component-library-react':
         specifier: 12.0.0
         version: 12.0.0(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -1772,6 +1772,13 @@ packages:
 
   '@utrecht/button-react@2.0.10':
     resolution: {integrity: sha512-UWrIsT5OG82LQLD8sGhng1P4aJ4KfixjnZFScGJiSySBGczW7TdqMgyjK9/ROKzAxyrMnXUKkq7RBRqT238nrg==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
+  '@utrecht/button-react@3.0.0':
+    resolution: {integrity: sha512-gjfSD2ukhD/TZToLB2eLhbcEB+SB3yp3GPNjuoCoy3F3NdJo9+/r0RkCFoO4f2AW8BaVNW23iwPgAVBV6Pe+LA==}
     peerDependencies:
       '@babel/runtime': '*'
       react: ^18.0.0 || ^19.0.0
@@ -7664,6 +7671,14 @@ snapshots:
   '@utrecht/button-link-css@2.0.1': {}
 
   '@utrecht/button-react@2.0.10(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/button-css': 3.0.1
+      clsx: 2.1.1
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@utrecht/button-react@3.0.0(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@utrecht/button-css': 3.0.1
