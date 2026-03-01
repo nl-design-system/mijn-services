@@ -86,7 +86,7 @@ jobs:
         run: pnpm run --if-present build
 
       - name: Publish to Chromatic
-        uses: chromaui/action@07791f8243f4cb2698bf4d00426baf4b2d1cb7e0 # v13.3.5
+        uses: chromaui/action@5ec258af08deb3e8c36653bd618cb7fe52090031 # v15.2.0
         with:
           autoAcceptChanges: main
           exitOnceUploaded: true
