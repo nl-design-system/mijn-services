@@ -14,22 +14,22 @@ importers:
     devDependencies:
       '@changesets/cli':
         specifier: 2.30.0
-        version: 2.30.0(@types/node@24.11.0)
+        version: 2.30.0(@types/node@25.3.3)
       '@lerna-lite/cli':
         specifier: 4.11.3
-        version: 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@24.11.0)
+        version: 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@25.3.3)
       '@lerna-lite/publish':
         specifier: 4.11.3
-        version: 4.11.3(@lerna-lite/run@4.11.3)(@types/node@24.11.0)(conventional-commits-filter@5.0.0)
+        version: 4.11.3(@lerna-lite/run@4.11.3)(@types/node@25.3.3)(conventional-commits-filter@5.0.0)
       '@lerna-lite/run':
         specifier: 4.11.3
-        version: 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@24.11.0)
+        version: 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@25.3.3)
       '@lerna-lite/version':
         specifier: 4.11.3
-        version: 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@types/node@24.11.0)(conventional-commits-filter@5.0.0)
+        version: 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@types/node@25.3.3)(conventional-commits-filter@5.0.0)
       '@types/node':
-        specifier: 24.11.0
-        version: 24.11.0
+        specifier: 25.3.3
+        version: 25.3.3
       '@typescript-eslint/eslint-plugin':
         specifier: 8.56.1
         version: 8.56.1(@typescript-eslint/parser@8.56.1(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
@@ -166,23 +166,23 @@ importers:
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.28.6)(react@19.2.4)
       '@nl-design-system-unstable/voorbeeld-design-tokens':
-        specifier: 8.0.0
-        version: 8.0.0
-      '@rijkshuisstijl-community/design-tokens':
         specifier: 9.0.0
         version: 9.0.0
+      '@rijkshuisstijl-community/design-tokens':
+        specifier: 11.1.0
+        version: 11.1.0
       '@storybook/addon-a11y':
         specifier: 10.2.14
         version: 10.2.14(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
       '@storybook/addon-docs':
         specifier: 10.2.14
-        version: 10.2.14(@types/react@19.2.14)(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
+        version: 10.2.14(@types/react@19.2.14)(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
       '@storybook/addon-links':
         specifier: 10.2.14
         version: 10.2.14(react@19.2.4)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
       '@storybook/react-vite':
         specifier: 10.2.14
-        version: 10.2.14(esbuild@0.27.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
+        version: 10.2.14(esbuild@0.27.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
       '@tabler/icons-react':
         specifier: 3.38.0
         version: 3.38.0(react@19.2.4)
@@ -196,11 +196,11 @@ importers:
         specifier: 2.0.1
         version: 2.0.1
       '@utrecht/button-react':
-        specifier: 2.0.10
-        version: 2.0.10(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        specifier: 3.0.0
+        version: 3.0.0(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/component-library-react':
-        specifier: 12.0.0
-        version: 12.0.0(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        specifier: 13.0.0
+        version: 13.0.0(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/design-tokens':
         specifier: 5.0.1
         version: 5.0.1
@@ -214,8 +214,8 @@ importers:
         specifier: 4.0.1
         version: 4.0.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@whitespace/storybook-addon-html':
-        specifier: 8.0.2
-        version: 8.0.2(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
+        specifier: 9.0.0
+        version: 9.0.0(prettier@3.8.1)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
       eslint-plugin-storybook:
         specifier: 10.2.14
         version: 10.2.14(eslint@8.57.1)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
@@ -242,7 +242,7 @@ importers:
         version: 5.9.3
       vite:
         specifier: 7.3.1
-        version: 7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2)
+        version: 7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2)
 
 packages:
 
@@ -975,8 +975,8 @@ packages:
       '@babel/runtime': ^7
       react: ^18 || ^19
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@8.0.0':
-    resolution: {integrity: sha512-507RURF0P+sBHSOJhd3XnJWdGY2dV/w04CsG+Yvuzz69IgyzHvCZK2n43BqpQeRczZ1nzVhZ9XeB3tIUwlK/jQ==}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@9.0.0':
+    resolution: {integrity: sha512-2sEhQg6nsAo5pGQq/HZ4Qj2O1gVyB5zt9y9r9SMDuWaN5FyesElQUJF/NbUBEuXg+8C4sgex2bgYwBJ+Sl3Kqw==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1224,8 +1224,8 @@ packages:
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@rijkshuisstijl-community/design-tokens@9.0.0':
-    resolution: {integrity: sha512-zuuj4vnw2jcORmxAfqD9wP1eRaawSCLAq4rc2fZaNWMjYv93JTOfo9B5cHnwPllsI/DiKBmDZfS+VQDf94RA6w==}
+  '@rijkshuisstijl-community/design-tokens@11.1.0':
+    resolution: {integrity: sha512-QWAsFCEVv9AlOnISFMlBvU1M75D/LmI4sUU5RegMkj3HZH1a9A218rlExlIy/6KfmtvL67TUTnuZYkDEZmQ/UQ==}
 
   '@rollup/pluginutils@5.3.0':
     resolution: {integrity: sha512-5EdhGZtnu3V88ces7s53hhfK5KSASnJZv8Lulpc04cWO3REESroJXg73DFsOmgbU2BhwV0E20bu2IDZb3VKW4Q==}
@@ -1574,8 +1574,8 @@ packages:
   '@types/node@22.19.8':
     resolution: {integrity: sha512-ebO/Yl+EAvVe8DnMfi+iaAyIqYdK0q/q0y0rw82INWEKJOBe6b/P3YWE8NW7oOlF/nXFNrHwhARrN/hdgDkraA==}
 
-  '@types/node@24.11.0':
-    resolution: {integrity: sha512-fPxQqz4VTgPI/IQ+lj9r0h+fDR66bzoeMGHp8ASee+32OSGIkeASsoZuJixsQoVef1QJbeubcPBxKk22QVoWdw==}
+  '@types/node@25.3.3':
+    resolution: {integrity: sha512-DpzbrH7wIcBaJibpKo9nnSQL0MTRdnWttGyE5haGwK86xgMOkFLp7vEyfQPGLOJh5wNYiJ3V9PmUMDhV9u8kkQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1775,6 +1775,13 @@ packages:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
 
+  '@utrecht/button-react@3.0.0':
+    resolution: {integrity: sha512-gjfSD2ukhD/TZToLB2eLhbcEB+SB3yp3GPNjuoCoy3F3NdJo9+/r0RkCFoO4f2AW8BaVNW23iwPgAVBV6Pe+LA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@utrecht/calendar-css@2.0.1':
     resolution: {integrity: sha512-ilczc5hcha8cYFhH28pyrY21DCOl3gEyeWJNiDkdDgFk4esK9MhJUT7D0d334g6uSARzasI61ZEM6A8Czndfqw==}
 
@@ -1785,8 +1792,8 @@ packages:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
 
-  '@utrecht/calendar-react@1.0.15':
-    resolution: {integrity: sha512-WbdNVY/iKVVg4PdOfxxRHfQJJEHTp9wwVXbRnI284TtMLcxCFp1wpiV0ozQ6EBERAmD9yBHyfJoUkSYw6VFkXA==}
+  '@utrecht/calendar-react@1.0.16':
+    resolution: {integrity: sha512-5vxaxQtRhr3UKmSaz5KOq4lCXMPzOaRZatDvqNYJhBE9QaV6B7G2NUZ8b0MWLbYJl9JuROWe1e+55gtFVzYClA==}
     peerDependencies:
       '@babel/runtime': '*'
       react: ^18.0.0 || ^19.0.0
@@ -1851,8 +1858,8 @@ packages:
       vega:
         optional: true
 
-  '@utrecht/component-library-react@12.0.0':
-    resolution: {integrity: sha512-w27W4+9ZyS3y1/Tn/r3WPq6xjCpKbCCHH2QaBq0eryNFnoCp/4xqxUNaxXzss6gRc55Jsxz2JYZiYlPFWNOV5Q==}
+  '@utrecht/component-library-react@13.0.0':
+    resolution: {integrity: sha512-ua78QV8QCw0/zXhCCa7+wToLkyBzNbTGJeW5Tt26cYaJ1ktVhDEBCaLJ95EKJJJN3IJ9stOVwmkiECk6bj92gQ==}
     peerDependencies:
       '@babel/runtime': ^7.23.6
       date-fns: ^2.30.0
@@ -2035,8 +2042,18 @@ packages:
   '@utrecht/listbox-css@2.0.1':
     resolution: {integrity: sha512-oBn1E2EGeQWkFHFryJx+NPLyiwlUP2qJ8CslQsmYMbiBjo7c9W9lx+e9OZn7ZJ/f5kviimZ9mkbwpJ6EjHPvcw==}
 
+  '@utrecht/listbox-css@2.1.0':
+    resolution: {integrity: sha512-3m5BRchEAtjzm0W2fJ9qU4ms45jp1J86rerdFDOSP+Zu0LEN0GCONIhkGM+dfiiq8h0YUl03WRemu2NUjcH8UA==}
+
   '@utrecht/listbox-react@1.0.13':
     resolution: {integrity: sha512-o/VI/MLMfYjda7z5mlntIKKwEB58a425H7JVNLbq3tOEP10TWvDLjRg9jvDcPRwdFZkYSd/7dGW8KtpiQeVeeA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
+  '@utrecht/listbox-react@1.0.14':
+    resolution: {integrity: sha512-5S9/3CA41MqzWTVfdnXXkN7VRMJ+//fHvuTnpLzGeG3PU0P4K0gym5NR1KTb9gO1tOp2sfQPOkJtK+yDDuJ1iQ==}
     peerDependencies:
       '@babel/runtime': '*'
       react: ^18.0.0 || ^19.0.0
@@ -2078,8 +2095,18 @@ packages:
   '@utrecht/open-forms-container-css@2.0.1':
     resolution: {integrity: sha512-dU9rTVEC6x/0V9xL63MoitBgrI5F7EEpj/7lZFhjQVFI2Z5n2ttTS8D0UnD879jnRi52EyFzvGxp31bwoeEyXA==}
 
+  '@utrecht/open-forms-container-css@2.0.2':
+    resolution: {integrity: sha512-C0oVLxmXDzqaqL54fP1J9vkAu/4rADESPI8j93dDUsrBn5EeZnUbD60CLuGb9jrYgyvfLNW1uX1W/TAjZg1lYg==}
+
   '@utrecht/open-forms-container-react@1.0.5':
     resolution: {integrity: sha512-a0WN4m7JdPeAY4daGJfJtL9Fz6I7BOTBp2WTKLWsx2YnX0/GuULbSn0PZV6KM90Upbvyv2hUFmTeI5Q/9W8KYA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
+  '@utrecht/open-forms-container-react@1.0.6':
+    resolution: {integrity: sha512-EoqTvn8BaVHkgnl0OmlIlsp9sms0UspId/fVDbex+HQDNRTW7dNRci1TtE/GczgtkSPyUU+ip21uPPWoQ5yTdA==}
     peerDependencies:
       '@babel/runtime': '*'
       react: ^18.0.0 || ^19.0.0
@@ -2170,8 +2197,18 @@ packages:
   '@utrecht/textbox-css@3.0.1':
     resolution: {integrity: sha512-SP3CFpTd/6CffvSBcpBQ+uKzYusgDB/ri0vmEA/uYfWnRyen1ETQkeCoDJeSUR/D8g24NMdFu7xmOniiwGpRQg==}
 
+  '@utrecht/textbox-css@3.1.0':
+    resolution: {integrity: sha512-KT2r6v1yTcdQPFZhswo/7+dMPL7x8aulBLeYO9SmrlVkpY47owJcB0KrkmMbF51/VvTLh4kW0qbaQ+vKnjwUsg==}
+
   '@utrecht/textbox-react@1.0.12':
     resolution: {integrity: sha512-ulGmFq6Guq4LSdjX9HtZrMDfoRjHd9Y6PdAl8vk/nne0m9p1XMe9nc+FRaa05gcaDHNxjpVidO7MvOjelIGZKg==}
+    peerDependencies:
+      '@babel/runtime': ^7.23.6
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
+  '@utrecht/textbox-react@1.0.13':
+    resolution: {integrity: sha512-z33gq8KRMxYlB8KR+JsXKd71QiOdt89hW6UT146bMVI+3fYjSVkOhgixf8gB0PIAKjcMFjjMsYqq4hfvtQq5gg==}
     peerDependencies:
       '@babel/runtime': ^7.23.6
       react: ^18.0.0 || ^19.0.0
@@ -2213,10 +2250,11 @@ packages:
   '@vitest/utils@3.2.4':
     resolution: {integrity: sha512-fB2V0JFrQSMsCo9HiSq3Ezpdv4iYaXRG1Sx8edX3MwxfyNn83mKiGzOcH+Fkxt4MHxr3y42fQi1oeAInqgX2QA==}
 
-  '@whitespace/storybook-addon-html@8.0.2':
-    resolution: {integrity: sha512-NsCpY+jWl6MamuQuSptuC5A1Xa4UWNtqhbBjv710C8Ka+n+t2e/tCfx1UAsB6m3linja2jU4Zmxu8W026lzLGQ==}
+  '@whitespace/storybook-addon-html@9.0.0':
+    resolution: {integrity: sha512-GX2lk5EgE46Lqbs1sa/7mWDWo6g/tPiIH8SyYvzBgMlUmq/q1mulHLxowQeN/HYpdlFMeUskUlYhMmE64qi44w==}
     peerDependencies:
-      storybook: ^9.0.0
+      prettier: ^3.7.1
+      storybook: ^10
 
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
@@ -3884,6 +3922,9 @@ packages:
   lodash-es@4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
 
+  lodash-es@4.17.23:
+    resolution: {integrity: sha512-kVI48u3PZr38HdYz98UmfPnXl2DXrpdctLrFLCd3kOx1xUkOmpFPx7gCWWM5MPkL/fD8zb+Ph0QzjGFs4+hHWg==}
+
   lodash.chunk@4.2.0:
     resolution: {integrity: sha512-ZzydJKfUHJwHa+hF5X66zLFCBrWn5GeF28OHEr4WVWtNDXlQ/IjWKPBiikqKo2ne0+v6JgCgJ0GzJp8k8bHC7w==}
 
@@ -5510,8 +5551,8 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
-  undici-types@7.16.0:
-    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
+  undici-types@7.18.2:
+    resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
   unicorn-magic@0.1.0:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
@@ -6024,7 +6065,7 @@ snapshots:
     dependencies:
       '@changesets/types': 6.1.0
 
-  '@changesets/cli@2.30.0(@types/node@24.11.0)':
+  '@changesets/cli@2.30.0(@types/node@25.3.3)':
     dependencies:
       '@changesets/apply-release-plan': 7.1.0
       '@changesets/assemble-release-plan': 6.0.9
@@ -6040,7 +6081,7 @@ snapshots:
       '@changesets/should-skip-package': 0.1.2
       '@changesets/types': 6.1.0
       '@changesets/write': 0.4.0
-      '@inquirer/external-editor': 1.0.3(@types/node@24.11.0)
+      '@inquirer/external-editor': 1.0.3(@types/node@25.3.3)
       '@manypkg/get-packages': 1.1.3
       ansi-colors: 4.1.3
       enquirer: 2.4.1
@@ -6436,56 +6477,56 @@ snapshots:
 
   '@inquirer/ansi@1.0.2': {}
 
-  '@inquirer/core@10.3.2(@types/node@24.11.0)':
+  '@inquirer/core@10.3.2(@types/node@25.3.3)':
     dependencies:
       '@inquirer/ansi': 1.0.2
       '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@24.11.0)
+      '@inquirer/type': 3.0.10(@types/node@25.3.3)
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
       wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 24.11.0
+      '@types/node': 25.3.3
 
-  '@inquirer/expand@4.0.23(@types/node@24.11.0)':
+  '@inquirer/expand@4.0.23(@types/node@25.3.3)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@24.11.0)
-      '@inquirer/type': 3.0.10(@types/node@24.11.0)
+      '@inquirer/core': 10.3.2(@types/node@25.3.3)
+      '@inquirer/type': 3.0.10(@types/node@25.3.3)
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 24.11.0
+      '@types/node': 25.3.3
 
-  '@inquirer/external-editor@1.0.3(@types/node@24.11.0)':
+  '@inquirer/external-editor@1.0.3(@types/node@25.3.3)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.0
     optionalDependencies:
-      '@types/node': 24.11.0
+      '@types/node': 25.3.3
 
   '@inquirer/figures@1.0.15': {}
 
-  '@inquirer/input@4.3.1(@types/node@24.11.0)':
+  '@inquirer/input@4.3.1(@types/node@25.3.3)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@24.11.0)
-      '@inquirer/type': 3.0.10(@types/node@24.11.0)
+      '@inquirer/core': 10.3.2(@types/node@25.3.3)
+      '@inquirer/type': 3.0.10(@types/node@25.3.3)
     optionalDependencies:
-      '@types/node': 24.11.0
+      '@types/node': 25.3.3
 
-  '@inquirer/select@4.4.2(@types/node@24.11.0)':
+  '@inquirer/select@4.4.2(@types/node@25.3.3)':
     dependencies:
       '@inquirer/ansi': 1.0.2
-      '@inquirer/core': 10.3.2(@types/node@24.11.0)
+      '@inquirer/core': 10.3.2(@types/node@25.3.3)
       '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@24.11.0)
+      '@inquirer/type': 3.0.10(@types/node@25.3.3)
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 24.11.0
+      '@types/node': 25.3.3
 
-  '@inquirer/type@3.0.10(@types/node@24.11.0)':
+  '@inquirer/type@3.0.10(@types/node@25.3.3)':
     optionalDependencies:
-      '@types/node': 24.11.0
+      '@types/node': 25.3.3
 
   '@isaacs/balanced-match@4.0.1': {}
 
@@ -6508,11 +6549,11 @@ snapshots:
 
   '@isaacs/string-locale-compare@1.1.0': {}
 
-  '@joshwooding/vite-plugin-react-docgen-typescript@0.6.4(typescript@5.9.3)(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))':
+  '@joshwooding/vite-plugin-react-docgen-typescript@0.6.4(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))':
     dependencies:
       glob: 13.0.6
       react-docgen-typescript: 2.4.0(typescript@5.9.3)
-      vite: 7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2)
+      vite: 7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2)
     optionalDependencies:
       typescript: 5.9.3
 
@@ -6543,10 +6584,10 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@lerna-lite/cli@4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@24.11.0)':
+  '@lerna-lite/cli@4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@25.3.3)':
     dependencies:
-      '@lerna-lite/core': 4.11.3(@types/node@24.11.0)
-      '@lerna-lite/init': 4.11.3(@types/node@24.11.0)
+      '@lerna-lite/core': 4.11.3(@types/node@25.3.3)
+      '@lerna-lite/init': 4.11.3(@types/node@25.3.3)
       '@lerna-lite/npmlog': 4.11.3
       dedent: 1.7.1
       dotenv: 17.3.1
@@ -6554,19 +6595,19 @@ snapshots:
       load-json-file: 7.0.1
       yargs: 18.0.0
     optionalDependencies:
-      '@lerna-lite/publish': 4.11.3(@lerna-lite/run@4.11.3)(@types/node@24.11.0)(conventional-commits-filter@5.0.0)
-      '@lerna-lite/run': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@24.11.0)
-      '@lerna-lite/version': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@types/node@24.11.0)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/publish': 4.11.3(@lerna-lite/run@4.11.3)(@types/node@25.3.3)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/run': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@25.3.3)
+      '@lerna-lite/version': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@types/node@25.3.3)(conventional-commits-filter@5.0.0)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/core@4.11.3(@types/node@24.11.0)':
+  '@lerna-lite/core@4.11.3(@types/node@25.3.3)':
     dependencies:
-      '@inquirer/expand': 4.0.23(@types/node@24.11.0)
-      '@inquirer/input': 4.3.1(@types/node@24.11.0)
-      '@inquirer/select': 4.4.2(@types/node@24.11.0)
+      '@inquirer/expand': 4.0.23(@types/node@25.3.3)
+      '@inquirer/input': 4.3.1(@types/node@25.3.3)
+      '@inquirer/select': 4.4.2(@types/node@25.3.3)
       '@lerna-lite/npmlog': 4.11.3
       '@npmcli/run-script': 10.0.3
       ci-info: 4.4.0
@@ -6594,9 +6635,9 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/init@4.11.3(@types/node@24.11.0)':
+  '@lerna-lite/init@4.11.3(@types/node@25.3.3)':
     dependencies:
-      '@lerna-lite/core': 4.11.3(@types/node@24.11.0)
+      '@lerna-lite/core': 4.11.3(@types/node@25.3.3)
       fs-extra: 11.3.3
       p-map: 7.0.4
       write-json-file: 7.0.0
@@ -6615,9 +6656,9 @@ snapshots:
       tinyrainbow: 3.0.3
       wide-align: 1.1.5
 
-  '@lerna-lite/profiler@4.11.3(@types/node@24.11.0)':
+  '@lerna-lite/profiler@4.11.3(@types/node@25.3.3)':
     dependencies:
-      '@lerna-lite/core': 4.11.3(@types/node@24.11.0)
+      '@lerna-lite/core': 4.11.3(@types/node@25.3.3)
       '@lerna-lite/npmlog': 4.11.3
       fs-extra: 11.3.3
       upath: 2.0.1
@@ -6626,12 +6667,12 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/publish@4.11.3(@lerna-lite/run@4.11.3)(@types/node@24.11.0)(conventional-commits-filter@5.0.0)':
+  '@lerna-lite/publish@4.11.3(@lerna-lite/run@4.11.3)(@types/node@25.3.3)(conventional-commits-filter@5.0.0)':
     dependencies:
-      '@lerna-lite/cli': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@24.11.0)
-      '@lerna-lite/core': 4.11.3(@types/node@24.11.0)
+      '@lerna-lite/cli': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@25.3.3)
+      '@lerna-lite/core': 4.11.3(@types/node@25.3.3)
       '@lerna-lite/npmlog': 4.11.3
-      '@lerna-lite/version': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@types/node@24.11.0)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/version': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@types/node@25.3.3)(conventional-commits-filter@5.0.0)
       '@npmcli/arborist': 9.4.0
       '@npmcli/package-json': 7.0.5
       byte-size: 9.0.1
@@ -6664,12 +6705,12 @@ snapshots:
       - conventional-commits-filter
       - supports-color
 
-  '@lerna-lite/run@4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@24.11.0)':
+  '@lerna-lite/run@4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@25.3.3)':
     dependencies:
-      '@lerna-lite/cli': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@24.11.0)
-      '@lerna-lite/core': 4.11.3(@types/node@24.11.0)
+      '@lerna-lite/cli': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@25.3.3)
+      '@lerna-lite/core': 4.11.3(@types/node@25.3.3)
       '@lerna-lite/npmlog': 4.11.3
-      '@lerna-lite/profiler': 4.11.3(@types/node@24.11.0)
+      '@lerna-lite/profiler': 4.11.3(@types/node@25.3.3)
       fs-extra: 11.3.3
       p-map: 7.0.4
       tinyrainbow: 3.0.3
@@ -6683,11 +6724,11 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/version@4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@types/node@24.11.0)(conventional-commits-filter@5.0.0)':
+  '@lerna-lite/version@4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@types/node@25.3.3)(conventional-commits-filter@5.0.0)':
     dependencies:
       '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)
-      '@lerna-lite/cli': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@24.11.0)
-      '@lerna-lite/core': 4.11.3(@types/node@24.11.0)
+      '@lerna-lite/cli': 4.11.3(@lerna-lite/publish@4.11.3)(@lerna-lite/run@4.11.3)(@lerna-lite/version@4.11.3)(@types/node@25.3.3)
+      '@lerna-lite/core': 4.11.3(@types/node@25.3.3)
       '@lerna-lite/npmlog': 4.11.3
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 22.0.1
@@ -6777,7 +6818,7 @@ snapshots:
       clsx: 2.1.1
       react: 19.2.4
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@8.0.0': {}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@9.0.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -7080,7 +7121,7 @@ snapshots:
 
   '@pkgr/core@0.2.9': {}
 
-  '@rijkshuisstijl-community/design-tokens@9.0.0': {}
+  '@rijkshuisstijl-community/design-tokens@11.1.0': {}
 
   '@rollup/pluginutils@5.3.0(rollup@4.53.2)':
     dependencies:
@@ -7211,10 +7252,10 @@ snapshots:
       axe-core: 4.11.0
       storybook: 10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
 
-  '@storybook/addon-docs@10.2.14(@types/react@19.2.14)(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))':
+  '@storybook/addon-docs@10.2.14(@types/react@19.2.14)(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))':
     dependencies:
       '@mdx-js/react': 3.1.1(@types/react@19.2.14)(react@19.2.4)
-      '@storybook/csf-plugin': 10.2.14(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
+      '@storybook/csf-plugin': 10.2.14(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
       '@storybook/icons': 2.0.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@storybook/react-dom-shim': 10.2.14(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
       react: 19.2.4
@@ -7235,25 +7276,25 @@ snapshots:
     optionalDependencies:
       react: 19.2.4
 
-  '@storybook/builder-vite@10.2.14(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))':
+  '@storybook/builder-vite@10.2.14(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))':
     dependencies:
-      '@storybook/csf-plugin': 10.2.14(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
+      '@storybook/csf-plugin': 10.2.14(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
       storybook: 10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       ts-dedent: 2.2.0
-      vite: 7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2)
+      vite: 7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2)
     transitivePeerDependencies:
       - esbuild
       - rollup
       - webpack
 
-  '@storybook/csf-plugin@10.2.14(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))':
+  '@storybook/csf-plugin@10.2.14(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))':
     dependencies:
       storybook: 10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       unplugin: 2.3.11
     optionalDependencies:
       esbuild: 0.27.0
       rollup: 4.53.2
-      vite: 7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2)
+      vite: 7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2)
 
   '@storybook/global@5.0.0': {}
 
@@ -7268,11 +7309,11 @@ snapshots:
       react-dom: 19.2.4(react@19.2.4)
       storybook: 10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
 
-  '@storybook/react-vite@10.2.14(esbuild@0.27.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))':
+  '@storybook/react-vite@10.2.14(esbuild@0.27.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))':
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.6.4(typescript@5.9.3)(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.6.4(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
       '@rollup/pluginutils': 5.3.0(rollup@4.53.2)
-      '@storybook/builder-vite': 10.2.14(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
+      '@storybook/builder-vite': 10.2.14(esbuild@0.27.0)(rollup@4.53.2)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2))
       '@storybook/react': 10.2.14(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
       empathic: 2.0.0
       magic-string: 0.30.21
@@ -7282,7 +7323,7 @@ snapshots:
       resolve: 1.22.11
       storybook: 10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       tsconfig-paths: 4.2.0
-      vite: 7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2)
+      vite: 7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2)
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -7360,7 +7401,7 @@ snapshots:
 
   '@types/concat-stream@2.0.0':
     dependencies:
-      '@types/node': 24.11.0
+      '@types/node': 25.3.3
 
   '@types/debug@4.1.12':
     dependencies:
@@ -7402,9 +7443,9 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@types/node@24.11.0':
+  '@types/node@25.3.3':
     dependencies:
-      undici-types: 7.16.0
+      undici-types: 7.18.2
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -7630,6 +7671,14 @@ snapshots:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
 
+  '@utrecht/button-react@3.0.0(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/button-css': 3.0.1
+      clsx: 2.1.1
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
   '@utrecht/calendar-css@2.0.1': {}
 
   '@utrecht/calendar-react@1.0.14(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
@@ -7643,14 +7692,14 @@ snapshots:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
 
-  '@utrecht/calendar-react@1.0.15(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@utrecht/calendar-react@1.0.16(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
-      '@utrecht/button-react': 2.0.10(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@utrecht/button-react': 3.0.0(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/calendar-css': 2.0.1
       clsx: 2.1.1
       date-fns: 2.30.0
-      lodash-es: 4.17.21
+      lodash-es: 4.17.23
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
 
@@ -7808,7 +7857,7 @@ snapshots:
     optionalDependencies:
       date-fns: 2.30.0
 
-  '@utrecht/component-library-react@12.0.0(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@utrecht/component-library-react@13.0.0(@babel/runtime@7.28.6)(date-fns@2.30.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@utrecht/accordion-css': 3.0.1
@@ -7824,8 +7873,8 @@ snapshots:
       '@utrecht/breadcrumb-nav-css': 2.1.0
       '@utrecht/button-group-react': 1.1.3(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/button-link-css': 2.0.1
-      '@utrecht/button-react': 2.0.10(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@utrecht/calendar-react': 1.0.15(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@utrecht/button-react': 3.0.0(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@utrecht/calendar-react': 1.0.16(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/card-css': 1.0.1
       '@utrecht/card-react': 0.0.4(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/checkbox-react': 1.0.11(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -7870,7 +7919,7 @@ snapshots:
       '@utrecht/link-react': 1.0.10(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/link-social-css': 2.0.1
       '@utrecht/list-social-css': 2.0.1
-      '@utrecht/listbox-react': 1.0.13(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@utrecht/listbox-react': 1.0.14(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/logo-button-css': 1.4.2
       '@utrecht/logo-css': 2.0.1
       '@utrecht/logo-image-css': 1.4.2
@@ -7882,8 +7931,8 @@ snapshots:
       '@utrecht/nav-list-css': 1.3.2
       '@utrecht/number-badge-css': 3.0.1
       '@utrecht/number-data-css': 2.0.1
-      '@utrecht/open-forms-container-css': 2.0.1
-      '@utrecht/open-forms-container-react': 1.0.5(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@utrecht/open-forms-container-css': 2.0.2
+      '@utrecht/open-forms-container-react': 1.0.6(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/ordered-list-css': 3.0.1
       '@utrecht/page-content-css': 2.0.1
       '@utrecht/page-css': 2.0.1
@@ -7907,7 +7956,7 @@ snapshots:
       '@utrecht/table-css': 2.0.1
       '@utrecht/table-of-contents-css': 1.0.1
       '@utrecht/textarea-css': 3.0.1
-      '@utrecht/textbox-react': 1.0.12(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@utrecht/textbox-react': 1.0.13(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@utrecht/top-task-link-css': 2.0.1
       '@utrecht/top-task-nav-css': 1.3.2
       '@utrecht/unordered-list-css': 2.0.1
@@ -8064,10 +8113,20 @@ snapshots:
 
   '@utrecht/listbox-css@2.0.1': {}
 
+  '@utrecht/listbox-css@2.1.0': {}
+
   '@utrecht/listbox-react@1.0.13(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@utrecht/listbox-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@utrecht/listbox-react@1.0.14(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/listbox-css': 2.1.0
       clsx: 2.1.1
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
@@ -8099,10 +8158,23 @@ snapshots:
       '@utrecht/focus-ring-css': 3.0.1
       '@utrecht/textbox-css': 3.0.1
 
+  '@utrecht/open-forms-container-css@2.0.2':
+    dependencies:
+      '@utrecht/focus-ring-css': 3.0.1
+      '@utrecht/textbox-css': 3.1.0
+
   '@utrecht/open-forms-container-react@1.0.5(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@utrecht/open-forms-container-css': 2.0.1
+      clsx: 2.1.1
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@utrecht/open-forms-container-react@1.0.6(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/open-forms-container-css': 2.0.2
       clsx: 2.1.1
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
@@ -8167,10 +8239,20 @@ snapshots:
 
   '@utrecht/textbox-css@3.0.1': {}
 
+  '@utrecht/textbox-css@3.1.0': {}
+
   '@utrecht/textbox-react@1.0.12(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@utrecht/textbox-css': 3.0.1
+      clsx: 2.1.1
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@utrecht/textbox-react@1.0.13(@babel/runtime@7.28.6)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@babel/runtime': 7.28.6
+      '@utrecht/textbox-css': 3.1.0
       clsx: 2.1.1
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
@@ -8217,8 +8299,9 @@ snapshots:
       loupe: 3.2.1
       tinyrainbow: 2.0.0
 
-  '@whitespace/storybook-addon-html@8.0.2(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))':
+  '@whitespace/storybook-addon-html@9.0.0(prettier@3.8.1)(storybook@10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))':
     dependencies:
+      prettier: 3.8.1
       storybook: 10.2.14(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
 
   abbrev@2.0.0: {}
@@ -10014,6 +10097,8 @@ snapshots:
       p-locate: 5.0.0
 
   lodash-es@4.17.21: {}
+
+  lodash-es@4.17.23: {}
 
   lodash.chunk@4.2.0: {}
 
@@ -12046,7 +12131,7 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  undici-types@7.16.0: {}
+  undici-types@7.18.2: {}
 
   unicorn-magic@0.1.0: {}
 
@@ -12211,7 +12296,7 @@ snapshots:
       '@types/unist': 3.0.2
       vfile-message: 4.0.2
 
-  vite@7.3.1(@types/node@24.11.0)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2):
+  vite@7.3.1(@types/node@25.3.3)(sass-embedded@1.97.3)(sass@1.97.3)(yaml@2.8.2):
     dependencies:
       esbuild: 0.27.0
       fdir: 6.5.0(picomatch@4.0.3)
@@ -12220,7 +12305,7 @@ snapshots:
       rollup: 4.53.2
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.11.0
+      '@types/node': 25.3.3
       fsevents: 2.3.3
       sass: 1.97.3
       sass-embedded: 1.97.3
