@@ -35,7 +35,7 @@ import {
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
 import { PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
-import { mijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
+import { storybookPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const meta = {
   title: 'Templates/MijnOmgeving/Basis',
@@ -84,7 +84,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
         <SideNavigationBase>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href={mijnOmgevingPaths.overzicht}>
+              <SideNavigationLink href={storybookPaths.overzicht}>
                 <IconLayoutGrid />
                 Overzicht
               </SideNavigationLink>
@@ -92,19 +92,19 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href={mijnOmgevingPaths.taken}>
+              <SideNavigationLink href={storybookPaths.taken}>
                 <IconListCheck />
                 Mijn taken
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href={mijnOmgevingPaths.berichtenOverzicht}>
+              <SideNavigationLink href={storybookPaths.berichtenOverzicht}>
                 <IconInbox />
                 Mijn berichten <NumberBadge>2</NumberBadge>
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
-              <SideNavigationLink href={mijnOmgevingPaths.zakenOverzicht}>
+              <SideNavigationLink href={storybookPaths.zakenOverzicht}>
                 <IconArchive />
                 Mijn zaken
               </SideNavigationLink>
@@ -138,7 +138,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
           </SideNavigationList>
           <SideNavigationList>
             <SideNavigationItem>
-              <SideNavigationLink href={mijnOmgevingPaths.mijnGegevens}>
+              <SideNavigationLink href={storybookPaths.mijnGegevens}>
                 <IconUser />
                 Mijn gegevens
               </SideNavigationLink>
