@@ -4,14 +4,13 @@
   "private": true,
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/services.git",
+    "url": "git@github.com:nl-design-system/mijn-services.git",
     "directory": "packages/website"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "clean": "rimraf .next",
-    "start": "next start"
+    "clean": "rimraf .next"
   },
   "dependencies": {
     "@amsterdam/design-system-css": "3.0.0",
