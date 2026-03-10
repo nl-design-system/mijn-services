@@ -47,7 +47,7 @@ jobs:
         run: pnpm run build
 
       - name: Move Next.js output into Storybook dist
-        run: cp -r packages/website/out/packages/storybook/dist/website
+        run: cp -r packages/website/out packages/storybook/dist/website
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
