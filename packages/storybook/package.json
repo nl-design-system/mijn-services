@@ -47,7 +47,7 @@
     "@types/react": "19.2.8",
     "@types/react-dom": "19.2.3",
     "@utrecht/body-css": "2.0.1",
-    "@utrecht/button-react": "2.0.10",
+    "@utrecht/button-react": "3.0.0",
     "@utrecht/component-library-react": "12.0.0",
     "@utrecht/design-tokens": "5.0.1",
     "@utrecht/icon": "2.2.0",
