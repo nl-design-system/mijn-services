@@ -166,8 +166,8 @@ importers:
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.28.6)(react@19.2.4)
       '@nl-design-system-unstable/voorbeeld-design-tokens':
-        specifier: 8.0.0
-        version: 8.0.0
+        specifier: 9.0.0
+        version: 9.0.0
       '@rijkshuisstijl-community/design-tokens':
         specifier: 9.0.0
         version: 9.0.0
@@ -277,8 +277,8 @@ importers:
         specifier: 2.2.2
         version: 2.2.2(@babel/runtime@7.28.6)(react@19.2.3)
       '@nl-design-system-unstable/voorbeeld-design-tokens':
-        specifier: 7.4.1
-        version: 7.4.1
+        specifier: 9.0.0
+        version: 9.0.0
       '@rijkshuisstijl-community/design-tokens':
         specifier: 9.0.0
         version: 9.0.0
@@ -816,6 +816,7 @@ packages:
 
   '@gemeente-denhaag/design-tokens-components@5.1.0':
     resolution: {integrity: sha512-giww3ewSJ6/J4kW3ononfm8hzrH7yR4b5AyZGS6BOA2z4AmlgOvYrqP4wW7UTBDYq+crnp4lI+CWO3vQ/LVJHw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@gemeente-denhaag/file@2.3.0':
     resolution: {integrity: sha512-qkcSafrgLQYy7AqfMdP3BKmkrc0aoXJH1gyDM0oovWSPaDjmYzwS8qSN25DutB39pWH92z43anptaqERZlOa6w==}
@@ -1329,11 +1330,8 @@ packages:
       '@babel/runtime': ^7
       react: ^18 || ^19
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@7.4.1':
-    resolution: {integrity: sha512-GNnapAn2mTIzXRcCvs0JMr4Bf9+ivUJ3zFBJLRT1SYpAYm2xPwptVxIM3k4WLJ0c59E9FfxsEBPJluGuAHUVvg==}
-
-  '@nl-design-system-unstable/voorbeeld-design-tokens@8.0.0':
-    resolution: {integrity: sha512-507RURF0P+sBHSOJhd3XnJWdGY2dV/w04CsG+Yvuzz69IgyzHvCZK2n43BqpQeRczZ1nzVhZ9XeB3tIUwlK/jQ==}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@9.0.0':
+    resolution: {integrity: sha512-2sEhQg6nsAo5pGQq/HZ4Qj2O1gVyB5zt9y9r9SMDuWaN5FyesElQUJF/NbUBEuXg+8C4sgex2bgYwBJ+Sl3Kqw==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -7794,9 +7792,7 @@ snapshots:
       clsx: 2.1.1
       react: 19.2.4
 
-  '@nl-design-system-unstable/voorbeeld-design-tokens@7.4.1': {}
-
-  '@nl-design-system-unstable/voorbeeld-design-tokens@8.0.0': {}
+  '@nl-design-system-unstable/voorbeeld-design-tokens@9.0.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
