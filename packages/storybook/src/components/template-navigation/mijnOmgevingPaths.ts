@@ -10,13 +10,13 @@ export const storybookPaths = {
 } as const;
 
 export const websitePaths = {
-  overzicht: '/templates/mijn-omgeving-home',
-  taken: '/templates/mijn-omgeving-taken-overzicht',
-  berichtenOverzicht: '/templates/mijn-omgeving-berichten-overzicht',
-  berichtDetail: '/templates/mijn-omgeving-berichtdetail',
-  zakenOverzicht: '/templates/mijn-omgeving-zaken-overzicht',
-  zaakDetail: '/templates/mijn-omgeving-zaakdetail',
-  mijnGegevens: '/templates/mijn-omgeving-gegevens-overzicht',
+  overzicht: '/mijn-services/website/templates/mijn-omgeving-home',
+  taken: '/mijn-services/website/templates/mijn-omgeving-taken-overzicht',
+  berichtenOverzicht: '/mijn-services/website/templates/mijn-omgeving-berichten-overzicht',
+  berichtDetail: '/mijn-services/website/templates/mijn-omgeving-berichtdetail',
+  zakenOverzicht: '/mijn-services/website/templates/mijn-omgeving-zaken-overzicht',
+  zaakDetail: '/mijn-services/website/templates/mijn-omgeving-zaakdetail',
+  mijnGegevens: '/mijn-services/website/templates/mijn-omgeving-gegevens-overzicht',
 } as const;
 
 export type MijnOmgevingPaths = {
