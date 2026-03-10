@@ -169,7 +169,7 @@ export default function MijnOmgevingHome({
               Hallo Jeroen van Drouwen
             </Heading>
             <Paragraph>
-              In &apos;Mijn omgeving&apos; kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt
+              In &lsquo;Mijn omgeving&rsquo; kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt
               bijvoorbeeld uw rekeningen betalen en zien wanneer uw aanvraag klaar is.
             </Paragraph>
             <section>
