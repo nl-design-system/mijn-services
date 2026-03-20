@@ -111,6 +111,11 @@
   --todo-skip-link-focus-outline-offset: -0.125rem;
   --todo-skip-link-focus-padding-inline-end: 10px;
   --todo-skip-link-focus-padding-inline-start: 10px;
+  --todo-link-focus-background-color: var(--basis-focus-background-color);
+  --todo-link-focus-outline-color: var(--rhc-color-zwart);
+  --todo-link-focus-outline-style: solid;
+  --todo-link-focus-outline-width: 2px;
+  --todo-link-focus-outline-offset: 2px;
   --todo-link-footer-focus-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
     var(--utrecht-focus-inverse-outline-color, transparent);
   --todo-link-footer-focus-outline-color: var(--rhc-color-zwart);
