@@ -67,7 +67,7 @@ export default function MijnOmgevingHome({
     <Layout logo={logo} footerLogo={footerLogo}>
       <Grid paddingTop={'x-large'}>
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
-          <Link href={'/#'} className="todo-breadcrumb--mobile">
+          <Link href={paths.overzicht} className="todo-breadcrumb--mobile">
             <Icon>
               <IconChevronLeft />
             </Icon>
@@ -78,13 +78,13 @@ export default function MijnOmgevingHome({
             <h2 id="hidden-breadcrumb-header" hidden>
               Kruimelpad
             </h2>
-            <BreadcrumbNavLink href={'/#'}>Home</BreadcrumbNavLink>
+            <BreadcrumbNavLink href={paths.overzicht}>Home</BreadcrumbNavLink>
             <BreadcrumbNavSeparator>
               <Icon>
                 <IconChevronRight />
               </Icon>
             </BreadcrumbNavSeparator>
-            <BreadcrumbNavLink href={'/#'} disabled current>
+            <BreadcrumbNavLink href={paths.overzicht} disabled current>
               Gemeente Voorbeeld
             </BreadcrumbNavLink>
           </BreadcrumbNav>
