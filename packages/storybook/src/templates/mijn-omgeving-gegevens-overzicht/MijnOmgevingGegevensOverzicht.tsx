@@ -163,16 +163,24 @@ export default function MijnOmgevingGegevensOverzicht({
               <Heading level={3}>Op deze pagina</Heading>
               <UnorderedList>
                 <UnorderedListItem>
-                  <Link href="#">Contactgegevens</Link>
+                  <Link className="todo-link--list-item" href="#">
+                    Contactgegevens
+                  </Link>
                 </UnorderedListItem>
                 <UnorderedListItem>
-                  <Link href="#">Persoonsgegevens</Link>
+                  <Link className="todo-link--list-item" href="#">
+                    Persoonsgegevens
+                  </Link>
                 </UnorderedListItem>
                 <UnorderedListItem>
-                  <Link href="#">Adresgegevens</Link>
+                  <Link className="todo-link--list-item" href="#">
+                    Adresgegevens
+                  </Link>
                 </UnorderedListItem>
                 <UnorderedListItem>
-                  <Link href="#">Meldingen</Link>
+                  <Link className="todo-link--list-item" href="#">
+                    Meldingen
+                  </Link>
                 </UnorderedListItem>
               </UnorderedList>
             </SpotlightSection>

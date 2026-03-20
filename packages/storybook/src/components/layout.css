@@ -29,6 +29,14 @@
   min-block-size: 44px;
 }
 
+.todo-breadcrumb--mobile:focus-visible {
+  background-color: var(--todo-link-focus-background-color);
+  outline-color: var(--todo-link-focus-outline-color);
+  outline-offset: var(--todo-link-focus-outline-offset);
+  outline-style: var(--todo-link-focus-outline-style);
+  outline-width: var(--todo-link-focus-outline-width);
+}
+
 .todo-breadcrumb--desktop {
   display: none;
 }
@@ -84,13 +92,30 @@
 }
 
 .todo-link {
-  display: flex;
+  display: inline-flex;
   margin-block-end: var(--basis-space-block-xl); /*  --nl-link-margin-block-end bestaat niet */
   margin-block-start: var(--basis-space-block-xl);
 }
 
+.todo-link:focus-visible {
+  /* refactor once it's supported in nl candidate */
+  background-color: var(--todo-link-focus-background-color);
+  outline-color: var(--todo-link-focus-outline-color);
+  outline-offset: var(--todo-link-focus-outline-offset);
+  outline-style: var(--todo-link-focus-outline-style);
+  outline-width: var(--todo-link-focus-outline-width);
+}
+
 .utrecht-link-list__link-text {
   display: flex;
+}
+
+.todo-link--list-item:focus-visible {
+  background-color: var(--todo-link-focus-background-color);
+  outline-color: var(--todo-link-focus-outline-color);
+  outline-offset: var(--todo-link-focus-outline-offset);
+  outline-style: var(--todo-link-focus-outline-style);
+  outline-width: var(--todo-link-focus-outline-width);
 }
 
 .todo-page-footer__grid {

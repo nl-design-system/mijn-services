@@ -173,7 +173,11 @@ export default function MijnOmgevingBerichtDetail({
             <Heading level={1}>Betalen van uw parkeerbon</Heading>
             <Paragraph>Ontvangen op 1 maart 2024 om 18.10 uur</Paragraph>
             <ActionMulti
-              actions={<ButtonLink appearance={'primary-action-button'}>Betalen</ButtonLink>}
+              actions={
+                <ButtonLink href="#" appearance={'primary-action-button'}>
+                  Betalen
+                </ButtonLink>
+              }
               className={'todo-action--multi'}
               labels={labels}
               dateTime="2023-03-01"
@@ -230,7 +234,10 @@ export default function MijnOmgevingBerichtDetail({
             <Paragraph>Betaal vóór 1 maart 2023 uw parkeerbon van € 74.90.</Paragraph>
             <Paragraph>
               Bent u het niet eens met deze parkeerbon? Dan kunt u bezwaar maken. Vul het formulier{' '}
-              <Link href="#">Bezwaar maken tegen een parkeerbon</Link> in.
+              <Link className="todo-link" href="#">
+                Bezwaar maken tegen een parkeerbon
+              </Link>{' '}
+              in.
             </Paragraph>
             <Paragraph>
               Met vriendelijke groet,
@@ -245,7 +252,11 @@ export default function MijnOmgevingBerichtDetail({
               lastUpdated={'March 22 2024 GMT+0200'}
             />
             <ActionMulti
-              actions={<ButtonLink appearance={'primary-action-button'}>Betalen</ButtonLink>}
+              actions={
+                <ButtonLink href="#" appearance={'primary-action-button'}>
+                  Betalen
+                </ButtonLink>
+              }
               labels={labels}
               dateTime="2023-03-01"
               now="2023-01-14"
