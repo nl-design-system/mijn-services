@@ -196,7 +196,7 @@ export default function MijnOmgevingZaakDetail({
             <h2 id="hidden-breadcrumb-header" hidden>
               Kruimelpad
             </h2>
-            <BreadcrumbNavLink href={'/#'}>Gemeente Voorbeeld</BreadcrumbNavLink>
+            <BreadcrumbNavLink href={paths.overzicht}>Gemeente Voorbeeld</BreadcrumbNavLink>
             <BreadcrumbNavSeparator>
               <Icon>
                 <IconChevronRight />
@@ -208,7 +208,7 @@ export default function MijnOmgevingZaakDetail({
                 <IconChevronRight />
               </Icon>
             </BreadcrumbNavSeparator>
-            <BreadcrumbNavLink href={'/#'} disabled current>
+            <BreadcrumbNavLink href={paths.zaakDetail} disabled current>
               Aanvraag subsidie geluidsisolatie
             </BreadcrumbNavLink>
           </BreadcrumbNav>

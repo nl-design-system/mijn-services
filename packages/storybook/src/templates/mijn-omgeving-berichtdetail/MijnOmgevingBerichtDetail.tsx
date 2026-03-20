@@ -77,13 +77,13 @@ export default function MijnOmgevingBerichtDetail({
             <h2 id="hidden-breadcrumb-header" hidden>
               Kruimelpad
             </h2>
-            <BreadcrumbNavLink href={'/#'}>Home</BreadcrumbNavLink>
+            <BreadcrumbNavLink href={paths.overzicht}>Home</BreadcrumbNavLink>
             <BreadcrumbNavSeparator>
               <Icon>
                 <IconChevronRight />
               </Icon>
             </BreadcrumbNavSeparator>
-            <BreadcrumbNavLink href={'/#'}>Gemeente Voorbeeld</BreadcrumbNavLink>
+            <BreadcrumbNavLink href={paths.overzicht}>Gemeente Voorbeeld</BreadcrumbNavLink>
             <BreadcrumbNavSeparator>
               <Icon>
                 <IconChevronRight />
@@ -95,7 +95,7 @@ export default function MijnOmgevingBerichtDetail({
                 <IconChevronRight />
               </Icon>
             </BreadcrumbNavSeparator>
-            <BreadcrumbNavLink href={'/#'} disabled current>
+            <BreadcrumbNavLink href={paths.berichtDetail} disabled current>
               Betalen van uw parkeerbon
             </BreadcrumbNavLink>
           </BreadcrumbNav>
@@ -133,25 +133,25 @@ export default function MijnOmgevingBerichtDetail({
             </SideNavigationList>
             <SideNavigationList>
               <SideNavigationItem>
-                <SideNavigationLink href="/#">
+                <SideNavigationLink href="/">
                   <IconCurrencyEuro />
                   Belastingzaken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href="/#">
+                <SideNavigationLink href="/">
                   <IconHome />
                   WOZ
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href="/#">
+                <SideNavigationLink href="/">
                   <IconParking />
                   Parkeren
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
-                <SideNavigationLink href="/#">
+                <SideNavigationLink href="/">
                   <IconBuildingCommunity />
                   Erfpacht
                 </SideNavigationLink>
