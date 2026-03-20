@@ -29,6 +29,8 @@
   /* Den Haag component tokens */
   --denhaag-action-context-lg-gap: 16px;
   --denhaag-focus-border: 2px dashed #0b0c0c;
+
+  // --denhaag-tabs-tab-outline: var(--denhaag-focus-border);
   --denhaag-file-focus-outline-color: #0b0c0c;
   --denhaag-file-focus-outline-style: dashed;
   --denhaag-file-focus-outline-width: 2px;
@@ -90,6 +92,10 @@
   --todo-skip-link-focus-outline-width: 2px;
   --todo-skip-link-focus-outline-offset: -0.125rem;
   --todo-action--single-focus-background-color: var(--utrecht-link-focus-background-color);
+  --todo-link-focus-background-color: var(--utrecht-link-focus-background-color);
+  --todo-link-focus-outline-color: var(--utrecht-focus-outline-color);
+  --todo-link-focus-outline-style: var(--utrecht-focus-outline-style);
+  --todo-link-focus-outline-width: var(--utrecht-focus-outline-width);
   --todo-link-footer-focus-background-color: var(--utrecht-link-focus-background-color);
   --todo-link-footer-focus-outline-color: white;
   --todo-link-footer-focus-outline-style: dashed;

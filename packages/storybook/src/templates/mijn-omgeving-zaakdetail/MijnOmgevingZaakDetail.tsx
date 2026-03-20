@@ -285,7 +285,11 @@ export default function MijnOmgevingZaakDetail({
           <main id="main">
             <Heading level={1}>Hallo Jeroen van Drouwen</Heading>
             <ActionMulti
-              actions={<ButtonLink appearance={'primary-action-button'}>Informatie geven</ButtonLink>}
+              actions={
+                <ButtonLink href="#" appearance={'primary-action-button'}>
+                  Informatie geven
+                </ButtonLink>
+              }
               labels={labels}
               dateTime="2024-11-22"
               now="2024-11-20"

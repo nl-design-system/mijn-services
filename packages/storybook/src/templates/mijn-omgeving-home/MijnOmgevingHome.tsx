@@ -67,7 +67,7 @@ export default function MijnOmgevingHome({
     <Layout logo={logo} footerLogo={footerLogo}>
       <Grid paddingTop={'x-large'}>
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 12 }}>
-          <Link href={'/#'} className="todo-breadcrumb--mobile">
+          <Link href={'/#'} className="todo-breadcrumb--mobile ">
             <Icon>
               <IconChevronLeft />
             </Icon>
@@ -174,7 +174,9 @@ export default function MijnOmgevingHome({
             </Paragraph>
             <section>
               <Heading level={2}>Wat moet ik regelen</Heading>
-              <Link href={paths.taken}>Bekijk alle taken (10)</Link>
+              <Link className="todo-link" href={paths.taken}>
+                Bekijk alle taken (10)
+              </Link>
               <ActionSingle
                 className={'todo-action--single'}
                 labels={labels}
@@ -201,7 +203,9 @@ export default function MijnOmgevingHome({
             </section>
             <section>
               <Heading level={2}>Mijn zaken</Heading>
-              <Link href={paths.zakenOverzicht}>Bekijk alle zaken (15)</Link>
+              <Link className="todo-link" href={paths.zakenOverzicht}>
+                Bekijk alle zaken (15)
+              </Link>
               <div className={'todo-card-layout'}>
                 <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={paths.zaakDetail} context={'ZK-228402'} />
                 <CaseCard title={'Aanvraag parkeervergunning'} href={paths.zaakDetail} context={'ZK-108422'} />
