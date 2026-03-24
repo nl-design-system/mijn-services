@@ -1,27 +1,60 @@
 import '@amsterdam/design-system-css/dist/grid/grid.css';
 import '@amsterdam/design-system-css/dist/page-footer/page-footer.css';
-import { Grid, PageFooter } from '@amsterdam/design-system-react';
+import { Grid, PageFooter, PageHeader } from '@amsterdam/design-system-react';
+import { Button } from '@nl-design-system-candidate/button-react/css';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
 import { SkipLink } from '@nl-design-system-candidate/skip-link-react/css';
-import { LinkList, LinkListLink, PageContent, PageHeader } from '@utrecht/component-library-react/dist/css-module';
+import { IconChevronDown, IconSearch } from '@tabler/icons-react';
+import { Icon, LinkList, LinkListLink, PageContent, Textbox } from '@utrecht/component-library-react/dist/css-module';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 import './layout.css';
+import '@amsterdam/design-system-css/dist/index.css';
+import { Logo } from './Logo';
 
 interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> {
   logo?: ReactElement;
   footerLogo?: ReactElement;
 }
 
-export const Layout = ({ logo, children, className, footerLogo, ...props }: LayoutProps) => {
+export const Layout = ({ children, className, footerLogo, ...props }: LayoutProps) => {
   return (
     <div className={className} {...props}>
-      <PageHeader className="todo-page-header">
-        <SkipLink className="todo-skip-link" href="#main">
-          Direct naar de hoofdinhoud
-        </SkipLink>
-        <Grid className="todo-page-header-content">{logo}</Grid>
-      </PageHeader>
+      <SkipLink className="todo-skip-link" href="#main">
+        Direct naar de hoofdinhoud
+      </SkipLink>
+
+      <PageHeader
+        logoBrand={{
+          label: 'Gemeente Voorbeeld logo',
+          svg: (props) => <Logo {...props} />,
+        }}
+        menuItems={
+          <>
+            <li>
+              <Link href="">Contact</Link>
+            </li>
+            <li>
+              <Link href="">
+                Inloggen
+                <Icon>
+                  <IconChevronDown />
+                </Icon>
+              </Link>
+            </li>
+            <form onSubmit={(e) => e.preventDefault()} style={{ display: 'flex', alignItems: 'center' }}>
+              <Textbox type="search" placeholder={'Bijvoorbeeld zwembad of grofvuil'}></Textbox>
+              <Button type="submit">
+                <Icon>
+                  <IconSearch />
+                </Icon>
+                Zoeken
+              </Button>
+            </form>
+          </>
+        }
+      ></PageHeader>
+
       <PageContent className="todo-page-content">{children}</PageContent>
       <PageFooter style={{ marginBlockStart: '24px' }}>
         <PageFooter.Spotlight className="todo-page-footer__spotlight">
