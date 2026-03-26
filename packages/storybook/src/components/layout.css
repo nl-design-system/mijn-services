@@ -91,8 +91,21 @@
   margin-block-end: 16px;
 }
 
+.todo-link--with-icon {
+  display: inline-flex;
+}
+
+.todo-link--with-icon:focus-visible {
+  /* refactor once it's supported in nl link candidate */
+  background-color: var(--todo-link-focus-background-color);
+  outline-color: var(--todo-link-focus-outline-color);
+  outline-offset: var(--todo-link-focus-outline-offset);
+  outline-style: var(--todo-link-focus-outline-style);
+  outline-width: var(--todo-link-focus-outline-width);
+}
+
 .todo-link:focus-visible {
-  /* refactor once it's supported in nl candidate */
+  /* refactor once it's supported in nl link candidate */
   background-color: var(--todo-link-focus-background-color);
   outline-color: var(--todo-link-focus-outline-color);
   outline-offset: var(--todo-link-focus-outline-offset);
