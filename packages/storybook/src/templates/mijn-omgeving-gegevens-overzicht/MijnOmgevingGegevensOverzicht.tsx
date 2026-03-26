@@ -186,7 +186,7 @@ export default function MijnOmgevingGegevensOverzicht({
             </SpotlightSection>
 
             <Heading level={2}>Contactgegevens</Heading>
-            <Link href="#" className="todo-link">
+            <Link href="#" className="todo-link--with-icon">
               <Icon>
                 <IconPencil />
               </Icon>{' '}
@@ -242,7 +242,7 @@ export default function MijnOmgevingGegevensOverzicht({
             </Link>
 
             <Heading level={2}>Meldingen</Heading>
-            <Link href="#" className="todo-link">
+            <Link href="#" className="todo-link--with-icon">
               <Icon>
                 <IconPencil />
               </Icon>{' '}
