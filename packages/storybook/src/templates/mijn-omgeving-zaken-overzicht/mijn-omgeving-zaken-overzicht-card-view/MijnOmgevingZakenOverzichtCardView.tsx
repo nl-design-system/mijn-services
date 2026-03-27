@@ -171,6 +171,22 @@ export default function MijnOmgevingZakenOverzichtCardView({
                           context={'ZK-29124'}
                         />
                         <CaseCard title={'Aanvraag parkeervergunning'} href={paths.zaakDetail} context={'ZK-02599'} />
+                        <CaseCard title={'Melding openbare ruimte'} href={paths.zaakDetail} context={'ZK-02612'} />
+                        <CaseCard title={'Aanvraag woningaanpassing'} href={paths.zaakDetail} context={'ZK-02724'} />
+                        <CaseCard title={'Aanvraag bijzondere bijstand'} href={paths.zaakDetail} context={'ZK-02724'} />
+                        <CaseCard
+                          title={'Aanvraag uittreksel basisregistratie personen'}
+                          href={paths.zaakDetail}
+                          context={'ZK-02724'}
+                        />
+                        <CaseCard title={'Aanvraag naamsbepaling'} href={paths.zaakDetail} context={'ZK-02875'} />
+                        <CaseCard title={'Bezwaar bestemmingsplan'} href={paths.zaakDetail} context={'ZK-02973'} />
+                        <CaseCard title={'Melding overlast buren'} href={paths.zaakDetail} context={'ZK-03001'} />
+                        <CaseCard
+                          title={'Aanvraag gehandicaptenparkeerkaat'}
+                          href={paths.zaakDetail}
+                          context={'ZK-03154'}
+                        />
                       </div>
                     ),
                   },
