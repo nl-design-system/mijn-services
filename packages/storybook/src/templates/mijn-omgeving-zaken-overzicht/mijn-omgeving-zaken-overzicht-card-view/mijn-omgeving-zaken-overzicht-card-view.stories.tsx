@@ -1,20 +1,20 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import MijnOmgevingZakenOverzicht from './MijnOmgevingZakenOverzicht';
-import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
-import { storybookPaths } from '../../components/template-navigation/mijnOmgevingPaths';
+import MijnOmgevingZakenOverzichtCardView from './MijnOmgevingZakenOverzichtCardView';
+import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../../components/Logo';
+import { storybookPaths } from '../../../components/template-navigation/mijnOmgevingPaths';
 
 const meta = {
-  title: 'Templates/MijnOmgeving/MijnZaken/Overzicht',
-  component: MijnOmgevingZakenOverzicht,
+  title: 'Templates/MijnOmgeving/MijnZaken/Overzicht/CardView',
+  component: MijnOmgevingZakenOverzichtCardView,
   globals: {
     dir: 'ltr',
     lang: 'nl',
   },
-  id: 'mijn-omgeving-mijnzaken-overzicht',
+  id: 'mijn-omgeving-mijnzaken-overzicht-card-view',
   parameters: {
     layout: 'fullscreen',
   },
-} satisfies Meta<typeof MijnOmgevingZakenOverzicht>;
+} satisfies Meta<typeof MijnOmgevingZakenOverzichtCardView>;
 
 export default meta;
 
