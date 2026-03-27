@@ -201,7 +201,7 @@ export default function MijnOmgevingHome({
             </section>
             <section>
               <Heading level={2}>Mijn zaken</Heading>
-              <Link href={paths.zakenOverzicht}>Bekijk alle zaken (15)</Link>
+              <Link href={paths.zakenOverzichtTableView}>Bekijk alle zaken (15)</Link>
               <div className={'todo-card-layout'}>
                 <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={paths.zaakDetail} context={'ZK-228402'} />
                 <CaseCard title={'Aanvraag parkeervergunning'} href={paths.zaakDetail} context={'ZK-108422'} />
