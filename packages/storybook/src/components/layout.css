@@ -95,16 +95,9 @@
   display: inline-flex;
 }
 
-.todo-link--with-icon:focus-visible {
-  /* refactor once it's supported in nl link candidate */
-  background-color: var(--todo-link-focus-background-color);
-  outline-color: var(--todo-link-focus-outline-color);
-  outline-offset: var(--todo-link-focus-outline-offset);
-  outline-style: var(--todo-link-focus-outline-style);
-  outline-width: var(--todo-link-focus-outline-width);
-}
-
-.todo-link:focus-visible {
+.todo-link:focus-visible,
+.todo-link--with-icon:focus-visible,
+.todo-link--list-item:focus-visible {
   /* refactor once it's supported in nl link candidate */
   background-color: var(--todo-link-focus-background-color);
   outline-color: var(--todo-link-focus-outline-color);
@@ -115,14 +108,6 @@
 
 .utrecht-link-list__link-text {
   display: flex;
-}
-
-.todo-link--list-item:focus-visible {
-  background-color: var(--todo-link-focus-background-color);
-  outline-color: var(--todo-link-focus-outline-color);
-  outline-offset: var(--todo-link-focus-outline-offset);
-  outline-style: var(--todo-link-focus-outline-style);
-  outline-width: var(--todo-link-focus-outline-width);
 }
 
 .todo-page-footer__grid {
