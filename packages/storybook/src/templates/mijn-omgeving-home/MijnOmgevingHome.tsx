@@ -203,7 +203,7 @@ export default function MijnOmgevingHome({
             </section>
             <section>
               <Heading level={2}>Mijn zaken</Heading>
-              <Link className="todo-link" href={paths.zakenOverzicht}>
+              <Link className="todo-link" href={paths.zakenOverzichtTableView}>
                 Bekijk alle zaken (15)
               </Link>
               <div className={'todo-card-layout'}>
