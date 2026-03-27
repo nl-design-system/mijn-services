@@ -4,7 +4,8 @@ export const storybookPaths = {
   taken: '?path=/story/mijn-omgeving-taken--default',
   berichtenOverzicht: '?path=/story/mijn-omgeving-berichten-overzicht--default',
   berichtDetail: '?path=/story/mijn-omgeving-mijnberichten-detailpagina--default',
-  zakenOverzicht: '?path=/story/mijn-omgeving-mijnzaken-overzicht--default',
+  zakenOverzicht: '?path=/story/mijn-omgeving-mijnzaken-overzicht-card-view--default',
+  zakenOverzichtTableView: '?path=/story/mijn-omgeving-mijnzaken-overzicht-table-view--default',
   zaakDetail: '?path=/story/mijn-omgeving-mijnzaken-detailpagina--default',
   mijnGegevens: '?path=/story/mijn-profiel-1--default',
 } as const;
@@ -15,6 +16,7 @@ export const websitePaths = {
   berichtenOverzicht: '/mijn-services/website/templates/mijn-omgeving-berichten-overzicht',
   berichtDetail: '/mijn-services/website/templates/mijn-omgeving-berichtdetail',
   zakenOverzicht: '/mijn-services/website/templates/mijn-omgeving-zaken-overzicht',
+  zakenOverzichtTableView: '/mijn-services/website/templates/mijn-omgeving-zaken-overzicht-table-view',
   zaakDetail: '/mijn-services/website/templates/mijn-omgeving-zaakdetail',
   mijnGegevens: '/mijn-services/website/templates/mijn-omgeving-gegevens-overzicht',
 } as const;
@@ -26,6 +28,7 @@ export type MijnOmgevingPaths = {
   berichtenOverzicht: string;
   berichtDetail: string;
   zakenOverzicht: string;
+  zakenOverzichtTableView?: string;
   zaakDetail: string;
   mijnGegevens: string;
 };
