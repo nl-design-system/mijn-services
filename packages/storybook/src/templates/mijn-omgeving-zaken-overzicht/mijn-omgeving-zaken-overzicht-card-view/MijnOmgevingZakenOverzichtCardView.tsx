@@ -14,7 +14,7 @@ import { Link } from '@nl-design-system-candidate/link-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
-import '../../themes/index.scss';
+import '../../../themes/index.scss';
 import {
   IconArchive,
   IconBuildingCommunity,
@@ -35,10 +35,10 @@ import {
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement, useEffect, useState } from 'react';
-import { Layout } from '../../components/Layout';
-import { MijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
+import { Layout } from '../../../components/Layout';
+import { MijnOmgevingPaths } from '../../../components/template-navigation/mijnOmgevingPaths';
 
-export default function MijnOmgevingZakenOverzicht({
+export default function MijnOmgevingZakenOverzichtCardView({
   logo,
   footerLogo,
   paths,
