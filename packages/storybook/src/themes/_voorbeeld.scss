@@ -25,6 +25,8 @@
   --ams-grid-padding-inline: var(--basis-space-block-xl);
   --ams-grid-medium-padding-inline: var(--basis-space-block-xl);
   --ams-grid-wide-padding-inline: var(--basis-space-block-xl);
+  --ams-page-header-menu-item-color: var(--nl-link-color);
+  --ams-page-header-menu-link-text-decoration-line: underline;
 
   /* Den Haag component tokens */
   --denhaag-action-context-lg-gap: 16px;
@@ -80,6 +82,8 @@
   /* Custom component tokens */
   --todo-page-header-logo-color: var(--basis-color-accent-1-color-default);
   --todo-page-footer-heading-color: var(--basis-color-default-inverse-color-document);
+  --voorbeeld-logo-color: black;
+  --voorbeeld-logo-icon-color: var(--basis-color-accent-1-color-default);
   --todo-page-footer-heading-font-family: var(--basis-text-font-family-default);
   --todo-page-footer-color: var(--basis-color-default-inverse-color-document);
   --todo-page-footer-focus-color: #0b0c0c;
