@@ -150,6 +150,9 @@ importers:
       '@gemeente-denhaag/tab':
         specifier: 3.1.1
         version: 3.1.1(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      '@nl-design-system-candidate/button-react':
+        specifier: 1.1.0
+        version: 1.1.0(@babel/runtime@7.29.2)(react@19.2.5)
       '@nl-design-system-candidate/heading-react':
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.29.2)(react@19.2.5)
@@ -1341,6 +1344,12 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
+
+  '@nl-design-system-candidate/button-react@1.1.0':
+    resolution: {integrity: sha512-Zi2QGpAq6/AWkL0hf9BNcNp8AQUV5yyDcKw7WDBuZ3W0ci/EF46ZfvntTbbBpHX09lYqS6F4Vf7hPGh1BdGxTg==}
+    peerDependencies:
+      '@babel/runtime': ^7
+      react: ^18 || ^19
 
   '@nl-design-system-candidate/heading-react@1.1.7':
     resolution: {integrity: sha512-Gvubqw8jrNj0cX5n8fY/xb/iwilvLpaDQ2aUWcGgh+y38YJDOqvckG32LHtmLTUOW+Q6Zl1g5yZ6zvX/af/UYQ==}
@@ -7943,6 +7952,12 @@ snapshots:
 
   '@next/swc-win32-x64-msvc@16.2.3':
     optional: true
+
+  '@nl-design-system-candidate/button-react@1.1.0(@babel/runtime@7.29.2)(react@19.2.5)':
+    dependencies:
+      '@babel/runtime': 7.29.2
+      clsx: 2.1.1
+      react: 19.2.5
 
   '@nl-design-system-candidate/heading-react@1.1.7(@babel/runtime@7.29.2)(react@19.2.5)':
     dependencies:
