@@ -7,15 +7,18 @@ import {
   SideNavigationLink,
   SideNavigationList,
 } from '@gemeente-denhaag/side-navigation';
+import { Button } from '@nl-design-system-candidate/button-react/css';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
+import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '../../../themes/index.scss';
 import {
   IconArchive,
   IconBuildingCommunity,
+  IconCalendarEvent,
   IconChevronLeft,
   IconChevronRight,
   IconCurrencyEuro,
@@ -31,6 +34,13 @@ import {
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
   Icon,
+  Table,
+  TableBody,
+  TableCell,
+  TableHeader,
+  TableHeaderCell,
+  TableRow,
+  Textbox,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from '../../../components/Layout';
@@ -148,7 +158,113 @@ export default function MijnOmgevingZakenOverzichtTableView({
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
           <main id="main">
             <section>
-              <Heading level={1}>Mijn Zaken</Heading>
+              <Heading level={1} id="mijn-zaken-overzicht-heading">
+                Mijn Zaken
+              </Heading>
+              <Textbox></Textbox>
+              <Button>Zoeken</Button>
+              <Button>
+                <Icon>
+                  <IconCalendarEvent />
+                </Icon>
+                Filter
+              </Button>
+              <Paragraph>89 zaken</Paragraph>
+              <Table aria-labelledby="mijn-zaken-overzicht-heading">
+                <TableHeader>
+                  <TableHeaderCell scope="col">Naam</TableHeaderCell>
+                  <TableHeaderCell scope="col">Datum aanvraag</TableHeaderCell>
+                  <TableHeaderCell scope="col">Open of gesloten</TableHeaderCell>
+                </TableHeader>
+
+                <TableBody>
+                  <TableRow>
+                    <TableCell>
+                      <Link className="todo-link" href={paths.zaakDetail}>
+                        Aanvraag laadpaal
+                      </Link>
+                    </TableCell>
+                    <TableCell>16-03-2025</TableCell>
+                    <TableCell>Open</TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell>
+                      <Link className="todo-link" href={paths.zaakDetail}>
+                        Aanvraag subsidie geluidsisolatie
+                      </Link>
+                    </TableCell>
+                    <TableCell>14-01-2025</TableCell>
+                    <TableCell>Open</TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell>
+                      <Link className="todo-link" href={paths.zaakDetail}>
+                        Aanvraag parkeervergunning
+                      </Link>
+                    </TableCell>
+                    <TableCell>13-06-2024</TableCell>
+                    <TableCell>Open</TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell>
+                      <Link className="todo-link" href={paths.zaakDetail}>
+                        Nog een zaak
+                      </Link>
+                    </TableCell>
+                    <TableCell>13-06-2024</TableCell>
+                    <TableCell>Gesloten</TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell>
+                      <Link className="todo-link" href={paths.zaakDetail}>
+                        Nog een zaak
+                      </Link>
+                    </TableCell>
+                    <TableCell>13-06-2024</TableCell>
+                    <TableCell>Gesloten</TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell>
+                      <Link href={paths.zaakDetail}>Nog een zaak</Link>
+                    </TableCell>
+                    <TableCell>13-06-2024</TableCell>
+                    <TableCell>Gesloten</TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell>
+                      <Link className="todo-link" href={paths.zaakDetail}>
+                        Nog een zaak
+                      </Link>
+                    </TableCell>
+                    <TableCell>13-06-2024</TableCell>
+                    <TableCell>Gesloten</TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell>
+                      <Link href={paths.zaakDetail}>Nog een zaak</Link>
+                    </TableCell>
+                    <TableCell>13-06-2024</TableCell>
+                    <TableCell>Gesloten</TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell>
+                      <Link className="todo-link" href={paths.zaakDetail}>
+                        Nog een zaak
+                      </Link>
+                    </TableCell>
+                    <TableCell>13-06-2024</TableCell>
+                    <TableCell>Gesloten</TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
             </section>
           </main>
         </Grid.Cell>
