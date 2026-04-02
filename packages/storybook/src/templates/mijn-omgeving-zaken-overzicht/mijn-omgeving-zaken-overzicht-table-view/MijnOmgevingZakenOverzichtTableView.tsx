@@ -42,6 +42,7 @@ import {
   TableRow,
   Textbox,
 } from '@utrecht/component-library-react/dist/css-module';
+import { UtrechtPagination } from '@utrecht/web-component-library-react';
 import { ReactElement } from 'react';
 import { Layout } from '../../../components/Layout';
 import { MijnOmgevingPaths } from '../../../components/template-navigation/mijnOmgevingPaths';
@@ -161,14 +162,22 @@ export default function MijnOmgevingZakenOverzichtTableView({
               <Heading level={1} id="mijn-zaken-overzicht-heading">
                 Mijn Zaken
               </Heading>
-              <Textbox></Textbox>
-              <Button>Zoeken</Button>
-              <Button>
-                <Icon>
-                  <IconCalendarEvent />
-                </Icon>
-                Filter
-              </Button>
+
+              <div className="todo-search-bar">
+                <div className="todo-search-bar__form" role="search">
+                  <label htmlFor="zaken-zoeken" className="visually-hidden">
+                    Zoeken in mijn zaken
+                  </label>
+                  <Textbox className="todo-search-bar__textbox" id="zaken-zoeken" placeholder="Zoeken..."></Textbox>
+                  <Button className="todo-button todo-search-bar__button" type="submit" purpose="secondary">
+                    Zoeken
+                  </Button>
+                </div>
+                <Button iconStart={<IconCalendarEvent />} className="todo-button" purpose="subtle">
+                  Filter
+                </Button>
+              </div>
+
               <Paragraph>89 zaken</Paragraph>
               <Table aria-labelledby="mijn-zaken-overzicht-heading">
                 <TableHeader>
@@ -230,7 +239,9 @@ export default function MijnOmgevingZakenOverzichtTableView({
 
                   <TableRow>
                     <TableCell>
-                      <Link href={paths.zaakDetail}>Nog een zaak</Link>
+                      <Link className="todo-link" href={paths.zaakDetail}>
+                        Nog een zaak
+                      </Link>
                     </TableCell>
                     <TableCell>13-06-2024</TableCell>
                     <TableCell>Gesloten</TableCell>
@@ -248,7 +259,19 @@ export default function MijnOmgevingZakenOverzichtTableView({
 
                   <TableRow>
                     <TableCell>
-                      <Link href={paths.zaakDetail}>Nog een zaak</Link>
+                      <Link className="todo-link" href={paths.zaakDetail}>
+                        Nog een zaak
+                      </Link>
+                    </TableCell>
+                    <TableCell>13-06-2024</TableCell>
+                    <TableCell>Gesloten</TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell>
+                      <Link className="todo-link" href={paths.zaakDetail}>
+                        Nog een zaak
+                      </Link>
                     </TableCell>
                     <TableCell>13-06-2024</TableCell>
                     <TableCell>Gesloten</TableCell>
@@ -265,6 +288,18 @@ export default function MijnOmgevingZakenOverzichtTableView({
                   </TableRow>
                 </TableBody>
               </Table>
+
+              <UtrechtPagination
+                currentIndex={3}
+                links={JSON.stringify([
+                  { href: '#page1', index: 1 },
+                  { href: '#page2', index: 2 },
+                  { href: '#page3', index: 3, current: true },
+                  { href: '#page4', index: 4 },
+                ])}
+                prev={JSON.stringify({ href: '#page2', index: 2 })}
+                next={JSON.stringify({ href: '#page4', index: 4 })}
+              ></UtrechtPagination>
             </section>
           </main>
         </Grid.Cell>
