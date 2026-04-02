@@ -41,6 +41,20 @@
   display: none;
 }
 
+.todo-visually-hidden {
+  block-size: 1px;
+  border: 0;
+  clip-path: inset(50%);
+  inline-size: 1px;
+  margin-block: -1px;
+  margin-inline: -1px;
+  overflow: hidden;
+  padding-block: 0;
+  padding-inline: 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
 .todo-address {
   font-style: inherit;
   margin-block: 0;
@@ -70,6 +84,29 @@
   padding-inline-start: var(--todo-skip-link-focus-padding-inline-start);
 }
 
+.todo-search-bar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.todo-search-bar__form {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  gap: 0.5rem;
+  max-inline-size: 600px;
+}
+
+.todo-search-bar__textbox {
+  flex-grow: 1;
+}
+
+.todo-search-bar__button {
+  flex-shrink: 0;
+}
+
 .denhaag-side-navigation__link:focus-visible {
   background-color: var(--todo-link-focus-background-color);
   color: var(--todo-link-focus-color);
@@ -95,6 +132,7 @@
   display: inline-flex;
 }
 
+.todo-button:focus-visible,
 .todo-link:focus-visible,
 .todo-link--with-icon:focus-visible,
 .todo-link--list-item:focus-visible {
@@ -166,5 +204,9 @@
 
   .todo-breadcrumb--desktop {
     display: block;
+  }
+
+  .todo-search-bar {
+    flex-wrap: nowrap;
   }
 }

@@ -165,7 +165,7 @@ export default function MijnOmgevingZakenOverzichtTableView({
 
               <div className="todo-search-bar">
                 <div className="todo-search-bar__form" role="search">
-                  <label htmlFor="zaken-zoeken" className="visually-hidden">
+                  <label htmlFor="zaken-zoeken" className="todo-visually-hidden">
                     Zoeken in mijn zaken
                   </label>
                   <Textbox className="todo-search-bar__textbox" id="zaken-zoeken" placeholder="Zoeken..."></Textbox>
