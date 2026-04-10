@@ -11,6 +11,7 @@ import {
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react';
+import { DotBadge } from '@rijkshuisstijl-community/components-react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '../../themes/index.scss';
@@ -50,13 +51,13 @@ export default function MijnOmgevingBerichtenOverzicht({
   const messages = [
     {
       new: true,
-      title: '🔴 Betalen van uw parkeerbon',
+      title: ' Betalen van uw parkeerbon',
       dateTime: '2023-03-16T06:41:34.427Z',
       link: paths.berichtDetail,
     },
     {
       new: true,
-      title: '🔴 Tip: Recht op subsidie',
+      title: ' Tip: Recht op subsidie',
       dateTime: '2023-01-14T19:47:36.593Z',
       link: paths.berichtDetail,
     },
@@ -203,6 +204,7 @@ export default function MijnOmgevingBerichtenOverzicht({
 
               {messages.map((m) => (
                 <Action key={m.title} link={m.link} dateTime={m.dateTime}>
+                  {m.new && <DotBadge label="Nieuw bericht" />}
                   {m.new ? <b>{m.title}</b> : m.title}
                 </Action>
               ))}
