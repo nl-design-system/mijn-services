@@ -6,6 +6,26 @@
   --utrecht-alert-column-gap: 16px;
   --utrecht-alert-margin-block-end: 32px;
   --utrecht-pagination-margin-block-start: 24px;
+  --utrecht-pagination-relative-link-hover-background-color: var(--denhaag-color-green-1);
+  --utrecht-pagination-relative-link-color: var(--nl-link-color);
+  --utrecht-pagination-relative-link-text-decoration: underline;
+  --utrecht-pagination-relative-link-border-width: 0.0625rem;
+  --utrecht-pagination-relative-link-border-color: transparent;
+  --utrecht-pagination-relative-link-padding-block-end: 12px;
+  --utrecht-pagination-relative-link-padding-block-start: 12px;
+  --utrecht-pagination-relative-link-padding-inline-end: 16px;
+  --utrecht-pagination-relative-link-padding-inline-start: 16px;
+  --utrecht-pagination-page-link-current-border-color: var(--denhaag-color-green-1);
+  --utrecht-pagination-page-link-current-background-color: var(--denhaag-color-green-1);
+  --utrecht-pagination-page-link-padding-block-end: 12px;
+  --utrecht-pagination-page-link-padding-block-start: 12px;
+  --utrecht-pagination-page-link-padding-inline-end: 16px;
+  --utrecht-pagination-page-link-padding-inline-start: 16px;
+  --utrecht-pagination-page-link-hover-background-color: var(--denhaag-color-green-1);
+  --utrecht-pagination-page-link-color: var(--nl-link-color);
+  --utrecht-pagination-page-link-border-color: transparent;
+  --utrecht-pagination-page-link-border-width: 2px;
+  --utrecht-pagination-page-link-text-decoration: underline;
   --utrecht-spotlight-section-background-color: #e3f3fd;
   --utrecht-spotlight-section-padding-block-end: 20px;
   --utrecht-spotlight-section-padding-block-start: 16px;
@@ -19,6 +39,20 @@
   --nl-skip-link-background-color: var(--denhaag-color-ocher-2);
   --nl-skip-link-color: var(--denhaag-color-blue-5);
   --rhc-dot-badge-color: var(--denhaag-color-red-3);
+  --nl-button-secondary-border-color: var(--denhaag-color-green-4);
+  --nl-button-secondary-color: var(--denhaag-color-green-4);
+  --nl-button-secondary-hover-background-color: var(--denhaag-color-green-1);
+  --nl-button-secondary-hover-color: var(--denhaag-color-green-4);
+  --nl-button-subtle-hover-border-color: transparent;
+  --nl-button-subtle-hover-background-color: var(--denhaag-color-green-1);
+  --nl-button-subtle-hover-color: var(--denhaag-color-green-4);
+  --nl-button-border-radius: 3px;
+  --nl-button-subtle-border-color: transparent;
+  --nl-button-subtle-color: var(--denhaag-color-green-3);
+  --nl-button-padding-block-end: 10px;
+  --nl-button-padding-block-start: 10px;
+  --nl-button-padding-inline-end: 16px;
+  --nl-button-padding-inline-start: 16px;
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
