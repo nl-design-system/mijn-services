@@ -13,12 +13,14 @@ import { Heading } from '@nl-design-system-candidate/heading-react/css';
 import { Link } from '@nl-design-system-candidate/link-react/css';
 import { NumberBadge } from '@nl-design-system-candidate/number-badge-react/css';
 import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
+import { NavigationList, NavigationListItem } from '@rijkshuisstijl-community/components-react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/theme.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import '@rijkshuisstijl-community/design-tokens/dist/index.css';
 import '../../themes/index.scss';
 import {
   IconArchive,
+  IconArrowRight,
   IconBuildingCommunity,
   IconChevronLeft,
   IconChevronRight,
@@ -212,6 +214,40 @@ export default function MijnOmgevingHome({
                 <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={paths.zaakDetail} context={'ZK-228402'} />
                 <CaseCard title={'Aanvraag parkeervergunning'} href={paths.zaakDetail} context={'ZK-108422'} />
               </div>
+            </section>
+            <section>
+              <Heading level={2}>Heading voor themas</Heading>
+              <NavigationList>
+                {' '}
+                <NavigationListItem
+                  description="Uw aanslagen en belastingen"
+                  href="#"
+                  icon="currency-euro"
+                  label="Belastingzaken"
+                  iconEnd={<IconArrowRight />}
+                />
+                <NavigationListItem
+                  description="De WOZ waarde van uw woning"
+                  href="#"
+                  icon={<IconHome />}
+                  label="WOZ"
+                  iconEnd={<IconArrowRight />}
+                />
+                <NavigationListItem
+                  description="Uw parkeervergunning en parkeertegoed"
+                  href="#"
+                  icon={<IconParking />}
+                  label="Parkeren"
+                  iconEnd={<IconArrowRight />}
+                />
+                <NavigationListItem
+                  description="Erfpacht en contracten"
+                  href="#"
+                  icon={<IconBuildingCommunity />}
+                  label="Erfpacht"
+                  iconEnd={<IconArrowRight />}
+                />
+              </NavigationList>
             </section>
           </main>
         </Grid.Cell>
