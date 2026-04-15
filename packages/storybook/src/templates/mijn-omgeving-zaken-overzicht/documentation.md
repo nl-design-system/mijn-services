@@ -3,14 +3,14 @@
 Deze documentatie dient voor de MijnZaken overzichtspagina van een MijnOmgeving pagina. De MijnZaken overzichtspagina toont de openstaande en gesloten zaken van een gebruiker.
 Afhankelijk van het aantal zaken wordt een andere weergave getoond:
 
-- **Tot en met 10 zaken** → Card view
+- **Minder dan 10 zaken** → Card view
 - **Meer dan 10 zaken** → Table view
 
-## Card view
+## Minder dan 10 zaken (Card view)
 
 De card view is bedoeld voor gebruikers met een beperkt aantal zaken. Elke zaak wordt weergegeven als een kaart met de zaaktitel en het zaaknummer. Open en gesloten zaken zijn gescheiden via tabs.
 
-## Table view
+## Meer dan 10 zaken (Table view)
 
 De table view is bedoeld voor gebruikers met meer dan 10 zaken. De zaken worden weergegeven in een tabel met zoek- en filtermogelijkheden en paginering.
 
