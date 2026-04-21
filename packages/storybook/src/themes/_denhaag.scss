@@ -38,21 +38,38 @@
   --nl-paragraph-margin-block-end: 16px;
   --nl-skip-link-background-color: var(--denhaag-color-ocher-2);
   --nl-skip-link-color: var(--denhaag-color-blue-5);
-  --rhc-dot-badge-color: var(--denhaag-color-red-3);
-  --nl-button-secondary-border-color: var(--denhaag-color-green-4);
-  --nl-button-secondary-color: var(--denhaag-color-green-4);
+  --nl-button-min-block-size: 3rem;
+  --nl-button-secondary-border-color: var(--denhaag-color-green-3);
+  --nl-button-secondary-color: var(--denhaag-color-green-3);
   --nl-button-secondary-hover-background-color: var(--denhaag-color-green-1);
   --nl-button-secondary-hover-color: var(--denhaag-color-green-4);
+  --nl-button-secondary-border-width: var(--denhaag-button-border-width);
   --nl-button-subtle-hover-border-color: transparent;
   --nl-button-subtle-hover-background-color: var(--denhaag-color-green-1);
   --nl-button-subtle-hover-color: var(--denhaag-color-green-4);
-  --nl-button-border-radius: 3px;
+  --nl-button-border-radius: 4px;
   --nl-button-subtle-border-color: transparent;
   --nl-button-subtle-color: var(--denhaag-color-green-3);
-  --nl-button-padding-block-end: 10px;
-  --nl-button-padding-block-start: 10px;
-  --nl-button-padding-inline-end: 16px;
-  --nl-button-padding-inline-start: 16px;
+  --nl-button-padding-block-end: calc(
+    var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) - var(
+        --denhaag-button-border-width
+      )
+  );
+  --nl-button-padding-block-start: calc(
+    var(--denhaag-button-medium-size-padding-block, var(--denhaag-button-padding-block)) - var(
+        --denhaag-button-border-width
+      )
+  );
+  --nl-button-padding-inline-end: calc(
+    var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) - var(
+        --denhaag-button-border-width
+      )
+  );
+  --nl-button-padding-inline-start: calc(
+    var(--denhaag-button-medium-size-padding-inline, var(--denhaag-button-padding-inline)) - var(
+        --denhaag-button-border-width
+      )
+  );
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
