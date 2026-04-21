@@ -96,7 +96,7 @@
   display: flex;
   flex-grow: 1;
   gap: 0.5rem;
-  max-inline-size: 600px;
+  max-inline-size: 490px;
 }
 
 .todo-search-bar__textbox {
