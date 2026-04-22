@@ -14,22 +14,22 @@ importers:
     devDependencies:
       '@changesets/cli':
         specifier: 2.30.0
-        version: 2.30.0(@types/node@20.19.39)
+        version: 2.30.0(@types/node@24.12.2)
       '@lerna-lite/cli':
         specifier: 4.11.5
-        version: 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@20.19.39)
+        version: 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.2)
       '@lerna-lite/publish':
         specifier: 4.11.5
-        version: 4.11.5(@lerna-lite/run@4.11.5)(@types/node@20.19.39)(conventional-commits-filter@5.0.0)
+        version: 4.11.5(@lerna-lite/run@4.11.5)(@types/node@24.12.2)(conventional-commits-filter@5.0.0)
       '@lerna-lite/run':
         specifier: 4.11.5
-        version: 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@20.19.39)
+        version: 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.2)
       '@lerna-lite/version':
         specifier: 4.11.5
-        version: 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@types/node@20.19.39)(conventional-commits-filter@5.0.0)
+        version: 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@types/node@24.12.2)(conventional-commits-filter@5.0.0)
       '@types/node':
-        specifier: 20.19.39
-        version: 20.19.39
+        specifier: 24.12.2
+        version: 24.12.2
       '@typescript-eslint/eslint-plugin':
         specifier: 8.58.2
         version: 8.58.2(@typescript-eslint/parser@8.58.2(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
@@ -173,7 +173,7 @@ importers:
         version: 8.0.0
       '@rijkshuisstijl-community/components-react':
         specifier: 14.0.1
-        version: 14.0.1(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+        version: 14.0.1(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@rijkshuisstijl-community/design-tokens':
         specifier: 9.0.0
         version: 9.0.0
@@ -182,13 +182,13 @@ importers:
         version: 10.3.5(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
       '@storybook/addon-docs':
         specifier: 10.3.5
-        version: 10.3.5(@types/react@19.2.14)(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+        version: 10.3.5(@types/react@19.2.14)(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@storybook/addon-links':
         specifier: 10.3.5
         version: 10.3.5(react@19.2.5)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
       '@storybook/react-vite':
         specifier: 10.3.5
-        version: 10.3.5(esbuild@0.27.4)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+        version: 10.3.5(esbuild@0.27.4)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@tabler/icons-react':
         specifier: 3.41.1
         version: 3.41.1(react@19.2.5)
@@ -248,7 +248,7 @@ importers:
         version: 5.9.3
       vite:
         specifier: 7.3.2
-        version: 7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+        version: 7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
 
   packages/website:
     dependencies:
@@ -2076,6 +2076,9 @@ packages:
 
   '@types/node@22.19.15':
     resolution: {integrity: sha512-F0R/h2+dsy5wJAUe3tAU6oqa2qbWY5TpNfL/RGmo1y38hiyO1w3x2jPtt76wmuaJI4DQnOBu21cNXQ2STIUUWg==}
+
+  '@types/node@24.12.2':
+    resolution: {integrity: sha512-A1sre26ke7HDIuY/M23nd9gfB+nrmhtYyMINbjI1zHJxYteKR6qSMX56FsmjMcDb3SMcjJg5BiRRgOCC/yBD0g==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -6496,6 +6499,9 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
+
   unicorn-magic@0.3.0:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
     engines: {node: '>=18'}
@@ -7040,7 +7046,7 @@ snapshots:
     dependencies:
       '@changesets/types': 6.1.0
 
-  '@changesets/cli@2.30.0(@types/node@20.19.39)':
+  '@changesets/cli@2.30.0(@types/node@24.12.2)':
     dependencies:
       '@changesets/apply-release-plan': 7.1.0
       '@changesets/assemble-release-plan': 6.0.9
@@ -7056,7 +7062,7 @@ snapshots:
       '@changesets/should-skip-package': 0.1.2
       '@changesets/types': 6.1.0
       '@changesets/write': 0.4.0
-      '@inquirer/external-editor': 1.0.3(@types/node@20.19.39)
+      '@inquirer/external-editor': 1.0.3(@types/node@24.12.2)
       '@manypkg/get-packages': 1.1.3
       ansi-colors: 4.1.3
       enquirer: 2.4.1
@@ -7618,56 +7624,56 @@ snapshots:
 
   '@inquirer/ansi@1.0.2': {}
 
-  '@inquirer/core@10.3.2(@types/node@20.19.39)':
+  '@inquirer/core@10.3.2(@types/node@24.12.2)':
     dependencies:
       '@inquirer/ansi': 1.0.2
       '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@20.19.39)
+      '@inquirer/type': 3.0.10(@types/node@24.12.2)
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
       wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 20.19.39
+      '@types/node': 24.12.2
 
-  '@inquirer/expand@4.0.23(@types/node@20.19.39)':
+  '@inquirer/expand@4.0.23(@types/node@24.12.2)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@20.19.39)
-      '@inquirer/type': 3.0.10(@types/node@20.19.39)
+      '@inquirer/core': 10.3.2(@types/node@24.12.2)
+      '@inquirer/type': 3.0.10(@types/node@24.12.2)
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 20.19.39
+      '@types/node': 24.12.2
 
-  '@inquirer/external-editor@1.0.3(@types/node@20.19.39)':
+  '@inquirer/external-editor@1.0.3(@types/node@24.12.2)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.2
     optionalDependencies:
-      '@types/node': 20.19.39
+      '@types/node': 24.12.2
 
   '@inquirer/figures@1.0.15': {}
 
-  '@inquirer/input@4.3.1(@types/node@20.19.39)':
+  '@inquirer/input@4.3.1(@types/node@24.12.2)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@20.19.39)
-      '@inquirer/type': 3.0.10(@types/node@20.19.39)
+      '@inquirer/core': 10.3.2(@types/node@24.12.2)
+      '@inquirer/type': 3.0.10(@types/node@24.12.2)
     optionalDependencies:
-      '@types/node': 20.19.39
+      '@types/node': 24.12.2
 
-  '@inquirer/select@4.4.2(@types/node@20.19.39)':
+  '@inquirer/select@4.4.2(@types/node@24.12.2)':
     dependencies:
       '@inquirer/ansi': 1.0.2
-      '@inquirer/core': 10.3.2(@types/node@20.19.39)
+      '@inquirer/core': 10.3.2(@types/node@24.12.2)
       '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@20.19.39)
+      '@inquirer/type': 3.0.10(@types/node@24.12.2)
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 20.19.39
+      '@types/node': 24.12.2
 
-  '@inquirer/type@3.0.10(@types/node@20.19.39)':
+  '@inquirer/type@3.0.10(@types/node@24.12.2)':
     optionalDependencies:
-      '@types/node': 20.19.39
+      '@types/node': 24.12.2
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -7686,11 +7692,11 @@ snapshots:
 
   '@istanbuljs/schema@0.1.3': {}
 
-  '@joshwooding/vite-plugin-react-docgen-typescript@0.7.0(typescript@5.9.3)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@joshwooding/vite-plugin-react-docgen-typescript@0.7.0(typescript@5.9.3)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
       glob: 13.0.6
       react-docgen-typescript: 2.4.0(typescript@5.9.3)
-      vite: 7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+      vite: 7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
     optionalDependencies:
       typescript: 5.9.3
 
@@ -7721,10 +7727,10 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@lerna-lite/cli@4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@20.19.39)':
+  '@lerna-lite/cli@4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.2)':
     dependencies:
-      '@lerna-lite/core': 4.11.5(@types/node@20.19.39)
-      '@lerna-lite/init': 4.11.5(@types/node@20.19.39)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.2)
+      '@lerna-lite/init': 4.11.5(@types/node@24.12.2)
       '@lerna-lite/npmlog': 4.11.5
       dedent: 1.7.2
       dotenv: 17.4.2
@@ -7732,19 +7738,19 @@ snapshots:
       load-json-file: 7.0.1
       yargs: 18.0.0
     optionalDependencies:
-      '@lerna-lite/publish': 4.11.5(@lerna-lite/run@4.11.5)(@types/node@20.19.39)(conventional-commits-filter@5.0.0)
-      '@lerna-lite/run': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@20.19.39)
-      '@lerna-lite/version': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@types/node@20.19.39)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/publish': 4.11.5(@lerna-lite/run@4.11.5)(@types/node@24.12.2)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/run': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.2)
+      '@lerna-lite/version': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@types/node@24.12.2)(conventional-commits-filter@5.0.0)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/core@4.11.5(@types/node@20.19.39)':
+  '@lerna-lite/core@4.11.5(@types/node@24.12.2)':
     dependencies:
-      '@inquirer/expand': 4.0.23(@types/node@20.19.39)
-      '@inquirer/input': 4.3.1(@types/node@20.19.39)
-      '@inquirer/select': 4.4.2(@types/node@20.19.39)
+      '@inquirer/expand': 4.0.23(@types/node@24.12.2)
+      '@inquirer/input': 4.3.1(@types/node@24.12.2)
+      '@inquirer/select': 4.4.2(@types/node@24.12.2)
       '@lerna-lite/npmlog': 4.11.5
       '@npmcli/run-script': 10.0.4
       ci-info: 4.4.0
@@ -7770,9 +7776,9 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/init@4.11.5(@types/node@20.19.39)':
+  '@lerna-lite/init@4.11.5(@types/node@24.12.2)':
     dependencies:
-      '@lerna-lite/core': 4.11.5(@types/node@20.19.39)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.2)
       fs-extra: 11.3.4
       p-map: 7.0.4
       write-json-file: 7.0.0
@@ -7790,9 +7796,9 @@ snapshots:
       tinyrainbow: 3.1.0
       wide-align: 1.1.5
 
-  '@lerna-lite/profiler@4.11.5(@types/node@20.19.39)':
+  '@lerna-lite/profiler@4.11.5(@types/node@24.12.2)':
     dependencies:
-      '@lerna-lite/core': 4.11.5(@types/node@20.19.39)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.2)
       '@lerna-lite/npmlog': 4.11.5
       fs-extra: 11.3.4
     transitivePeerDependencies:
@@ -7800,12 +7806,12 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/publish@4.11.5(@lerna-lite/run@4.11.5)(@types/node@20.19.39)(conventional-commits-filter@5.0.0)':
+  '@lerna-lite/publish@4.11.5(@lerna-lite/run@4.11.5)(@types/node@24.12.2)(conventional-commits-filter@5.0.0)':
     dependencies:
-      '@lerna-lite/cli': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@20.19.39)
-      '@lerna-lite/core': 4.11.5(@types/node@20.19.39)
+      '@lerna-lite/cli': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.2)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.2)
       '@lerna-lite/npmlog': 4.11.5
-      '@lerna-lite/version': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@types/node@20.19.39)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/version': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@types/node@24.12.2)(conventional-commits-filter@5.0.0)
       '@npmcli/arborist': 9.4.2
       '@npmcli/package-json': 7.0.5
       byte-size: 9.0.1
@@ -7837,12 +7843,12 @@ snapshots:
       - conventional-commits-filter
       - supports-color
 
-  '@lerna-lite/run@4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@20.19.39)':
+  '@lerna-lite/run@4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.2)':
     dependencies:
-      '@lerna-lite/cli': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@20.19.39)
-      '@lerna-lite/core': 4.11.5(@types/node@20.19.39)
+      '@lerna-lite/cli': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.2)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.2)
       '@lerna-lite/npmlog': 4.11.5
-      '@lerna-lite/profiler': 4.11.5(@types/node@20.19.39)
+      '@lerna-lite/profiler': 4.11.5(@types/node@24.12.2)
       fs-extra: 11.3.4
       p-map: 7.0.4
       tinyrainbow: 3.1.0
@@ -7856,11 +7862,11 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/version@4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@types/node@20.19.39)(conventional-commits-filter@5.0.0)':
+  '@lerna-lite/version@4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@types/node@24.12.2)(conventional-commits-filter@5.0.0)':
     dependencies:
       '@conventional-changelog/git-client': 2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.4.0)
-      '@lerna-lite/cli': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@20.19.39)
-      '@lerna-lite/core': 4.11.5(@types/node@20.19.39)
+      '@lerna-lite/cli': 4.11.5(@lerna-lite/publish@4.11.5)(@lerna-lite/run@4.11.5)(@lerna-lite/version@4.11.5)(@types/node@24.12.2)
+      '@lerna-lite/core': 4.11.5(@types/node@24.12.2)
       '@lerna-lite/npmlog': 4.11.5
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 22.0.1
@@ -8318,11 +8324,11 @@ snapshots:
 
   '@rijkshuisstijl-community/accordion-css@2.0.0': {}
 
-  '@rijkshuisstijl-community/accordion-react@3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/accordion-react@3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
       '@rijkshuisstijl-community/accordion-css': 2.0.0
       '@utrecht/component-library-react': 13.0.4(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@vitejs/plugin-react': 4.7.0(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitejs/plugin-react': 4.7.0(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@vitest/coverage-v8': 3.2.4
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -8337,12 +8343,12 @@ snapshots:
 
   '@rijkshuisstijl-community/alert-css@4.0.0': {}
 
-  '@rijkshuisstijl-community/alert-react@3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/alert-react@3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
       '@rijkshuisstijl-community/alert-css': 4.0.0
       '@rijkshuisstijl-community/icon-react': 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/component-library-react': 13.0.4(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@vitejs/plugin-react': 4.7.0(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitejs/plugin-react': 4.7.0(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@vitest/coverage-v8': 3.2.4
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -8357,11 +8363,11 @@ snapshots:
 
   '@rijkshuisstijl-community/article-css@2.0.0': {}
 
-  '@rijkshuisstijl-community/article-react@2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/article-react@2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
       '@rijkshuisstijl-community/article-css': 2.0.0
       '@utrecht/component-library-react': 13.0.4(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@vitejs/plugin-react': 4.7.0(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitejs/plugin-react': 4.7.0(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@vitest/coverage-v8': 3.2.4
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -8374,18 +8380,18 @@ snapshots:
       - vite
       - vitest
 
-  '@rijkshuisstijl-community/components-react@14.0.1(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/components-react@14.0.1(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
       '@amsterdam/design-system-react': 1.1.0(@amsterdam/design-system-css@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@nl-design-system-candidate/link-react': 1.1.8(@babel/runtime@7.29.2)(react@19.2.5)
       '@nl-design-system-candidate/skip-link-react': 1.1.7(@babel/runtime@7.29.2)(react@19.2.5)
-      '@rijkshuisstijl-community/accordion-react': 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
-      '@rijkshuisstijl-community/alert-react': 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
-      '@rijkshuisstijl-community/article-react': 2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/accordion-react': 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/alert-react': 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/article-react': 2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@rijkshuisstijl-community/figure-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@rijkshuisstijl-community/icon-react': 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@rijkshuisstijl-community/image-react': 2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@rijkshuisstijl-community/paragraph-react': 2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/paragraph-react': 2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@utrecht/body-react': 0.0.9(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/component-library-react': 13.0.4(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/page-body-react': 1.0.10(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
@@ -8445,11 +8451,11 @@ snapshots:
 
   '@rijkshuisstijl-community/paragraph-css@2.0.0': {}
 
-  '@rijkshuisstijl-community/paragraph-react@2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/paragraph-react@2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
       '@nl-design-system-candidate/paragraph-react': 2.2.2(@babel/runtime@7.29.2)(react@19.2.5)
       '@rijkshuisstijl-community/paragraph-css': 2.0.0
-      '@vitejs/plugin-react': 4.7.0(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitejs/plugin-react': 4.7.0(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@vitest/coverage-v8': 3.2.4
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -8590,10 +8596,10 @@ snapshots:
       axe-core: 4.11.2
       storybook: 10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
 
-  '@storybook/addon-docs@10.3.5(@types/react@19.2.14)(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@storybook/addon-docs@10.3.5(@types/react@19.2.14)(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
       '@mdx-js/react': 3.1.1(@types/react@19.2.14)(react@19.2.5)
-      '@storybook/csf-plugin': 10.3.5(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@storybook/csf-plugin': 10.3.5(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@storybook/icons': 2.0.1(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@storybook/react-dom-shim': 10.3.5(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
       react: 19.2.5
@@ -8614,25 +8620,25 @@ snapshots:
     optionalDependencies:
       react: 19.2.5
 
-  '@storybook/builder-vite@10.3.5(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@storybook/builder-vite@10.3.5(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
-      '@storybook/csf-plugin': 10.3.5(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@storybook/csf-plugin': 10.3.5(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       storybook: 10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       ts-dedent: 2.2.0
-      vite: 7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+      vite: 7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
     transitivePeerDependencies:
       - esbuild
       - rollup
       - webpack
 
-  '@storybook/csf-plugin@10.3.5(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@storybook/csf-plugin@10.3.5(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
       storybook: 10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       unplugin: 2.3.11
     optionalDependencies:
       esbuild: 0.27.4
       rollup: 4.53.2
-      vite: 7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+      vite: 7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
 
   '@storybook/global@5.0.0': {}
 
@@ -8647,11 +8653,11 @@ snapshots:
       react-dom: 19.2.5(react@19.2.5)
       storybook: 10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
 
-  '@storybook/react-vite@10.3.5(esbuild@0.27.4)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@storybook/react-vite@10.3.5(esbuild@0.27.4)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.7.0(typescript@5.9.3)(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.7.0(typescript@5.9.3)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@rollup/pluginutils': 5.3.0(rollup@4.53.2)
-      '@storybook/builder-vite': 10.3.5(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@storybook/builder-vite': 10.3.5(esbuild@0.27.4)(rollup@4.53.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@storybook/react': 10.3.5(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)
       empathic: 2.0.0
       magic-string: 0.30.21
@@ -8661,7 +8667,7 @@ snapshots:
       resolve: 1.22.11
       storybook: 10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       tsconfig-paths: 4.2.0
-      vite: 7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+      vite: 7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -8796,6 +8802,10 @@ snapshots:
   '@types/node@22.19.15':
     dependencies:
       undici-types: 6.21.0
+
+  '@types/node@24.12.2':
+    dependencies:
+      undici-types: 7.16.0
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -10042,7 +10052,7 @@ snapshots:
     dependencies:
       '@stencil/core': 4.18.3
 
-  '@vitejs/plugin-react@4.7.0(vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@vitejs/plugin-react@4.7.0(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.29.0)
@@ -10050,7 +10060,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+      vite: 7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -14332,6 +14342,8 @@ snapshots:
 
   undici-types@6.21.0: {}
 
+  undici-types@7.16.0: {}
+
   unicorn-magic@0.3.0: {}
 
   unicorn-magic@0.4.0: {}
@@ -14505,7 +14517,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@7.3.2(@types/node@22.19.15)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3):
+  vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3):
     dependencies:
       esbuild: 0.27.4
       fdir: 6.5.0(picomatch@4.0.4)
@@ -14514,7 +14526,7 @@ snapshots:
       rollup: 4.53.2
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.19.15
+      '@types/node': 24.12.2
       fsevents: 2.3.3
       sass: 1.99.0
       sass-embedded: 1.99.0
