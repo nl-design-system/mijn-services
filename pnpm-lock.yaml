@@ -172,8 +172,8 @@ importers:
         specifier: 10.1.0
         version: 10.1.0
       '@rijkshuisstijl-community/components-react':
-        specifier: 14.0.1
-        version: 14.0.1(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+        specifier: 15.0.1
+        version: 15.0.1(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@rijkshuisstijl-community/design-tokens':
         specifier: 14.0.0
         version: 14.0.0
@@ -1669,14 +1669,41 @@ packages:
       react: '>=18.2.0'
       react-dom: '>=18.2.0'
 
-  '@rijkshuisstijl-community/components-react@14.0.1':
-    resolution: {integrity: sha512-hFWHFOAduGlMXQagKUnm74Zn+e3cPzM2nB5OzzIzX65SIE8SDOV4GdB6T9GULSh1fdpCPvmF6qcDUBnDQNW1ug==}
+  '@rijkshuisstijl-community/blockquote-css@1.0.0':
+    resolution: {integrity: sha512-zkawpKBr8Ky7OA8HoPP7BJ0wBW7P4rULKnzBlfApvfWjBx+9L5hgq4EWDOsujN2L1SRBYbo2exUCs5NfdjJflA==}
+
+  '@rijkshuisstijl-community/blockquote-react@1.0.0':
+    resolution: {integrity: sha512-YpUbjoXGJYNj3lyodtrk8OyfyHrj6akGitn0HRL5803p3FNdRQErGxZMl/KnD/yLb0SenfEeslzyQAV5e2QzaA==}
+    peerDependencies:
+      react: '>=18.2.0'
+      react-dom: '>=18.2.0'
+
+  '@rijkshuisstijl-community/button-css@1.0.0':
+    resolution: {integrity: sha512-X0LTB0cibBubWPbQjHLlM6D2G55Oy0qEkZpZqvitfJiigWFfd/M0tn1eCx0/qedqzm9er7YFuJys0k9YNUA9Pg==}
+
+  '@rijkshuisstijl-community/button-react@1.0.0':
+    resolution: {integrity: sha512-E2wv0sEQq0OCeA/pC6JY78Ed3xlDhPSK/jqoFILCQByClfssQopUq1JzNhIY5cVBjUqUy9RACwhS2GfOVyPbqg==}
+    peerDependencies:
+      react: '>=18.2.0'
+      react-dom: '>=18.2.0'
+
+  '@rijkshuisstijl-community/components-react@15.0.1':
+    resolution: {integrity: sha512-nLr06sIgx2BoxlMwLQ0rvlezUG14Ky7/CewBQMW9XFkX2cnyBNoqpBF9lkkTmdW4UhEUC0uzjzl3SLHi/CHRRQ==}
     peerDependencies:
       react: '>=18.2.0'
       react-dom: '>=18.2.0'
 
   '@rijkshuisstijl-community/design-tokens@14.0.0':
     resolution: {integrity: sha512-VDTWRT95U78/nyGFQlhrANHlIE5XPT/el32oIn/9zR1VQjLfI5B+8la/vlyJZHSfciAYxVmN5/AecbhQh/3LtA==}
+
+  '@rijkshuisstijl-community/dot-badge-css@1.0.0':
+    resolution: {integrity: sha512-ggT/eoTP3bpQ5cZA2KF4N4nryG4Upm+xFU+j69Zod/i9JmNCHS0aKT2duOrhTm+zhSrZmdGzDhAmCTS72K0lhg==}
+
+  '@rijkshuisstijl-community/dot-badge-react@1.0.0':
+    resolution: {integrity: sha512-mirH060J/qvpZ8GWLykp0vXph/vQDUgHA+R5V5J2+hK26RFG4yNsNQ0eHxwdiFX8W3we6KbXzwkpkaW6G+pLbg==}
+    peerDependencies:
+      react: '>=18.2.0'
+      react-dom: '>=18.2.0'
 
   '@rijkshuisstijl-community/figure-css@1.0.0':
     resolution: {integrity: sha512-YeSHvat447oBQO/osaQGBQJu9XOM0l+orIwFiPU/Zn66/8n05wj4cXVMj44SRNwRBgFAPBPpzgVI3Do/vGLneg==}
@@ -1699,11 +1726,29 @@ packages:
       react: '>=18.2.0'
       react-dom: '>=18.2.0'
 
+  '@rijkshuisstijl-community/link-css@1.0.0':
+    resolution: {integrity: sha512-E9S/lmQivTVVHaKvHXZVhW3VYyUngaqEGUkWI5nKUOOLI5KcWOmpisqo9/a433OBnfawGUl1hJRkccJs3j7ovw==}
+
+  '@rijkshuisstijl-community/link-react@1.0.0':
+    resolution: {integrity: sha512-MURnIRSI6+Vggq+xyFcIgj2svB82Zq8Jg8m8fqOamBY5rbmcPObbYTtQKc4qfC54zzKsOPuO8RXOhePNYTNOIw==}
+    peerDependencies:
+      react: '>=18.2.0'
+      react-dom: '>=18.2.0'
+
   '@rijkshuisstijl-community/paragraph-css@2.0.0':
     resolution: {integrity: sha512-JQf6qbhNnMLvRLmobjYdRr8nWTKhCroo3fiwZEeYO2u1yayAV+e7BbFoSqBVvOUkJoHKDYUebsj5HmKDFqFoPA==}
 
   '@rijkshuisstijl-community/paragraph-react@2.0.1':
     resolution: {integrity: sha512-Mj/Zbtl0ik3UGaBihbdP+/fy4IfUMkZjnD2oi2ccoQAS+fQuZxI5Sv4U/5oY+6kc0T4WB08tYqF0RwBid3gM+w==}
+    peerDependencies:
+      react: '>=18.2.0'
+      react-dom: '>=18.2.0'
+
+  '@rijkshuisstijl-community/separator-css@1.0.0':
+    resolution: {integrity: sha512-/cda/TEpUYkSQ7+uVjQKL/zvgzRc9V3atL8gAwG1T4et9uHIUf4V96Px6dZQ3G1bdz3SJdRYCVsAZPGwMCawKQ==}
+
+  '@rijkshuisstijl-community/separator-react@1.0.0':
+    resolution: {integrity: sha512-XT1yDc2hOmXA6/4Hs/HTEQf7V/QdHGfApLhYzzMHKfSad87jlxJA+GZKclwrRvOyJPtE+QNFpQaYihvstbFUtg==}
     peerDependencies:
       react: '>=18.2.0'
       react-dom: '>=18.2.0'
@@ -3237,14 +3282,14 @@ packages:
   '@utrecht/rich-text-css@3.0.0':
     resolution: {integrity: sha512-lrytwDqDTPyKiOhoYqLe6hRsI8I/doIN48Hrliei6PxPx7WCh4McUPVvewQgZkS7dxT+dLyDpqMlP4CIQynByA==}
 
-  '@utrecht/root-css@3.0.0':
-    resolution: {integrity: sha512-T4GxW4qz0D+Kxecm+/QX9UrDhYRh55dtfptuuXAVr9vMEOajPreJlJ0u5sC+Wyr0NaIfxcCcJVCCVhzLNLJ1Dg==}
+  '@utrecht/root-css@3.1.0':
+    resolution: {integrity: sha512-Xi96mZewr7ttbtaED/BGK/bNoLyIETVM8tXSNSgA22Xb/gxgtzhkjRlW0Q0sNe11fsqUzI1SJwj43lZDHZWBXg==}
 
   '@utrecht/root-css@4.1.1':
     resolution: {integrity: sha512-FOUJ5ISJAF+yiDbGdpuDiKee6Wb2rSBDTZMyBikeQdMqJBc+akQYtO4+dVhTgT6jwGWchFHUEKkW967WUUUheg==}
 
-  '@utrecht/root-react@1.0.10':
-    resolution: {integrity: sha512-ZuN5hhIM5CKQBq+1J1GL/+C3ahT6k9D5NsdlN+XgUnnl73yEVLqIO9tXDMqJC30++M238W5R12GnUJJySssL0A==}
+  '@utrecht/root-react@1.0.11':
+    resolution: {integrity: sha512-+DCYlt1/LoROsdFXYeLd48bol8M2Lr9+HBbGDMgokvG8W8pzheZNkHSocGfeYKATpEqEt25h5GKoQREW0qo6iw==}
     peerDependencies:
       '@babel/runtime': '*'
       react: ^18.0.0 || ^19.0.0
@@ -8793,7 +8838,36 @@ snapshots:
       - vite
       - vitest
 
-  '@rijkshuisstijl-community/components-react@14.0.1(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/blockquote-css@1.0.0': {}
+
+  '@rijkshuisstijl-community/blockquote-react@1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+    dependencies:
+      '@rijkshuisstijl-community/blockquote-css': 1.0.0
+      '@utrecht/component-library-react': 13.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
+
+  '@rijkshuisstijl-community/button-css@1.0.0': {}
+
+  '@rijkshuisstijl-community/button-react@1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+    dependencies:
+      '@rijkshuisstijl-community/button-css': 1.0.0
+      '@rijkshuisstijl-community/icon-react': 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      '@utrecht/component-library-react': 13.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
+
+  '@rijkshuisstijl-community/components-react@15.0.1(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
       '@amsterdam/design-system-react': 1.1.0(@amsterdam/design-system-css@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@nl-design-system-candidate/link-react': 1.1.8(@babel/runtime@7.29.2)(react@19.2.5)
@@ -8801,16 +8875,21 @@ snapshots:
       '@rijkshuisstijl-community/accordion-react': 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@rijkshuisstijl-community/alert-react': 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@rijkshuisstijl-community/article-react': 2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/blockquote-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      '@rijkshuisstijl-community/button-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      '@rijkshuisstijl-community/dot-badge-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@rijkshuisstijl-community/figure-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@rijkshuisstijl-community/icon-react': 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@rijkshuisstijl-community/image-react': 2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      '@rijkshuisstijl-community/link-react': 1.0.0(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@rijkshuisstijl-community/paragraph-react': 2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/separator-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/body-react': 0.0.9(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/component-library-react': 13.0.4(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/page-body-react': 1.0.10(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/page-header-react': 1.0.9(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/page-layout-react': 1.0.9(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@utrecht/root-react': 1.0.10(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      '@utrecht/root-react': 1.0.11(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
     transitivePeerDependencies:
@@ -8825,6 +8904,20 @@ snapshots:
       - vitest
 
   '@rijkshuisstijl-community/design-tokens@14.0.0': {}
+
+  '@rijkshuisstijl-community/dot-badge-css@1.0.0': {}
+
+  '@rijkshuisstijl-community/dot-badge-react@1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+    dependencies:
+      '@rijkshuisstijl-community/dot-badge-css': 1.0.0
+      '@utrecht/component-library-react': 13.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
 
   '@rijkshuisstijl-community/figure-css@1.0.0': {}
 
@@ -8862,6 +8955,23 @@ snapshots:
       - react-vega
       - vega
 
+  '@rijkshuisstijl-community/link-css@1.0.0': {}
+
+  '@rijkshuisstijl-community/link-react@1.0.0(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+    dependencies:
+      '@nl-design-system-candidate/link-react': 1.1.8(@babel/runtime@7.29.2)(react@19.2.5)
+      '@rijkshuisstijl-community/link-css': 1.0.0
+      '@vitejs/plugin-react': 4.7.0(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitest/coverage-v8': 3.2.4
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - '@vitest/browser'
+      - supports-color
+      - vite
+      - vitest
+
   '@rijkshuisstijl-community/paragraph-css@2.0.0': {}
 
   '@rijkshuisstijl-community/paragraph-react@2.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
@@ -8878,6 +8988,20 @@ snapshots:
       - supports-color
       - vite
       - vitest
+
+  '@rijkshuisstijl-community/separator-css@1.0.0': {}
+
+  '@rijkshuisstijl-community/separator-react@1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+    dependencies:
+      '@rijkshuisstijl-community/separator-css': 1.0.0
+      '@utrecht/component-library-react': 13.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
 
   '@rolldown/pluginutils@1.0.0-beta.27': {}
 
@@ -10685,14 +10809,14 @@ snapshots:
 
   '@utrecht/rich-text-css@3.0.0': {}
 
-  '@utrecht/root-css@3.0.0': {}
+  '@utrecht/root-css@3.1.0': {}
 
   '@utrecht/root-css@4.1.1': {}
 
-  '@utrecht/root-react@1.0.10(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+  '@utrecht/root-react@1.0.11(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
       '@babel/runtime': 7.29.2
-      '@utrecht/root-css': 3.0.0
+      '@utrecht/root-css': 3.1.0
       clsx: 2.1.1
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
