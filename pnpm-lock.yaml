@@ -175,8 +175,8 @@ importers:
         specifier: 14.0.1
         version: 14.0.1(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@7.3.2(@types/node@24.12.2)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@rijkshuisstijl-community/design-tokens':
-        specifier: 9.0.0
-        version: 9.0.0
+        specifier: 14.0.0
+        version: 14.0.0
       '@storybook/addon-a11y':
         specifier: 10.3.5
         version: 10.3.5(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
@@ -286,8 +286,8 @@ importers:
         specifier: 10.1.0
         version: 10.1.0
       '@rijkshuisstijl-community/design-tokens':
-        specifier: 9.0.0
-        version: 9.0.0
+        specifier: 14.0.0
+        version: 14.0.0
       '@tabler/icons-react':
         specifier: 3.41.1
         version: 3.41.1(react@19.2.5)
@@ -1675,8 +1675,8 @@ packages:
       react: '>=18.2.0'
       react-dom: '>=18.2.0'
 
-  '@rijkshuisstijl-community/design-tokens@9.0.0':
-    resolution: {integrity: sha512-zuuj4vnw2jcORmxAfqD9wP1eRaawSCLAq4rc2fZaNWMjYv93JTOfo9B5cHnwPllsI/DiKBmDZfS+VQDf94RA6w==}
+  '@rijkshuisstijl-community/design-tokens@14.0.0':
+    resolution: {integrity: sha512-VDTWRT95U78/nyGFQlhrANHlIE5XPT/el32oIn/9zR1VQjLfI5B+8la/vlyJZHSfciAYxVmN5/AecbhQh/3LtA==}
 
   '@rijkshuisstijl-community/figure-css@1.0.0':
     resolution: {integrity: sha512-YeSHvat447oBQO/osaQGBQJu9XOM0l+orIwFiPU/Zn66/8n05wj4cXVMj44SRNwRBgFAPBPpzgVI3Do/vGLneg==}
@@ -8824,7 +8824,7 @@ snapshots:
       - vite
       - vitest
 
-  '@rijkshuisstijl-community/design-tokens@9.0.0': {}
+  '@rijkshuisstijl-community/design-tokens@14.0.0': {}
 
   '@rijkshuisstijl-community/figure-css@1.0.0': {}
 
