@@ -220,8 +220,8 @@ importers:
         specifier: 4.0.4
         version: 4.0.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@whitespace/storybook-addon-html':
-        specifier: 8.0.2
-        version: 8.0.2(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
+        specifier: 9.0.0
+        version: 9.0.0(prettier@3.8.3)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
       eslint-plugin-storybook:
         specifier: 10.3.5
         version: 10.3.5(eslint@9.39.2)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)
@@ -3013,10 +3013,11 @@ packages:
   '@webcontainer/env@1.1.1':
     resolution: {integrity: sha512-6aN99yL695Hi9SuIk1oC88l9o0gmxL1nGWWQ/kNy81HigJ0FoaoTXpytCj6ItzgyCEwA9kF1wixsTuv5cjsgng==}
 
-  '@whitespace/storybook-addon-html@8.0.2':
-    resolution: {integrity: sha512-NsCpY+jWl6MamuQuSptuC5A1Xa4UWNtqhbBjv710C8Ka+n+t2e/tCfx1UAsB6m3linja2jU4Zmxu8W026lzLGQ==}
+  '@whitespace/storybook-addon-html@9.0.0':
+    resolution: {integrity: sha512-GX2lk5EgE46Lqbs1sa/7mWDWo6g/tPiIH8SyYvzBgMlUmq/q1mulHLxowQeN/HYpdlFMeUskUlYhMmE64qi44w==}
     peerDependencies:
-      storybook: ^9.0.0
+      prettier: ^3.7.1
+      storybook: ^10
 
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
@@ -10106,8 +10107,9 @@ snapshots:
 
   '@webcontainer/env@1.1.1': {}
 
-  '@whitespace/storybook-addon-html@8.0.2(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))':
+  '@whitespace/storybook-addon-html@9.0.0(prettier@3.8.3)(storybook@10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))':
     dependencies:
+      prettier: 3.8.3
       storybook: 10.3.5(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
 
   abbrev@2.0.0: {}

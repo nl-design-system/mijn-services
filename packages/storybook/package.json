@@ -55,7 +55,7 @@
     "@utrecht/icon": "2.2.0",
     "@utrecht/root-css": "2.0.1",
     "@utrecht/web-component-library-react": "4.0.4",
-    "@whitespace/storybook-addon-html": "8.0.2",
+    "@whitespace/storybook-addon-html": "9.0.0",
     "eslint-plugin-storybook": "10.3.5",
     "react": "19.2.5",
     "react-dom": "19.2.5",
