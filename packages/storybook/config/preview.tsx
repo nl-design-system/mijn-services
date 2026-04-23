@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react-vite';
-import '@utrecht/body-css';
 import '@utrecht/root-css';
+import { Root } from '@utrecht/root-react';
 import { useEffect } from 'react';
 import { StoryRootDecorator } from './StoryRootDecorator';
 
@@ -16,8 +16,7 @@ const withTheme = (Story: any, { parameters, args }: { parameters: any; args: an
   const theme = (parameters as StoryParameters).theme || (args as StoryArgs).theme;
 
   useEffect(() => {
-    document.documentElement.classList.add('utrecht-root');
-    document.body.classList.add('utrecht-body');
+    // document.documentElement.classList.add('utrecht-root');
 
     let previousTheme: string | null = null;
 
@@ -43,7 +42,17 @@ const withTheme = (Story: any, { parameters, args }: { parameters: any; args: an
 };
 
 const preview: Preview = {
-  decorators: [StoryRootDecorator, withTheme],
+  decorators: [
+    (Story, options) => {
+      return options.parameters['isPage'] ? (
+        <Root Component="div">{Story()}</Root>
+      ) : (
+        <Root Component="div">{Story()}</Root>
+      );
+    },
+    StoryRootDecorator,
+    withTheme,
+  ],
   parameters: {
     controls: { expanded: false },
     options: {
