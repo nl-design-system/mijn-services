@@ -1,5 +1,4 @@
 import type { Preview } from '@storybook/react-vite';
-import '@utrecht/body-css';
 import '@utrecht/root-css';
 import { useEffect } from 'react';
 import { StoryRootDecorator } from './StoryRootDecorator';
