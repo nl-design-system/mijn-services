@@ -201,9 +201,6 @@ importers:
       '@types/react-dom':
         specifier: 19.2.3
         version: 19.2.3(@types/react@19.2.14)
-      '@utrecht/body-css':
-        specifier: 4.0.0
-        version: 4.0.0
       '@utrecht/button-react':
         specifier: 3.0.2
         version: 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
@@ -219,6 +216,9 @@ importers:
       '@utrecht/root-css':
         specifier: 4.1.1
         version: 4.1.1
+      '@utrecht/root-react':
+        specifier: 1.0.16
+        version: 1.0.16(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/web-component-library-react':
         specifier: 4.0.4
         version: 4.0.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
@@ -294,15 +294,15 @@ importers:
       '@tabler/icons-react':
         specifier: 3.41.1
         version: 3.41.1(react@19.2.5)
-      '@utrecht/body-css':
-        specifier: 4.0.0
-        version: 4.0.0
       '@utrecht/component-library-react':
         specifier: 13.3.1
         version: 13.3.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/root-css':
         specifier: 4.1.1
         version: 4.1.1
+      '@utrecht/root-react':
+        specifier: 1.0.16
+        version: 1.0.16(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       next:
         specifier: 16.2.3
         version: 16.2.3(@babel/core@7.29.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(sass@1.99.0)
@@ -2448,9 +2448,6 @@ packages:
   '@utrecht/body-css@2.0.1':
     resolution: {integrity: sha512-WQjaF2Ii0eERCnTGYI32Jpjts5ydJpCAQUTtLjVs/jGF2+wHBz7XRDN6SFd8S0xIgp6llMQjHB9rdVp8JxieWA==}
 
-  '@utrecht/body-css@4.0.0':
-    resolution: {integrity: sha512-mxI/wcihyEkVVDwp1kirWxcOmUlGH2pwJu3TYWZccnbgzjcQdA0r8SirGZ2IF9LH9cpQmJn4mPOXWFJQsxOskA==}
-
   '@utrecht/body-react@0.0.9':
     resolution: {integrity: sha512-WgXbP1plrnYyxHzGa5PLCvGJtXPeqowhexplpgUMJruFDlMkTLc5e4F1AL8PWpppTFiQcHz9jwbeO5JMwFp7QQ==}
     peerDependencies:
@@ -3288,6 +3285,13 @@ packages:
 
   '@utrecht/root-react@1.0.11':
     resolution: {integrity: sha512-+DCYlt1/LoROsdFXYeLd48bol8M2Lr9+HBbGDMgokvG8W8pzheZNkHSocGfeYKATpEqEt25h5GKoQREW0qo6iw==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
+  '@utrecht/root-react@1.0.16':
+    resolution: {integrity: sha512-tS5nuW0rNk8fqK3sRjQvr3QvPXeq+Q1umk0A/A1pJkAbeurqgaGXFafLyT7a/yuw9f9FneDsGRbQFjQzUDQDEw==}
     peerDependencies:
       '@babel/runtime': '*'
       react: ^18.0.0 || ^19.0.0
@@ -9711,8 +9715,6 @@ snapshots:
 
   '@utrecht/body-css@2.0.1': {}
 
-  '@utrecht/body-css@4.0.0': {}
-
   '@utrecht/body-react@0.0.9(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
       '@babel/runtime': 7.29.2
@@ -10865,6 +10867,14 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.29.2
       '@utrecht/root-css': 3.1.0
+      clsx: 2.1.1
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
+
+  '@utrecht/root-react@1.0.16(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+    dependencies:
+      '@babel/runtime': 7.29.2
+      '@utrecht/root-css': 4.1.1
       clsx: 2.1.1
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
