@@ -21,6 +21,7 @@
     "./packages/*"
   ],
   "devDependencies": {
+    "@babel/runtime": "7.29.2",
     "@changesets/cli": "2.30.0",
     "@lerna-lite/cli": "5.1.0",
     "@lerna-lite/publish": "5.1.0",

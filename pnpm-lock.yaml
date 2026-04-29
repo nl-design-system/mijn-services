@@ -12,6 +12,9 @@ importers:
         specifier: 14.1.1
         version: 14.1.1
     devDependencies:
+      '@babel/runtime':
+        specifier: 7.29.2
+        version: 7.29.2
       '@changesets/cli':
         specifier: 2.30.0
         version: 2.30.0(@types/node@24.12.2)
