@@ -205,8 +205,8 @@ importers:
         specifier: 3.0.2
         version: 3.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/component-library-react':
-        specifier: 13.3.1
-        version: 13.3.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+        specifier: 14.0.0
+        version: 14.0.0(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/design-tokens':
         specifier: 6.2.0
         version: 6.2.0
@@ -295,8 +295,8 @@ importers:
         specifier: 3.41.1
         version: 3.41.1(react@19.2.5)
       '@utrecht/component-library-react':
-        specifier: 13.3.1
-        version: 13.3.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+        specifier: 14.0.0
+        version: 14.0.0(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/root-css':
         specifier: 4.1.1
         version: 4.1.1
@@ -305,7 +305,7 @@ importers:
         version: 1.0.16(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       next:
         specifier: 16.2.4
-        version: 16.2.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(sass@1.99.0)
+        version: 16.2.4(@babel/core@7.29.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(sass@1.99.0)
       react:
         specifier: 19.2.5
         version: 19.2.5
@@ -2669,19 +2669,12 @@ packages:
       vega:
         optional: true
 
-  '@utrecht/component-library-react@13.3.1':
-    resolution: {integrity: sha512-nb2Esx4YCnMX/j/hQu70ZdXx8bIczXPLur75/Ltny8UAh91rS1R0L7KXKNZBwzdMAM1VqJCFGv7ppCqOeKuZ5w==}
+  '@utrecht/component-library-react@14.0.0':
+    resolution: {integrity: sha512-sIXjwzdgjJ3jxhTI5F0x1eZMvyarTAyxLfaA/wddubpEZBm8DlPiF4EwkcpB2Ja9mQz+t2ESl0LR5I8EqC4c6w==}
     peerDependencies:
       '@babel/runtime': ^7.23.6
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
-      react-vega: ^7.6.0
-      vega: ^5.25.0
-    peerDependenciesMeta:
-      react-vega:
-        optional: true
-      vega:
-        optional: true
 
   '@utrecht/currency-data-css@2.0.1':
     resolution: {integrity: sha512-RjbY93rP5+LsNAlcA6krrzt/lwjtI+gMALqEsw9srHXJQvF3DcJUxlR/fUfS7H6EdMy26OxRJGJ+XQ4wL6P4hA==}
@@ -3187,6 +3180,9 @@ packages:
   '@utrecht/page-footer-css@4.0.0':
     resolution: {integrity: sha512-242M01de3+WLuotK4kJqLaB03aNnD5xvVKpD3Fk8ZclX4+fB9Bd9FOoJrZIBhloFZOOUERnjBdsU32l6a4fqaQ==}
 
+  '@utrecht/page-footer-css@4.0.1':
+    resolution: {integrity: sha512-jHd+IVGik2rG/cs5KWwt15qzB9lRI5pSASNAGYUtkp5uTJ5sk/QWLxrxX19qOPzQ7Yj/uB4ctuDAunSgQT8bfg==}
+
   '@utrecht/page-footer-react@1.0.11':
     resolution: {integrity: sha512-vgDDDxJgRKBvNq2iiNkELMlVMKnFRMTifGOA0amfqMDXTYuaCr2VQnkL0kuV+rcJmtoRXAynASQfURqRGKohyA==}
     peerDependencies:
@@ -3199,6 +3195,9 @@ packages:
 
   '@utrecht/page-header-css@3.0.0':
     resolution: {integrity: sha512-V6DblLWEGaaqupcQckYFK/tCpIQOCPRUpGfY00x8PAvpSPsHLmxHVBisM66jjfs4S2jjvsQIMz7oy0F5J91DrA==}
+
+  '@utrecht/page-header-css@3.0.1':
+    resolution: {integrity: sha512-kCobPBJEhEf4NaazS86cj2M/YFCekANem3UTiOt16laCqxImfMkN49bdkaoqB93vuu+3ofETlu3pdW51L9hi/g==}
 
   '@utrecht/page-header-react@1.0.10':
     resolution: {integrity: sha512-BubnU4eG/keZQXu09GrRDitFu72Vr7crPawK2qLCurHS68k59TYrcgFuKUKrQBJ0Oi8gdSkOcvf2wfX1KLHB3w==}
@@ -3421,9 +3420,6 @@ packages:
 
   '@utrecht/vega-visualization-css@1.4.2':
     resolution: {integrity: sha512-JTTx1DsKIeYZz95+H34HGfocKjDpbVOsFdPK1f/b3U3C5ivdC75fTkzU1+tVp6ijPwKnWPNr6eiIXTY9tHj5Kg==}
-
-  '@utrecht/vega-visualization-css@2.0.0':
-    resolution: {integrity: sha512-7bv6nNhvX68Fu2u3qdNO/Ne0f4JJlNnIO4mD9KmuZrocR2u7Z0r5RV30MUphfOKu1l7Ws/GDQagdg61lv+SjBg==}
 
   '@utrecht/web-component-library-react@4.0.4':
     resolution: {integrity: sha512-Xc5tt4dwev7elsXoZ6cShE/ULLEBFY3GNmczozsCZ/UVVIx2oLM32SCBFqFVX4GLYzW7sskMTKJIdZbXUvBz5Q==}
@@ -10321,7 +10317,7 @@ snapshots:
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
 
-  '@utrecht/component-library-react@13.3.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+  '@utrecht/component-library-react@14.0.0(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
       '@babel/runtime': 7.29.2
       '@utrecht/accordion-css': 4.0.0
@@ -10400,8 +10396,8 @@ snapshots:
       '@utrecht/ordered-list-css': 4.0.0
       '@utrecht/page-content-css': 3.0.0
       '@utrecht/page-css': 3.0.0
-      '@utrecht/page-footer-css': 4.0.0
-      '@utrecht/page-header-css': 3.0.0
+      '@utrecht/page-footer-css': 4.0.1
+      '@utrecht/page-header-css': 3.0.1
       '@utrecht/pagination-css': 3.0.0
       '@utrecht/paragraph-css': 4.0.0
       '@utrecht/pre-heading-css': 3.0.0
@@ -10425,7 +10421,6 @@ snapshots:
       '@utrecht/top-task-nav-css': 2.0.0
       '@utrecht/unordered-list-css': 3.1.0
       '@utrecht/url-data-css': 3.0.0
-      '@utrecht/vega-visualization-css': 2.0.0
       clsx: 2.1.1
       lodash.chunk: 4.2.0
       react: 19.2.5
@@ -10869,6 +10864,8 @@ snapshots:
 
   '@utrecht/page-footer-css@4.0.0': {}
 
+  '@utrecht/page-footer-css@4.0.1': {}
+
   '@utrecht/page-footer-react@1.0.11(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
       '@babel/runtime': 7.29.2
@@ -10880,6 +10877,8 @@ snapshots:
   '@utrecht/page-header-css@2.0.1': {}
 
   '@utrecht/page-header-css@3.0.0': {}
+
+  '@utrecht/page-header-css@3.0.1': {}
 
   '@utrecht/page-header-react@1.0.10(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
@@ -11058,8 +11057,6 @@ snapshots:
   '@utrecht/url-data-css@3.0.0': {}
 
   '@utrecht/vega-visualization-css@1.4.2': {}
-
-  '@utrecht/vega-visualization-css@2.0.0': {}
 
   '@utrecht/web-component-library-react@4.0.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
@@ -13906,7 +13903,7 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  next@16.2.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(sass@1.99.0):
+  next@16.2.4(@babel/core@7.29.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(sass@1.99.0):
     dependencies:
       '@next/env': 16.2.4
       '@swc/helpers': 0.5.15
@@ -13915,7 +13912,7 @@ snapshots:
       postcss: 8.4.31
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
-      styled-jsx: 5.1.6(react@19.2.5)
+      styled-jsx: 5.1.6(@babel/core@7.29.0)(react@19.2.5)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.2.4
       '@next/swc-darwin-x64': 16.2.4
@@ -15163,10 +15160,12 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.6(react@19.2.5):
+  styled-jsx@5.1.6(@babel/core@7.29.0)(react@19.2.5):
     dependencies:
       client-only: 0.0.1
       react: 19.2.5
+    optionalDependencies:
+      '@babel/core': 7.29.0
 
   stylelint-config-recommended-scss@17.0.0(postcss@8.5.13)(stylelint@17.9.1(typescript@5.9.3)):
     dependencies:
