@@ -47,7 +47,7 @@
     "stylelint": "17.9.1",
     "stylelint-config-standard-scss": "17.0.0",
     "stylelint-order": "8.1.1",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "scripts": {
     "backup-discussions": "pnpm --filter @vng.nl/gh-discussions-backup-tool run backup",
