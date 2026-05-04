@@ -118,11 +118,11 @@ importers:
   packages/storybook:
     devDependencies:
       '@amsterdam/design-system-css':
-        specifier: 3.3.0
-        version: 3.3.0
+        specifier: 4.1.0
+        version: 4.1.0
       '@amsterdam/design-system-react':
         specifier: 3.3.0
-        version: 3.3.0(@amsterdam/design-system-css@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+        version: 3.3.0(@amsterdam/design-system-css@4.1.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@chromatic-com/storybook':
         specifier: 5.1.2
         version: 5.1.2(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
@@ -176,7 +176,7 @@ importers:
         version: 10.1.0
       '@rijkshuisstijl-community/components-react':
         specifier: 15.0.2
-        version: 15.0.2(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+        version: 15.0.2(@amsterdam/design-system-css@4.1.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
       '@rijkshuisstijl-community/design-tokens':
         specifier: 14.0.0
         version: 14.0.0
@@ -256,11 +256,11 @@ importers:
   packages/website:
     dependencies:
       '@amsterdam/design-system-css':
-        specifier: 3.3.0
-        version: 3.3.0
+        specifier: 4.1.0
+        version: 4.1.0
       '@amsterdam/design-system-react':
         specifier: 3.3.0
-        version: 3.3.0(@amsterdam/design-system-css@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+        version: 3.3.0(@amsterdam/design-system-css@4.1.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@gemeente-denhaag/action':
         specifier: 4.2.0
         version: 4.2.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
@@ -305,7 +305,7 @@ importers:
         version: 1.0.16(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       next:
         specifier: 16.2.4
-        version: 16.2.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(sass@1.99.0)
+        version: 16.2.4(@babel/core@7.29.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(sass@1.99.0)
       react:
         specifier: 19.2.5
         version: 19.2.5
@@ -351,11 +351,11 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@amsterdam/design-system-css@3.3.0':
-    resolution: {integrity: sha512-PzkXkk7+1XTp2FLWvU5RTWLB6pE/KlkKtH/eE6TaM4QPzci2FKNVaPfUeOw4sZLMylfsFkK3jsiGRssAFgyvRw==}
+  '@amsterdam/design-system-css@4.1.0':
+    resolution: {integrity: sha512-AfR2vCwOTnbpv1P6oaa8CPcwJSi6NNtBfExszqxSob5EWg0+o/mvdBah6GddItEg8sGrXctSvnYGM/I00q3chQ==}
     peerDependencies:
-      '@amsterdam/design-system-assets': 2.2.0
-      '@amsterdam/design-system-tokens': 3.4.0
+      '@amsterdam/design-system-assets': 2.3.0
+      '@amsterdam/design-system-tokens': 4.0.1
 
   '@amsterdam/design-system-react-icons@1.0.0':
     resolution: {integrity: sha512-rgY7haz069mYWPFJaXqsOFFqZQt+1sMOR9WpxybJB0SmAXevlkdEY5X12CtCCzbeBtzRXgCJxTouYjl+5dZblw==}
@@ -7393,7 +7393,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
-  '@amsterdam/design-system-css@3.3.0': {}
+  '@amsterdam/design-system-css@4.1.0': {}
 
   '@amsterdam/design-system-react-icons@1.0.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
@@ -7405,18 +7405,18 @@ snapshots:
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
 
-  '@amsterdam/design-system-react@1.1.0(@amsterdam/design-system-css@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+  '@amsterdam/design-system-react@1.1.0(@amsterdam/design-system-css@4.1.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
-      '@amsterdam/design-system-css': 3.3.0
+      '@amsterdam/design-system-css': 4.1.0
       '@amsterdam/design-system-react-icons': 1.0.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@babel/runtime': 7.27.4
       clsx: 2.1.1
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
 
-  '@amsterdam/design-system-react@3.3.0(@amsterdam/design-system-css@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+  '@amsterdam/design-system-react@3.3.0(@amsterdam/design-system-css@4.1.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
-      '@amsterdam/design-system-css': 3.3.0
+      '@amsterdam/design-system-css': 4.1.0
       '@amsterdam/design-system-react-icons': 2.0.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@babel/runtime': 7.29.2
       clsx: 2.1.1
@@ -9044,9 +9044,9 @@ snapshots:
       - react-vega
       - vega
 
-  '@rijkshuisstijl-community/components-react@15.0.2(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/components-react@15.0.2(@amsterdam/design-system-css@4.1.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
     dependencies:
-      '@amsterdam/design-system-react': 1.1.0(@amsterdam/design-system-css@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      '@amsterdam/design-system-react': 1.1.0(@amsterdam/design-system-css@4.1.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@nl-design-system-candidate/link-react': 1.1.8(@babel/runtime@7.29.2)(react@19.2.5)
       '@nl-design-system-candidate/skip-link-react': 1.1.7(@babel/runtime@7.29.2)(react@19.2.5)
       '@rijkshuisstijl-community/accordion-react': 3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
@@ -13906,7 +13906,7 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  next@16.2.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(sass@1.99.0):
+  next@16.2.4(@babel/core@7.29.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(sass@1.99.0):
     dependencies:
       '@next/env': 16.2.4
       '@swc/helpers': 0.5.15
@@ -13915,7 +13915,7 @@ snapshots:
       postcss: 8.4.31
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
-      styled-jsx: 5.1.6(react@19.2.5)
+      styled-jsx: 5.1.6(@babel/core@7.29.0)(react@19.2.5)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.2.4
       '@next/swc-darwin-x64': 16.2.4
@@ -15163,10 +15163,12 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.6(react@19.2.5):
+  styled-jsx@5.1.6(@babel/core@7.29.0)(react@19.2.5):
     dependencies:
       client-only: 0.0.1
       react: 19.2.5
+    optionalDependencies:
+      '@babel/core': 7.29.0
 
   stylelint-config-recommended-scss@17.0.0(postcss@8.5.13)(stylelint@17.9.1(typescript@5.9.3)):
     dependencies:
