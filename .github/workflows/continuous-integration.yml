@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
 
       - name: Install pnpm package manager
         uses: pnpm/action-setup@26f6d4f2c533a43e6b5da0b4a5dd983f98f7b49a # v6.0.4
@@ -31,7 +33,7 @@ jobs:
         run: |
           echo "Auditing npm dependencies with pnpm v11 before installing them. For more information, see: https://nldesignsystem.nl/pnpm-audit"
           pnpm dlx pnpm@11.0.0-rc.2 --config.manage-package-manager-versions=false audit --audit-level critical
-      
+
       - name: Check for known security issues with npm packages
         if: vars.ENABLE_PNPM_AUDIT_V11 != '1'
         run: |
@@ -48,6 +50,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
 
       - name: Install pnpm package manager
         uses: pnpm/action-setup@26f6d4f2c533a43e6b5da0b4a5dd983f98f7b49a # v6.0.4
@@ -63,7 +67,7 @@ jobs:
         run: |
           echo "Auditing npm dependencies with pnpm v11 before installing them. For more information, see: https://nldesignsystem.nl/pnpm-audit"
           pnpm dlx pnpm@11.0.0-rc.2 --config.manage-package-manager-versions=false audit --audit-level critical
-      
+
       - name: Check for known security issues with npm packages
         if: vars.ENABLE_PNPM_AUDIT_V11 != '1'
         run: |
@@ -83,6 +87,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
 
       - name: Install pnpm package manager
         uses: pnpm/action-setup@26f6d4f2c533a43e6b5da0b4a5dd983f98f7b49a # v6.0.4
@@ -98,7 +104,7 @@ jobs:
         run: |
           echo "Auditing npm dependencies with pnpm v11 before installing them. For more information, see: https://nldesignsystem.nl/pnpm-audit"
           pnpm dlx pnpm@11.0.0-rc.2 --config.manage-package-manager-versions=false audit --audit-level critical
-      
+
       - name: Check for known security issues with npm packages
         if: vars.ENABLE_PNPM_AUDIT_V11 != '1'
         run: |
@@ -132,6 +138,7 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Install pnpm package manager
         uses: pnpm/action-setup@26f6d4f2c533a43e6b5da0b4a5dd983f98f7b49a # v6.0.4
@@ -147,7 +154,7 @@ jobs:
         run: |
           echo "Auditing npm dependencies with pnpm v11 before installing them. For more information, see: https://nldesignsystem.nl/pnpm-audit"
           pnpm dlx pnpm@11.0.0-rc.2 --config.manage-package-manager-versions=false audit --audit-level critical
-      
+
       - name: Check for known security issues with npm packages
         if: vars.ENABLE_PNPM_AUDIT_V11 != '1'
         run: |
