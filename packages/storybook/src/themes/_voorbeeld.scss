@@ -9,12 +9,13 @@
   --utrecht-space-around: 1;
   --utrecht-alert-margin-block-end: var(--basis-space-block-3xl);
   --utrecht-page-header-border-block-end-color: var(--basis-color-accent-1-color-default);
-  --utrecht-page-header-border-block-end-width: 2px;
-  --utrecht-focus-outline-color: #0b0c0c;
-  --utrecht-focus-outline-style: dashed;
-  --utrecht-focus-outline-width: 2px;
+  --utrecht-page-header-border-block-end-width: var(--basis-border-width-md); /* was: 2px */
+  --utrecht-focus-outline-color: var(--basis-focus-outline-color); /* was: #0b0c0c */
+  --utrecht-focus-outline-style: var(--basis-focus-outline-style); /* was: dashed; */
+  --utrecht-focus-outline-width: var(--basis-border-width-md); /* was: 2px; */
   --utrecht-pagination-margin-block-start: var(--basis-space-block-3xl);
-  --utrecht-spotlight-section-background-color: #e3f3fd;
+  --utrecht-spotlight-section-background-color: #e3f3fd; /* TODO: Geen exacte basis-token match. Dichtstbijzijnde optie: 
+   --basis-color-info-bg-subtle (#f4fafe). Navragen of dit gebruikt kan worden. */
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
@@ -27,20 +28,25 @@
   --ams-grid-wide-padding-inline: var(--basis-space-block-xl);
 
   /* Den Haag component tokens */
-  --denhaag-action-context-lg-gap: 16px;
-  --denhaag-focus-border: 2px dashed #0b0c0c;
+  --denhaag-action-context-lg-gap: var(--basis-space-column-xl); /* was: 16px */
+  --denhaag-focus-border: 2px dashed #0b0c0c; /* ⚠️ DH heeft shorthand - individuele basis tokens beschikbaar, opsplitsen niet zomaar mogelijk
+  worden deze wel op deze manier door DH gebruikt of is er een alternatief?
+  --basis-focus-outline-color: #0b0c0c;
+  --basis-focus-outline-style: dashed; 
+  --basis-border-width-md: 0.125rem; (=1px)
+  --basis-border-width-sm: 0.0625rem; (=1px) */
 
   // --denhaag-tabs-tab-outline: var(--denhaag-focus-border);
-  --denhaag-file-focus-outline-color: #0b0c0c;
-  --denhaag-file-focus-outline-style: dashed;
-  --denhaag-file-focus-outline-width: 2px;
+  --denhaag-file-focus-outline-color: var(--basis-focus-outline-color); /* was: #0b0c0c */
+  --denhaag-file-focus-outline-style: var(--basis-focus-outline-style); /* was: dashed */
+  --denhaag-file-focus-outline-width: var(--basis-border-width-md); /* was: 2px */
   --denhaag-side-navigation-display: flex;
   --denhaag-side-navigation-mobile-display: var(--denhaag-side-navigation-display);
   --denhaag-side-navigation-flex-direction: column;
   --denhaag-side-navigation-row-gap: var(--basis-space-row-3xl);
-  --denhaag-side-navigation-list-padding-inline-start: 0px;
-  --denhaag-side-navigation-list-padding-block-start: 0px;
-  --denhaag-side-navigation-list-padding-block-end: 0px;
+  --denhaag-side-navigation-list-padding-inline-start: var(--basis-space-none); /* was: 0px; */
+  --denhaag-side-navigation-list-padding-block-start: var(--basis-space-none); /* was: 0px; */
+  --denhaag-side-navigation-list-padding-block-end: var(--basis-space-none); /* was: 0px; */
   --denhaag-side-navigation-link-hover-color: var(--basis-color-action-2-color-hover);
   --denhaag-side-navigation-link-current-font-weight: var(--basis-text-font-weight-bold);
   --denhaag-side-navigation-link-current-color: var(--basis-color-default-color-document);
@@ -64,45 +70,45 @@
   --denhaag-case-card-wrapper-padding-block-end: var(--basis-space-block-2xl);
   --denhaag-case-card-wrapper-padding-inline-start: var(--basis-space-inline-3xl);
   --denhaag-case-card-wrapper-padding-inline-end: var(--basis-space-inline-3xl);
-  --denhaag-case-card-title-line-height: 1.5;
-  --denhaag-case-card-subtitle-line-height: 1.5;
+  --denhaag-case-card-title-line-height: var(--basis-text-line-height-md); /* was: 1.5 */
+  --denhaag-case-card-subtitle-line-height: var(--basis-text-line-height-md); /* was: 1.5 */
   --denhaag-case-card-background-color: var(--basis-color-action-2-bg-active);
-  --denhaag-case-card-paper-color: white;
+  --denhaag-case-card-paper-color: white; /* var(--basis-color-default-bg-document) - works maar semantisch niet correct */
   --denhaag-case-card-background-background-color: var(--basis-color-action-2-bg-default);
   --denhaag-case-card-title-color: var(--basis-heading-color);
   --denhaag-case-card-title-font-size: var(--basis-text-font-size-lg);
   --denhaag-case-card-title-font-weight: var(--basis-heading-font-weight);
   --denhaag-case-card-subtitle-color: var(--basis-color-default-color-document);
   --denhaag-case-card-subtitle-font-family: revert;
-  --denhaag-case-card-archived-background-background-color: #eff1f3;
-  --denhaag-case-card-archived-background-color: #dfe3e8;
+  --denhaag-case-card-archived-background-background-color: #eff1f3; /* = --basis-color-default-bg-default ( = grijs-100) | technically archived is niet default? */
+  --denhaag-case-card-archived-background-color: #dfe3e8; /* = --basis-color-default-bg-active (= grijs-200) | technically archived is niet active? */
 
   /* Custom component tokens */
   --todo-page-header-logo-color: var(--basis-color-accent-1-color-default);
   --todo-page-footer-heading-color: var(--basis-color-default-inverse-color-document);
   --todo-page-footer-heading-font-family: var(--basis-text-font-family-default);
   --todo-page-footer-color: var(--basis-color-default-inverse-color-document);
-  --todo-page-footer-focus-color: #0b0c0c;
+  --todo-page-footer-focus-color: var(--basis-focus-color); /* was: #0b0c0c */
   --todo-link-footer-text-decoration-line: none;
   --todo-side-navigation-focus-background-color: var(--basis-focus-background-color);
   --todo-skip-link-focus-padding-inline-end: var(--basis-space-inline-xl);
   --todo-skip-link-focus-padding-inline-start: var(--basis-space-inline-xl);
-  --todo-skip-link-focus-outline-style: dashed;
-  --todo-skip-link-focus-outline-color: #0b0c0c;
-  --todo-skip-link-focus-outline-width: 2px;
-  --todo-skip-link-focus-outline-offset: -0.125rem;
+  --todo-skip-link-focus-outline-style: var(--basis-focus-outline-style); /* was: dashed */
+  --todo-skip-link-focus-outline-color: var(--basis-focus-outline-color); /* was: #0b0c0c */
+  --todo-skip-link-focus-outline-width: var(--basis-border-width-md); /* was: 2px */
+  --todo-skip-link-focus-outline-offset: -0.125rem; /* --basis-focus-outline-offset = 0px, negatieve offset hier bewust */
   --todo-action--single-focus-background-color: var(--utrecht-link-focus-background-color);
   --todo-link-focus-background-color: var(--utrecht-link-focus-background-color);
   --todo-link-focus-outline-color: var(--utrecht-focus-outline-color);
   --todo-link-focus-outline-style: var(--utrecht-focus-outline-style);
   --todo-link-focus-outline-width: var(--utrecht-focus-outline-width);
   --todo-link-footer-focus-background-color: var(--utrecht-link-focus-background-color);
-  --todo-link-footer-focus-outline-color: white;
-  --todo-link-footer-focus-outline-style: dashed;
-  --todo-link-footer-focus-outline-width: 2px;
+  --todo-link-footer-focus-outline-color: var(--basis-focus-inverse-outline-color); /* was: white */
+  --todo-link-footer-focus-outline-style: var(--basis-focus-outline-style); /* was: dashed */
+  --todo-link-footer-focus-outline-width: var(--basis-border-width-md); /* was: 2px */
   --todo-link-footer-focus-text-decoration-line: none;
-  --todo-link-footer-focus-color: #0b0c0c;
-  --todo-link-list-footer-focus-outline-style: dashed;
-  --todo-link-list-footer-focus-outline-width: 2px;
-  --todo-link-list-footer-focus-outline-color: white;
+  --todo-link-footer-focus-color: var(--basis-focus-color); /* was: #0b0c0c */
+  --todo-link-list-footer-focus-outline-style: var(--basis-focus-outline-style); /* was: dashed */
+  --todo-link-list-footer-focus-outline-width: var(--basis-border-width-md); /* was: 2px */
+  --todo-link-list-footer-focus-outline-color: var(--basis-focus-inverse-outline-color); /* was: white; */
 }
