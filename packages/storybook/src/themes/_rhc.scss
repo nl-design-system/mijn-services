@@ -1,37 +1,37 @@
 .rhc-theme {
-  --nl-heading-level-1-margin-block-end: var(--rhc-space-300) !important;
-  --nl-heading-level-2-margin-block-start: var(--rhc-space-300) !important;
-  --nl-heading-level-2-margin-block-end: var(--rhc-space-300) !important;
+  --nl-heading-level-1-margin-block-end: var(--rhc-space-2xl) !important; /* was: --rhc-space-300 */
+  --nl-heading-level-2-margin-block-start: var(--rhc-space-2xl) !important; /* was: --rhc-space-300 */
+  --nl-heading-level-2-margin-block-end: var(--rhc-space-2xl) !important; /* was: --rhc-space-300 */
 
   /* Utrecht component tokens */
   --utrecht-page-header-border-block-end-color: var(--rhc-logo-image-color);
-  --utrecht-page-header-border-block-end-width: 2px;
+  --utrecht-page-header-border-block-end-width: var(--rhc-border-width-md); /* was: 2px */
   --utrecht-space-around: 1;
-  --utrecht-alert-margin-block-end: var(--rhc-space-300);
-  --utrecht-root-font-family: var(--rhc-font-family-primary);
+  --utrecht-alert-margin-block-end: var(--rhc-space-2xl); /* was: --rhc-space-300 */
+  --utrecht-root-font-family: var(--rhc-text-font-family-default);
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
   --ams-grid-medium-column-count: 6;
   --ams-grid-column-count: 3;
-  --ams-grid-column-gap: var(--rhc-space-300);
-  --ams-grid-row-gap-xl: var(--rhc-space-200);
-  --ams-grid-padding-inline: var(--rhc-space-300);
-  --ams-grid-medium-padding-inline: var(--rhc-space-400);
-  --ams-grid-wide-padding-inline: var(--rhc-space-500);
+  --ams-grid-column-gap: var(--rhc-space-2xl); /* was: --rhc-space-300 */
+  --ams-grid-row-gap-xl: var(--rhc-space-xl); /* was: --rhc-space-200 */
+  --ams-grid-padding-inline: var(--rhc-space-2xl); /* was: --rhc-space-300 */
+  --ams-grid-medium-padding-inline: var(--rhc-space-3xl); /* was: --rhc-space-400 */
+  --ams-grid-wide-padding-inline: var(--rhc-space-4xl); /* was: --rhc-space-500 */
   --ams-page-footer-spotlight-background-color: var(--utrecht-page-footer-background-color);
 
   /* Den Haag component tokens */
-  --denhaag-focus-border: 2px solid var(--utrecht-focus-outline-color);
+  --denhaag-focus-border: 2px solid var(--utrecht-focus-outline-color); /* ⚠️ shorthand - individuele tokens beschikbaar maar opsplitsen niet zomaar mogelijk */
   --denhaag-file-focus-outline-color: var(--rhc-color-zwart);
   --denhaag-file-focus-outline-style: solid;
-  --denhaag-file-focus-outline-width: 2px;
+  --denhaag-file-focus-outline-width: var(--rhc-border-width-md); /* was: 2px */
   --denhaag-side-navigation-display: flex;
   --denhaag-side-navigation-flex-direction: column;
-  --denhaag-side-navigation-row-gap: var(--rhc-space-300);
-  --denhaag-side-navigation-list-padding-inline-start: 0px;
-  --denhaag-side-navigation-list-padding-block-start: 0px;
-  --denhaag-side-navigation-list-padding-block-end: 0px;
+  --denhaag-side-navigation-row-gap: var(--rhc-space-2xl); /* was: --rhc-space-300 */
+  --denhaag-side-navigation-list-padding-inline-start: var(--rhc-space-none); /* was: 0px */
+  --denhaag-side-navigation-list-padding-block-start: var(--rhc-space-none); /* was: 0px */
+  --denhaag-side-navigation-list-padding-block-end: var(--rhc-space-none); /* was: 0px */
   --denhaag-side-navigation-link-hover-color: var(--rhc-sidenav-link-hover-color);
   --denhaag-side-navigation-link-active-font-weight: var(
     --rhc-sidenav-link-current-font-weight
@@ -54,77 +54,77 @@
 
   /* Den Haag Action */
   --denhaag-action-color: var(--rhc-color-cool-grey-900);
-  --denhaag-action-content-bold-font-weight: 700;
-  --denhaag-action-border-color: #cbd5e1;
+  --denhaag-action-content-bold-font-weight: var(--rhc-text-font-weight-bold); /* was: 700 */
+  --denhaag-action-border-color: #cbd5e1; /* hardcoded: geen passende rhc-color token gevonden */
   --denhaag-action-border-style: solid;
-  --denhaag-action-border-width: 1px;
-  --denhaag-action-single-padding-block-start: var(--rhc-space-150);
-  --denhaag-action-single-padding-block-end: var(--rhc-space-150);
-  --denhaag-action-single-padding-inline-end: var(--rhc-space-200);
-  --denhaag-action-padding-inline-start: var(--rhc-space-150);
-  --denhaag-action-padding-inline-end: var(--rhc-space-150);
-  --denhaag-action-padding-block-start: var(--rhc-space-150);
-  --denhaag-action-padding-block-end: var(--rhc-space-150);
-  --denhaag-action-details-gap: var(--rhc-space-150);
-  --denhaag-action-details-lg-gap: var(--rhc-space-150);
+  --denhaag-action-border-width: var(--rhc-border-width-sm); /* was: 1px */
+  --denhaag-action-single-padding-block-start: var(--rhc-space-lg); /* was: --rhc-space-150 */
+  --denhaag-action-single-padding-block-end: var(--rhc-space-lg); /* was: --rhc-space-150 */
+  --denhaag-action-single-padding-inline-end: var(--rhc-space-xl); /* was: --rhc-space-200 */
+  --denhaag-action-padding-inline-start: var(--rhc-space-lg); /* was: --rhc-space-150 */
+  --denhaag-action-padding-inline-end: var(--rhc-space-lg); /* was: --rhc-space-150 */
+  --denhaag-action-padding-block-start: var(--rhc-space-lg); /* was: --rhc-space-150 */
+  --denhaag-action-padding-block-end: var(--rhc-space-lg); /* was: --rhc-space-150 */
+  --denhaag-action-details-gap: var(--rhc-space-lg); /* was: --rhc-space-150 */
+  --denhaag-action-details-lg-gap: var(--rhc-space-lg); /* was: --rhc-space-150 */
   --denhaag-action-date-color: var(--rhc-color-cool-grey-900);
-  --denhaag-action-date-font-weight: 500;
-  --denhaag-action-date-warning-gap: var(--rhc-space-150);
+  --denhaag-action-date-font-weight: 500; /* hardcoded: geen exacte match, dichtstbijzijnde opties: --rhc-text-font-weight-regular (400) of --rhc-text-font-weight-semi-bold (550) */
+  --denhaag-action-date-warning-gap: var(--rhc-space-lg); /* was: --rhc-space-150 */
   --denhaag-action-date-warning-color: var(--rhc-color-oranje-500);
-  --denhaag-action-date-warning-font-weight: bold;
-  --denhaag-action-actions-gap: var(--rhc-space-150);
-  --denhaag-action-lg-gap: var(--rhc-space-150);
-  --denhaag-action-lg-padding-block-start: var(--rhc-space-150);
-  --denhaag-action-lg-padding-block-end: var(--rhc-space-150);
+  --denhaag-action-date-warning-font-weight: var(--rhc-text-font-weight-bold); /* was: bold */
+  --denhaag-action-actions-gap: var(--rhc-space-lg); /* was: --rhc-space-150 */
+  --denhaag-action-lg-gap: var(--rhc-space-lg); /* was: --rhc-space-150 */
+  --denhaag-action-lg-padding-block-start: var(--rhc-space-lg); /* was: --rhc-space-150 */
+  --denhaag-action-lg-padding-block-end: var(--rhc-space-lg); /* was: --rhc-space-150 */
 
   /* Den Haag Case Card */
-  --denhaag-case-card-height: 192px;
-  --denhaag-case-card-border-radius: 3px;
-  --denhaag-case-card-padding-block-start: 20px;
-  --denhaag-case-card-wrapper-padding-block-start: 12px;
-  --denhaag-case-card-wrapper-padding-block-end: 24px;
-  --denhaag-case-card-wrapper-padding-inline-start: 24px;
-  --denhaag-case-card-wrapper-padding-inline-end: 24px;
-  --denhaag-case-card-title-line-height: 1.5;
-  --denhaag-case-card-subtitle-line-height: 1.5;
+  --denhaag-case-card-height: 192px; /* hardcoded: layout-specifiek, geen token beschikbaar */
+  --denhaag-case-card-border-radius: var(--rhc-border-radius-sm); /* was: 3px */
+  --denhaag-case-card-padding-block-start: 20px; /* geen rhc spacing token voor - waarde heeft visuele functie related aan hover */
+  --denhaag-case-card-wrapper-padding-block-start: 12px; /* hardcoded: cardspecifieke waarde, rhc-space-lg = 12px maar aanpassen is risicovol */
+  --denhaag-case-card-wrapper-padding-block-end: 24px; /* hardcoded: cardspecifieke waarde, rhc-space-2xl = 24px maar aanpassen is risicovol */
+  --denhaag-case-card-wrapper-padding-inline-start: 24px; /* hardcoded: cardspecifieke waarde, rhc-space-2xl = 24px maar aanpassen is risicovol */
+  --denhaag-case-card-wrapper-padding-inline-end: 24px; /* hardcoded: cardspecifieke waarde, rhc-space-2xl = 24px maar aanpassen is risicovol */
+  --denhaag-case-card-title-line-height: var(--rhc-text-line-height-md); /* was: 1.5 */
+  --denhaag-case-card-subtitle-line-height: var(--rhc-text-line-height-md); /* was: 1.5 */
   --denhaag-case-card-background-color: var(--rhc-color-lichtblauw-500);
   --denhaag-case-card-paper-color: var(--rhc-color-wit);
   --denhaag-case-card-background-background-color: var(--rhc-color-lichtblauw-100);
   --denhaag-case-card-title-color: var(--rhc-color-cool-grey-900);
-  --denhaag-case-card-title-font-family: var(--rhc-font-family-primary);
-  --denhaag-case-card-title-font-size: 20px;
-  --denhaag-case-card-title-font-weight: 700;
+  --denhaag-case-card-title-font-family: var(--rhc-text-font-family-default);
+  --denhaag-case-card-title-font-size: 20px; /* hardcoded: fluid rhc-text-font-size-lg risico door vaste card height van 192px */
+  --denhaag-case-card-title-font-weight: var(--rhc-text-font-weight-bold); /* was: 700 */
   --denhaag-case-card-subtitle-color: var(--rhc-color-cool-grey-800);
-  --denhaag-case-card-subtitle-font-family: var(--rhc-font-family-primary);
-  --denhaag-case-card-subtitle-margin-block-start: var(--rhc-space-150);
+  --denhaag-case-card-subtitle-font-family: var(--rhc-text-font-family-default);
+  --denhaag-case-card-subtitle-margin-block-start: var(--rhc-space-lg); /* was: --rhc-space-150 */
 
   /* Custom component tokens */
   --todo-page-footer-color: var(--utrecht-page-footer-color);
   --todo-page-footer-focus-color: var(--utrecht-page-footer-color);
   --todo-page-footer-heading-font-family: var(--nl-heading-level-4-font-family);
-  --todo-page-footer-heading-color: white;
+  --todo-page-footer-heading-color: var(--rhc-color-wit); /* was: white */
   --todo-link-footer-text-decoration-line: none;
   --todo-page-header-logo-color: var(--rhc-logo-image-color);
   --todo-skip-link-focus-outline-color: var(--rhc-color-zwart);
   --todo-skip-link-focus-outline-style: solid;
-  --todo-skip-link-focus-outline-width: 2px;
-  --todo-skip-link-focus-outline-offset: -0.125rem;
-  --todo-skip-link-focus-padding-inline-end: 10px;
-  --todo-skip-link-focus-padding-inline-start: 10px;
+  --todo-skip-link-focus-outline-width: var(--rhc-border-width-md); /* was: 2px - er is geen outline token */
+  --todo-skip-link-focus-outline-offset: -0.125rem; /* hardcoded: negatieve offset heeft geen token beschikbaar */
+  --todo-skip-link-focus-padding-inline-end: 10px; /* hardcoded: geen exacte match, dichtstbijzijnde opties: --rhc-space-md (8px) of --rhc-space-lg (12px) */
+  --todo-skip-link-focus-padding-inline-start: 10px; /* hardcoded: geen exacte match, dichtstbijzijnde opties: --rhc-space-md (8px) of --rhc-space-lg (12px) */
   --todo-link-focus-background-color: var(--basis-focus-background-color);
   --todo-link-focus-outline-color: var(--rhc-color-zwart);
   --todo-link-focus-outline-style: solid;
-  --todo-link-focus-outline-width: 2px;
-  --todo-link-focus-outline-offset: 2px;
+  --todo-link-focus-outline-width: var(--rhc-border-width-md); /* was: 2px - er is geen outline token */
+  --todo-link-focus-outline-offset: 2px; /* hardcoded: geen rhc of basis token beschikbaar */
   --todo-link-footer-focus-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
     var(--utrecht-focus-inverse-outline-color, transparent);
   --todo-link-footer-focus-outline-color: var(--rhc-color-zwart);
-  --todo-link-footer-focus-outline-offset: 2px;
+  --todo-link-footer-focus-outline-offset: 2px; /* hardcoded: geen rhc of basis token beschikbaar */
   --todo-link-footer-focus-outline-style: solid;
-  --todo-link-footer-focus-outline-width: 2px;
+  --todo-link-footer-focus-outline-width: var(--rhc-border-width-md); /* was: 2px - er is geen outline token */
   --todo-link-footer-focus-text-decoration-line: none;
   --todo-link-list-footer-focus-outline-color: var(--rhc-color-zwart);
-  --todo-link-list-footer-focus-outline-offset: 2px;
+  --todo-link-list-footer-focus-outline-offset: 2px; /* hardcoded: geen rhc of basis token beschikbaar */
   --todo-link-list-footer-focus-outline-style: solid;
-  --todo-link-list-footer-focus-outline-width: 2px;
+  --todo-link-list-footer-focus-outline-width: var(--rhc-border-width-md); /* was: 2px - er is geen outline token */
 }
