@@ -39,6 +39,8 @@ import {
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
+import { zakenApiResponse } from '../../api/zaken/fixtures';
+import { getZakenCount, mapZakenToOverviewItems, PaginatedZaakList } from '../../api/zaken/view-model';
 import { Layout } from '../../components/Layout';
 import { MijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
@@ -58,11 +60,16 @@ export default function MijnOmgevingHome({
   logo,
   footerLogo,
   paths,
+  zaken = zakenApiResponse,
 }: {
   logo: ReactElement;
   footerLogo?: ReactElement;
   paths: MijnOmgevingPaths;
+  zaken?: PaginatedZaakList;
 }) {
+  const zaakItems = mapZakenToOverviewItems(zaken, paths.zaakDetail).slice(0, 4);
+  const zaakCount = getZakenCount(zaken);
+
   return (
     <Layout logo={logo} footerLogo={footerLogo}>
       <Grid paddingTop={'x-large'}>
@@ -204,13 +211,17 @@ export default function MijnOmgevingHome({
             <section>
               <Heading level={2}>Mijn zaken</Heading>
               <Link className="todo-link" href={paths.zakenOverzichtTableView}>
-                Bekijk alle zaken (15)
+                Bekijk alle zaken ({zaakCount})
               </Link>
               <div className={'todo-card-layout'}>
-                <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={paths.zaakDetail} context={'ZK-228402'} />
-                <CaseCard title={'Aanvraag parkeervergunning'} href={paths.zaakDetail} context={'ZK-108422'} />
-                <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={paths.zaakDetail} context={'ZK-228402'} />
-                <CaseCard title={'Aanvraag parkeervergunning'} href={paths.zaakDetail} context={'ZK-108422'} />
+                {zaakItems.map((zaakItem) => (
+                  <CaseCard
+                    key={zaakItem.id}
+                    title={zaakItem.title}
+                    href={zaakItem.href}
+                    context={zaakItem.identificatie}
+                  />
+                ))}
               </div>
             </section>
           </main>

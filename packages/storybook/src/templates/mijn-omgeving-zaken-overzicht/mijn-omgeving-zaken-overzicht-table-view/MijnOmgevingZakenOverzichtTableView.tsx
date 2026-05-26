@@ -44,6 +44,8 @@ import {
 } from '@utrecht/component-library-react/dist/css-module';
 import { UtrechtPagination } from '@utrecht/web-component-library-react';
 import { ReactElement } from 'react';
+import { zakenApiResponse } from '../../../api/zaken/fixtures';
+import { getZakenCount, mapZakenToOverviewItems, PaginatedZaakList } from '../../../api/zaken/view-model';
 import { Layout } from '../../../components/Layout';
 import { MijnOmgevingPaths } from '../../../components/template-navigation/mijnOmgevingPaths';
 
@@ -51,11 +53,20 @@ export default function MijnOmgevingZakenOverzichtTableView({
   logo,
   footerLogo,
   paths,
+  zaken = zakenApiResponse,
 }: {
   logo: ReactElement;
   footerLogo?: ReactElement;
   paths: MijnOmgevingPaths;
+  zaken?: PaginatedZaakList;
 }) {
+  const zaakItems = mapZakenToOverviewItems(zaken, paths.zaakDetail);
+  const zaakCount = getZakenCount(zaken);
+  const paginationLinks = [
+    { href: '#page1', index: 1, current: true },
+    ...(zaakCount > zaakItems.length ? [{ href: '#page2', index: 2 }] : []),
+  ];
+
   return (
     <Layout logo={logo} footerLogo={footerLogo}>
       <Grid paddingTop={'x-large'}>
@@ -178,7 +189,9 @@ export default function MijnOmgevingZakenOverzichtTableView({
                 </Button>
               </div>
 
-              <Paragraph>89 zaken</Paragraph>
+              <Paragraph>
+                {zaakCount} {zaakCount === 1 ? 'zaak' : 'zaken'}
+              </Paragraph>
               <Table aria-labelledby="mijn-zaken-overzicht-heading">
                 <TableHeader>
                   <TableHeaderCell scope="col">Naam</TableHeaderCell>
@@ -187,118 +200,24 @@ export default function MijnOmgevingZakenOverzichtTableView({
                 </TableHeader>
 
                 <TableBody>
-                  <TableRow>
-                    <TableCell>
-                      <Link className="todo-link" href={paths.zaakDetail}>
-                        Aanvraag laadpaal
-                      </Link>
-                    </TableCell>
-                    <TableCell>16-03-2025</TableCell>
-                    <TableCell>Open</TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell>
-                      <Link className="todo-link" href={paths.zaakDetail}>
-                        Aanvraag subsidie geluidsisolatie
-                      </Link>
-                    </TableCell>
-                    <TableCell>14-01-2025</TableCell>
-                    <TableCell>Open</TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell>
-                      <Link className="todo-link" href={paths.zaakDetail}>
-                        Aanvraag parkeervergunning
-                      </Link>
-                    </TableCell>
-                    <TableCell>13-06-2024</TableCell>
-                    <TableCell>Open</TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell>
-                      <Link className="todo-link" href={paths.zaakDetail}>
-                        Nog een zaak
-                      </Link>
-                    </TableCell>
-                    <TableCell>13-06-2024</TableCell>
-                    <TableCell>Gesloten</TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell>
-                      <Link className="todo-link" href={paths.zaakDetail}>
-                        Nog een zaak
-                      </Link>
-                    </TableCell>
-                    <TableCell>13-06-2024</TableCell>
-                    <TableCell>Gesloten</TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell>
-                      <Link className="todo-link" href={paths.zaakDetail}>
-                        Nog een zaak
-                      </Link>
-                    </TableCell>
-                    <TableCell>13-06-2024</TableCell>
-                    <TableCell>Gesloten</TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell>
-                      <Link className="todo-link" href={paths.zaakDetail}>
-                        Nog een zaak
-                      </Link>
-                    </TableCell>
-                    <TableCell>13-06-2024</TableCell>
-                    <TableCell>Gesloten</TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell>
-                      <Link className="todo-link" href={paths.zaakDetail}>
-                        Nog een zaak
-                      </Link>
-                    </TableCell>
-                    <TableCell>13-06-2024</TableCell>
-                    <TableCell>Gesloten</TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell>
-                      <Link className="todo-link" href={paths.zaakDetail}>
-                        Nog een zaak
-                      </Link>
-                    </TableCell>
-                    <TableCell>13-06-2024</TableCell>
-                    <TableCell>Gesloten</TableCell>
-                  </TableRow>
-
-                  <TableRow>
-                    <TableCell>
-                      <Link className="todo-link" href={paths.zaakDetail}>
-                        Nog een zaak
-                      </Link>
-                    </TableCell>
-                    <TableCell>13-06-2024</TableCell>
-                    <TableCell>Gesloten</TableCell>
-                  </TableRow>
+                  {zaakItems.map((zaakItem) => (
+                    <TableRow key={zaakItem.id}>
+                      <TableCell>
+                        <Link className="todo-link" href={zaakItem.href}>
+                          {zaakItem.title}
+                        </Link>
+                      </TableCell>
+                      <TableCell>{zaakItem.requestDate}</TableCell>
+                      <TableCell>{zaakItem.statusLabel}</TableCell>
+                    </TableRow>
+                  ))}
                 </TableBody>
               </Table>
 
               <UtrechtPagination
-                currentIndex={3}
-                links={JSON.stringify([
-                  { href: '#page1', index: 1 },
-                  { href: '#page2', index: 2 },
-                  { href: '#page3', index: 3, current: true },
-                  { href: '#page4', index: 4 },
-                ])}
-                prev={JSON.stringify({ href: '#page2', index: 2 })}
-                next={JSON.stringify({ href: '#page4', index: 4 })}
+                currentIndex={1}
+                links={JSON.stringify(paginationLinks)}
+                next={JSON.stringify(paginationLinks[1])}
               ></UtrechtPagination>
             </section>
           </main>

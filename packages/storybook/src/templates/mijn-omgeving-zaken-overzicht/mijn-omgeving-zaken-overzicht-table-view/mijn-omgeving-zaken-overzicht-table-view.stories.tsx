@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import MijnOmgevingZakenOverzichtTableView from './MijnOmgevingZakenOverzichtTableView';
+import { zakenApiResponse } from '../../../api/zaken/fixtures';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../../components/Logo';
 import { storybookPaths } from '../../../components/template-navigation/mijnOmgevingPaths';
 
@@ -28,6 +29,7 @@ export const Default: Story = {
     logo: <PageHeaderLogo />,
     footerLogo: <VoorbeeldFooterLogo />,
     paths: storybookPaths,
+    zaken: zakenApiResponse,
   },
 };
 
@@ -38,5 +40,6 @@ export const DenHaagTheme: Story = {
   args: {
     logo: <DenHaagLogo />,
     paths: storybookPaths,
+    zaken: zakenApiResponse,
   },
 };
