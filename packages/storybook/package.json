@@ -16,6 +16,7 @@
   "scripts": {
     "build": "storybook build --output-dir dist/ --config-dir config/",
     "clean": "rimraf dist/",
+    "generate:zaken-api": "openapi-typescript src/api/zaken/openapi.yaml --root-types --root-types-no-schema-prefix -o src/api/zaken/openapi-types.ts",
     "lint-build": "tsc --noEmit --project tsconfig.json",
     "storybook": "storybook dev --config-dir config/ --port 6006"
   },
@@ -57,6 +58,7 @@
     "@utrecht/web-component-library-react": "4.0.4",
     "@whitespace/storybook-addon-html": "9.0.0",
     "eslint-plugin-storybook": "10.3.6",
+    "openapi-typescript": "7.13.0",
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "react-syntax-highlighter": "16.1.1",
@@ -65,6 +67,5 @@
     "storybook": "10.3.6",
     "typescript": "5.9.3",
     "vite": "8.0.10"
-  },
-  "dependencies": {}
+  }
 }

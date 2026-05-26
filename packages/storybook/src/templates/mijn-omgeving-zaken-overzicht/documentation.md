@@ -14,6 +14,12 @@ De card view is bedoeld voor gebruikers met een beperkt aantal zaken. Elke zaak 
 
 De table view is bedoeld voor gebruikers met meer dan 10 zaken. De zaken worden weergegeven in een tabel met zoek- en filtermogelijkheden en paginering.
 
+## Zaken API POC
+
+De MijnZaken templates gebruiken een getypeerde fixture op basis van Zaken API 1.5.1. De Storybook build faalt als gebruikte fixturevelden niet meer passen op de gegenereerde OpenAPI types. Velden zoals zaaktitel (`omschrijving`), zaaknummer (`identificatie`), aanvraagdatum (`registratiedatum`) en open/gesloten status (`einddatum`) komen direct uit de Zaken API.
+
+Vertalingen zijn in deze POC Nederlands. De Zaken API specificatie bevat geen vertaalvelden. Volledige vertaalde labels moeten later via een backend- of Catalogi-contract worden toegevoegd.
+
 ## Github Discussions
 
 Keuzes, relevante onderzoeken en linkjes naar Figma worden vastgelegd in Github Discussions.

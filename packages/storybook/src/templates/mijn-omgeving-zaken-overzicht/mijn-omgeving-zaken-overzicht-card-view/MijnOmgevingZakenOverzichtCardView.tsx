@@ -35,6 +35,14 @@ import {
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement, useEffect, useState } from 'react';
+import { zakenApiResponse } from '../../../api/zaken/fixtures';
+import {
+  getClosedZaken,
+  getOpenZaken,
+  getZaakIdentificatie,
+  getZaakTitle,
+  PaginatedZaakList,
+} from '../../../api/zaken/view-model';
 import { Layout } from '../../../components/Layout';
 import { MijnOmgevingPaths } from '../../../components/template-navigation/mijnOmgevingPaths';
 
@@ -42,12 +50,16 @@ export default function MijnOmgevingZakenOverzichtCardView({
   logo,
   footerLogo,
   paths,
+  zaken = zakenApiResponse,
 }: {
   logo: ReactElement;
   footerLogo?: ReactElement;
   paths: MijnOmgevingPaths;
+  zaken?: PaginatedZaakList;
 }) {
   const [tabsKey, setTabsKey] = useState(0);
+  const openZaken = getOpenZaken(zaken);
+  const geslotenZaken = getClosedZaken(zaken);
 
   /* workaround to force re-render, needs a fix in Den Haag Tabs component */
   useEffect(() => {
@@ -162,50 +174,33 @@ export default function MijnOmgevingZakenOverzichtCardView({
                 key={tabsKey}
                 tabData={[
                   {
-                    label: 'Open zaken',
+                    label: `Open zaken (${openZaken.length})`,
                     panelContent: (
                       <div className={'todo-card-layout'}>
-                        <CaseCard
-                          title={'Aanvraag subsidie geluidsisolatie'}
-                          href={paths.zaakDetail}
-                          context={'ZK-29124'}
-                        />
-                        <CaseCard title={'Aanvraag parkeervergunning'} href={paths.zaakDetail} context={'ZK-02599'} />
-                        <CaseCard title={'Melding openbare ruimte'} href={paths.zaakDetail} context={'ZK-02612'} />
-                        <CaseCard title={'Aanvraag woningaanpassing'} href={paths.zaakDetail} context={'ZK-02724'} />
-                        <CaseCard title={'Aanvraag bijzondere bijstand'} href={paths.zaakDetail} context={'ZK-02724'} />
-                        <CaseCard
-                          title={'Aanvraag uittreksel basisregistratie personen'}
-                          href={paths.zaakDetail}
-                          context={'ZK-02724'}
-                        />
-                        <CaseCard title={'Aanvraag naamsbepaling'} href={paths.zaakDetail} context={'ZK-02875'} />
-                        <CaseCard title={'Bezwaar bestemmingsplan'} href={paths.zaakDetail} context={'ZK-02973'} />
-                        <CaseCard title={'Melding overlast buren'} href={paths.zaakDetail} context={'ZK-03001'} />
-                        <CaseCard
-                          title={'Aanvraag gehandicaptenparkeerkaat'}
-                          href={paths.zaakDetail}
-                          context={'ZK-03154'}
-                        />
+                        {openZaken.map((zaak) => (
+                          <CaseCard
+                            key={zaak.uuid}
+                            title={getZaakTitle(zaak)}
+                            href={paths.zaakDetail}
+                            context={getZaakIdentificatie(zaak)}
+                          />
+                        ))}
                       </div>
                     ),
                   },
                   {
-                    label: 'Gesloten zaken',
+                    label: `Gesloten zaken (${geslotenZaken.length})`,
                     panelContent: (
                       <div className={'todo-card-layout'}>
-                        <CaseCard
-                          title={'Bezwaar tegen WOZ-waarde'}
-                          href={paths.zaakDetail}
-                          context={'ZK-00122'}
-                          appearance="archived"
-                        />
-                        <CaseCard
-                          title={'Aanvraag paspoort'}
-                          href={paths.zaakDetail}
-                          context={'ZK-99084'}
-                          appearance="archived"
-                        />
+                        {geslotenZaken.map((zaak) => (
+                          <CaseCard
+                            key={zaak.uuid}
+                            title={getZaakTitle(zaak)}
+                            href={paths.zaakDetail}
+                            context={getZaakIdentificatie(zaak)}
+                            appearance="archived"
+                          />
+                        ))}
                       </div>
                     ),
                   },

@@ -39,6 +39,18 @@ import {
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
+import { zaakDetail, zaakDetailInformatieObjecten, zaakDetailStatussen } from '../../api/zaken/fixtures';
+import {
+  formatDate,
+  formatLongDate,
+  getDocumentTitle,
+  getZaakIdentificatie,
+  getZaakTitle,
+  mapStatusesToSteps,
+  Zaak,
+  ZaakInformatieObject,
+  Status as ZaakStatus,
+} from '../../api/zaken/view-model';
 import { Layout } from '../../components/Layout';
 import { MijnOmgevingPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
@@ -53,56 +65,6 @@ const labels = {
     return `nog ${daysDifference} dagen`;
   },
 };
-
-const timeline = (
-  <Status
-    collapsible
-    expandedSteps={['onderzoek']}
-    steps={[
-      {
-        id: 'deelname',
-        marker: 1,
-        status: 'checked',
-        steps: [
-          {
-            id: 0,
-            status: 'checked',
-            title: 'Aanmelding ontvangen',
-          },
-        ],
-        title: 'Deelname aan geluidsonderzoek',
-      },
-      {
-        id: 'onderzoek',
-        marker: 2,
-        status: 'current',
-        steps: [
-          {
-            id: 1,
-            status: 'checked',
-            title: 'Afspraak meten geluidsoverlast gemaakt',
-          },
-          {
-            status: 'checked',
-            id: 2,
-            title: 'Geluidsoverlast gemeten',
-          },
-        ],
-        title: 'Onderzoek naar geluidsoverlast',
-      },
-      {
-        id: 'uitvoeren',
-        marker: 3,
-        title: 'Uitvoeren van maatregelen',
-      },
-      {
-        id: 'klaar',
-        marker: 4,
-        title: 'Maatregelen zijn uitgevoerd',
-      },
-    ]}
-  />
-);
 
 const contactTimelineArgs = {
   labels: { today: 'vandaag', yesterday: 'gisteren' },
@@ -176,11 +138,46 @@ export default function MijnOmgevingZaakDetail({
   logo,
   footerLogo,
   paths,
+  action,
+  contactmomenten = contactTimeline,
+  informatieObjecten = zaakDetailInformatieObjecten,
+  statussen = zaakDetailStatussen,
+  zaak = zaakDetail,
 }: {
   logo: ReactElement;
   footerLogo?: ReactElement;
   paths: MijnOmgevingPaths;
+  action?: ReactElement;
+  contactmomenten?: ReactElement;
+  informatieObjecten?: ZaakInformatieObject[];
+  statussen?: ZaakStatus[];
+  zaak?: Zaak;
 }) {
+  const title = getZaakTitle(zaak);
+  const statusSteps = mapStatusesToSteps(statussen);
+  const expandedSteps = statusSteps.filter((step) => step.status === 'current').map((step) => step.id);
+  const detailItems = [
+    { title: 'Datum aanvraag', detail: formatLongDate(zaak.registratiedatum ?? zaak.startdatum) },
+    { title: 'Startdatum', detail: formatLongDate(zaak.startdatum) },
+    { title: 'Zaaknummer', detail: getZaakIdentificatie(zaak) },
+    ...(zaak.einddatum ? [{ title: 'Einddatum', detail: formatLongDate(zaak.einddatum) }] : []),
+  ];
+  const defaultAction = (
+    <ActionMulti
+      actions={
+        <ButtonLink href="#" appearance={'primary-action-button'}>
+          Informatie geven
+        </ButtonLink>
+      }
+      labels={labels}
+      dateTime="2024-11-22"
+      now="2024-11-20"
+      relativeDate={true}
+    >
+      <strong>Geef informatie voor uw {title.toLowerCase()}</strong>
+    </ActionMulti>
+  );
+
   return (
     <Layout logo={logo} footerLogo={footerLogo}>
       <Grid paddingTop={'x-large'}>
@@ -209,7 +206,7 @@ export default function MijnOmgevingZaakDetail({
               </Icon>
             </BreadcrumbNavSeparator>
             <BreadcrumbNavLink href={paths.zaakDetail} disabled current>
-              Aanvraag subsidie geluidsisolatie
+              {title}
             </BreadcrumbNavLink>
           </BreadcrumbNav>
         </Grid.Cell>
@@ -283,39 +280,28 @@ export default function MijnOmgevingZaakDetail({
 
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
           <main id="main">
-            <Heading level={1}>Hallo Jeroen van Drouwen</Heading>
-            <ActionMulti
-              actions={
-                <ButtonLink href="#" appearance={'primary-action-button'}>
-                  Informatie geven
-                </ButtonLink>
-              }
-              labels={labels}
-              dateTime="2024-11-22"
-              now="2024-11-20"
-              relativeDate={true}
-            >
-              <strong>Geef informatie voor uw aanvraag subsidie geluidsisolatie</strong>
-            </ActionMulti>
+            <Heading level={1}>{title}</Heading>
+            {action ?? defaultAction}
             <Heading level={2}>Status</Heading>
-            {timeline}
+            <Status collapsible expandedSteps={expandedSteps} steps={statusSteps} />
             <Heading level={2}>Details</Heading>
-            <DescriptionList
-              items={[
-                { title: 'Datum aanvraag', detail: '17 oktober 2022' },
-                { title: 'Zaaknummer', detail: '11234899818' },
-              ]}
-            />
-            <Heading level={2}>Documenten</Heading>
-            <File
-              className={'todo-file-component'}
-              name={'antwoord-formulier-deelname-onderzoek'}
-              href={''}
-              size={'658kb'}
-              lastUpdated={'12-12-2024'}
-            />
+            <DescriptionList items={detailItems} />
+            {informatieObjecten.length > 0 && (
+              <>
+                <Heading level={2}>Documenten</Heading>
+                {informatieObjecten.map((informatieObject) => (
+                  <File
+                    key={informatieObject.uuid}
+                    className={'todo-file-component'}
+                    name={getDocumentTitle(informatieObject)}
+                    href={informatieObject.informatieobject}
+                    lastUpdated={formatDate(informatieObject.registratiedatum)}
+                  />
+                ))}
+              </>
+            )}
             <Heading level={2}>Contactmomenten</Heading>
-            {contactTimeline}
+            {contactmomenten}
           </main>
         </Grid.Cell>
       </Grid>
