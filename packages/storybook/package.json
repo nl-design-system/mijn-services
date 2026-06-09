@@ -16,7 +16,7 @@
   "scripts": {
     "build": "storybook build --output-dir dist/ --config-dir config/",
     "clean": "rimraf dist/",
-    "generate:zaken-api": "openapi-typescript src/api/zaken/openapi.yaml --root-types --root-types-no-schema-prefix -o src/api/zaken/openapi-types.ts",
+    "generate:zaken-api": "openapi-typescript src/api/zaken/vendor/openapi.yaml --root-types --root-types-no-schema-prefix -o src/api/zaken/openapi-types.ts",
     "lint-build": "tsc --noEmit --project tsconfig.json",
     "storybook": "storybook dev --config-dir config/ --port 6006"
   },

@@ -16,9 +16,11 @@ De table view is bedoeld voor gebruikers met meer dan 10 zaken. De zaken worden 
 
 ## Zaken API POC
 
-De MijnZaken templates gebruiken een getypeerde fixture op basis van Zaken API 1.5.1. De Storybook build faalt als gebruikte fixturevelden niet meer passen op de gegenereerde OpenAPI types. Velden zoals zaaktitel (`omschrijving`), zaaknummer (`identificatie`), aanvraagdatum (`registratiedatum`) en open/gesloten status (`einddatum`) komen direct uit de Zaken API.
+De MijnZaken templates tonen zaakgegevens zoals de titel (`omschrijving`), het zaaknummer (`identificatie`) en of een zaak nog open is (`einddatum`). Die velden komen rechtstreeks uit de Zaken API (versie 1.5.1).
 
-Vertalingen zijn in deze POC Nederlands. De Zaken API specificatie bevat geen vertaalvelden. Volledige vertaalde labels moeten later via een backend- of Catalogi-contract worden toegevoegd.
+Voor Storybook worden er fixtures gebruikt die de structuur van echte API-responses nabootsen. Die fixtures zijn getypeerd met TypeScript en worden automatisch gevalideerd aan de hand van de OpenAPI-specificatie van de Zaken API. Klopt er iets niet meer, bijvoorbeeld omdat een veldnaam in de API veranderd is, dan faalt de Storybook build. Zo worden type-mismatches vroeg opgepikt.
+
+De labels in deze POC zijn Nederlands. De Zaken API zelf bevat geen vertaalvelden, dus volledig vertaalbare labels vereisen een aanvulling vanuit een backend- of Catalogi-contract — dat is een vervolgstap.
 
 ## Github Discussions
 
