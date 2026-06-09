@@ -1,8 +1,13 @@
 import type { PaginatedZaakList, Status, Zaak, ZaakInformatieObject } from './view-model';
 
-const apiBaseUrl = 'https://zaken.example.test/api/v1';
-const catalogiBaseUrl = 'https://catalogi.example.test/api/v1';
-const documentenBaseUrl = 'https://documenten.example.test/api/v1';
+const apiBaseUrl = 'https://zaken.example.com/api/v1';
+const catalogiBaseUrl = 'https://catalogi.example.com/api/v1';
+const documentenBaseUrl = 'https://documenten.example.com/api/v1';
+const EXAMPLE_BRONORGANISATIE = '123456782';
+const EXAMPLE_VERANTWOORDELIJKE_ORGANISATIE = '123456782';
+const EXAMPLE_UITERLIJKE_EINDDATUM_AFDOENING = '2025-11-17';
+const EXAMPLE_EINDDATUM_GEPLAND = '2025-11-17';
+const EXAMPLE_ARCHIEFACTIEDATUM = '2032-12-31';
 
 type ZaakFixture = {
   einddatum?: string | null;
@@ -25,16 +30,16 @@ function createZaak({ einddatum = null, identificatie, omschrijving, registratie
     url: zaakUrl(uuid),
     uuid,
     identificatie,
-    bronorganisatie: '123456782',
+    bronorganisatie: EXAMPLE_BRONORGANISATIE,
     omschrijving,
     toelichting: `Zaak voor ${omschrijving.toLowerCase()}.`,
     zaaktype: `${catalogiBaseUrl}/zaaktypen/${uuid}`,
     registratiedatum,
-    verantwoordelijkeOrganisatie: '123456782',
+    verantwoordelijkeOrganisatie: EXAMPLE_VERANTWOORDELIJKE_ORGANISATIE,
     startdatum: registratiedatum,
     einddatum,
-    einddatumGepland: einddatum ?? '2025-11-17',
-    uiterlijkeEinddatumAfdoening: einddatum ?? '2025-12-01',
+    einddatumGepland: einddatum ?? EXAMPLE_EINDDATUM_GEPLAND,
+    uiterlijkeEinddatumAfdoening: einddatum ?? EXAMPLE_UITERLIJKE_EINDDATUM_AFDOENING,
     productenOfDiensten: [`${catalogiBaseUrl}/producten-diensten/${uuid}`],
     vertrouwelijkheidaanduiding: 'openbaar',
     betalingsindicatie: 'nvt',
@@ -48,87 +53,89 @@ function createZaak({ einddatum = null, identificatie, omschrijving, registratie
     zaakobjecten: [],
     kenmerken: [{ kenmerk: identificatie, bron: 'Zaken API POC' }],
     archiefstatus: einddatum === null ? 'nog_te_archiveren' : 'gearchiveerd',
-    archiefactiedatum: einddatum === null ? null : '2032-12-31',
+    archiefactiedatum: einddatum === null ? null : EXAMPLE_ARCHIEFACTIEDATUM,
     resultaat: einddatum === null ? null : `${apiBaseUrl}/resultaten/${uuid}`,
   };
 }
 
-const zaken = [
-  createZaak({
+const zakenJson: ZaakFixture[] = [
+  {
     uuid: '8c3fdb0c-9e40-4b8d-a64a-f0b41d5d6f01',
     identificatie: 'ZK-29124',
     omschrijving: 'Aanvraag subsidie geluidsisolatie',
     registratiedatum: '2025-03-16',
-  }),
-  createZaak({
+  },
+  {
     uuid: '0a42e39f-3987-4a9d-8a3f-47b8ac39c5f1',
     identificatie: 'ZK-02599',
     omschrijving: 'Aanvraag parkeervergunning',
     registratiedatum: '2025-01-14',
-  }),
-  createZaak({
+  },
+  {
     uuid: 'a54b5996-a6c1-4e1c-a53a-548044655bd0',
     identificatie: 'ZK-02612',
     omschrijving: 'Melding openbare ruimte',
     registratiedatum: '2024-12-18',
-  }),
-  createZaak({
+  },
+  {
     uuid: '922dd19e-8601-43d0-9f47-4f92c8e48079',
     identificatie: 'ZK-02724',
     omschrijving: 'Aanvraag woningaanpassing',
     registratiedatum: '2024-11-29',
-  }),
-  createZaak({
+  },
+  {
     uuid: '9372cb06-f27a-46d4-905f-dbc80bbd080b',
     identificatie: 'ZK-02725',
     omschrijving: 'Aanvraag bijzondere bijstand',
     registratiedatum: '2024-10-02',
-  }),
-  createZaak({
+  },
+  {
     uuid: '70be2166-36d7-4111-ac0f-b4dc4df6ecdc',
     identificatie: 'ZK-02791',
     omschrijving: 'Aanvraag uittreksel basisregistratie personen',
     registratiedatum: '2024-09-13',
-  }),
-  createZaak({
+  },
+  {
     uuid: '3954128e-5d31-4c1a-9a0e-828746841840',
     identificatie: 'ZK-02875',
     omschrijving: 'Aanvraag naamsbepaling',
     registratiedatum: '2024-08-22',
-  }),
-  createZaak({
+  },
+  {
     uuid: '0370fb3b-c0f9-4fdd-bbcf-4656cad9e3f4',
     identificatie: 'ZK-02973',
     omschrijving: 'Bezwaar bestemmingsplan',
     registratiedatum: '2024-07-15',
-  }),
-  createZaak({
+  },
+  {
     uuid: '17fb0617-743f-4898-8cbb-a6b9230d24d6',
     identificatie: 'ZK-03001',
     omschrijving: 'Melding overlast buren',
     registratiedatum: '2024-06-13',
-  }),
-  createZaak({
+  },
+  {
     uuid: '520fe998-033b-46b2-a82c-af22145f587f',
     identificatie: 'ZK-03154',
     omschrijving: 'Aanvraag gehandicaptenparkeerkaart',
     registratiedatum: '2024-05-07',
-  }),
-  createZaak({
+  },
+  {
     uuid: '41857a3d-d10f-45b0-979c-263131e3d4a0',
     identificatie: 'ZK-00122',
     omschrijving: 'Bezwaar tegen WOZ-waarde',
     registratiedatum: '2023-04-21',
     einddatum: '2023-08-30',
-  }),
-  createZaak({
+  },
+  {
     uuid: '59434199-d6d0-4cab-99c7-ec03fd0c5565',
     identificatie: 'ZK-99084',
     omschrijving: 'Aanvraag paspoort',
     registratiedatum: '2023-01-11',
     einddatum: '2023-01-27',
-  }),
+  },
 ];
+
+const zaken = zakenJson.map((zaak) => createZaak(zaak));
 
 export const zakenApiResponse = {
   count: zaken.length,
