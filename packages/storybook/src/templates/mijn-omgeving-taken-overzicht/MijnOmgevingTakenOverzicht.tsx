@@ -86,7 +86,7 @@ export default function MijnOmgevingTakenOverzicht({
               </Icon>
             </BreadcrumbNavSeparator>
             <BreadcrumbNavLink href={paths.taken} disabled current>
-              Mijn taken
+              Taken
             </BreadcrumbNavLink>
           </BreadcrumbNav>
         </Grid.Cell>
@@ -105,19 +105,19 @@ export default function MijnOmgevingTakenOverzicht({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.taken} current>
                   <IconListCheck />
-                  Mijn taken
+                  Taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.berichtenOverzicht}>
                   <IconInbox />
-                  Mijn berichten <NumberBadge>2</NumberBadge>
+                  Berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.zakenOverzicht}>
                   <IconArchive />
-                  Mijn zaken
+                  Zaken
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -151,7 +151,7 @@ export default function MijnOmgevingTakenOverzicht({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
-                  Mijn gegevens
+                  Gegevens
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -161,7 +161,7 @@ export default function MijnOmgevingTakenOverzicht({
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
           <main id="main">
             <section>
-              <Heading level={1}>Mijn taken</Heading>
+              <Heading level={1}>Taken</Heading>
               <ActionSingle
                 className={'todo-action--single'}
                 labels={labels}

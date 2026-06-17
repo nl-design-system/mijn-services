@@ -95,7 +95,7 @@ export default function MijnOmgevingZakenOverzichtTableView({
               </Icon>
             </BreadcrumbNavSeparator>
             <BreadcrumbNavLink href={paths.zakenOverzicht} disabled current>
-              Mijn zaken
+              Zaken
             </BreadcrumbNavLink>
           </BreadcrumbNav>
         </Grid.Cell>
@@ -114,19 +114,19 @@ export default function MijnOmgevingZakenOverzichtTableView({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.taken}>
                   <IconListCheck />
-                  Mijn taken
+                  Taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.berichtenOverzicht}>
                   <IconInbox />
-                  Mijn berichten <NumberBadge>2</NumberBadge>
+                  Berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.zakenOverzicht} current>
                   <IconArchive />
-                  Mijn zaken
+                  Zaken
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -160,7 +160,7 @@ export default function MijnOmgevingZakenOverzichtTableView({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
-                  Mijn gegevens
+                  Gegevens
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -171,7 +171,7 @@ export default function MijnOmgevingZakenOverzichtTableView({
           <main id="main">
             <section>
               <Heading level={1} id="mijn-zaken-overzicht-heading">
-                Mijn Zaken
+                Zaken
               </Heading>
 
               <div className="todo-search-bar">
