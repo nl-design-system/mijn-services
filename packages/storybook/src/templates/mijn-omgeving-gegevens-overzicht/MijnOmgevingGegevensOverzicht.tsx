@@ -81,7 +81,7 @@ export default function MijnOmgevingGegevensOverzicht({
               </Icon>
             </BreadcrumbNavSeparator>
             <BreadcrumbNavLink href={paths.mijnGegevens} disabled current>
-              Mijn gegevens
+              Gegevens
             </BreadcrumbNavLink>
           </BreadcrumbNav>
         </Grid.Cell>
@@ -100,19 +100,19 @@ export default function MijnOmgevingGegevensOverzicht({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.taken}>
                   <IconListCheck />
-                  Mijn taken
+                  Taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.berichtenOverzicht}>
                   <IconInbox />
-                  Mijn berichten <NumberBadge>2</NumberBadge>
+                  Berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.zakenOverzicht}>
                   <IconArchive />
-                  Mijn zaken
+                  Zaken
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -146,7 +146,7 @@ export default function MijnOmgevingGegevensOverzicht({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.mijnGegevens} current>
                   <IconUser />
-                  Mijn gegevens
+                  Gegevens
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -155,7 +155,7 @@ export default function MijnOmgevingGegevensOverzicht({
 
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
           <main id="main">
-            <Heading level={1}>Mijn gegevens</Heading>
+            <Heading level={1}>Gegevens</Heading>
             <Paragraph>
               Op deze pagina ziet u uw persoonlijke gegevens en hoe wij die gebruiken om contact met u te houden.
             </Paragraph>

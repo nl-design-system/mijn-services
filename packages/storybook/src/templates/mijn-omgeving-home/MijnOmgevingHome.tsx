@@ -111,19 +111,19 @@ export default function MijnOmgevingHome({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.taken}>
                   <IconListCheck />
-                  Mijn taken
+                  Taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.berichtenOverzicht}>
                   <IconInbox />
-                  Mijn berichten <NumberBadge>2</NumberBadge>
+                  Berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.zakenOverzicht}>
                   <IconArchive />
-                  Mijn zaken
+                  Zaken
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -157,7 +157,7 @@ export default function MijnOmgevingHome({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
-                  Mijn gegevens
+                  Gegevens
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -180,7 +180,7 @@ export default function MijnOmgevingHome({
               bijvoorbeeld uw rekeningen betalen en zien wanneer uw aanvraag klaar is.
             </Paragraph>
             <section>
-              <Heading level={2}>Wat moet ik regelen</Heading>
+              <Heading level={2}>Taken</Heading>
               <Link className="todo-link" href={paths.taken}>
                 Bekijk alle taken (10)
               </Link>
@@ -209,7 +209,7 @@ export default function MijnOmgevingHome({
               </ActionSingle>
             </section>
             <section>
-              <Heading level={2}>Mijn zaken</Heading>
+              <Heading level={2}>Zaken</Heading>
               <Link className="todo-link" href={paths.zakenOverzichtTableView}>
                 Bekijk alle zaken ({zaakCount})
               </Link>

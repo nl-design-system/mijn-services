@@ -70,7 +70,7 @@ export default function MijnOmgevingBerichtDetail({
             <Icon>
               <IconChevronLeft />
             </Icon>
-            Mijn berichten
+            Berichten
           </Link>
 
           <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header" className="todo-breadcrumb--desktop">
@@ -89,7 +89,7 @@ export default function MijnOmgevingBerichtDetail({
                 <IconChevronRight />
               </Icon>
             </BreadcrumbNavSeparator>
-            <BreadcrumbNavLink href={paths.berichtenOverzicht}>Mijn berichten</BreadcrumbNavLink>
+            <BreadcrumbNavLink href={paths.berichtenOverzicht}>Berichten</BreadcrumbNavLink>
             <BreadcrumbNavSeparator>
               <Icon>
                 <IconChevronRight />
@@ -115,19 +115,19 @@ export default function MijnOmgevingBerichtDetail({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.taken}>
                   <IconListCheck />
-                  Mijn taken
+                  Taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.berichtenOverzicht} current>
                   <IconInbox />
-                  Mijn berichten <NumberBadge>2</NumberBadge>
+                  Berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.zakenOverzicht}>
                   <IconArchive />
-                  Mijn zaken
+                  Zaken
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -161,7 +161,7 @@ export default function MijnOmgevingBerichtDetail({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
-                  Mijn gegevens
+                  Gegevens
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>

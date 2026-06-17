@@ -94,7 +94,7 @@ export default function MijnOmgevingZakenOverzichtCardView({
               </Icon>
             </BreadcrumbNavSeparator>
             <BreadcrumbNavLink href={paths.zakenOverzicht} disabled current>
-              Mijn zaken
+              Zaken
             </BreadcrumbNavLink>
           </BreadcrumbNav>
         </Grid.Cell>
@@ -113,19 +113,19 @@ export default function MijnOmgevingZakenOverzichtCardView({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.taken}>
                   <IconListCheck />
-                  Mijn taken
+                  Taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.berichtenOverzicht}>
                   <IconInbox />
-                  Mijn berichten <NumberBadge>2</NumberBadge>
+                  Berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.zakenOverzicht} current>
                   <IconArchive />
-                  Mijn zaken
+                  Zaken
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -159,7 +159,7 @@ export default function MijnOmgevingZakenOverzichtCardView({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
-                  Mijn gegevens
+                  Gegevens
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -169,7 +169,7 @@ export default function MijnOmgevingZakenOverzichtCardView({
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
           <main id="main">
             <section>
-              <Heading level={1}>Mijn Zaken</Heading>
+              <Heading level={1}>Zaken</Heading>
               <Tabs
                 key={tabsKey}
                 tabData={[

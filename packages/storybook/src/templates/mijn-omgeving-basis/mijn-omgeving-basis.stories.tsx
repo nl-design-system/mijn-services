@@ -94,19 +94,19 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             <SideNavigationItem>
               <SideNavigationLink href={storybookPaths.taken}>
                 <IconListCheck />
-                Mijn taken
+                Taken
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
               <SideNavigationLink href={storybookPaths.berichtenOverzicht}>
                 <IconInbox />
-                Mijn berichten <NumberBadge>2</NumberBadge>
+                Berichten <NumberBadge>2</NumberBadge>
               </SideNavigationLink>
             </SideNavigationItem>
             <SideNavigationItem>
               <SideNavigationLink href={storybookPaths.zakenOverzicht}>
                 <IconArchive />
-                Mijn zaken
+                Zaken
               </SideNavigationLink>
             </SideNavigationItem>
           </SideNavigationList>
@@ -140,7 +140,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             <SideNavigationItem>
               <SideNavigationLink href={storybookPaths.mijnGegevens}>
                 <IconUser />
-                Mijn gegevens
+                Gegevens
               </SideNavigationLink>
             </SideNavigationItem>
           </SideNavigationList>

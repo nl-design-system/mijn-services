@@ -125,7 +125,7 @@ export default function MijnOmgevingBerichtenOverzicht({
               </Icon>
             </BreadcrumbNavSeparator>
             <BreadcrumbNavLink href={paths.berichtenOverzicht} disabled current>
-              Mijn berichten
+              Berichten
             </BreadcrumbNavLink>
           </BreadcrumbNav>
         </Grid.Cell>
@@ -144,19 +144,19 @@ export default function MijnOmgevingBerichtenOverzicht({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.taken}>
                   <IconListCheck />
-                  Mijn taken
+                  Taken
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.berichtenOverzicht} current>
                   <IconInbox />
-                  Mijn berichten <NumberBadge>2</NumberBadge>
+                  Berichten <NumberBadge>2</NumberBadge>
                 </SideNavigationLink>
               </SideNavigationItem>
               <SideNavigationItem>
                 <SideNavigationLink href={paths.zakenOverzicht}>
                   <IconArchive />
-                  Mijn zaken
+                  Zaken
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -190,7 +190,7 @@ export default function MijnOmgevingBerichtenOverzicht({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
-                  Mijn gegevens
+                  Gegevens
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -200,7 +200,7 @@ export default function MijnOmgevingBerichtenOverzicht({
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
           <main id="main">
             <section>
-              <Heading level={1}>Mijn berichten</Heading>
+              <Heading level={1}>Berichten</Heading>
 
               {messages.map((m) => (
                 <Action key={m.title} link={m.link} dateTime={m.dateTime}>
