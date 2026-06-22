@@ -25,7 +25,6 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  name: 'Default',
   parameters: {
     theme: 'voorbeeld-theme',
   },
