@@ -64,8 +64,8 @@ importers:
         specifier: 9.1.7
         version: 9.1.7
       lint-staged:
-        specifier: 16.4.0
-        version: 16.4.0
+        specifier: 17.0.7
+        version: 17.0.7
       markdownlint-cli:
         specifier: 0.48.0
         version: 0.48.0
@@ -179,7 +179,7 @@ importers:
         version: 10.1.0
       '@rijkshuisstijl-community/components-react':
         specifier: 15.0.2
-        version: 15.0.2(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+        version: 15.0.2(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@rijkshuisstijl-community/design-tokens':
         specifier: 14.0.0
         version: 14.0.0
@@ -188,13 +188,13 @@ importers:
         version: 10.3.6(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
       '@storybook/addon-docs':
         specifier: 10.3.6
-        version: 10.3.6(@types/react@19.2.14)(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+        version: 10.3.6(@types/react@19.2.14)(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@storybook/addon-links':
         specifier: 10.3.6
         version: 10.3.6(react@19.2.5)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
       '@storybook/react-vite':
         specifier: 10.3.6
-        version: 10.3.6(esbuild@0.27.7)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+        version: 10.3.6(esbuild@0.27.7)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@tabler/icons-react':
         specifier: 3.41.1
         version: 3.41.1(react@19.2.5)
@@ -257,7 +257,7 @@ importers:
         version: 5.9.3
       vite:
         specifier: 8.0.10
-        version: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+        version: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0)
 
   packages/website:
     dependencies:
@@ -3838,9 +3838,6 @@ packages:
   colorette@1.4.0:
     resolution: {integrity: sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g==}
 
-  colorette@2.0.20:
-    resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
-
   colorjs.io@0.5.2:
     resolution: {integrity: sha512-twmVoizEW7ylZSN32OgKdXRmo1qg+wT5/6C3xu5b9QsWzSFAhHLn2xd8ro0diCsKfCj1RdaTP/nrcW+vAoQPIw==}
 
@@ -4558,6 +4555,10 @@ packages:
 
   get-east-asian-width@1.5.0:
     resolution: {integrity: sha512-CQ+bEO+Tva/qlmw24dCejulK5pMzVnUOFOijVogd3KQs07HnRIgp8TGipvCCRT06xeYEbpbgwaCxglFyiuIcmA==}
+    engines: {node: '>=18'}
+
+  get-east-asian-width@1.6.0:
+    resolution: {integrity: sha512-QRbvDIbx6YklUe6RxeTeleMR0yv3cYH6PsPZHcnVn7xv7zO1BHN8r0XETu8n6Ye3Q+ahtSarc3WgtNWmehIBfA==}
     engines: {node: '>=18'}
 
   get-intrinsic@1.3.0:
@@ -5341,14 +5342,14 @@ packages:
   linkify-it@5.0.0:
     resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
 
-  lint-staged@16.4.0:
-    resolution: {integrity: sha512-lBWt8hujh/Cjysw5GYVmZpFHXDCgZzhrOm8vbcUdobADZNOK/bRshr2kM3DfgrrtR1DQhfupW9gnIXOfiFi+bw==}
-    engines: {node: '>=20.17'}
+  lint-staged@17.0.7:
+    resolution: {integrity: sha512-JrSobt+tW3rH8IOMi8tDZd3foorM5yPEkLD/V2NxobgHrFfHWGee4MOLVuZeScgxftEwbHrPHIFA/ZL+nUJeuA==}
+    engines: {node: '>=22.22.1'}
     hasBin: true
 
-  listr2@9.0.5:
-    resolution: {integrity: sha512-ME4Fb83LgEgwNw96RKNvKV4VTLuXfoKudAmm2lP8Kk87KaMK0/Xrx/aAkMWmT8mDb+3MlFDspfbCs7adjRxA2g==}
-    engines: {node: '>=20.0.0'}
+  listr2@10.2.1:
+    resolution: {integrity: sha512-7I5knELsJKTUjXG+A6BkKAiGkW1i25fNa/xlUl9hFtk15WbE9jndA89xu5FzQKrY5llajE1hfZZFMILXkDHk/Q==}
+    engines: {node: '>=22.13.0'}
 
   load-json-file@4.0.0:
     resolution: {integrity: sha512-Kx8hMakjX03tiGTLAIdJ+lL0htKnXjEZN6hk/tozf/WOuYGdZBJrZ+rCJRbVCugsjB3jMLn9746NsQIf5VjBMw==}
@@ -6958,8 +6959,8 @@ packages:
   tiny-invariant@1.3.3:
     resolution: {integrity: sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==}
 
-  tinyexec@1.0.4:
-    resolution: {integrity: sha512-u9r3uZC0bdpGOXtlxUIdwf9pkmvhqJdrVCH9fapQtgy/OeTTMZ1nqH7agtvEfmGui6e1XxjcdrlxvxJvc3sMqw==}
+  tinyexec@1.2.4:
+    resolution: {integrity: sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg==}
     engines: {node: '>=18'}
 
   tinyglobby@0.2.15:
@@ -7334,6 +7335,10 @@ packages:
   wordwrap@1.0.0:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
 
+  wrap-ansi@10.0.0:
+    resolution: {integrity: sha512-SGcvg80f0wUy2/fXES19feHMz8E0JoXv2uNgHOu4Dgi2OrCy1lqwFYEJz1BLbDI0exjPMe/ZdzZ/YpGECBG/aQ==}
+    engines: {node: '>=20'}
+
   wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
     engines: {node: '>=10'}
@@ -7394,8 +7399,8 @@ packages:
   yaml-ast-parser@0.0.43:
     resolution: {integrity: sha512-2PTINUwsRqSd+s8XxKaJWQlUuEMHJQyEuh2edBbW8KNJz0SJPwUSD2zRWqezFEdN7IzAgeuYHFUCF7o8zRdZ0A==}
 
-  yaml@2.8.3:
-    resolution: {integrity: sha512-AvbaCLOO2Otw/lW5bmh9d/WEdcDFdQp2Z2ZUH3pX9U2ihyUY0nvLv7J6TrWowklRGPYbB/IuIMfYgxaCPg5Bpg==}
+  yaml@2.9.0:
+    resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -8291,11 +8296,11 @@ snapshots:
 
   '@istanbuljs/schema@0.1.6': {}
 
-  '@joshwooding/vite-plugin-react-docgen-typescript@0.7.0(typescript@5.9.3)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@joshwooding/vite-plugin-react-docgen-typescript@0.7.0(typescript@5.9.3)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       glob: 13.0.6
       react-docgen-typescript: 2.4.0(typescript@5.9.3)
-      vite: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+      vite: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0)
     optionalDependencies:
       typescript: 5.9.3
 
@@ -8366,7 +8371,7 @@ snapshots:
       tinyglobby: 0.2.16
       write-file-atomic: 7.0.1
       write-json-file: 7.0.0
-      yaml: 2.8.3
+      yaml: 2.9.0
       zeptomatch: 2.1.0
     transitivePeerDependencies:
       - '@types/node'
@@ -8941,11 +8946,11 @@ snapshots:
 
   '@rijkshuisstijl-community/accordion-css@2.0.1': {}
 
-  '@rijkshuisstijl-community/accordion-react@3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/accordion-react@3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@rijkshuisstijl-community/accordion-css': 2.0.1
       '@utrecht/component-library-react': 13.0.4(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@vitest/coverage-v8': 3.2.4
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -8974,12 +8979,12 @@ snapshots:
 
   '@rijkshuisstijl-community/alert-css@4.0.1': {}
 
-  '@rijkshuisstijl-community/alert-react@3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/alert-react@3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@rijkshuisstijl-community/alert-css': 4.0.1
       '@rijkshuisstijl-community/icon-react': 3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/component-library-react': 13.0.4(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@vitest/coverage-v8': 3.2.4
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -8994,11 +8999,11 @@ snapshots:
 
   '@rijkshuisstijl-community/article-css@2.0.1': {}
 
-  '@rijkshuisstijl-community/article-react@2.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/article-react@2.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@rijkshuisstijl-community/article-css': 2.0.1
       '@utrecht/component-library-react': 13.0.4(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@vitest/coverage-v8': 3.2.4
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -9027,11 +9032,11 @@ snapshots:
 
   '@rijkshuisstijl-community/breadcrumb-nav-css@1.0.0': {}
 
-  '@rijkshuisstijl-community/breadcrumb-nav-react@0.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/breadcrumb-nav-react@0.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@rijkshuisstijl-community/breadcrumb-nav-css': 1.0.0
       '@utrecht/component-library-react': 13.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@vitest/coverage-v8': 3.2.4
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -9062,11 +9067,11 @@ snapshots:
 
   '@rijkshuisstijl-community/card-as-link-css@1.0.0': {}
 
-  '@rijkshuisstijl-community/card-as-link-react@1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/card-as-link-react@1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@rijkshuisstijl-community/card-as-link-css': 1.0.0
       '@rijkshuisstijl-community/image-react': 2.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@utrecht/component-library-react': 13.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -9082,10 +9087,10 @@ snapshots:
 
   '@rijkshuisstijl-community/card-css@1.0.0': {}
 
-  '@rijkshuisstijl-community/card-react@1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/card-react@1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@rijkshuisstijl-community/card-css': 1.0.0
-      '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@utrecht/component-library-react': 13.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -9127,28 +9132,28 @@ snapshots:
       - react-vega
       - vega
 
-  '@rijkshuisstijl-community/components-react@15.0.2(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/components-react@15.0.2(@amsterdam/design-system-css@3.3.0)(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@amsterdam/design-system-react': 1.1.0(@amsterdam/design-system-css@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@nl-design-system-candidate/link-react': 1.1.8(@babel/runtime@7.29.2)(react@19.2.5)
       '@nl-design-system-candidate/skip-link-react': 1.1.7(@babel/runtime@7.29.2)(react@19.2.5)
-      '@rijkshuisstijl-community/accordion-react': 3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/accordion-react': 3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@rijkshuisstijl-community/action-group-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@rijkshuisstijl-community/alert-react': 3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
-      '@rijkshuisstijl-community/article-react': 2.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/alert-react': 3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
+      '@rijkshuisstijl-community/article-react': 2.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@rijkshuisstijl-community/blockquote-react': 1.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@rijkshuisstijl-community/breadcrumb-nav-react': 0.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/breadcrumb-nav-react': 0.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@rijkshuisstijl-community/button-react': 1.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@rijkshuisstijl-community/card-as-link-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
-      '@rijkshuisstijl-community/card-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/card-as-link-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
+      '@rijkshuisstijl-community/card-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@rijkshuisstijl-community/checkbox-group-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@rijkshuisstijl-community/checkbox-react': 1.0.0(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@rijkshuisstijl-community/dot-badge-react': 1.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@rijkshuisstijl-community/figure-react': 1.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@rijkshuisstijl-community/icon-react': 3.0.3(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@rijkshuisstijl-community/image-react': 2.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
-      '@rijkshuisstijl-community/paragraph-react': 2.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@rijkshuisstijl-community/link-react': 1.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
+      '@rijkshuisstijl-community/paragraph-react': 2.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@rijkshuisstijl-community/separator-react': 1.0.1(@babel/runtime@7.29.2)(date-fns@2.30.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/body-react': 0.0.11(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@utrecht/component-library-react': 13.0.4(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
@@ -9224,11 +9229,11 @@ snapshots:
 
   '@rijkshuisstijl-community/link-css@1.0.1': {}
 
-  '@rijkshuisstijl-community/link-react@1.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/link-react@1.0.1(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@nl-design-system-candidate/link-react': 1.1.8(@babel/runtime@7.29.2)(react@19.2.5)
       '@rijkshuisstijl-community/link-css': 1.0.1
-      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@vitest/coverage-v8': 3.2.4
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -9241,11 +9246,11 @@ snapshots:
 
   '@rijkshuisstijl-community/paragraph-css@2.0.1': {}
 
-  '@rijkshuisstijl-community/paragraph-react@2.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@rijkshuisstijl-community/paragraph-react@2.0.2(@babel/runtime@7.29.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@nl-design-system-candidate/paragraph-react': 2.2.2(@babel/runtime@7.29.2)(react@19.2.5)
       '@rijkshuisstijl-community/paragraph-css': 2.0.1
-      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@vitejs/plugin-react': 4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@vitest/coverage-v8': 3.2.4
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
@@ -9383,10 +9388,10 @@ snapshots:
       axe-core: 4.11.4
       storybook: 10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
 
-  '@storybook/addon-docs@10.3.6(@types/react@19.2.14)(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@storybook/addon-docs@10.3.6(@types/react@19.2.14)(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@mdx-js/react': 3.1.1(@types/react@19.2.14)(react@19.2.5)
-      '@storybook/csf-plugin': 10.3.6(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@storybook/csf-plugin': 10.3.6(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@storybook/icons': 2.0.1(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@storybook/react-dom-shim': 10.3.6(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))
       react: 19.2.5
@@ -9407,24 +9412,24 @@ snapshots:
     optionalDependencies:
       react: 19.2.5
 
-  '@storybook/builder-vite@10.3.6(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@storybook/builder-vite@10.3.6(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
-      '@storybook/csf-plugin': 10.3.6(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@storybook/csf-plugin': 10.3.6(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       storybook: 10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       ts-dedent: 2.2.0
-      vite: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+      vite: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0)
     transitivePeerDependencies:
       - esbuild
       - rollup
       - webpack
 
-  '@storybook/csf-plugin@10.3.6(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@storybook/csf-plugin@10.3.6(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       storybook: 10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       unplugin: 2.3.11
     optionalDependencies:
       esbuild: 0.27.7
-      vite: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+      vite: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0)
 
   '@storybook/global@5.0.0': {}
 
@@ -9439,11 +9444,11 @@ snapshots:
       react-dom: 19.2.5(react@19.2.5)
       storybook: 10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
 
-  '@storybook/react-vite@10.3.6(esbuild@0.27.7)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@storybook/react-vite@10.3.6(esbuild@0.27.7)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.7.0(typescript@5.9.3)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.7.0(typescript@5.9.3)(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@rollup/pluginutils': 5.3.0
-      '@storybook/builder-vite': 10.3.6(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))
+      '@storybook/builder-vite': 10.3.6(esbuild@0.27.7)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))
       '@storybook/react': 10.3.6(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(storybook@10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)
       empathic: 2.0.0
       magic-string: 0.30.21
@@ -9453,7 +9458,7 @@ snapshots:
       resolve: 1.22.12
       storybook: 10.3.6(prettier@3.8.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       tsconfig-paths: 4.2.0
-      vite: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+      vite: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0)
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -11155,7 +11160,7 @@ snapshots:
     dependencies:
       '@stencil/core': 4.18.3
 
-  '@vitejs/plugin-react@4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3))':
+  '@vitejs/plugin-react@4.7.0(vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0))':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.29.0)
@@ -11163,7 +11168,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3)
+      vite: 8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -11572,8 +11577,6 @@ snapshots:
   colord@2.9.3: {}
 
   colorette@1.4.0: {}
-
-  colorette@2.0.20: {}
 
   colorjs.io@0.5.2: {}
 
@@ -12621,6 +12624,8 @@ snapshots:
 
   get-east-asian-width@1.5.0: {}
 
+  get-east-asian-width@1.6.0: {}
+
   get-intrinsic@1.3.0:
     dependencies:
       call-bind-apply-helpers: 1.0.2
@@ -13029,7 +13034,7 @@ snapshots:
 
   is-fullwidth-code-point@5.1.0:
     dependencies:
-      get-east-asian-width: 1.5.0
+      get-east-asian-width: 1.6.0
 
   is-generator-function@1.0.10:
     dependencies:
@@ -13358,23 +13363,22 @@ snapshots:
     dependencies:
       uc.micro: 2.1.0
 
-  lint-staged@16.4.0:
+  lint-staged@17.0.7:
     dependencies:
-      commander: 14.0.3
-      listr2: 9.0.5
+      listr2: 10.2.1
       picomatch: 4.0.4
       string-argv: 0.3.2
-      tinyexec: 1.0.4
-      yaml: 2.8.3
+      tinyexec: 1.2.4
+    optionalDependencies:
+      yaml: 2.9.0
 
-  listr2@9.0.5:
+  listr2@10.2.1:
     dependencies:
       cli-truncate: 5.2.0
-      colorette: 2.0.20
       eventemitter3: 5.0.4
       log-update: 6.1.0
       rfdc: 1.4.1
-      wrap-ansi: 9.0.2
+      wrap-ansi: 10.0.0
 
   load-json-file@4.0.0:
     dependencies:
@@ -15429,7 +15433,7 @@ snapshots:
 
   tiny-invariant@1.3.3: {}
 
-  tinyexec@1.0.4: {}
+  tinyexec@1.2.4: {}
 
   tinyglobby@0.2.15:
     dependencies:
@@ -15596,7 +15600,7 @@ snapshots:
       vfile-message: 4.0.3
       vfile-reporter: 8.1.1
       vfile-statistics: 3.0.0
-      yaml: 2.8.3
+      yaml: 2.9.0
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -15745,7 +15749,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.8.3):
+  vite@8.0.10(@types/node@24.12.2)(esbuild@0.27.7)(sass-embedded@1.99.0)(sass@1.99.0)(yaml@2.9.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -15758,7 +15762,7 @@ snapshots:
       fsevents: 2.3.3
       sass: 1.99.0
       sass-embedded: 1.99.0
-      yaml: 2.8.3
+      yaml: 2.9.0
 
   vscode-json-languageservice@4.2.1:
     dependencies:
@@ -15859,6 +15863,12 @@ snapshots:
 
   wordwrap@1.0.0: {}
 
+  wrap-ansi@10.0.0:
+    dependencies:
+      ansi-styles: 6.2.3
+      string-width: 8.2.1
+      strip-ansi: 7.2.0
+
   wrap-ansi@7.0.0:
     dependencies:
       ansi-styles: 4.3.0
@@ -15911,7 +15921,7 @@ snapshots:
 
   yaml-ast-parser@0.0.43: {}
 
-  yaml@2.8.3: {}
+  yaml@2.9.0: {}
 
   yargs-parser@20.2.9: {}
 
