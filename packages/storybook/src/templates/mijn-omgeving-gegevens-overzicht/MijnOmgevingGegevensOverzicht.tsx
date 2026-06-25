@@ -81,7 +81,7 @@ export default function MijnOmgevingGegevensOverzicht({
               </Icon>
             </BreadcrumbNavSeparator>
             <BreadcrumbNavLink href={paths.mijnGegevens} disabled current>
-              Gegevens
+              Mijn gegevens
             </BreadcrumbNavLink>
           </BreadcrumbNav>
         </Grid.Cell>
@@ -146,7 +146,7 @@ export default function MijnOmgevingGegevensOverzicht({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.mijnGegevens} current>
                   <IconUser />
-                  Gegevens
+                  Mijn gegevens
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
@@ -155,7 +155,7 @@ export default function MijnOmgevingGegevensOverzicht({
 
         <Grid.Cell span={{ narrow: 3, medium: 6, wide: 9 }}>
           <main id="main">
-            <Heading level={1}>Gegevens</Heading>
+            <Heading level={1}>Mijn gegevens</Heading>
             <Paragraph>
               Op deze pagina ziet u uw persoonlijke gegevens en hoe wij die gebruiken om contact met u te houden.
             </Paragraph>
