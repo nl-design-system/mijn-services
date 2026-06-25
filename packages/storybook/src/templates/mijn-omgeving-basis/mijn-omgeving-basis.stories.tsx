@@ -140,7 +140,7 @@ const TemplatePage = ({ logo, footerLogo }: { logo: ReactElement; footerLogo?: R
             <SideNavigationItem>
               <SideNavigationLink href={storybookPaths.mijnGegevens}>
                 <IconUser />
-                Gegevens
+                Mijn gegevens
               </SideNavigationLink>
             </SideNavigationItem>
           </SideNavigationList>

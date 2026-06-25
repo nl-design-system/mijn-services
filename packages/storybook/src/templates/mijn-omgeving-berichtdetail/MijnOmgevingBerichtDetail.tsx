@@ -161,7 +161,7 @@ export default function MijnOmgevingBerichtDetail({
               <SideNavigationItem>
                 <SideNavigationLink href={paths.mijnGegevens}>
                   <IconUser />
-                  Gegevens
+                  Mijn gegevens
                 </SideNavigationLink>
               </SideNavigationItem>
             </SideNavigationList>
