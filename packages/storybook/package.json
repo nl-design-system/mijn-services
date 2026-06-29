@@ -21,8 +21,8 @@
     "storybook": "storybook dev --config-dir config/ --port 6006"
   },
   "devDependencies": {
-    "@amsterdam/design-system-css": "3.3.0",
-    "@amsterdam/design-system-react": "3.3.0",
+    "@amsterdam/design-system-css": "4.2.0",
+    "@amsterdam/design-system-react": "4.2.0",
     "@chromatic-com/storybook": "5.2.1",
     "@gemeente-denhaag/action": "4.2.2",
     "@gemeente-denhaag/card": "5.0.7",
