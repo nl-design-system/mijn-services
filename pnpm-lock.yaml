@@ -181,8 +181,8 @@ importers:
         specifier: 15.1.1
         version: 15.1.1(@amsterdam/design-system-css@4.2.0)(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@rijkshuisstijl-community/design-tokens':
-        specifier: 14.0.0
-        version: 14.0.0
+        specifier: 15.0.0
+        version: 15.0.0
       '@storybook/addon-a11y':
         specifier: 10.4.5
         version: 10.4.5(storybook@10.4.5(@types/react@19.2.17)(prettier@3.8.4)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
@@ -2074,6 +2074,9 @@ packages:
 
   '@rijkshuisstijl-community/design-tokens@14.0.0':
     resolution: {integrity: sha512-VDTWRT95U78/nyGFQlhrANHlIE5XPT/el32oIn/9zR1VQjLfI5B+8la/vlyJZHSfciAYxVmN5/AecbhQh/3LtA==}
+
+  '@rijkshuisstijl-community/design-tokens@15.0.0':
+    resolution: {integrity: sha512-6gOwzVTPF6bF1Qs7pvTXpFoP4KKJRJP8FCIcK9mFnAG62/AQuuaeMKgsDtOI0CgQ/5eE9XWbOvUYdNPYLRTTRA==}
 
   '@rijkshuisstijl-community/dot-badge-css@1.1.0':
     resolution: {integrity: sha512-mGn13u+C6v/DTf9Gt5dWXlPEeOAy3U67n1jhLREL3oAQCXmuIkV8mPkqoXzq0TaiqI7urjv4+h0OVP8n04rlWA==}
@@ -10178,6 +10181,8 @@ snapshots:
       - vega
 
   '@rijkshuisstijl-community/design-tokens@14.0.0': {}
+
+  '@rijkshuisstijl-community/design-tokens@15.0.0': {}
 
   '@rijkshuisstijl-community/dot-badge-css@1.1.0': {}
 
