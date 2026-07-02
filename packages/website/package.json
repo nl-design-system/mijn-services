@@ -13,7 +13,7 @@
     "clean": "rimraf .next"
   },
   "dependencies": {
-    "@amsterdam/design-system-css": "3.3.0",
+    "@amsterdam/design-system-css": "4.2.0",
     "@amsterdam/design-system-react": "3.3.0",
     "@gemeente-denhaag/action": "4.2.2",
     "@gemeente-denhaag/card": "5.0.7",
