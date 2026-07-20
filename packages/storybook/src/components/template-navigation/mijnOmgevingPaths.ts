@@ -4,6 +4,8 @@ export const storybookPaths = {
   taken: '?path=/story/mijn-omgeving-taken--default',
   berichtenOverzicht: '?path=/story/mijn-omgeving-berichten-overzicht--default',
   berichtDetail: '?path=/story/mijn-omgeving-mijnberichten-detailpagina--default',
+  mijnPlanOverzichtOntwikkelplan: '?path=/story/concepts-mijnplan--default',
+  mijnPlanTakenOverzicht: '?path=/story/concepts-mijnplan-taken-overzicht--default',
   zakenOverzicht: '?path=/story/mijn-omgeving-mijnzaken-overzicht-card-view--default',
   zakenOverzichtTableView: '?path=/story/mijn-omgeving-mijnzaken-overzicht-table-view--default',
   zaakDetail: '?path=/story/mijn-omgeving-mijnzaken-detailpagina--default',
@@ -15,6 +17,8 @@ export const websitePaths = {
   taken: '/mijn-services/website/templates/mijn-omgeving-taken-overzicht',
   berichtenOverzicht: '/mijn-services/website/templates/mijn-omgeving-berichten-overzicht',
   berichtDetail: '/mijn-services/website/templates/mijn-omgeving-berichtdetail',
+  mijnPlanOverzichtOntwikkelplan: '/mijn-services/website/templates/mijn-plan-overzicht-ontwikkelplan',
+  mijnPlanTakenOverzicht: '/mijn-services/website/templates/mijn-plan-taken-overzicht',
   zakenOverzicht: '/mijn-services/website/templates/mijn-omgeving-zaken-overzicht',
   zakenOverzichtTableView: '/mijn-services/website/templates/mijn-omgeving-zaken-overzicht-table-view',
   zaakDetail: '/mijn-services/website/templates/mijn-omgeving-zaakdetail',
@@ -27,6 +31,8 @@ export type MijnOmgevingPaths = {
   taken: string;
   berichtenOverzicht: string;
   berichtDetail: string;
+  mijnPlanOverzichtOntwikkelplan: string;
+  mijnPlanTakenOverzicht: string;
   zakenOverzicht: string;
   zakenOverzichtTableView?: string;
   zaakDetail: string;
