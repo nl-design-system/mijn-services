@@ -155,8 +155,8 @@ importers:
         specifier: 4.1.1
         version: 4.1.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@gemeente-denhaag/tab':
-        specifier: 3.1.1
-        version: 3.1.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: 3.3.0
+        version: 3.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@nl-design-system-candidate/button-react':
         specifier: 1.1.0
         version: 1.1.0(@babel/runtime@7.29.7)(react@19.2.7)
@@ -280,6 +280,9 @@ importers:
       '@gemeente-denhaag/side-navigation':
         specifier: 4.1.1
         version: 4.1.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@gemeente-denhaag/tab':
+        specifier: 3.3.0
+        version: 3.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@nl-design-system-candidate/heading-react':
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.29.7)(react@19.2.7)
@@ -929,6 +932,12 @@ packages:
       react: 18 || 19
       react-dom: 18 || 19
 
+  '@gemeente-denhaag/number-badge@2.2.1':
+    resolution: {integrity: sha512-xR8iLdqj5kbRaseTJIaSGWfXrrLY63wqzLscVE1R+GOc9yCFoi28Q4Fcvget4kS9zuDrQ8V8AJUl3310dt4A/A==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
   '@gemeente-denhaag/paragraph@2.1.0':
     resolution: {integrity: sha512-sNleGQroezFeWq4aN9fAd4Zvme5adBhJHE8gu+p02j1pD3nlDxsgAx8tTukWA6xxZ6idQTGvEVDz0r9T1Yxx5g==}
     peerDependencies:
@@ -953,8 +962,8 @@ packages:
       react: 18 || 19
       react-dom: 18 || 19
 
-  '@gemeente-denhaag/tab@3.1.1':
-    resolution: {integrity: sha512-mQh9fUDxYdSusTXs4LYkaOI4EmJvA2gcM4DiEyPaw1akq7ZNRk0hXPf1J6wKQgthvemyzAUPUA7yNZxIgjPpKA==}
+  '@gemeente-denhaag/tab@3.3.0':
+    resolution: {integrity: sha512-xaCD76OYAg4Qyt3Ema5jxaPMaHHA1ImGe0h8jnTb5bJ1+999lyU8BbQswrm96xjcbOJwUjIv/v6tHdxQ5JLY8A==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -2735,9 +2744,6 @@ packages:
 
   '@types/estree-jsx@1.0.5':
     resolution: {integrity: sha512-52CcUVNFyfb1A2ALocQw/Dd1BQFNmSdkuC3BkZ6iqhdMfQz7JWOFRuJFloOzjk+6WijU56m9oKXFAXc7o3Towg==}
-
-  '@types/estree@1.0.8':
-    resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
@@ -7926,8 +7932,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  uuid@13.0.0:
-    resolution: {integrity: sha512-XQegIaBTVUjSHliKqcnFqYypAd4S+WCYt5NIeRs6w/UAry7z8Y9j5ZwRRL4kzq9U3sD6v+85er9FvkEaBpji2w==}
+  uuid@14.0.1:
+    resolution: {integrity: sha512-6ZxzVpzDXDa3bJWaHilVayA+BH/1zmxCJoVgvmqJnid/gPoKHxUrS/aC/T6LGQtNHT+XHG9fXPJB4d+IrU30Ew==}
     hasBin: true
 
   validate-npm-package-license@3.0.4:
@@ -8670,7 +8676,7 @@ snapshots:
 
   '@eslint/eslintrc@2.1.4(supports-color@10.2.2)':
     dependencies:
-      ajv: 6.12.6
+      ajv: 6.14.0
       debug: 4.4.3(supports-color@10.2.2)
       espree: 9.6.1
       globals: 13.20.0
@@ -8684,7 +8690,7 @@ snapshots:
 
   '@eslint/eslintrc@3.3.3(supports-color@10.2.2)':
     dependencies:
-      ajv: 6.12.6
+      ajv: 6.14.0
       debug: 4.4.3(supports-color@10.2.2)
       espree: 10.4.0
       globals: 14.0.0
@@ -8800,6 +8806,11 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
+  '@gemeente-denhaag/number-badge@2.2.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+    dependencies:
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+
   '@gemeente-denhaag/paragraph@2.1.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       react: 19.2.7
@@ -8830,12 +8841,13 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@gemeente-denhaag/tab@3.1.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@gemeente-denhaag/tab@3.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
+      '@gemeente-denhaag/number-badge': 2.2.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       clsx: 2.1.1
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      uuid: 13.0.0
+      uuid: 14.0.1
 
   '@gemeente-denhaag/utils@3.0.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
@@ -10835,8 +10847,6 @@ snapshots:
   '@types/estree-jsx@1.0.5':
     dependencies:
       '@types/estree': 1.0.9
-
-  '@types/estree@1.0.8': {}
 
   '@types/estree@1.0.9': {}
 
@@ -13802,8 +13812,8 @@ snapshots:
       '@humanfs/node': 0.16.7
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.4.3
-      '@types/estree': 1.0.8
-      ajv: 6.12.6
+      '@types/estree': 1.0.9
+      ajv: 6.14.0
       chalk: 4.1.2
       cross-spawn: 7.0.6
       debug: 4.4.3(supports-color@10.2.2)
@@ -13822,7 +13832,7 @@ snapshots:
       is-glob: 4.0.3
       json-stable-stringify-without-jsonify: 1.0.1
       lodash.merge: 4.6.2
-      minimatch: 3.1.2
+      minimatch: 3.1.5
       natural-compare: 1.4.0
       optionator: 0.9.3
     transitivePeerDependencies:
@@ -17057,7 +17067,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  uuid@13.0.0: {}
+  uuid@14.0.1: {}
 
   validate-npm-package-license@3.0.4:
     dependencies:
