@@ -15,8 +15,9 @@
   },
   "scripts": {
     "build": "storybook build --output-dir dist/ --config-dir config/",
-    "clean": "rimraf dist/",
+    "clean": "rimraf dist/ vendor/ src/api/vendor/",
     "generate:zaken-api": "openapi-typescript src/api/zaken/vendor/openapi.yaml --root-types --root-types-no-schema-prefix -o src/api/zaken/openapi-types.ts",
+    "generate:openapi-ts": "openapi-ts --input src/api/zaken/vendor/openapi.yaml",
     "lint-build": "tsc --noEmit --project tsconfig.json",
     "storybook": "storybook dev --config-dir config/ --port 6006"
   },
@@ -33,6 +34,7 @@
     "@gemeente-denhaag/process-steps": "4.2.5",
     "@gemeente-denhaag/side-navigation": "4.1.1",
     "@gemeente-denhaag/tab": "3.1.1",
+    "@hey-api/openapi-ts": "0.99.0",
     "@nl-design-system-candidate/button-react": "1.1.0",
     "@nl-design-system-candidate/heading-react": "1.1.7",
     "@nl-design-system-candidate/link-react": "1.1.8",
@@ -67,5 +69,8 @@
     "storybook": "10.4.5",
     "typescript": "5.9.3",
     "vite": "8.0.16"
+  },
+  "dependencies": {
+    "zod": "4.4.3"
   }
 }

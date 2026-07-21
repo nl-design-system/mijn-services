@@ -45,18 +45,31 @@ import {
 } from '../../../api/zaken/view-model';
 import { Layout } from '../../../components/Layout';
 import { MijnOmgevingPaths } from '../../../components/template-navigation/mijnOmgevingPaths';
+import { zPaginatedZaakList } from '../../../client/zod.gen';
 
 export default function MijnOmgevingZakenOverzichtCardView({
   logo,
   footerLogo,
   paths,
-  zaken = zakenApiResponse,
+  zakenArg = zakenApiResponse,
 }: {
   logo: ReactElement;
   footerLogo?: ReactElement;
   paths: MijnOmgevingPaths;
-  zaken?: PaginatedZaakList;
+  zakenArg?: PaginatedZaakList;
 }) {
+  let zaken;
+
+  try {
+    zaken = zPaginatedZaakList.parse(zakenArg);
+  } catch (e) {
+    return (
+      <div>
+        <h2>Fout in de JSON:</h2>
+        <pre>{JSON.stringify(e)}</pre>
+      </div>
+    );
+  }
   const [tabsKey, setTabsKey] = useState(0);
   const openZaken = getOpenZaken(zaken);
   const geslotenZaken = getClosedZaken(zaken);
