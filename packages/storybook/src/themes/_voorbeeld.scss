@@ -14,7 +14,7 @@
   --utrecht-focus-outline-style: var(--basis-focus-outline-style); /* was: dashed; */
   --utrecht-focus-outline-width: var(--basis-border-width-md); /* was: 2px; */
   --utrecht-pagination-margin-block-start: var(--basis-space-block-3xl);
-  --utrecht-spotlight-section-background-color: #e3f3fd; /* TODO: Geen exacte basis-token match. Dichtstbijzijnde optie: 
+  --utrecht-spotlight-section-background-color: #e3f3fd; /* TODO: Geen exacte basis-token match. Dichtstbijzijnde optie:
    --basis-color-info-bg-subtle (#f4fafe). Navragen of dit gebruikt kan worden. */
 
   /* Amsterdam component tokens */
@@ -32,11 +32,12 @@
   --denhaag-focus-border: 2px dashed #0b0c0c; /* ⚠️ DH heeft shorthand - individuele basis tokens beschikbaar, opsplitsen niet zomaar mogelijk
   worden deze wel op deze manier door DH gebruikt of is er een alternatief?
   --basis-focus-outline-color: #0b0c0c;
-  --basis-focus-outline-style: dashed; 
+  --basis-focus-outline-style: dashed;
   --basis-border-width-md: 0.125rem; (=1px)
   --basis-border-width-sm: 0.0625rem; (=1px) */
 
   // --denhaag-tabs-tab-outline: var(--denhaag-focus-border);
+  --denhaag-tabs-tab-gap: var(--basis-space-inline-md);
   --denhaag-file-focus-outline-color: var(--basis-focus-outline-color); /* was: #0b0c0c */
   --denhaag-file-focus-outline-style: var(--basis-focus-outline-style); /* was: dashed */
   --denhaag-file-focus-outline-width: var(--basis-border-width-md); /* was: 2px */
