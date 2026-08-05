@@ -209,8 +209,8 @@ importers:
         specifier: 3.0.3
         version: 3.0.3(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@utrecht/component-library-react':
-        specifier: 14.0.1
-        version: 14.0.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: 14.0.2
+        version: 14.0.2(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@utrecht/design-tokens':
         specifier: 6.2.1
         version: 6.2.1
@@ -302,8 +302,8 @@ importers:
         specifier: 3.44.0
         version: 3.44.0(react@19.2.7)
       '@utrecht/component-library-react':
-        specifier: 13.3.1
-        version: 13.3.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: 14.0.2
+        version: 14.0.2(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@utrecht/root-css':
         specifier: 4.1.2
         version: 4.1.2
@@ -3201,8 +3201,8 @@ packages:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
 
-  '@utrecht/calendar-react@1.1.4':
-    resolution: {integrity: sha512-WjQ2ikehLt7AfXP7YOKGU1gl3TJ8Ii4luu48rOOyYM5JHNU9aY2m3wv/tio8bftOuxCIxeEuP/E4i9OWkH/zLQ==}
+  '@utrecht/calendar-react@1.1.5':
+    resolution: {integrity: sha512-jPJfW299WIzEka4fG/7YFftphGQ6AcBqEEJ9MKEiDirhgmJkfeHJkPJXqp+EQVGPFEzp8rb4Cf5WJcqRHEurDA==}
     peerDependencies:
       '@babel/runtime': '*'
       react: ^18.0.0 || ^19.0.0
@@ -3365,8 +3365,8 @@ packages:
       vega:
         optional: true
 
-  '@utrecht/component-library-react@14.0.1':
-    resolution: {integrity: sha512-9uGuGEsBoQtIEzjTDszHvIFEgysQUveiQBNbh3GrrD62M+70CBhIcjFWIwDtursFjE4R1ShPRM2GZJSWGzAQUA==}
+  '@utrecht/component-library-react@14.0.2':
+    resolution: {integrity: sha512-jOLGE8E54EHbaV8nXC+h0+5312NVUJul4X6WvhPHdGWxERA3p52AJYojxIgK2r0ntWF1t7+mDj9oV28JX0yE0g==}
     peerDependencies:
       '@babel/runtime': ^7.23.6
       react: ^18.0.0 || ^19.0.0
@@ -3801,8 +3801,8 @@ packages:
   '@utrecht/link-button-css@3.0.0':
     resolution: {integrity: sha512-eFdofIw3yQnSlvfJVb7umYh8Ia45Lw51V9QP/eCfkliTWIN/G5iQM3T8gue8G2fCLUnIZw4xY7c3MgqRD6DhoA==}
 
-  '@utrecht/link-button-css@3.0.1':
-    resolution: {integrity: sha512-nwTadzdHiI7O6ca653afWlZXqKQOdR2nk96UnhMi2GWHd6W8x5aw+ORdX+INe8M56WHI3iO7jHAYyxsCMe1RpQ==}
+  '@utrecht/link-button-css@3.1.0':
+    resolution: {integrity: sha512-4r19yUViA8ual/AjVvYdGEToUspeUOYPkeSDHUL3inyH3jexD0f+ekp5deMdqyVHn6E8kaoEUkcBVeTGe7Weiw==}
 
   '@utrecht/link-css@2.0.1':
     resolution: {integrity: sha512-2mpaFeKybBeL+qIvJ73UC0jtwhn0IBM3vn8BD9OTwYQK6djY0tVwQwpouDWrzPRU169swp8BPllMU19A0xfyZA==}
@@ -11427,7 +11427,7 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@utrecht/calendar-react@1.1.4(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@utrecht/calendar-react@1.1.5(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@babel/runtime': 7.29.7
       '@utrecht/button-react': 3.0.3(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -11786,7 +11786,7 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@utrecht/component-library-react@14.0.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@utrecht/component-library-react@14.0.2(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@babel/runtime': 7.29.7
       '@utrecht/accordion-css': 4.0.1
@@ -11803,7 +11803,7 @@ snapshots:
       '@utrecht/button-group-react': 1.1.5(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@utrecht/button-link-css': 3.0.1
       '@utrecht/button-react': 3.0.3(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@utrecht/calendar-react': 1.1.4(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@utrecht/calendar-react': 1.1.5(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@utrecht/card-css': 2.0.1
       '@utrecht/card-react': 0.0.6(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@utrecht/checkbox-react': 1.0.14(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -11843,7 +11843,7 @@ snapshots:
       '@utrecht/icon-css': 4.0.1
       '@utrecht/img-css': 3.0.1
       '@utrecht/index-char-nav-css': 3.0.1
-      '@utrecht/link-button-css': 3.0.1
+      '@utrecht/link-button-css': 3.1.0
       '@utrecht/link-list-css': 4.0.1
       '@utrecht/link-react': 1.0.12(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@utrecht/link-social-css': 3.0.1
@@ -12265,7 +12265,7 @@ snapshots:
 
   '@utrecht/link-button-css@3.0.0': {}
 
-  '@utrecht/link-button-css@3.0.1': {}
+  '@utrecht/link-button-css@3.1.0': {}
 
   '@utrecht/link-css@2.0.1': {}
 
