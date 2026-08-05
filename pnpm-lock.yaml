@@ -122,11 +122,11 @@ importers:
   packages/storybook:
     devDependencies:
       '@amsterdam/design-system-css':
-        specifier: 4.2.0
-        version: 4.2.0
+        specifier: 4.3.0
+        version: 4.3.0
       '@amsterdam/design-system-react':
         specifier: 4.2.0
-        version: 4.2.0(@amsterdam/design-system-css@4.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 4.2.0(@amsterdam/design-system-css@4.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@chromatic-com/storybook':
         specifier: 5.2.1
         version: 5.2.1(storybook@10.4.5(@types/react@19.2.17)(prettier@3.8.4)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
@@ -180,7 +180,7 @@ importers:
         version: 11.2.0
       '@rijkshuisstijl-community/components-react':
         specifier: 15.1.1
-        version: 15.1.1(@amsterdam/design-system-css@4.2.0)(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 15.1.1(@amsterdam/design-system-css@4.3.0)(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@rijkshuisstijl-community/design-tokens':
         specifier: 15.0.0
         version: 15.0.0
@@ -263,11 +263,11 @@ importers:
   packages/website:
     dependencies:
       '@amsterdam/design-system-css':
-        specifier: 3.3.0
-        version: 3.3.0
+        specifier: 4.3.0
+        version: 4.3.0
       '@amsterdam/design-system-react':
         specifier: 3.3.0
-        version: 3.3.0(@amsterdam/design-system-css@3.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 3.3.0(@amsterdam/design-system-css@4.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@gemeente-denhaag/action':
         specifier: 4.2.2
         version: 4.2.2(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -354,17 +354,11 @@ packages:
   '@adobe/css-tools@4.5.0':
     resolution: {integrity: sha512-6OzddxPio9UiWTCemp4N8cYLV2ZN1ncRnV1cVGtve7dhPOtRkleRyx32GQCYSwDYgaHU3USMm84tNsvKzRCa1Q==}
 
-  '@amsterdam/design-system-css@3.3.0':
-    resolution: {integrity: sha512-PzkXkk7+1XTp2FLWvU5RTWLB6pE/KlkKtH/eE6TaM4QPzci2FKNVaPfUeOw4sZLMylfsFkK3jsiGRssAFgyvRw==}
+  '@amsterdam/design-system-css@4.3.0':
+    resolution: {integrity: sha512-SSLfJcWhAjraIekOsBJb1xf7ubCqUJdwHaHQIQ0qGttm23rSxrHna3EaB3SIx9srma16OIbmExp4ESgGojruZA==}
     peerDependencies:
-      '@amsterdam/design-system-assets': 2.2.0
-      '@amsterdam/design-system-tokens': 3.4.0
-
-  '@amsterdam/design-system-css@4.2.0':
-    resolution: {integrity: sha512-d0hmwk0Wew6rVuzswPGMez/KR1VHhlaocPYH+aDOl8yQjR0RgqIhmQRW8WbbT3tF33cmJNYjr5jGgA5hos/GYA==}
-    peerDependencies:
-      '@amsterdam/design-system-assets': 2.4.0
-      '@amsterdam/design-system-tokens': 4.1.0
+      '@amsterdam/design-system-assets': 2.5.0
+      '@amsterdam/design-system-tokens': 4.2.0
 
   '@amsterdam/design-system-react-icons@1.0.0':
     resolution: {integrity: sha512-rgY7haz069mYWPFJaXqsOFFqZQt+1sMOR9WpxybJB0SmAXevlkdEY5X12CtCCzbeBtzRXgCJxTouYjl+5dZblw==}
@@ -8255,9 +8249,7 @@ snapshots:
 
   '@adobe/css-tools@4.5.0': {}
 
-  '@amsterdam/design-system-css@3.3.0': {}
-
-  '@amsterdam/design-system-css@4.2.0': {}
+  '@amsterdam/design-system-css@4.3.0': {}
 
   '@amsterdam/design-system-react-icons@1.0.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
@@ -8274,27 +8266,27 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@amsterdam/design-system-react@1.1.0(@amsterdam/design-system-css@4.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@amsterdam/design-system-react@1.1.0(@amsterdam/design-system-css@4.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@amsterdam/design-system-css': 4.2.0
+      '@amsterdam/design-system-css': 4.3.0
       '@amsterdam/design-system-react-icons': 1.0.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@babel/runtime': 7.27.4
       clsx: 2.1.1
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@amsterdam/design-system-react@3.3.0(@amsterdam/design-system-css@3.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@amsterdam/design-system-react@3.3.0(@amsterdam/design-system-css@4.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@amsterdam/design-system-css': 3.3.0
+      '@amsterdam/design-system-css': 4.3.0
       '@amsterdam/design-system-react-icons': 2.0.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@babel/runtime': 7.29.2
       clsx: 2.1.1
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@amsterdam/design-system-react@4.2.0(@amsterdam/design-system-css@4.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@amsterdam/design-system-react@4.2.0(@amsterdam/design-system-css@4.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@amsterdam/design-system-css': 4.2.0
+      '@amsterdam/design-system-css': 4.3.0
       '@amsterdam/design-system-react-icons': 2.1.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@babel/runtime': 7.29.7
       clsx: 2.1.1
@@ -10066,9 +10058,9 @@ snapshots:
       - react-vega
       - vega
 
-  '@rijkshuisstijl-community/components-react@15.1.1(@amsterdam/design-system-css@4.2.0)(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@rijkshuisstijl-community/components-react@15.1.1(@amsterdam/design-system-css@4.3.0)(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@amsterdam/design-system-react': 1.1.0(@amsterdam/design-system-css@4.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@amsterdam/design-system-react': 1.1.0(@amsterdam/design-system-css@4.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@nl-design-system-candidate/link-react': 1.1.8(@babel/runtime@7.29.7)(react@19.2.7)
       '@nl-design-system-candidate/skip-link-react': 1.1.7(@babel/runtime@7.29.7)(react@19.2.7)
       '@rijkshuisstijl-community/accordion-react': 3.1.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -10115,7 +10107,7 @@ snapshots:
       '@rijkshuisstijl-community/navigation-list-react': 1.0.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@rijkshuisstijl-community/number-badge-react': 1.0.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@rijkshuisstijl-community/ordered-list-react': 1.0.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@rijkshuisstijl-community/page-number-navigation-react': 1.0.1(@amsterdam/design-system-css@4.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@rijkshuisstijl-community/page-number-navigation-react': 1.0.1(@amsterdam/design-system-css@4.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@rijkshuisstijl-community/paragraph-react': 2.1.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@rijkshuisstijl-community/radio-react': 1.0.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@rijkshuisstijl-community/root-react': 1.0.1(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -10509,9 +10501,9 @@ snapshots:
 
   '@rijkshuisstijl-community/page-number-navigation-css@1.0.0': {}
 
-  '@rijkshuisstijl-community/page-number-navigation-react@1.0.1(@amsterdam/design-system-css@4.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@rijkshuisstijl-community/page-number-navigation-react@1.0.1(@amsterdam/design-system-css@4.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@amsterdam/design-system-react': 1.1.0(@amsterdam/design-system-css@4.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@amsterdam/design-system-react': 1.1.0(@amsterdam/design-system-css@4.3.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@rijkshuisstijl-community/page-number-navigation-css': 1.0.0
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
