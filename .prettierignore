@@ -4,6 +4,7 @@ vendor/
 
 # Ignore generated files
 .angular/
+.next/
 build/
 coverage/
 dist/
