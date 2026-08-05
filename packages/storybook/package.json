@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@amsterdam/design-system-css": "4.2.0",
-    "@amsterdam/design-system-react": "4.2.0",
+    "@amsterdam/design-system-react": "4.3.0",
     "@chromatic-com/storybook": "5.2.1",
     "@gemeente-denhaag/action": "4.2.2",
     "@gemeente-denhaag/card": "5.0.7",
