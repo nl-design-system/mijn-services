@@ -1,5 +1,3 @@
----
-
 ## Vragen of aansluiten?
 
 Hulp nodig of wil je bijdragen? Hier zijn de belangrijkste manieren om aan te sluiten:
