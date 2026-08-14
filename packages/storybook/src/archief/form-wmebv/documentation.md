@@ -1,3 +1,11 @@
+> **⚠️ LET OP!**
+>
+> De WMEBV-templates worden momenteel niet actief doorontwikkeld/onderhouden. De code kan als referentie
+> dienen, maar wordt niet gecontroleerd op consistentie met de rest van het NL Design System.
+> Zie je hier waarde in? Issues en bijdragen zijn welkom.
+
+---
+
 # Inleiding
 
 Voordat de huidige versie van het generieke e-formulier (meerstappenformulier) in deze Storybook-documentatie werd opgenomen, is er een eerdere versie ontwikkeld en gedocumenteerd in de Hulpgids Wmebv: e-formulieren en notificeren. Deze hulpgids vormde de basis voor het ontwerp en de implementatie van het meerstappenformulier.

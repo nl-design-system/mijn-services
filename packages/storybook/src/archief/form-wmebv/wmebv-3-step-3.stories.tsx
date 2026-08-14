@@ -27,7 +27,7 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/5 - Stap 3',
+  title: 'Archief/Meerstappenformulier/WMEBV Contactformulier/5 - Stap 3',
   id: 'wmebv-3-step-3',
   parameters: {
     layout: 'fullscreen',
