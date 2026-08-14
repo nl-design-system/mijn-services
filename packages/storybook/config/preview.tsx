@@ -60,8 +60,11 @@ const preview: Preview = {
       storySort: {
         order: [
           'MijnServices',
+          ['Intro', 'Aan de slag', 'Over de templates', 'Open Source License', 'Toestemming voor gebruik'],
           'Templates',
           ['Mijn Omgeving', ['Basis', 'Overzichtspagina', 'Zaakdetailpagina'], 'Mijn Profiel'],
+          'Concepts',
+          'Archief',
         ],
       },
     },
