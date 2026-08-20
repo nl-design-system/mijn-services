@@ -295,7 +295,7 @@ export default function MijnPlanDoelPagina({
                   {
                     title: 'Gewenste situatie',
                     detail:
-                      'Ik heb een eigen woning die is ingericht en waar ik mijn kinderen kan ontvangen in het weekend. De rekening worden automatisch van mijn rekening betaalt zonder dat er achterstanden kunnen ontstaan.',
+                      'Ik heb een eigen woning die is ingericht en waar ik mijn kinderen kan ontvangen in het weekend. De rekeningen worden automatisch van mijn rekening betaald zonder dat er achterstanden kunnen ontstaan.',
                   },
                   //TODO: in Figma this description list contains a 'voortgang' list which may need to be an Ordered List due to its meaningful order.
                   {
