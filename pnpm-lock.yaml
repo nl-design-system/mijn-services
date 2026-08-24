@@ -280,9 +280,6 @@ importers:
       '@gemeente-denhaag/side-navigation':
         specifier: 4.1.1
         version: 4.1.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@gemeente-denhaag/tab':
-        specifier: 3.3.0
-        version: 3.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@nl-design-system-candidate/heading-react':
         specifier: 1.1.7
         version: 1.1.7(@babel/runtime@7.29.7)(react@19.2.7)
