@@ -1,6 +1,6 @@
 <!-- @license CC0-1.0 -->
 
-# MijnGegevens Overzicht inhoud
+# MijnZaken - ZaakDetail inhoud
 
 Deze documentatie dient voor [korte beschrijving van deze laag/pagina].
 
@@ -10,7 +10,7 @@ Keuzes, relevante onderzoeken en linkjes naar Figma worden vastgelegd in Github 
 Voor Mijn Omgevingen zijn er bij NL Design System [meerdere discussies](https://github.com/orgs/nl-design-system/discussions/categories/mijn-omgevingen) waar leden van de community feedback achter kunnen laten.
 Hierdoor hebben we alle kennis gevangen op een plek, en kunnen we gezamelijk verder bouwen aan één overheidsbeleving.
 
-### Relevante discussies voor MijnGegevens Overzicht inhoud
+### Relevante discussies voor MijnZaken - ZaakDetail inhoud
 
 - [Naam]([link])
 - [Naam]([link])

@@ -1,4 +1,4 @@
-# MijnOmgeving basis inhoud
+# Basis inhoud
 
 Deze documentatie dient voor de basis indeling van een MijnOmgeving pagina.
 
