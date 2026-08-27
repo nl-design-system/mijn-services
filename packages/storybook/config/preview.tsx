@@ -62,7 +62,7 @@ const preview: Preview = {
           'MijnServices',
           ['Intro', 'Aan de slag', 'Over de templates', 'Open Source License', 'Toestemming voor gebruik'],
           'Templates',
-          ['Mijn Omgeving', ['Basis', 'Overzichtspagina', 'Zaakdetailpagina'], 'Mijn Profiel'],
+          ['MijnOmgeving', ['Basis', 'Homepagina', 'MijnBerichten', 'MijnGegevens', 'MijnTaken', 'MijnZaken']],
           'Concepts',
           'Archief',
         ],
