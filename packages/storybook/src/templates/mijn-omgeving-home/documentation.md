@@ -1,6 +1,6 @@
-# MijnOmgeving - Overzichtspagina inhoud
+# Homepagina inhoud
 
-Deze documentatie dient voor de overzichtspagina van een MijnOmgeving pagina.
+Deze documentatie dient voor [korte beschrijving van deze laag/pagina].
 
 ## Github Discussions
 
@@ -10,7 +10,7 @@ System [meerdere discussies](https://github.com/orgs/nl-design-system/discussion
 van de community feedback achter kunnen laten.
 Hierdoor hebben we alle kennis gevangen op een plek, en kunnen we gezamelijk verder bouwen aan één overheidsbeleving.
 
-### Relevante discussies voor Overzichtspagina inhoud
+### Relevante discussies voor Homepagina inhoud
 
 - [Overzichtspagina](https://github.com/orgs/nl-design-system/discussions/392)
 - [Objectweergave](https://github.com/orgs/nl-design-system/discussions/387)

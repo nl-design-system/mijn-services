@@ -5,7 +5,7 @@ import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../componen
 import { storybookPaths } from '../../components/template-navigation/mijnOmgevingPaths';
 
 const meta = {
-  title: 'Templates/MijnOmgeving/Overzichtspagina',
+  title: 'Templates/MijnOmgeving/Homepagina',
   component: MijnOmgevingHome,
   globals: {
     dir: 'ltr',
