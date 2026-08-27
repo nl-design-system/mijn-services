@@ -1,4 +1,6 @@
-# Onderzoek en bronnen – Template: MijnOmgeving
+# MijnOmgeving - Onderzoek en bronnen
+
+> ⚠️ **Let op!** _Deze content is minstens 10 maanden oud en nog niet nagelopen op actualiteit_
 
 ## Introductie van de MijnOmgeving-services
 
