@@ -10,10 +10,7 @@ Hierdoor hebben we alle kennis gevangen op een plek, en kunnen we gezamelijk ver
 
 ### Relevante discussies voor Basis inhoud
 
-- [Page Header](https://github.com/orgs/nl-design-system/discussions/388)
-- [Page Footer](https://github.com/orgs/nl-design-system/discussions/391)
-- [Side Navigation](https://github.com/orgs/nl-design-system/discussions/390)
-- [Breadcrumb Navigation](https://github.com/orgs/nl-design-system/discussions/389)
+Losse componentdiscussies kun je terugvinden in de "Gebruikte componenten" tabellen hieronder via de linkjes in de "Component" of "MijnServices Issue" kolom.
 
 ## Gebruikte componenten
 
@@ -39,6 +36,7 @@ Voor de basis indeling worden de volgende componenten gebruikt:
 | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | [Skip Link](https://nldesignsystem.nl/skip-link/)                         | Candidate                                                                                                                          | [SkipLink (#548)](https://github.com/nl-design-system/mijn-services/issues/548)              |
 | [Side Navigation](https://nldesignsystem.nl/side-navigation/)             | [Den Haag Sidenav](https://nl-design-system.github.io/denhaag/?path=/docs/react-sidenavigation--docs)                              | [Side Navigation (#406)](https://github.com/nl-design-system/mijn-services/issues/406)       |
+| [Number Badge](https://nldesignsystem.nl/number-badge/)                   | Candidate                                                                                                                          | [Number Badge (#439)](https://github.com/nl-design-system/mijn-services/issues/439)          |
 | [Breadcrumb Navigation](https://nldesignsystem.nl/breadcrumb-navigation/) | [Utrecht Breadcrumb Navigation](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-breadcrumb-nav--docs) | [Breadcrumb Navigation (#550)](https://github.com/nl-design-system/mijn-services/issues/550) |
 | [Link](https://nldesignsystem.nl/link/)                                   | Candidate                                                                                                                          | [Link (#545)](https://github.com/nl-design-system/mijn-services/issues/545)                  |
 | [Link List](https://nldesignsystem.nl/link-list/)                         | [Utrecht Link List](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-link-list--docs)                  | [Link List (#559)](https://github.com/nl-design-system/mijn-services/issues/559)             |
