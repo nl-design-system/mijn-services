@@ -13,7 +13,7 @@ Hierdoor hebben we alle kennis gevangen op een plek, en kunnen we gezamelijk ver
 
 ### Relevante discussies voor MijnBerichten Detailpagina inhoud
 
-- [Detailpagina - Bericht - Mijn omgevingen](https://github.com/orgs/nl-design-system/discussions/397)
+- [MijnBerichten Detailpagina](https://github.com/orgs/nl-design-system/discussions/397)
 
 ## Gebruikte componenten
 
