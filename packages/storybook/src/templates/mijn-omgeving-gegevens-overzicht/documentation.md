@@ -2,7 +2,7 @@
 
 # MijnGegevens Overzicht inhoud
 
-Deze documentatie dient voor [korte beschrijving van deze laag/pagina].
+Deze documentatie dient voor de overzichtspagina van persoonlijke gegevens (MijnGegevens) binnen MijnOmgeving.
 
 ## Github Discussions
 
@@ -12,29 +12,24 @@ Hierdoor hebben we alle kennis gevangen op een plek, en kunnen we gezamelijk ver
 
 ### Relevante discussies voor MijnGegevens Overzicht inhoud
 
-- [Naam]([link])
-- [Naam]([link])
+- [Profielgegevens - MijnOmgevingen](https://github.com/orgs/nl-design-system/discussions/401)
 
 ## Gebruikte componenten
 
-<!-- Optie A: deze laag heeft eigen componenten -->
+Deze pagina bouwt voort op de Basis-indeling (met o.a. Page Header, Page Footer, Side Navigation, etc.). Hieronder de componenten die specifiek zijn voor de Gegevens overzichtspagina.
 
-| Component | Gebruikte implementatie | Issue         |
-| --------- | ----------------------- | ------------- |
-| [naam]    | [implementatie]([link]) | [#nr]([link]) |
-| [naam]    | [implementatie]([link]) | [#nr]([link]) |
+> **Let op:** Niet elk component is al stabiel. Sommige zijn nog in ontwikkeling of
+> sluiten nog niet volledig aan. Verdere uitleg, status etc. vind je in de
+> bijbehorende issue. Wil je meedenken of bijdragen, begin daar.
 
-<!-- Optie B: deze laag hergebruikt van een andere laag -->
-<!--
-Maakt gebruik van [Laag]. Refereer naar de [documentatie]([link]) van [laag] voor meer informatie over die componenten.
--->
-
-### Patronen
-
-| Patroon naam | Patroon variant | Documentatie                     |
-| ------------ | --------------- | -------------------------------- |
-| [naam]       | [variant]       | [Nog niet gedocumenteerd / link] |
-| [naam]       | [variant]       | [Nog niet gedocumenteerd / link] |
+| Component                                                       | Gebruikte implementatie                                                                                                     | Issue                                                                                   |
+| --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Note](https://nldesignsystem.nl/note/)                         | [Utrecht Note](https://nl-design-system.github.io/utrecht/storybook-react/?path=/docs/react-note--docs)                     |                                                                                         |
+| [Heading](https://nldesignsystem.nl/heading/)                   | Candidate                                                                                                                   | [Heading (#544)](https://github.com/nl-design-system/mijn-services/issues/544)          |
+| [Link](https://nldesignsystem.nl/link/)                         | Candidate                                                                                                                   | [Link (#545)](https://github.com/nl-design-system/mijn-services/issues/545)             |
+| [Data Summary](https://nldesignsystem.nl/data-summary/)         |                                                                                                                             |                                                                                         |
+| [Unordered List](https://nldesignsystem.nl/unordered-list/)     | [Utrecht Unordered List](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-unordered-list--docs) |                                                                                         |
+| [Description List](https://nldesignsystem.nl/description-list/) | [Den Haag Description List](https://nl-design-system.github.io/denhaag/?path=/docs/css-descriptionlist--docs)               | [Description List (#468)](https://github.com/nl-design-system/mijn-services/issues/468) |
 
 ## Gebruikte MijnServices APIs
 
