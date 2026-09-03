@@ -1,20 +1,20 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
-import MijnPlanTakenOverzicht from './MijnPlanTakenOverzicht';
+import MijnPlanDoelPagina from './MijnPlanDoelPagina';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../../components/Logo';
 import { storybookPaths } from '../../../components/template-navigation/mijnOmgevingPaths';
 
 const meta = {
-  title: 'Concepts/MijnPlan/TakenOverzicht',
-  component: MijnPlanTakenOverzicht,
+  title: 'Concepts/MijnPlan/DoelPagina',
+  component: MijnPlanDoelPagina,
   globals: {
     dir: 'ltr',
     lang: 'nl',
   },
-  id: 'concepts-mijnplan-taken-overzicht',
+  id: 'concepts-mijnplan-doel-pagina',
   parameters: {
     layout: 'fullscreen',
   },
-} satisfies Meta<typeof MijnPlanTakenOverzicht>;
+} satisfies Meta<typeof MijnPlanDoelPagina>;
 
 export default meta;
 

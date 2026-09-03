@@ -2,6 +2,7 @@
 import '@amsterdam/design-system-css/dist/grid/grid.css';
 import { Grid } from '@amsterdam/design-system-react';
 import { ActionSingle } from '@gemeente-denhaag/action';
+import { DescriptionList } from '@gemeente-denhaag/descriptionlist';
 import {
   SideNavigationBase,
   SideNavigationItem,
@@ -50,27 +51,27 @@ const now = '2026-07-07T00:00:00.000Z';
 const takenFixture = [
   {
     id: '1',
-    title: 'Individuele inkomstentoeslag aanvragen',
-    dateTime: '2026-10-10T00:00:00.000Z', // future date
+    title: 'Voeg uw energiecontract toe',
+    dateTime: '2026-07-09T00:00:00.000Z', // 2 days after "now" → adds the "nog X dagen" warning label
     completed: false,
   },
   {
     id: '2',
-    title: 'Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein',
-    dateTime: '2026-07-09T00:00:00.000Z', // 2 days after "now" → falls in the "nog X dagen" window
+    title: 'Plan opsturen voor inrichten van kinderkamer',
+    dateTime: '2026-10-10T00:00:00.000Z', // future date
     completed: false,
   },
   {
     id: '3',
-    title: 'Verleng uw identiteitskaart',
+    title: 'Bonnetjes uploaden',
     completed: true,
-    dateTime: '2026-12-31T00:00:00.000Z', // completed, but dated in the future relative to "now"
+    dateTime: '2025-12-31T00:00:00.000Z', // completed, but dated in the future relative to "now"
   },
   {
     id: '4',
-    title: 'Nog een afgeronde taak',
+    title: 'Aanmelden cursus',
     completed: true,
-    dateTime: '2026-02-04T00:00:00.000Z', // completed, dated in the past relative to "now"
+    dateTime: '2025-02-04T00:00:00.000Z', // completed, dated in the past relative to "now"
   },
 ];
 
@@ -85,7 +86,7 @@ const labels = {
 const formatCompletedDate = (dateTime: string) =>
   new Intl.DateTimeFormat('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(dateTime));
 
-export default function MijnPlanTakenOverzicht({
+export default function MijnPlanDoelPagina({
   logo,
   footerLogo,
   paths,
@@ -124,8 +125,14 @@ export default function MijnPlanTakenOverzicht({
                 <IconChevronRight />
               </Icon>
             </BreadcrumbNavSeparator>
-            <BreadcrumbNavLink href={paths.mijnPlanTakenOverzicht} disabled current>
-              Taken
+            <BreadcrumbNavLink href={paths.mijnPlanTakenOverzicht}>Gemeente voorbeeld</BreadcrumbNavLink>
+            <BreadcrumbNavSeparator>
+              <Icon>
+                <IconChevronRight />
+              </Icon>
+            </BreadcrumbNavSeparator>
+            <BreadcrumbNavLink href={paths.mijnPlanOverzichtOntwikkelplan} disabled current>
+              Mijn plannen
             </BreadcrumbNavLink>
           </BreadcrumbNav>
         </Grid.Cell>
@@ -215,13 +222,16 @@ export default function MijnPlanTakenOverzicht({
               </Paragraph>
             </Alert>
             <section>
-              <Heading level={1}>Taken</Heading>
+              {/* <-- utrecht pre-heading here --> */}
+              <Heading level={1}>Titel van doel 1</Heading>
+              <Paragraph purpose="lead">Hier leest u wat u wilt bereiken en welke taken zijn afgesproken.</Paragraph>
+              <Heading level={2}>Mijn taken</Heading>
               <Tabs
                 key={tabsKey}
                 tabData={[
                   {
-                    // TODO: replace brackets with number-badge when component on Den Haag side has been updated
-                    label: `Open taken (${openTaken.length})`,
+                    label: 'Open taken',
+                    indicator: openTaken.length,
                     panelContent: (
                       <>
                         {openTaken.map((taak) => (
@@ -243,8 +253,8 @@ export default function MijnPlanTakenOverzicht({
                     ),
                   },
                   {
-                    // TODO: replace brackets with number-badge when component on Den Haag side has been updated
-                    label: `Afgerond (${afgerondeTaken.length})`,
+                    label: 'Afgerond',
+                    indicator: afgerondeTaken.length,
                     panelContent: (
                       <>
                         {afgerondeTaken.map((taak) => (
@@ -267,6 +277,45 @@ export default function MijnPlanTakenOverzicht({
                       </>
                     ),
                   },
+                ]}
+              />
+
+              <Heading level={2}>Wat ik wil bereiken</Heading>
+              <DescriptionList
+                items={[
+                  {
+                    title: 'Uitleg doel',
+                    detail: 'Om zelfstandig te kunnen wonen heb ik hulp nodig van de gemeente en andere instanties.',
+                  },
+                  {
+                    title: 'Start situatie',
+                    detail:
+                      'Ik woon nog bij mijn moeder. Binnenkort krijg ik een woning. De woning moet nog ingericht worden en ik moet kijken wat ik maandelijks moet betalen.',
+                  },
+                  {
+                    title: 'Gewenste situatie',
+                    detail:
+                      'Ik heb een eigen woning die is ingericht en waar ik mijn kinderen kan ontvangen in het weekend. De rekeningen worden automatisch van mijn rekening betaald zonder dat er achterstanden kunnen ontstaan.',
+                  },
+                  //TODO: in Figma this description list contains a 'voortgang' list which may need to be an Ordered List due to its meaningful order.
+                  {
+                    title: 'Voortgang',
+                    detail: (
+                      // TODO: style ordered list without numbers via design token or CSS
+                      <ol style={{ listStyleType: 'none', paddingInlineStart: 0 }}>
+                        <li>27-02-2025 D startsituatie</li>
+                        <li>20-10-2025 C Deels behaald</li>
+                      </ol>
+                    ),
+                  },
+                ]}
+              />
+
+              <Heading level={2}>Details</Heading>
+              <DescriptionList
+                items={[
+                  { title: 'Start datum', detail: '12 februari 2025' },
+                  { title: 'Afronden voor', detail: '27 februari 2026' },
                 ]}
               />
             </section>
