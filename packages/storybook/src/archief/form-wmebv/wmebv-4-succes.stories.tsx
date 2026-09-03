@@ -22,7 +22,7 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/6 - Succes',
+  title: 'Archief/Meerstappenformulier/WMEBV Contactformulier/6 - Succes',
   id: 'wmebv-success',
   parameters: {
     layout: 'fullscreen',

@@ -2,15 +2,17 @@ import { Canvas, Markdown, Meta } from '@storybook/addon-docs/blocks';
 import markdown from './documentation.md?raw';
 import * as CardViewStory from './mijn-omgeving-zaken-overzicht-card-view/mijn-omgeving-zaken-overzicht-card-view.stories.tsx';
 import * as TableViewStory from './mijn-omgeving-zaken-overzicht-table-view/mijn-omgeving-zaken-overzicht-table-view.stories.tsx';
+import contactMarkdown from '../../documentation/contact.md?raw';
 
 <Meta title="Templates/MijnOmgeving/MijnZaken/Overzicht/Documentatie" />
 
 <Markdown>{markdown}</Markdown>
+<Markdown>{contactMarkdown}</Markdown>
 
-## Example "minder dan 10 zaken" (Card View)
+## Voorbeeld "minder dan 10 zaken" (Card View)
 
 <Canvas of={CardViewStory.Default} />
 
-## Example "meer dan 10 zaken" (Table View)
+## Voorbeeld "meer dan 10 zaken" (Table View)
 
 <Canvas of={TableViewStory.Default} />

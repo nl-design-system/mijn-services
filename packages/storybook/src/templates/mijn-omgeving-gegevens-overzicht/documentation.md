@@ -1,37 +1,46 @@
-# Research en Bronnen – Template: Mijn Profiel
+<!-- @license CC0-1.0 -->
 
-## Introductie van de MijnProfiel-services
+# MijnGegevens Overzicht inhoud
 
-De **MijnProfiel**-services bieden burgers een persoonlijke online omgeving waarin zij hun gegevens kunnen beheren en gemeentelijke diensten kunnen afnemen. Een voorbeeld hiervan is te vinden bij de Gemeente Den Haag met **MijnDenHaag**. Hier kunnen inwoners hun persoonlijke gegevens aanpassen en de status van aanvragen volgen, allemaal via een beveiligde DigiD-inlog. Meer informatie is beschikbaar op de [website van de Gemeente Den Haag](https://www.denhaag.nl/nl/mijn-denhaag.htm).
+Deze documentatie dient voor de overzichtspagina van persoonlijke gegevens (MijnGegevens) binnen MijnOmgeving.
 
-## Figma-ontwerpbestand
+## Github Discussions
 
-Bij deze Storybook hoort een uitgebreid **Figma-ontwerpbestand**, waarin dezelfde templates zijn uitgewerkt op basis van de componenten uit het NL Design System. Dit bestand biedt handige referentie voor designers, zodat zij snel en efficiënt kunnen werken aan nieuwe ontwerpen die aansluiten bij de standaarden van het NL Design System.
+Keuzes, relevante onderzoeken en linkjes naar Figma worden vastgelegd in Github Discussions.
+Voor Mijn Omgevingen zijn er bij NL Design System [meerdere discussies](https://github.com/orgs/nl-design-system/discussions/categories/mijn-omgevingen) waar leden van de community feedback achter kunnen laten.
+Hierdoor hebben we alle kennis gevangen op een plek, en kunnen we gezamelijk verder bouwen aan één overheidsbeleving.
 
-Het Figma-bestand is handig omdat:
+### Relevante discussies voor MijnGegevens Overzicht inhoud
 
-- **Consistentie**: Het gebruik van NL Design System figma componenten zorgt ervoor dat ontwerpen consistent blijven, zowel visueel als functioneel.
-- **Efficiëntie**: Designers kunnen bestaande componenten hergebruiken, wat de tijd die nodig is voor het maken van nieuwe ontwerpen aanzienlijk verkort.
-- **Samenwerking**: Het bestand fungeert als een gedeeld referentiepunt voor designers en ontwikkelaars, wat de communicatie en samenwerking binnen teams vereenvoudigt.
+- [Profielgegevens - MijnOmgevingen](https://github.com/orgs/nl-design-system/discussions/401)
 
-Je kunt het Figma-ontwerpbestand bekijken via de volgende link: [Figma - MijnServices templates](https://www.figma.com/design/pB5d6RlVSa1B088Xpm1sSo/2025---MijnServices---Templates--Voorheen--Overheidsbrede-portalen-).
+## Gebruikte componenten
 
-## Gebruikersonderzoek naar de MijnProfiel-services
+Deze pagina bouwt voort op de Basis-indeling (met o.a. Page Header, Page Footer, Side Navigation, etc.). Hieronder de componenten die specifiek zijn voor de Gegevens overzichtspagina.
 
-Er is een gebruikersonderzoek uitgevoerd naar de MijnProfiel-services, waarbij de focus lag op de verwachtingen en behoeften van burgers en ondernemers. Het onderzoek identificeerde essentiële onderdelen zoals contactinformatie, meldingen, persoonsgegevens, adresgegevens, taalvoorkeuren en bankgegevens. Daarnaast werd de voorkeur uitgesproken voor een gebruikersinterface die gebruikmaakt van 'expansion panels' om informatie overzichtelijk te presenteren. Het volledige onderzoek is te vinden via [Gebruikersonderzoeken.nl](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/mijn-zaken/vng-profiel-service-omnichannel/).
+> **Let op:** Niet elk component is al stabiel. Sommige zijn nog in ontwikkeling of
+> sluiten nog niet volledig aan. Verdere uitleg, status etc. vind je in de
+> bijbehorende issue. Wil je meedenken of bijdragen, begin daar.
 
-## Deskresearch
+| Component                                                       | Gebruikte implementatie                                                                                                     | Issue                                                                                   |
+| --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Note](https://nldesignsystem.nl/note/)                         | [Utrecht Note](https://nl-design-system.github.io/utrecht/storybook-react/?path=/docs/react-note--docs)                     |                                                                                         |
+| [Heading](https://nldesignsystem.nl/heading/)                   | Candidate                                                                                                                   | [Heading (#544)](https://github.com/nl-design-system/mijn-services/issues/544)          |
+| [Link](https://nldesignsystem.nl/link/)                         | Candidate                                                                                                                   | [Link (#545)](https://github.com/nl-design-system/mijn-services/issues/545)             |
+| [Data Summary](https://nldesignsystem.nl/data-summary/)         |                                                                                                                             |                                                                                         |
+| [Unordered List](https://nldesignsystem.nl/unordered-list/)     | [Utrecht Unordered List](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-unordered-list--docs) |                                                                                         |
+| [Description List](https://nldesignsystem.nl/description-list/) | [Den Haag Description List](https://nl-design-system.github.io/denhaag/?path=/docs/css-descriptionlist--docs)               | [Description List (#468)](https://github.com/nl-design-system/mijn-services/issues/468) |
 
-Ter ondersteuning van het ontwerp van de MijnProfiel-pagina's is ook deskresearch uitgevoerd. Dit onderzoek verzamelde best practices en inzichten uit bestaande ontwerpen en gebruikerservaringen, wat heeft bijgedragen aan het creëren van een gebruiksvriendelijke en toegankelijke interface. Het resultaat van deze deskresearch is te bekijken via deze [Miro-link](https://miro.com/app/board/uXjVKi7wpLQ=/?moveToWidget=3458764599780788378&cot=14).
+## Gebruikte MijnServices APIs
 
-## Discussie over de 'Expandable Section' en het Estafettemodel
+Voor dit patroon zijn de volgende API's gebruikt:
 
-Naar aanleiding van de ontwerpen voor de MijnProfiel-pagina's is een discussie gestart op GitHub over de implementatie van de 'Expandable Section'-component (eerder in deze tekst 'expansion panels'genoemd). Deze discussie had tot doel de component te analyseren en te verbeteren en vervolgens verder te brengen binnen het Estafettemodel van het NL Design System. Het Estafettemodel is een aanpak om samen met de community de beste en meest bruikbare componenten, patronen en richtlijnen te ontwikkelen. Bekijk de discussie op [GitHub](https://github.com/orgs/nl-design-system/discussions/344) en meer informatie over het Estafettemodel in het [handboek van het NL Design System](https://nldesignsystem.nl/handboek/estafettemodel).
+- [Naam API] [versie] [(specificatie)]([link])
 
-## Belangrijke links
+### Voorbeeld response
 
-- [MijnDenHaag – Gemeente Den Haag](https://www.denhaag.nl/nl/mijn-denhaag.htm)
-- [Gebruikersonderzoek MijnProfiel-services](https://gebruikersonderzoeken.nl/docs/onderzoek-bekijken/mijn-zaken/vng-profiel-service-omnichannel/)
-- [Deskresearch MijnProfiel-pagina's](https://miro.com/app/board/uXjVKi7wpLQ=/?moveToWidget=3458764599780788378&cot=14)
-- [Discussie over 'Expandable Section' op GitHub](https://github.com/orgs/nl-design-system/discussions/344)
-- [Estafettemodel – NL Design System](https://nldesignsystem.nl/handboek/estafettemodel)
+​```json
+{
+
+}
+​```

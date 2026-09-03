@@ -1,13 +1,13 @@
 import { Canvas, Markdown, Meta } from '@storybook/addon-docs/blocks';
 import markdown from './documentation.md?raw';
-import * as BasisStory from './mijn-omgeving-basis.stories.tsx';
+import * as MijnTakenOverzichtStory from './mijn-omgeving.stories.tsx';
 import contactMarkdown from '../../documentation/contact.md?raw';
 
-<Meta title="Templates/MijnOmgeving/Basis/Documentatie" />
+<Meta title="Templates/MijnOmgeving/MijnTaken/Overzicht/Documentatie" />
 
 <Markdown>{markdown}</Markdown>
 <Markdown>{contactMarkdown}</Markdown>
 
 ## Voorbeeld
 
-<Canvas of={BasisStory.Default} />
+<Canvas of={MijnTakenOverzichtStory.Default} />
