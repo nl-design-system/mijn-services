@@ -18,7 +18,7 @@ import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/1 - Intro',
+  title: 'Archief/Meerstappenformulier/WMEBV Contactformulier/1 - Intro',
   id: 'wmebv-1-intro',
   parameters: {
     layout: 'fullscreen',
