@@ -136,6 +136,9 @@ importers:
       '@gemeente-denhaag/file':
         specifier: 2.4.1
         version: 2.4.1(@babel/runtime@7.29.7)(date-fns@2.30.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@gemeente-denhaag/icons':
+        specifier: 4.2.2
+        version: 4.2.2(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@gemeente-denhaag/process-steps':
         specifier: 4.2.5
         version: 4.2.5(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -217,6 +220,9 @@ importers:
       '@whitespace/storybook-addon-html':
         specifier: 9.0.0
         version: 9.0.0(prettier@3.9.7)(storybook@10.6.3(@types/react@19.2.17)(prettier@3.9.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
+      clsx:
+        specifier: 2.1.1
+        version: 2.1.1
       eslint-plugin-storybook:
         specifier: 10.6.3
         version: 10.6.3(eslint@8.57.1(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
@@ -894,6 +900,12 @@ packages:
 
   '@gemeente-denhaag/icons@4.1.0':
     resolution: {integrity: sha512-Q6fQ1TLQu4USfZyQ+82ONgL60eYgm9AAwMeULvXzOEHOaEHQp74DGBmd5YjNXi0XXkjkBdA+gfUgU+rnYX4R4Q==}
+    peerDependencies:
+      react: 18 || 19
+      react-dom: 18 || 19
+
+  '@gemeente-denhaag/icons@4.2.2':
+    resolution: {integrity: sha512-bmLCkbZzD6L66Sm43GKiZrCDYXR+tAwpgBJhhrzmePl+qMCRtSCWC2l79fhPAkDaPQ4AuQX7W7U7V1O2iyPMRQ==}
     peerDependencies:
       react: 18 || 19
       react-dom: 18 || 19
@@ -8104,6 +8116,12 @@ snapshots:
       react-dom: 19.2.7(react@19.2.7)
 
   '@gemeente-denhaag/icons@4.1.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+    dependencies:
+      clsx: 2.1.1
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+
+  '@gemeente-denhaag/icons@4.2.2(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       clsx: 2.1.1
       react: 19.2.7

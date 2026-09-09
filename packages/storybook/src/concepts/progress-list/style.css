@@ -1,0 +1,356 @@
+/*   Basis token fallback test? Moet een DH layer tussenkomen.
+     Die DH tokens bestaan mogelijk niet, not sure.
+     Zijn nu based op Figma token opzetje van Thijs en Jeffreys marker tokens.
+     Nu voor codepen hardcoded waardes gegeven. 
+     TODO: in VSC thema binnenhalen?
+*/
+
+:root {
+  --basis-space-block-sm: 0.25rem;
+  --basis-space-block-md: 0.5rem;
+  --basis-space-block-lg: 1.5rem;
+  --basis-space-inline-sm: 0.25rem;
+  --basis-space-inline-md: 0.5rem;
+  --basis-space-none: 0;
+  --basis-border-radius-sm: 0.25rem;
+  --basis-border-radius-round: 999px;
+  --basis-border-width-md: 2px;
+  --basis-size-icon-md: 1rem;
+  --basis-size-icon-sm: 1.125rem;
+  --basis-size-sm: 2.125rem;
+  --basis-text-font-size-sm: 0.875rem;
+  --basis-text-font-size-md: 1rem;
+  --basis-text-font-weight-bold: 700;
+  --basis-color-positive-color-default: #248641;
+  --basis-color-positive-border-default: #248641;
+  --basis-color-positive-bg-default: #eaf4ec;
+  --basis-color-accent-1-inverse-bg-default: #248641;
+  --basis-color-accent-1-inverse-color-default: #fff;
+  --basis-color-warning-color-default: #e15601;
+  --basis-color-warning-border-default: transparent;
+  --basis-color-warning-bg-default: #fdf1e0;
+  --basis-color-warning-inverse-bg-default: #e15601;
+  --basis-color-warning-inverse-color-default: #fff;
+  --basis-color-danger-color-default: #cf1c08;
+  --basis-color-danger-border-default: transparent;
+  --basis-color-danger-bg-default: #fbeae8;
+  --basis-color-negative-inverse-bg-default: #cf1c08;
+  --basis-color-negative-inverse-color-default: #fff;
+  --basis-color-default-bg-document: #fff;
+  --basis-color-default-border-subtle: #d2d2d2;
+  --basis-color-default-color-subtle: #4b4b4b;
+  --basis-color-neutral-color-default: #6b6b6b;
+  --basis-color-neutral-border-default: #b5b5b5;
+  --basis-color-neutral-bg-default: #f2f2f2;
+  --basis-color-text-default: #1a1a1a;
+  --basis-color-text-muted: #5c5c5c;
+}
+
+.denhaag-progress-list,
+.denhaag-progress-list *,
+.denhaag-progress-list *::before,
+.denhaag-progress-list *::after {
+  box-sizing: border-box;
+}
+
+/* Alle markers in doorlopende lijn ondanks verschil in size */
+.denhaag-progress-list {
+  --_dpl-marker-col-width: calc(
+    var(--denhaag-progress-list-dot-icon-size, var(--basis-size-icon-sm)) +
+      var(--denhaag-progress-list-dot-padding-inline-start, var(--basis-space-block-sm)) +
+      var(--denhaag-progress-list-dot-padding-inline-end, var(--basis-space-block-sm))
+  );
+  max-width: var(--denhaag-progress-list-max-width, 32rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  --_dpl-row-gap: var(--denhaag-progress-list-row-gap, var(--basis-space-none));
+}
+
+/* Progress List Item */
+.denhaag-progress-list__item {
+  position: relative;
+  padding-block-end: var(--denhaag-progress-list-item-gap, var(--basis-space-block-lg));
+}
+.denhaag-progress-list__item:last-child {
+  padding-block-end: 0;
+}
+
+.denhaag-progress-list__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: calc(var(--_dpl-marker-col-width) / 2 - 1px);
+  inset-block-start: 0;
+  inset-block-end: 0;
+  inline-size: 2px;
+  background-color: var(--denhaag-progress-list-connector-color, var(--basis-color-neutral-border-default));
+  z-index: 0;
+}
+.denhaag-progress-list__item--checked:not(:last-child)::after,
+.denhaag-progress-list__item--current:not(:last-child)::after {
+  background-color: var(--denhaag-progress-list-connector-positive-color, var(--basis-color-positive-color-default));
+}
+
+/* bewuste !important (voorkomt dat volgorde in het bestand bepaalt of
+   de lijn getoond wordt). */
+.denhaag-progress-list--reference .denhaag-progress-list__item::after {
+  content: none !important;
+}
+
+.denhaag-progress-list__step-row {
+  display: block;
+}
+
+/* eigen class op het klikbare element  */
+.denhaag-progress-list__step-row-button,
+.denhaag-progress-list__step-row--static {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--denhaag-progress-list-marker-gap, var(--basis-space-inline-md));
+}
+.denhaag-progress-list__step-row-button {
+  cursor: pointer;
+  list-style: none;
+}
+
+:where(.denhaag-progress-list__step-row-button)::-webkit-details-marker {
+  display: none;
+}
+:where(.denhaag-progress-list__step-row-button)::marker {
+  content: "";
+}
+
+/* geen <details> als er niets uit te klappen is, anders zou elk item
+   een chevron tonen die niets doet */
+
+details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
+  margin-inline-start: calc(
+    var(--_dpl-marker-col-width) + var(--denhaag-progress-list-marker-gap, var(--basis-space-inline-md))
+  );
+}
+
+/* Chevron (utrecht-icon-mixin) */
+/* ?: Gebruik verschillende icons, hier Utrecht maar bij Dot ook DH. Beter consistent houden? */
+/*  TODO: vervangen voor de echte include */
+.utrecht-icon {
+  --utrecht-icon-size: 1.25rem;
+  --utrecht-icon-color: currentColor;
+  block-size: var(--utrecht-icon-size);
+  color: var(--utrecht-icon-color);
+  display: inline-block;
+  font-size: var(--utrecht-icon-size);
+  inline-size: var(--utrecht-icon-size);
+  inset-block-start: var(--utrecht-icon-inset-block-start, 0);
+  position: relative;
+}
+
+.denhaag-progress-list__chevron {
+  --utrecht-icon-color: var(--denhaag-progress-list-chevron-color, var(--basis-color-text-muted));
+  margin-inline-start: auto;
+  padding-inline-start: var(--denhaag-progress-list-chevron-gap, var(--basis-space-inline-md));
+  flex-shrink: 0;
+  /* rotatiewaarde als token ipv hardcoded */
+  transform: var(--denhaag-progress-list-chevron-transform, rotate(0deg));
+  transition: transform 0.15s ease;
+}
+.denhaag-progress-list__step-row[open] > .denhaag-progress-list__step-row-button .denhaag-progress-list__chevron {
+  transform: var(--denhaag-progress-list-chevron-expanded-transform, rotate(180deg));
+}
+
+.denhaag-progress-list__marker {
+  flex-shrink: 0;
+  inline-size: var(--_dpl-marker-col-width, 2rem);
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 1;
+  background-color: var(--denhaag-progress-list-marker-background-color, Canvas);
+}
+
+.denhaag-progress-list__subitem .denhaag-progress-list__marker {
+  background-color: transparent;
+}
+
+/* TODO: tijdelijke fix voor icon sizing binnen Dot. */
+/* Beter om generieke mixin/utility te maken? */
+.denhaag-progress-list__dot .denhaag-icon {
+  font-size: 1em;
+}
+
+.denhaag-progress-list__dot {
+  --_dpl-dot-icon-size: var(--denhaag-progress-list-dot-icon-size, var(--basis-size-icon-sm));
+  --_dpl-dot-radius: var(--denhaag-progress-list-dot-border-radius, var(--basis-border-radius-round));
+  --_dpl-dot-pbs: var(--denhaag-progress-list-dot-padding-block-start, var(--basis-space-block-sm));
+  --_dpl-dot-pbe: var(--denhaag-progress-list-dot-padding-block-end, var(--basis-space-block-sm));
+  --_dpl-dot-pis: var(--denhaag-progress-list-dot-padding-inline-start, var(--basis-space-block-sm));
+  --_dpl-dot-pie: var(--denhaag-progress-list-dot-padding-inline-end, var(--basis-space-block-sm));
+  --_dpl-dot-border-width: var(--denhaag-progress-list-dot-border-width, var(--basis-border-width-md));
+  display: grid;
+  place-items: center;
+  inline-size: calc(var(--_dpl-dot-icon-size) + var(--_dpl-dot-pis) + var(--_dpl-dot-pie));
+  block-size: calc(var(--_dpl-dot-icon-size) + var(--_dpl-dot-pbs) + var(--_dpl-dot-pbe));
+  padding-block-start: var(--_dpl-dot-pbs);
+  padding-block-end: var(--_dpl-dot-pbe);
+  padding-inline-start: var(--_dpl-dot-pis);
+  padding-inline-end: var(--_dpl-dot-pie);
+  border-radius: var(--_dpl-dot-radius);
+  border-width: var(--_dpl-dot-border-width);
+  border-style: solid;
+  border-color: var(--denhaag-progress-list-dot-pending-border-color, var(--basis-color-default-border-subtle));
+  font-size: var(--_dpl-dot-icon-size);
+  font-weight: var(--denhaag-progress-list-dot-font-weight, var(--basis-text-font-weight-bold));
+  color: var(--denhaag-progress-list-dot-pending-color, var(--basis-color-default-color-subtle));
+  background-color: var(--denhaag-progress-list-dot-pending-background-color, var(--basis-color-default-bg-document));
+}
+
+.denhaag-progress-list__dot--checked {
+  border-color: var(--denhaag-progress-list-dot-checked-border-color, var(--basis-color-positive-border-default));
+  color: var(--denhaag-progress-list-dot-checked-icon-color, var(--basis-color-positive-color-default));
+  background-color: var(--denhaag-progress-list-dot-checked-background-color, var(--basis-color-default-bg-document));
+}
+
+.denhaag-progress-list__dot--current {
+  background-color: var(
+    --denhaag-progress-list-dot-current-background-color,
+    var(--basis-color-accent-1-inverse-bg-default)
+  );
+  border-color: var(--denhaag-progress-list-dot-current-border-color, transparent);
+  color: var(--denhaag-progress-list-dot-current-icon-color, var(--basis-color-accent-1-inverse-color-default, Canvas));
+}
+
+.denhaag-progress-list__dot--warning {
+  background-color: var(
+    --denhaag-progress-list-dot-warning-background-color,
+    var(--basis-color-warning-inverse-bg-default)
+  );
+  border-color: var(--denhaag-progress-list-dot-warning-border-color, transparent);
+  color: var(--denhaag-progress-list-dot-warning-icon-color, var(--basis-color-warning-inverse-color-default));
+}
+
+.denhaag-progress-list__dot--error {
+  background-color: var(
+    --denhaag-progress-list-dot-error-background-color,
+    var(--basis-color-negative-inverse-bg-default)
+  );
+  border-color: var(--denhaag-progress-list-dot-error-border-color, transparent);
+  color: var(--denhaag-progress-list-dot-error-icon-color, var(--basis-color-negative-inverse-color-default));
+}
+
+.denhaag-progress-list__dot--sub {
+  --_dpl-dot-sub-size: var(--denhaag-progress-list-dot-sub-size, 0.75rem);
+  inline-size: var(--_dpl-dot-sub-size);
+  block-size: var(--_dpl-dot-sub-size);
+  border: none;
+}
+.denhaag-progress-list__dot--sub.denhaag-progress-list__dot--checked,
+.denhaag-progress-list__dot--sub.denhaag-progress-list__dot--current {
+  background-color: var(--denhaag-progress-list-dot-sub-positive-color, var(--basis-color-positive-color-default));
+}
+.denhaag-progress-list__dot--sub.denhaag-progress-list__dot--warning {
+  background-color: var(--denhaag-progress-list-dot-sub-warning-color, var(--basis-color-warning-color-default));
+}
+.denhaag-progress-list__dot--sub.denhaag-progress-list__dot--error {
+  background-color: var(--denhaag-progress-list-dot-sub-danger-color, var(--basis-color-danger-color-default));
+}
+.denhaag-progress-list__dot--sub.denhaag-progress-list__dot--pending {
+  background-color: var(--denhaag-progress-list-dot-sub-neutral-color, var(--basis-color-neutral-border-default));
+}
+
+/* natuurlijke sr-pause (onzichtbare ".") */
+.denhaag-progress-list__sr-pause::after {
+  content: ".";
+  clip-path: inset(50%) !important;
+  font-size: 0.1px;
+}
+
+.denhaag-progress-list__content {
+  padding-block-start: var(--denhaag-progress-list-content-gap, var(--basis-space-block-sm));
+}
+.denhaag-progress-list__label {
+  font-weight: var(--denhaag-progress-list-label-font-weight, var(--basis-text-font-weight-bold));
+  margin: 0;
+}
+
+.denhaag-progress-list__date {
+  color: var(--denhaag-progress-list-date-color, var(--basis-color-text-muted));
+  font-size: var(--denhaag-progress-list-date-font-size, var(--basis-text-font-size-sm));
+  margin-block-start: var(--denhaag-progress-list-date-gap, var(--basis-space-block-sm));
+  margin-block-end: 0;
+}
+
+.denhaag-progress-list__body {
+  margin-block-start: var(--denhaag-progress-list-body-gap, var(--basis-space-block-md));
+  padding: 0;
+  border-radius: var(--denhaag-progress-list-body-border-radius, var(--basis-border-radius-sm));
+  background-color: transparent;
+}
+.denhaag-progress-list__body--warning {
+  padding: var(--denhaag-progress-list-body-padding, var(--basis-space-block-md));
+  background-color: var(--denhaag-progress-list-body-warning-background-color, var(--basis-color-warning-bg-default));
+}
+.denhaag-progress-list__body--error {
+  padding: var(--denhaag-progress-list-body-padding, var(--basis-space-block-md));
+  background-color: var(--denhaag-progress-list-body-error-background-color, var(--basis-color-danger-bg-default));
+}
+.denhaag-progress-list__body a {
+  color: inherit;
+  font-weight: 600;
+}
+
+.denhaag-progress-list__substeps {
+  list-style: none;
+  margin-block-start: var(--denhaag-progress-list-substeps-gap, var(--basis-space-block-md));
+  padding: 0;
+}
+.denhaag-progress-list__subitem {
+  position: relative;
+  display: flex;
+  gap: var(--denhaag-progress-list-marker-gap, var(--basis-space-inline-md));
+  padding-block-end: var(--denhaag-progress-list-item-gap, var(--basis-space-block-lg));
+}
+.denhaag-progress-list__subitem:last-child {
+  padding-block-end: 0;
+}
+.denhaag-progress-list__subitem .denhaag-progress-list__content {
+  padding-block-start: 0;
+}
+
+.denhaag-progress-list__subitem:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: calc(var(--_dpl-marker-col-width) / 2 - 1px);
+  inset-block-start: 0;
+  inset-block-end: 0;
+  inline-size: 2px;
+  background-color: var(--denhaag-progress-list-connector-color, var(--basis-color-neutral-border-default));
+  z-index: 0;
+}
+.denhaag-progress-list__subitem--checked:not(:last-child)::after,
+.denhaag-progress-list__subitem--current:not(:last-child)::after {
+  background-color: var(--denhaag-progress-list-connector-positive-color, var(--basis-color-positive-color-default));
+}
+
+/* Focus-ring (utrecht-focus-ring) */
+:where(.denhaag-progress-list) :where(:focus-visible) {
+  --_utrecht-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+    var(--utrecht-focus-inverse-outline-color, transparent);
+  box-shadow: var(--_utrecht-focus-ring-box-shadow);
+  outline-color: var(--utrecht-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
+  z-index: 1;
+}
+
+/* SR only  */
+.sr-only {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
