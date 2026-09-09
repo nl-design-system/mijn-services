@@ -1,0 +1,24 @@
+section + section {
+  margin-block-start: 3rem;
+  padding-block-start: 2rem;
+  border-block-start: 1px solid var(--basis-color-neutral-bg-default);
+}
+
+/* scenarios */
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+.scenario-column h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--basis-color-text-muted);
+  margin: 0 0 1rem;
+}
+.scenario-column .denhaag-progress-list {
+  font-size: 0.9rem;
+}
