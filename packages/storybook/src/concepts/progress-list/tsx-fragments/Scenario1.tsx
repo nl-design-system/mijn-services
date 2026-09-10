@@ -27,3 +27,5 @@ export function Scenario1Fragment() {
     </ol>
   );
 }
+
+// claude vragen? refactor om object te maken dat alle data in object staat + loopen om html element maken obv data (ivm json uit API naar comp)
