@@ -15,6 +15,7 @@ interface DotProps {
   srText: string;
   symbol?: React.ReactNode;
   subStep?: boolean;
+  // even checken of hier idd geen className voor nodig is?
 }
 
 const stateIcons: Partial<Record<DotState, React.ComponentType>> = {
@@ -35,6 +36,7 @@ export function Dot({ current, state, srText, symbol, subStep = false }: DotProp
         `denhaag-progress-list__dot--${state}`,
       )}
     >
+      {/* utrecht icon eromheen ? + mogelijk extra voordeel: icon size makkelijker in te stellen. */}
       {symbol !== undefined ? <span aria-hidden="true">{symbol}</span> : StateIcon && <StateIcon aria-hidden="true" />}
       <span className="sr-only denhaag-progress-list__sr-pause">{srText}:</span>
       <span className="sr-only"> </span>
