@@ -1,6 +1,6 @@
 # Homepagina inhoud
 
-Deze documentatie dient voor [korte beschrijving van deze laag/pagina].
+Deze documentatie dient voor de homepagina (startpagina) van een MijnOmgeving.
 
 ## Github Discussions
 
