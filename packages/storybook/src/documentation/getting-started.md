@@ -2,23 +2,27 @@
 
 # Aan de slag
 
-WIP
+(TODO)
 
 ## Als developer
 
-- Repo clonen en installeren (zie README(todo))
-- Storybook lokaal starten `pnpm storybook`
-- Componenten met design tokens aanpassen aan je eigen huisstijl
-- Next website voor het testen van componenten in context (bijv. accessibility) — zie README, `pnpm website`. + zet /mijn-services/website achter local host url in de browser.
-- Een PR/issue aanmaken (contributing-richtlijnen, indien aanwezig) - er zijn issue templates
-- MijnServices templates gebruiken ter voorbeeld
-- Archived WMEBV - niet meer onderhouden
+(TODO)
+
+<!-- - Repo clonen en installeren (zie README(todo)) -->
+<!-- - Storybook lokaal starten `pnpm storybook` -->
+<!-- - Componenten met design tokens aanpassen aan je eigen huisstijl -->
+<!-- - Next website voor het testen van componenten in context (bijv. accessibility) — zie README, `pnpm website`. + zet /mijn-services/website achter local host url in de browser. -->
+<!-- - Een PR/issue aanmaken (contributing-richtlijnen, indien aanwezig) - er zijn issue templates -->
+<!-- - MijnServices templates gebruiken ter voorbeeld -->
+<!-- - Archived WMEBV - niet meer onderhouden -->
 
 ## Als designer
 
-- Figma-bestand met NL Design System componenten (link)
-- Connected Projects in Figma — koppel je eigen project aan de Voorbeeld-thema-bibliotheek
-- Waar vind je onderzoek en bestaande designbeslissingen (Discussions, Onderzoek & bronnen-pagina's per template)
+(TODO)
+
+<!-- - Figma-bestand met NL Design System componenten (link) -->
+<!-- - Connected Projects in Figma — koppel je eigen project aan de Voorbeeld-thema-bibliotheek -->
+<!-- - Waar vind je onderzoek en bestaande designbeslissingen (Discussions, Onderzoek & bronnen-pagina's per template) -->
 
 ## Bijdragen
 
