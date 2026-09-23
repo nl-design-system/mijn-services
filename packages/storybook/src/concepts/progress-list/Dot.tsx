@@ -1,5 +1,7 @@
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
-import { CheckedIcon, CloseIcon } from '@gemeente-denhaag/icons';
+import { IconCheck, IconX, IconExclamationMark } from '@tabler/icons-react';
+import type { Icon as TablerIcon } from '@tabler/icons-react';
 // warning heeft geen icon? Tijdelijk uit Tabler, unicode voor POC + navragen bij Thijs? + toevoegen Icon DH opties?
 // pending & current hebben getallen - via symbol? Of ook een Icon voor consistentie? Vragen bij Robbert
 
@@ -7,24 +9,24 @@ import { CheckedIcon, CloseIcon } from '@gemeente-denhaag/icons';
 // Opties: step marker verbeteren en die gebruiken? Of Progress List deze eigen Dot gebruiken?
 
 // op dit moment geen forwardRef (= niet nodig denk ik? naar dot miss overkill, bij step mogelijk wel van meerwaarde)
-export type DotState = 'checked' | 'warning' | 'error' | 'pending'; // LETOP: Moet handmatig synchroon blijven met state in ProgressListStepData.ts. (later shared type maken?)
+export type DotState = 'checked' | 'warning' | 'error' | 'pending'; // LETOP: Moet handmatig synchroon blijven met state in ProgressListStepData.ts. (la7
 
-interface DotProps {
+export interface DotProps {
   state: DotState;
   current?: boolean;
-  srText: string;
-  symbol?: React.ReactNode;
+  accessibleText: string;
+  symbol?: ReactNode;
   subStep?: boolean;
   // even checken of hier idd geen className voor nodig is?
 }
 
-const stateIcons: Partial<Record<DotState, React.ComponentType>> = {
-  checked: CheckedIcon,
-  error: CloseIcon,
-  // warning: nog geen icon beschikbaar
+const stateIcons: Partial<Record<DotState, TablerIcon>> = {
+  checked: IconCheck,
+  error: IconX,
+  warning: IconExclamationMark,
 };
 
-export function Dot({ current, state, srText, symbol, subStep = false }: DotProps) {
+export function Dot({ current, state, accessibleText, symbol, subStep = false }: DotProps) {
   const StateIcon = stateIcons[state];
 
   return (
@@ -36,9 +38,12 @@ export function Dot({ current, state, srText, symbol, subStep = false }: DotProp
         `denhaag-progress-list__dot--${state}`,
       )}
     >
-      {/* utrecht icon eromheen ? + mogelijk extra voordeel: icon size makkelijker in te stellen. */}
-      {symbol !== undefined ? <span aria-hidden="true">{symbol}</span> : StateIcon && <StateIcon aria-hidden="true" />}
-      <span className="sr-only denhaag-progress-list__sr-pause">{srText}:</span>
+      {symbol !== undefined ? (
+        <span aria-hidden="true">{symbol}</span>
+      ) : (
+        StateIcon && <StateIcon aria-hidden="true" className="utrecht-icon" />
+      )}
+      <span className="sr-only denhaag-progress-list__sr-pause">{accessibleText}:</span>
       <span className="sr-only"> </span>
     </span>
   );

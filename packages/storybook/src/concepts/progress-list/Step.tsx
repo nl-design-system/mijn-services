@@ -1,9 +1,10 @@
 import { forwardRef, type PropsWithChildren } from 'react'; // forwardRef hoeft geen type
 import { Dot } from './Dot';
 import type { ProgressListStepBase } from './ProgressListStepData';
+import { IconChevronDown } from '@tabler/icons-react';
 
 // zelfde refactor als in SubStep
-interface StepProps extends ProgressListStepBase {
+export interface StepProps extends ProgressListStepBase {
   className?: string;
   current?: boolean;
   static?: boolean;
@@ -25,7 +26,7 @@ export const Step = forwardRef<HTMLLIElement, PropsWithChildren<StepProps>>(func
       {isStatic ? (
         <div className="denhaag-progress-list__step-row denhaag-progress-list__step-row--static">
           <span className="denhaag-progress-list__marker">
-            <Dot state={state} current={current} srText="TODO" symbol={number} /> {/* TODO: icon ipv symbol */}
+            <Dot state={state} current={current} accessibleText="TODO" symbol={number} /> {/* TODO: icon ipv symbol */}
           </span>
           <span className="denhaag-progress-list__content">
             <span className="denhaag-progress-list__label">{label}</span>
@@ -35,14 +36,14 @@ export const Step = forwardRef<HTMLLIElement, PropsWithChildren<StepProps>>(func
         <details className="denhaag-progress-list__step-row" open={open}>
           <summary className="denhaag-progress-list__step-row-button">
             <span className="denhaag-progress-list__marker">
-              <Dot state={state} current={current} srText="TODO" symbol={number} />
+              <Dot state={state} current={current} accessibleText="TODO" symbol={number} />
             </span>
             <span className="denhaag-progress-list__content">
               <span className="denhaag-progress-list__label">{label}</span>
             </span>
             <span className="denhaag-progress-list__chevron" aria-hidden="true">
-              ⌄{' '}
-              {/* chevron als default, maar kan react node ipv string worden net als andere icons - aparte prop voor maken/BEM expandIcon */}
+              <IconChevronDown className="denhaag-progress-list__chevron utrecht-icon" aria-hidden="true" />⌄{' '}
+              {/* aparte prop voor maken/BEM expandIcon */}
             </span>
           </summary>
           {(date || body) && (
