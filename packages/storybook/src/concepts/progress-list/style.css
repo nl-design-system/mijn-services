@@ -167,7 +167,7 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
   background-color: var(--denhaag-progress-list-marker-background-color, Canvas);
 }
 
-.denhaag-progress-list__subitem .denhaag-progress-list__marker {
+.denhaag-progress-list__substep .denhaag-progress-list__marker {
   background-color: transparent;
 }
 
@@ -302,20 +302,20 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
   margin-block-start: var(--denhaag-progress-list-substeps-gap, var(--basis-space-block-md));
   padding: 0;
 }
-.denhaag-progress-list__subitem {
+.denhaag-progress-list__substep {
   position: relative;
   display: flex;
   gap: var(--denhaag-progress-list-marker-gap, var(--basis-space-inline-md));
   padding-block-end: var(--denhaag-progress-list-item-gap, var(--basis-space-block-lg));
 }
-.denhaag-progress-list__subitem:last-child {
+.denhaag-progress-list__substep:last-child {
   padding-block-end: 0;
 }
-.denhaag-progress-list__subitem .denhaag-progress-list__content {
+.denhaag-progress-list__substep .denhaag-progress-list__content {
   padding-block-start: 0;
 }
 
-.denhaag-progress-list__subitem:not(:last-child)::after {
+.denhaag-progress-list__substep:not(:last-child)::after {
   content: "";
   position: absolute;
   inset-inline-start: calc(var(--_dpl-marker-col-width) / 2 - 1px);
@@ -325,8 +325,8 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
   background-color: var(--denhaag-progress-list-connector-color, var(--basis-color-neutral-border-default));
   z-index: 0;
 }
-.denhaag-progress-list__subitem--checked:not(:last-child)::after,
-.denhaag-progress-list__subitem--current:not(:last-child)::after {
+.denhaag-progress-list__substep--checked:not(:last-child)::after,
+.denhaag-progress-list__substep--current:not(:last-child)::after {
   background-color: var(--denhaag-progress-list-connector-positive-color, var(--basis-color-positive-color-default));
 }
 
