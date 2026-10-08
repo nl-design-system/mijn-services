@@ -41,7 +41,6 @@ import {
 import { ReactElement } from 'react';
 import { zaakDetail, zaakDetailInformatieObjecten, zaakDetailStatussen } from '../../api/zaken/fixtures';
 import {
-  formatDate,
   formatLongDate,
   getDocumentTitle,
   getZaakIdentificatie,
@@ -294,8 +293,8 @@ export default function MijnOmgevingZaakDetail({
                     key={informatieObject.uuid}
                     className={'todo-file-component'}
                     name={getDocumentTitle(informatieObject)}
-                    href={informatieObject.informatieobject}
-                    lastUpdated={formatDate(informatieObject.registratiedatum)}
+                    // href={} intentionally left out for now (file link, type and size come from Documenten API)
+                    lastUpdated={informatieObject.registratiedatum} // File formats the date itself, so pass raw value
                   />
                 ))}
               </>
