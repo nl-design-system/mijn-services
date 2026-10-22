@@ -312,13 +312,13 @@ importers:
         specifier: 24.13.2
         version: 24.13.2
       '@types/react':
-        specifier: '19'
+        specifier: 19.2.17
         version: 19.2.17
       '@types/react-dom':
-        specifier: '19'
+        specifier: 19.2.3
         version: 19.2.3(@types/react@19.2.17)
       eslint:
-        specifier: '9'
+        specifier: 9.39.2
         version: 9.39.2(supports-color@10.2.2)
       eslint-config-next:
         specifier: 16.4.3
@@ -330,7 +330,7 @@ importers:
         specifier: 1.101.0
         version: 1.101.0
       typescript:
-        specifier: '5'
+        specifier: 5.9.3
         version: 5.9.3
 
 packages:
