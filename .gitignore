@@ -25,7 +25,7 @@ out/
 
 # Cache
 .cache/
-tsconfig.tsbuildinfo
+*.tsbuildinfo
 
 # Ignore log files
 *.err
@@ -62,3 +62,8 @@ pnpm-lock.yaml
 
 # Ignore generated files from Stencil
 components.d.ts
+
+# Next.js
+.next
+.vercel
+next-env.d.ts
