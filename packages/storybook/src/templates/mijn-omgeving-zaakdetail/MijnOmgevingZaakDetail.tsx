@@ -301,6 +301,7 @@ export default function MijnOmgevingZaakDetail({
             )}
             <Heading level={2}>Contactmomenten</Heading>
             {contactmomenten}
+            {action ?? defaultAction}
           </main>
         </Grid.Cell>
       </Grid>
