@@ -65,6 +65,8 @@
   margin: 0;
   padding: 0;
   --_dpl-row-gap: var(--denhaag-progress-list-row-gap, var(--basis-space-none));
+  --utrecht-icon-size: var(--denhaag-progress-list-icon-size, 1.25rem);
+  --utrecht-icon-color: currentColor;
 }
 
 /* Progress List Item */
@@ -131,23 +133,13 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
 
 /* Chevron (utrecht-icon-mixin) */
 /* ?: Gebruik verschillende icons, hier Utrecht maar bij Dot ook DH. Beter consistent houden? */
-/*  TODO: vervangen voor de echte include */
-.utrecht-icon {
-  --utrecht-icon-size: 1.25rem;
-  --utrecht-icon-color: currentColor;
-  block-size: var(--utrecht-icon-size);
-  color: var(--utrecht-icon-color);
-  display: inline-block;
-  font-size: var(--utrecht-icon-size);
-  inline-size: var(--utrecht-icon-size);
-  inset-block-start: var(--utrecht-icon-inset-block-start, 0);
-  position: relative;
-}
 
 .denhaag-progress-list__chevron {
+  --utrecht-icon-size: var(--denhaag-progress-list-chevron-size, 1.25rem);
   --utrecht-icon-color: var(--denhaag-progress-list-chevron-color, var(--basis-color-text-muted));
   margin-inline-start: auto;
-  padding-inline-start: var(--denhaag-progress-list-chevron-gap, var(--basis-space-inline-md));
+  display: flex; /* wrapper = exact de icoongrootte, draait om het midden van het icoon */
+  align-self: center;
   flex-shrink: 0;
   /* rotatiewaarde als token ipv hardcoded */
   transform: var(--denhaag-progress-list-chevron-transform, rotate(0deg));
@@ -171,14 +163,10 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
   background-color: transparent;
 }
 
-/* TODO: tijdelijke fix voor icon sizing binnen Dot. */
-/* Beter om generieke mixin/utility te maken? */
-.denhaag-progress-list__dot .denhaag-icon {
-  font-size: 1em;
-}
-
 .denhaag-progress-list__dot {
+  --utrecht-icon-size: var(--_dpl-dot-icon-size);
   --_dpl-dot-icon-size: var(--denhaag-progress-list-dot-icon-size, var(--basis-size-icon-sm));
+  --utrecht-icon-color: currentColor;
   --_dpl-dot-radius: var(--denhaag-progress-list-dot-border-radius, var(--basis-border-radius-round));
   --_dpl-dot-pbs: var(--denhaag-progress-list-dot-padding-block-start, var(--basis-space-block-sm));
   --_dpl-dot-pbe: var(--denhaag-progress-list-dot-padding-block-end, var(--basis-space-block-sm));
@@ -186,6 +174,7 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
   --_dpl-dot-pie: var(--denhaag-progress-list-dot-padding-inline-end, var(--basis-space-block-sm));
   --_dpl-dot-border-width: var(--denhaag-progress-list-dot-border-width, var(--basis-border-width-md));
   display: grid;
+  place-content: center;
   place-items: center;
   inline-size: calc(var(--_dpl-dot-icon-size) + var(--_dpl-dot-pis) + var(--_dpl-dot-pie));
   block-size: calc(var(--_dpl-dot-icon-size) + var(--_dpl-dot-pbs) + var(--_dpl-dot-pbe));

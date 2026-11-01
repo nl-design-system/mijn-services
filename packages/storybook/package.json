@@ -53,6 +53,7 @@
     "@utrecht/component-library-react": "14.0.1",
     "@utrecht/design-tokens": "6.2.1",
     "@utrecht/icon": "2.3.0",
+    "@utrecht/icon-css": "4.0.1",
     "@utrecht/root-css": "4.1.2",
     "@utrecht/root-react": "1.0.17",
     "@utrecht/web-component-library-react": "4.0.5",

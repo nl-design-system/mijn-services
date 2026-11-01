@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import './style.css';
 
-import { ProgressList } from './tsx-fragments/ProgressList';
+import { FullExample } from './tsx-fragments/FullExample';
 import { Scenario1Fragment } from './tsx-fragments/Scenario1';
 import { Scenario2Fragment } from './tsx-fragments/Scenario2';
 import { Scenario3Fragment } from './tsx-fragments/Scenario3';
@@ -25,7 +25,7 @@ type Story = StoryObj;
 
 export const VoorbeeldVolledigeLijstStory: Story = {
   name: 'Voorbeeld: volledige lijst',
-  render: () => <ProgressList />,
+  render: () => <FullExample />,
 };
 
 export const Scenario1: Story = {

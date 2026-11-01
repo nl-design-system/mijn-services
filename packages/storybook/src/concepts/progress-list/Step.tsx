@@ -1,7 +1,9 @@
 import { forwardRef, type PropsWithChildren } from 'react'; // forwardRef hoeft geen type
 import { Dot } from './Dot';
 import type { ProgressListStepBase } from './ProgressListStepData';
+import { Icon } from '@utrecht/component-library-react';
 import { IconChevronDown } from '@tabler/icons-react';
+import '@utrecht/icon-css/dist/index.css';
 
 // zelfde refactor als in SubStep
 export interface StepProps extends ProgressListStepBase {
@@ -41,9 +43,10 @@ export const Step = forwardRef<HTMLLIElement, PropsWithChildren<StepProps>>(func
             <span className="denhaag-progress-list__content">
               <span className="denhaag-progress-list__label">{label}</span>
             </span>
-            <span className="denhaag-progress-list__chevron" aria-hidden="true">
-              <IconChevronDown className="denhaag-progress-list__chevron utrecht-icon" aria-hidden="true" />⌄{' '}
-              {/* aparte prop voor maken/BEM expandIcon */}
+            <span className="denhaag-progress-list__chevron">
+              <Icon>
+                <IconChevronDown />
+              </Icon>
             </span>
           </summary>
           {(date || body) && (
@@ -66,7 +69,11 @@ export const Step = forwardRef<HTMLLIElement, PropsWithChildren<StepProps>>(func
               )}
             </div>
           )}
-          {children}
+          {children && (
+            <ol className="denhaag-progress-list__substeps" role="list">
+              {children}
+            </ol>
+          )}
         </details>
       )}
     </li>
