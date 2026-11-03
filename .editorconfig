@@ -11,3 +11,7 @@ trim_trailing_whitespace = true
 
 [*.{md,mdx}]
 trim_trailing_whitespace = false
+
+[*.feature]
+indent_style = space
+indent_size = 2
