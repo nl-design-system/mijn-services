@@ -137,7 +137,6 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
 .denhaag-progress-list__chevron {
   --utrecht-icon-size: var(--denhaag-progress-list-chevron-size, 1.25rem);
   --utrecht-icon-color: var(--denhaag-progress-list-chevron-color, var(--basis-color-text-muted));
-  margin-inline-start: auto;
   display: flex; /* wrapper = exact de icoongrootte, draait om het midden van het icoon */
   align-self: center;
   flex-shrink: 0;
@@ -161,6 +160,7 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
 
 .denhaag-progress-list__substep .denhaag-progress-list__marker {
   background-color: transparent;
+  margin-block-start: calc((1lh - 0.75rem) / 2);
 }
 
 .denhaag-progress-list__dot {
@@ -294,6 +294,7 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
 .denhaag-progress-list__substep {
   position: relative;
   display: flex;
+  align-items: flex-start;
   gap: var(--denhaag-progress-list-marker-gap, var(--basis-space-inline-md));
   padding-block-end: var(--denhaag-progress-list-item-gap, var(--basis-space-block-lg));
 }

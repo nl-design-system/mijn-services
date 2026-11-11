@@ -26,11 +26,7 @@ export const SubStep = forwardRef<HTMLLIElement, SubStepProps>(function SubStep(
           </p>
         )}
         {body && (
-          <p
-            className={clsx('denhaag-progress-list__body', {
-              [`denhaag-progress-list__body--${body.variant}`]: body.variant,
-            })}
-          >
+          <p className={clsx('denhaag-progress-list__body', `denhaag-progress-list__body--${body.variant ?? state}`)}>
             {body.text}
             {body.link && (
               <>

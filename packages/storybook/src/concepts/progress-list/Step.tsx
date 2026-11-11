@@ -19,13 +19,16 @@ export const Step = forwardRef<HTMLLIElement, PropsWithChildren<StepProps>>(func
   { current, label, state, date, body, static: isStatic, open, number, children },
   forwardedRef,
 ) {
+  const isExpandable = Boolean(date || body || children);
+  const renderStatic = isStatic || !isExpandable;
+
   return (
     <li
       ref={forwardedRef}
       aria-current={current ? 'step' : undefined}
       className={`denhaag-progress-list__item denhaag-progress-list__item--${state}`}
     >
-      {isStatic ? (
+      {renderStatic ? (
         <div className="denhaag-progress-list__step-row denhaag-progress-list__step-row--static">
           <span className="denhaag-progress-list__marker">
             <Dot state={state} current={current} accessibleText="TODO" symbol={number} /> {/* TODO: icon ipv symbol */}

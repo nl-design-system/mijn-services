@@ -2,22 +2,27 @@ import { Step } from '../Step';
 import { SubStep } from '../SubStep';
 import { ProgressList } from '../ProgressList';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
-import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
+// import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
 
 export function FullExample() {
   return (
     <>
       <Heading level={2} id="demo-progress-list-heading">
-        Voorbeeld: volledige Progress List
+        Volledig vorbeeld van een Progress List
       </Heading>
       <ProgressList aria-labelledby="demo-progress-list-heading">
-        <Step label="Afgerond" state="checked"></Step>
-        <Step label="Ook afgerond" state="checked"></Step>
-        <Step label="Nog niet afgerond" state="warning" current open>
-          <SubStep label="In behandeling" state="warning">
-            <Paragraph>Hier komt iets te staan over waarom deze substep nog niet afgerond kan worden</Paragraph>
-          </SubStep>
+        <Step label="Ontvangen" state="checked"></Step>
+        <Step label="In behandeling" state="warning" date="10 mei, 2026" current open>
+          <SubStep label="Review van documenten" state="checked" date="10 mei, 2026"></SubStep>
+          <SubStep
+            label="Intern overleg"
+            state="warning"
+            date="10 mei, 2026"
+            body={{ text: 'Momenteel is het uitzonderlijk druk. Houd hierdoor rekening met 2 weken verwerkingstijd.' }}
+          ></SubStep>
+          <SubStep label="Stemmen" state="pending"></SubStep>
         </Step>
+        <Step label="Resultaat" state="pending" number={3}></Step>
       </ProgressList>
     </>
   );
