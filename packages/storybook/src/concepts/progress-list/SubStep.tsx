@@ -6,7 +6,7 @@ import type { ProgressListStepBase } from './ProgressListStepData';
 export interface SubStepProps extends ComponentPropsWithoutRef<'li'>, ProgressListStepBase {}
 
 export const SubStep = forwardRef<HTMLLIElement, SubStepProps>(function SubStep(
-  { className, label, state, date, body, ...restProps },
+  { className, label, state, dateTime, dateLabel, body, ...restProps },
   forwardedRef,
 ) {
   return (
@@ -20,9 +20,9 @@ export const SubStep = forwardRef<HTMLLIElement, SubStepProps>(function SubStep(
       </span>
       <div className="denhaag-progress-list__content">
         <p className="denhaag-progress-list__label">{label}</p>
-        {date && (
+        {dateTime && (
           <p className="denhaag-progress-list__date">
-            <time dateTime={date}>{date}</time>
+            <time dateTime={dateTime}>{dateTime}</time>
           </p>
         )}
         {body && (

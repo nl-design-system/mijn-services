@@ -1,4 +1,5 @@
-import { forwardRef, type PropsWithChildren } from 'react'; // forwardRef hoeft geen type
+import { forwardRef, type ComponentPropsWithoutRef } from 'react';
+import clsx from 'clsx';
 import { Dot } from './Dot';
 import type { ProgressListStepBase } from './ProgressListStepData';
 import { Icon } from '@utrecht/component-library-react';
@@ -6,27 +7,40 @@ import { IconChevronDown } from '@tabler/icons-react';
 import '@utrecht/icon-css/dist/index.css';
 
 // zelfde refactor als in SubStep
-export interface StepProps extends ProgressListStepBase {
+export interface StepProps extends ComponentPropsWithoutRef<'li'>, ProgressListStepBase {
   className?: string;
-  current?: boolean;
+  // current?: boolean;
   static?: boolean;
   open?: boolean;
   number?: number; // number ook via icon op te halen + same size maken, geen apart number (if voor axe dan miss https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-posinset)
-  children?: React.ReactNode; // children via import - dus eruit + ReactNode ook als import (= mooier dan React.ReactNode)
 }
 
-export const Step = forwardRef<HTMLLIElement, PropsWithChildren<StepProps>>(function Step(
-  { current, label, state, date, body, static: isStatic, open, number, children },
+export const Step = forwardRef<HTMLLIElement, StepProps>(function Step(
+  {
+    className,
+    current,
+    label,
+    state,
+    dateTime,
+    dateLabel,
+    body,
+    static: isStatic,
+    open,
+    number,
+    children,
+    ...restProps
+  },
   forwardedRef,
 ) {
-  const isExpandable = Boolean(date || body || children);
+  const isExpandable = Boolean(dateTime || body || children);
   const renderStatic = isStatic || !isExpandable;
 
   return (
     <li
       ref={forwardedRef}
       aria-current={current ? 'step' : undefined}
-      className={`denhaag-progress-list__item denhaag-progress-list__item--${state}`}
+      className={clsx('denhaag-progress-list__step', `denhaag-progress-list__step--${state}`, className)}
+      {...restProps}
     >
       {renderStatic ? (
         <div className="denhaag-progress-list__step-row denhaag-progress-list__step-row--static">
@@ -52,11 +66,11 @@ export const Step = forwardRef<HTMLLIElement, PropsWithChildren<StepProps>>(func
               </Icon>
             </span>
           </summary>
-          {(date || body) && (
+          {(dateTime || body) && (
             <div className="denhaag-progress-list__content">
-              {date && (
+              {dateTime && (
                 <p className="denhaag-progress-list__date">
-                  <time dateTime={date}>{date}</time>
+                  <time dateTime={dateTime}>{dateLabel ?? dateTime}</time>
                 </p>
               )}
               {body && (

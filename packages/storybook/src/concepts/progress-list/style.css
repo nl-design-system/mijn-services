@@ -69,16 +69,19 @@
   --utrecht-icon-color: currentColor;
 }
 
-/* Progress List Item */
-.denhaag-progress-list__item {
+/* Progress List Step */
+.denhaag-progress-list__step {
   position: relative;
-  padding-block-end: var(--denhaag-progress-list-item-gap, var(--basis-space-block-lg));
+  padding-block-end: var(
+    --denhaag-progress-list-step-gap,
+    var(--basis-space-block-lg)
+  ); /* ruimte onder een hoofdstap */
 }
-.denhaag-progress-list__item:last-child {
+.denhaag-progress-list__step:last-child {
   padding-block-end: 0;
 }
 
-.denhaag-progress-list__item:not(:last-child)::after {
+.denhaag-progress-list__step:not(:last-child)::after {
   content: "";
   position: absolute;
   inset-inline-start: calc(var(--_dpl-marker-col-width) / 2 - 1px);
@@ -88,14 +91,14 @@
   background-color: var(--denhaag-progress-list-connector-color, var(--basis-color-neutral-border-default));
   z-index: 0;
 }
-.denhaag-progress-list__item--checked:not(:last-child)::after,
-.denhaag-progress-list__item--current:not(:last-child)::after {
+.denhaag-progress-list__step--checked:not(:last-child)::after,
+.denhaag-progress-list__step--current:not(:last-child)::after {
   background-color: var(--denhaag-progress-list-connector-positive-color, var(--basis-color-positive-color-default));
 }
 
 /* bewuste !important (voorkomt dat volgorde in het bestand bepaalt of
    de lijn getoond wordt). */
-.denhaag-progress-list--reference .denhaag-progress-list__item::after {
+.denhaag-progress-list--reference .denhaag-progress-list__step::after {
   content: none !important;
 }
 
@@ -122,8 +125,7 @@
   content: "";
 }
 
-/* geen <details> als er niets uit te klappen is, anders zou elk item
-   een chevron tonen die niets doet */
+/* geen <details> als er niets uit te klappen is, anders zou elk step een chevron tonen die niets doet */
 
 details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
   margin-inline-start: calc(
@@ -288,7 +290,10 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
 
 .denhaag-progress-list__substeps {
   list-style: none;
-  margin-block-start: var(--denhaag-progress-list-substeps-gap, var(--basis-space-block-md));
+  margin-block-start: var(
+    --denhaag-progress-list-substeps-gap,
+    var(--basis-space-block-md)
+  ); /* ruimte boven de substappenlijst */
   padding: 0;
 }
 .denhaag-progress-list__substep {
@@ -296,7 +301,10 @@ details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
   display: flex;
   align-items: flex-start;
   gap: var(--denhaag-progress-list-marker-gap, var(--basis-space-inline-md));
-  padding-block-end: var(--denhaag-progress-list-item-gap, var(--basis-space-block-lg));
+  padding-block-end: var(
+    --denhaag-progress-list-substep-gap,
+    /* ruimte onder een substap (tussen substappen) */ var(--basis-space-block-lg)
+  ); /* of --denhaag-progress-list-substeps-margin-block-start omdat er anders substep en substeps is (ruimte boven de lijst, tussen de substeps)*/
 }
 .denhaag-progress-list__substep:last-child {
   padding-block-end: 0;
