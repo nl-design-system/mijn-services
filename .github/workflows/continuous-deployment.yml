@@ -7,15 +7,10 @@ on:
 permissions: {}
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy-pages.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -55,6 +50,17 @@ jobs:
         with:
           path: packages/storybook/dist/
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy-pages.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
         id: deploy-pages
