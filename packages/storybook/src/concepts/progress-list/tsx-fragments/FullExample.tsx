@@ -8,7 +8,7 @@ export function FullExample() {
   return (
     <>
       <Heading level={2} id="demo-progress-list-heading">
-        Volledig vorbeeld van een Progress List
+        Volledig voorbeeld van een Progress List
       </Heading>
       <ProgressList aria-labelledby="demo-progress-list-heading">
         <Step label="Ontvangen" state="checked"></Step>

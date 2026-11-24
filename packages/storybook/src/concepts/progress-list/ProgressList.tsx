@@ -1,6 +1,7 @@
 import { forwardRef, type ComponentPropsWithoutRef } from 'react';
 import clsx from 'clsx';
 import './style.css';
+import './index.scss';
 
 export type ProgressListProps = ComponentPropsWithoutRef<'ol'>;
 

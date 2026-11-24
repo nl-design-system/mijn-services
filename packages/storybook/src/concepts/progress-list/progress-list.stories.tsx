@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react-vite';
 import './style.css';
+import './index.scss';
 
 import { FullExample } from './tsx-fragments/FullExample';
 import { Scenario1Fragment } from './tsx-fragments/Scenario1';

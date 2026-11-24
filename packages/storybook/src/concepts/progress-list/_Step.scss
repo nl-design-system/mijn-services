@@ -1,0 +1,85 @@
+/* Step: hoofdstap met lijn, rij, summary knop en chevron. */
+
+/* Progress List Step */
+.denhaag-progress-list__step {
+  position: relative;
+  padding-block-end: var(
+    --denhaag-progress-list-step-gap,
+    var(--basis-space-block-lg)
+  ); /* ruimte onder een hoofdstap */
+}
+
+.denhaag-progress-list__step:last-child {
+  padding-block-end: 0;
+}
+
+.denhaag-progress-list__step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: calc(var(--_dpl-marker-col-width) / 2 - 1px);
+  inset-block-start: 0;
+  inset-block-end: 0;
+  inline-size: 2px;
+  background-color: var(--denhaag-progress-list-connector-color, var(--basis-color-neutral-border-default));
+  z-index: 0;
+}
+
+.denhaag-progress-list__step--checked:not(:last-child)::after,
+.denhaag-progress-list__step--current:not(:last-child)::after {
+  background-color: var(--denhaag-progress-list-connector-positive-color, var(--basis-color-positive-color-default));
+}
+
+/* bewuste !important (voorkomt dat volgorde in het bestand bepaalt of
+   de lijn getoond wordt). */
+.denhaag-progress-list--reference .denhaag-progress-list__step::after {
+  content: none !important;
+}
+
+.denhaag-progress-list__step-row {
+  display: block;
+}
+
+/* eigen class op het klikbare element  */
+.denhaag-progress-list__step-row-button,
+.denhaag-progress-list__step-row--static {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--denhaag-progress-list-marker-gap, var(--basis-space-inline-md));
+}
+
+.denhaag-progress-list__step-row-button {
+  cursor: pointer;
+  list-style: none;
+}
+
+:where(.denhaag-progress-list__step-row-button)::-webkit-details-marker {
+  display: none;
+}
+
+:where(.denhaag-progress-list__step-row-button)::marker {
+  content: "";
+}
+
+/* geen <details> als er niets uit te klappen is, anders zou elk step een chevron tonen die niets doet */
+details.denhaag-progress-list__step-row > .denhaag-progress-list__content {
+  margin-inline-start: calc(
+    var(--_dpl-marker-col-width) + var(--denhaag-progress-list-marker-gap, var(--basis-space-inline-md))
+  );
+}
+
+/* Chevron (utrecht-icon-mixin) */
+/* ?: Gebruik verschillende icons, hier Utrecht maar bij Dot ook DH. Beter consistent houden? */
+.denhaag-progress-list__chevron {
+  --utrecht-icon-size: var(--denhaag-progress-list-chevron-size, 1.25rem);
+  --utrecht-icon-color: var(--denhaag-progress-list-chevron-color, var(--basis-color-text-muted));
+  display: flex; /* wrapper = exact de icoongrootte, draait om het midden van het icoon */
+  align-self: center;
+  flex-shrink: 0;
+  /* rotatiewaarde als token ipv hardcoded */
+  transform: var(--denhaag-progress-list-chevron-transform, rotate(0deg));
+  transition: transform 0.15s ease;
+}
+
+.denhaag-progress-list__step-row[open] > .denhaag-progress-list__step-row-button .denhaag-progress-list__chevron {
+  transform: var(--denhaag-progress-list-chevron-expanded-transform, rotate(180deg));
+}

@@ -1,0 +1,75 @@
+/* ProgressList: de lijst zelf, plus de tekstelementen die Step en SubStep delen
+   (content, label, date, body). */
+
+.denhaag-progress-list,
+.denhaag-progress-list *,
+.denhaag-progress-list *::before,
+.denhaag-progress-list *::after {
+  box-sizing: border-box;
+}
+
+/* Alle markers in doorlopende lijn ondanks verschil in size */
+.denhaag-progress-list {
+  --_dpl-marker-col-width: calc(
+    var(--denhaag-progress-list-dot-icon-size, var(--basis-size-icon-sm)) +
+      var(--denhaag-progress-list-dot-padding-inline-start, var(--basis-space-block-sm)) +
+      var(--denhaag-progress-list-dot-padding-inline-end, var(--basis-space-block-sm))
+  );
+  max-width: var(--denhaag-progress-list-max-width, 32rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  --_dpl-row-gap: var(--denhaag-progress-list-row-gap, var(--basis-space-none));
+  --utrecht-icon-size: var(--denhaag-progress-list-icon-size, 1.25rem);
+  --utrecht-icon-color: currentColor;
+}
+
+.denhaag-progress-list__content {
+  padding-block-start: var(--denhaag-progress-list-content-gap, var(--basis-space-block-sm));
+}
+
+.denhaag-progress-list__label {
+  font-weight: var(--denhaag-progress-list-label-font-weight, var(--basis-text-font-weight-bold));
+  margin: 0;
+}
+
+.denhaag-progress-list__date {
+  color: var(--denhaag-progress-list-date-color, var(--basis-color-text-muted));
+  font-size: var(--denhaag-progress-list-date-font-size, var(--basis-text-font-size-sm));
+  margin-block-start: var(--denhaag-progress-list-date-gap, var(--basis-space-block-sm));
+  margin-block-end: 0;
+}
+
+.denhaag-progress-list__body {
+  margin-block-start: var(--denhaag-progress-list-body-gap, var(--basis-space-block-md));
+  padding: 0;
+  border-radius: var(--denhaag-progress-list-body-border-radius, var(--basis-border-radius-sm));
+  background-color: transparent;
+}
+
+.denhaag-progress-list__body--warning {
+  padding: var(--denhaag-progress-list-body-padding, var(--basis-space-block-md));
+  background-color: var(--denhaag-progress-list-body-warning-background-color, var(--basis-color-warning-bg-default));
+}
+
+.denhaag-progress-list__body--error {
+  padding: var(--denhaag-progress-list-body-padding, var(--basis-space-block-md));
+  background-color: var(--denhaag-progress-list-body-error-background-color, var(--basis-color-danger-bg-default));
+}
+
+.denhaag-progress-list__body a {
+  color: inherit;
+  font-weight: 600;
+}
+
+/* Focus-ring (utrecht-focus-ring) */
+:where(.denhaag-progress-list) :where(:focus-visible) {
+  --_utrecht-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+    var(--utrecht-focus-inverse-outline-color, transparent);
+  box-shadow: var(--_utrecht-focus-ring-box-shadow);
+  outline-color: var(--utrecht-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
+  z-index: 1;
+}

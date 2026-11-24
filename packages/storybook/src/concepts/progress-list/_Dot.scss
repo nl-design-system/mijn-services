@@ -1,0 +1,122 @@
+/* Dot: marker kolom, dot met alle states, subdot en verborgen tekst. */
+
+.denhaag-progress-list__marker {
+  flex-shrink: 0;
+  inline-size: var(--_dpl-marker-col-width, 2rem);
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 1;
+  background-color: var(--denhaag-progress-list-marker-background-color, Canvas);
+}
+
+.denhaag-progress-list__substep .denhaag-progress-list__marker {
+  background-color: transparent;
+  margin-block-start: calc((1lh - 0.75rem) / 2);
+}
+
+.denhaag-progress-list__dot {
+  --utrecht-icon-size: var(--_dpl-dot-icon-size);
+  --_dpl-dot-icon-size: var(--denhaag-progress-list-dot-icon-size, var(--basis-size-icon-sm));
+  --utrecht-icon-color: currentColor;
+  --_dpl-dot-radius: var(--denhaag-progress-list-dot-border-radius, var(--basis-border-radius-round));
+  --_dpl-dot-pbs: var(--denhaag-progress-list-dot-padding-block-start, var(--basis-space-block-sm));
+  --_dpl-dot-pbe: var(--denhaag-progress-list-dot-padding-block-end, var(--basis-space-block-sm));
+  --_dpl-dot-pis: var(--denhaag-progress-list-dot-padding-inline-start, var(--basis-space-block-sm));
+  --_dpl-dot-pie: var(--denhaag-progress-list-dot-padding-inline-end, var(--basis-space-block-sm));
+  --_dpl-dot-border-width: var(--denhaag-progress-list-dot-border-width, var(--basis-border-width-md));
+  display: grid;
+  place-content: center;
+  place-items: center;
+  inline-size: calc(var(--_dpl-dot-icon-size) + var(--_dpl-dot-pis) + var(--_dpl-dot-pie));
+  block-size: calc(var(--_dpl-dot-icon-size) + var(--_dpl-dot-pbs) + var(--_dpl-dot-pbe));
+  padding-block-start: var(--_dpl-dot-pbs);
+  padding-block-end: var(--_dpl-dot-pbe);
+  padding-inline-start: var(--_dpl-dot-pis);
+  padding-inline-end: var(--_dpl-dot-pie);
+  border-radius: var(--_dpl-dot-radius);
+  border-width: var(--_dpl-dot-border-width);
+  border-style: solid;
+  border-color: var(--denhaag-progress-list-dot-pending-border-color, var(--basis-color-default-border-subtle));
+  font-size: var(--_dpl-dot-icon-size);
+  font-weight: var(--denhaag-progress-list-dot-font-weight, var(--basis-text-font-weight-bold));
+  color: var(--denhaag-progress-list-dot-pending-color, var(--basis-color-default-color-subtle));
+  background-color: var(--denhaag-progress-list-dot-pending-background-color, var(--basis-color-default-bg-document));
+}
+
+.denhaag-progress-list__dot--checked {
+  border-color: var(--denhaag-progress-list-dot-checked-border-color, var(--basis-color-positive-border-default));
+  color: var(--denhaag-progress-list-dot-checked-icon-color, var(--basis-color-positive-color-default));
+  background-color: var(--denhaag-progress-list-dot-checked-background-color, var(--basis-color-default-bg-document));
+}
+
+.denhaag-progress-list__dot--current {
+  background-color: var(
+    --denhaag-progress-list-dot-current-background-color,
+    var(--basis-color-accent-1-inverse-bg-default)
+  );
+  border-color: var(--denhaag-progress-list-dot-current-border-color, transparent);
+  color: var(--denhaag-progress-list-dot-current-icon-color, var(--basis-color-accent-1-inverse-color-default, Canvas));
+}
+
+.denhaag-progress-list__dot--warning {
+  background-color: var(
+    --denhaag-progress-list-dot-warning-background-color,
+    var(--basis-color-warning-inverse-bg-default)
+  );
+  border-color: var(--denhaag-progress-list-dot-warning-border-color, transparent);
+  color: var(--denhaag-progress-list-dot-warning-icon-color, var(--basis-color-warning-inverse-color-default));
+}
+
+.denhaag-progress-list__dot--error {
+  background-color: var(
+    --denhaag-progress-list-dot-error-background-color,
+    var(--basis-color-negative-inverse-bg-default)
+  );
+  border-color: var(--denhaag-progress-list-dot-error-border-color, transparent);
+  color: var(--denhaag-progress-list-dot-error-icon-color, var(--basis-color-negative-inverse-color-default));
+}
+
+.denhaag-progress-list__dot--sub {
+  --_dpl-dot-sub-size: var(--denhaag-progress-list-dot-sub-size, 0.75rem);
+  inline-size: var(--_dpl-dot-sub-size);
+  block-size: var(--_dpl-dot-sub-size);
+  border: none;
+}
+
+.denhaag-progress-list__dot--sub.denhaag-progress-list__dot--checked,
+.denhaag-progress-list__dot--sub.denhaag-progress-list__dot--current {
+  background-color: var(--denhaag-progress-list-dot-sub-positive-color, var(--basis-color-positive-color-default));
+}
+
+.denhaag-progress-list__dot--sub.denhaag-progress-list__dot--warning {
+  background-color: var(--denhaag-progress-list-dot-sub-warning-color, var(--basis-color-warning-color-default));
+}
+
+.denhaag-progress-list__dot--sub.denhaag-progress-list__dot--error {
+  background-color: var(--denhaag-progress-list-dot-sub-danger-color, var(--basis-color-danger-color-default));
+}
+
+.denhaag-progress-list__dot--sub.denhaag-progress-list__dot--pending {
+  background-color: var(--denhaag-progress-list-dot-sub-neutral-color, var(--basis-color-neutral-border-default));
+}
+
+/* natuurlijke sr-pause (onzichtbare ".") */
+.denhaag-progress-list__sr-pause::after {
+  content: ".";
+  clip-path: inset(50%) !important;
+  font-size: 0.1px;
+}
+
+/* SR only  */
+.sr-only {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

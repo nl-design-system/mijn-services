@@ -1,0 +1,45 @@
+/* SubStep: de geneste lijst met substappen. */
+
+.denhaag-progress-list__substeps {
+  list-style: none;
+  margin-block-start: var(
+    --denhaag-progress-list-substeps-gap,
+    var(--basis-space-block-md)
+  ); /* ruimte boven de substappenlijst */
+  padding: 0;
+}
+
+.denhaag-progress-list__substep {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--denhaag-progress-list-marker-gap, var(--basis-space-inline-md));
+  padding-block-end: var(
+    --denhaag-progress-list-substep-gap,
+    /* ruimte onder een substap (tussen substappen) */ var(--basis-space-block-lg)
+  ); /* of --denhaag-progress-list-substeps-margin-block-start omdat er anders substep en substeps is (ruimte boven de lijst, tussen de substeps)*/
+}
+
+.denhaag-progress-list__substep:last-child {
+  padding-block-end: 0;
+}
+
+.denhaag-progress-list__substep .denhaag-progress-list__content {
+  padding-block-start: 0;
+}
+
+.denhaag-progress-list__substep:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: calc(var(--_dpl-marker-col-width) / 2 - 1px);
+  inset-block-start: 0;
+  inset-block-end: 0;
+  inline-size: 2px;
+  background-color: var(--denhaag-progress-list-connector-color, var(--basis-color-neutral-border-default));
+  z-index: 0;
+}
+
+.denhaag-progress-list__substep--checked:not(:last-child)::after,
+.denhaag-progress-list__substep--current:not(:last-child)::after {
+  background-color: var(--denhaag-progress-list-connector-positive-color, var(--basis-color-positive-color-default));
+}
