@@ -1,22 +1,16 @@
 import type { ReactNode } from 'react';
+
+export type ProgressListState = 'checked' | 'warning' | 'error' | 'pending';
 export interface ProgressListStepBase {
   label: string;
-  state: 'checked' | 'warning' | 'error' | 'pending'; // LETOP: Moet handmatig synchroon blijven met DotState in Dot.tsx. (later shared type maken?)
-  // miss andere naam dan state (te breed?)
+  state: ProgressListState;
+  // Vraag voor DH devs: state of status of anders? (DH en Ams gebruiken status).
   // checked als aparte prop? boolean? (edge case: mocht interterm ooit nodig zijn = aparte prop ernaast)
   dateTime?: string; // ISO 8601, voor het dateTime-attribuut van <time>
   dateLabel?: string; // leesbare tekst (bijv. 10 mei, 2026). Formatteren buiten comp (bv. met Intl.DateTimeFormat)
-  current?: boolean;
-  // platter opschrijven ipv genest
-  body?: {
-    text: string;
-    link?: {
-      text: ReactNode;
-      href: string;
-    };
-    variant?: 'checked' | 'warning' | 'error' | 'pending';
-    current?: boolean;
-  };
+  current?: boolean; // Vraag voor Thijs: kan een substap de huidige zijn? (Zo niet = current alleen bij StepProps)
+  body?: ReactNode;
+  bodyVariant?: 'checked' | 'warning' | 'error' | 'pending';
 }
 
 export interface ProgressListStepData extends ProgressListStepBase {

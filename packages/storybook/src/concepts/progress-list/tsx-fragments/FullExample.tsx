@@ -1,8 +1,9 @@
-import { Step } from '../Step';
-import { SubStep } from '../SubStep';
-import { ProgressList } from '../ProgressList';
+import { ProgressList, Step, SubStep } from '../index';
 import { Heading } from '@nl-design-system-candidate/heading-react/css';
-// import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
+import { Link } from '@nl-design-system-candidate/link-react/css';
+import { Paragraph } from '@nl-design-system-candidate/paragraph-react/css';
+import { Icon } from '@utrecht/component-library-react';
+import { IconArrowRight } from '@tabler/icons-react';
 
 export function FullExample() {
   return (
@@ -11,14 +12,35 @@ export function FullExample() {
         Volledig voorbeeld van een Progress List
       </Heading>
       <ProgressList aria-labelledby="demo-progress-list-heading">
-        <Step label="Ontvangen" state="checked"></Step>
-        <Step label="In behandeling" state="warning" date="10 mei, 2026" current open>
-          <SubStep label="Review van documenten" state="checked" date="10 mei, 2026"></SubStep>
+        <Step
+          label="Ontvangen maar dan met een hele lange tekst om te testen of de chevron meegaat naar de volgende"
+          dateTime="2026-05-08"
+          dateLabel="8 mei, 2026"
+          state="checked"
+        ></Step>
+        <Step label="In behandeling" state="warning" dateTime="2026-05-10" dateLabel="10 mei, 2026" current open>
+          <SubStep
+            label="Review van documenten"
+            state="checked"
+            dateTime="2026-05-10"
+            dateLabel="10 mei, 2026"
+          ></SubStep>
           <SubStep
             label="Intern overleg"
             state="warning"
-            date="10 mei, 2026"
-            body={{ text: 'Momenteel is het uitzonderlijk druk. Houd hierdoor rekening met 2 weken verwerkingstijd.' }}
+            dateTime="2026-05-10"
+            dateLabel="10 mei, 2026"
+            body={
+              <Paragraph>
+                Momenteel is het uitzonderlijk druk. Houd hierdoor rekening met 2 weken verwerkingstijd.{' '}
+                <Link href="#">
+                  Documenten bekijken
+                  <Icon>
+                    <IconArrowRight />
+                  </Icon>
+                </Link>
+              </Paragraph>
+            }
           ></SubStep>
           <SubStep label="Stemmen" state="pending"></SubStep>
         </Step>

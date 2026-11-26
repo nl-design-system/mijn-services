@@ -6,7 +6,7 @@ import type { ProgressListStepBase } from './ProgressListStepData';
 export interface SubStepProps extends ComponentPropsWithoutRef<'li'>, ProgressListStepBase {}
 
 export const SubStep = forwardRef<HTMLLIElement, SubStepProps>(function SubStep(
-  { className, label, state, dateTime, dateLabel, body, ...restProps },
+  { className, label, state, dateTime, dateLabel, body, bodyVariant, ...restProps },
   forwardedRef,
 ) {
   return (
@@ -22,19 +22,13 @@ export const SubStep = forwardRef<HTMLLIElement, SubStepProps>(function SubStep(
         <p className="denhaag-progress-list__label">{label}</p>
         {dateTime && (
           <p className="denhaag-progress-list__date">
-            <time dateTime={dateTime}>{dateTime}</time>
+            <time dateTime={dateTime}>{dateLabel ?? dateTime}</time>
           </p>
         )}
         {body && (
-          <p className={clsx('denhaag-progress-list__body', `denhaag-progress-list__body--${body.variant ?? state}`)}>
-            {body.text}
-            {body.link && (
-              <>
-                {' '}
-                <a href={body.link.href}>{body.link.text}</a>
-              </>
-            )}
-          </p>
+          <div className={clsx('denhaag-progress-list__body', `denhaag-progress-list__body--${bodyVariant ?? state}`)}>
+            {body}
+          </div>
         )}
       </div>
     </li>

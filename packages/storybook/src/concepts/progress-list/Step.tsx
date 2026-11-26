@@ -24,6 +24,7 @@ export const Step = forwardRef<HTMLLIElement, StepProps>(function Step(
     dateTime,
     dateLabel,
     body,
+    bodyVariant,
     static: isStatic,
     open,
     number,
@@ -74,15 +75,14 @@ export const Step = forwardRef<HTMLLIElement, StepProps>(function Step(
                 </p>
               )}
               {body && (
-                <p className="denhaag-progress-list__body">
-                  {body.text}
-                  {body.link && (
-                    <>
-                      {' '}
-                      <a href={body.link.href}>{body.link.text}</a>
-                    </>
+                <div
+                  className={clsx(
+                    'denhaag-progress-list__body',
+                    `denhaag-progress-list__body--${bodyVariant ?? state}`,
                   )}
-                </p>
+                >
+                  {body}
+                </div>
               )}
             </div>
           )}
